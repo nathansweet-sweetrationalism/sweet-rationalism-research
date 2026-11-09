@@ -8,7 +8,7 @@
   "canonical_authority": "WordPress",
   "github_source_path": "articles/matthew-david-segall-scholarly-evidence-criticism-index/article.html",
   "original_publication_date": "2026-11-09T13:44:24",
-  "last_wordpress_modified": "2026-11-09T14:52:58",
+  "last_wordpress_modified": "2026-11-09T15:02:05",
   "archive_baseline_date": "2026-11-09",
   "article_specific_doi": null,
   "doi_status": "no_article_specific_deposit_verified",
@@ -24,6 +24,16 @@
     "broader_peer_reviewed_works": 12,
     "primary_segall_published_sources": 9
   },
-  "archive_commit_content": "abacde457fc3562bcd97886b805c1a9e2950d4ee",
-  "correction_policy": "Preserve canonical WordPress and archive parity; label direct criticism versus relevant general literature; revise on new source, contrary evidence, or argument correction"
+  "archive_commit_content": "f54c655346e4715e10402e0439017ad80e114e43",
+  "correction_policy": "Preserve canonical WordPress and archive parity; label direct criticism versus relevant general literature; revise on new source, contrary evidence, or argument correction",
+  "features": [
+    "seven-section source taxonomy",
+    "direct peer-review verification status",
+    "DOI-linked critical and rival scholarship",
+    "named direct public responses",
+    "contextual internal links to published articles only",
+    "accessible client-side search",
+    "revision and claim-loss documentation",
+    "canonical WordPress metadata and featured image"
+  ]
 }
