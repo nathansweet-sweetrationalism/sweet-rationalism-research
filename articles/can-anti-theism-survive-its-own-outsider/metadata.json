@@ -8,11 +8,16 @@
   "canonical_authority": "WordPress",
   "github_source_path": "articles/can-anti-theism-survive-its-own-outsider/article.html",
   "original_publication_date": "2026-09-10T15:55:47",
-  "last_wordpress_modified": "2026-11-09T13:48:15",
+  "last_wordpress_modified": "2026-11-09T15:44:59",
   "archive_baseline_date": "2026-11-09",
   "article_specific_doi": null,
   "doi_status": "no_article_specific_deposit_verified",
   "version_policy": "Every public article revision must update WordPress canonical and this GitHub file; create/update article-specific Zenodo record only after authenticated deposit; preserve existing framework/ethos deposits.",
   "audit_status": "verbatim_publication_snapshot_not_independent_scientific_audit",
-  "historical_terms_policy": "Preserve verified historical titles and explicit historical quotations; use Recursive Corrigibility Framework for current methodology."
+  "historical_terms_policy": "Preserve verified historical titles and explicit historical quotations; use Recursive Corrigibility Framework for current methodology.",
+  "wordpress_tags": [
+    "Epistemology",
+    "Ethics",
+    "Philosophy of Religion"
+  ]
 }
