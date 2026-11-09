@@ -8,7 +8,7 @@
   "canonical_authority": "WordPress",
   "github_source_path": "articles/mind-everywhere-by-michael-levin-david-b-resnik-the-paper-i-predicted/article.html",
   "original_publication_date": "2026-02-26T20:31:58",
-  "last_wordpress_modified": "2026-11-09T14:11:58",
+  "last_wordpress_modified": "2026-11-09T15:48:04",
   "archive_baseline_date": "2026-11-09",
   "article_specific_doi": null,
   "doi_status": "no_article_specific_deposit_verified",
@@ -16,5 +16,12 @@
   "audit_status": "verbatim_publication_snapshot_not_independent_scientific_audit",
   "historical_terms_policy": "Preserve verified historical titles and explicit historical quotations; use Recursive Corrigibility Framework for current methodology.",
   "last_archive_sync_date": "2026-11-09",
-  "last_audit_note": "Added a precise in-body contextual citation to reciprocal Mind Everywhere / Chladni comparison; no other claims changed."
+  "last_audit_note": "Added a precise in-body contextual citation to reciprocal Mind Everywhere / Chladni comparison; no other claims changed.",
+  "wordpress_tags": [
+    "Biological Platonism",
+    "Levin critiques",
+    "Michael Levin",
+    "Ontology",
+    "Philosophy of Science"
+  ]
 }
