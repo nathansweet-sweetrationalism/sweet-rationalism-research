@@ -8,7 +8,7 @@
   "canonical_authority": "WordPress",
   "github_source_path": "articles/matthew-david-segall-scholarly-evidence-criticism-index/article.html",
   "original_publication_date": "2026-11-09T13:44:24",
-  "last_wordpress_modified": "2026-11-09T15:02:05",
+  "last_wordpress_modified": "2026-11-09T15:54:11",
   "archive_baseline_date": "2026-11-09",
   "article_specific_doi": null,
   "doi_status": "no_article_specific_deposit_verified",
@@ -35,5 +35,12 @@
     "accessible client-side search",
     "revision and claim-loss documentation",
     "canonical WordPress metadata and featured image"
+  ],
+  "wordpress_tags": [
+    "Alfred North Whitehead",
+    "Consciousness",
+    "Matthew David Segall",
+    "Process philosophy",
+    "Scholarly criticism"
   ]
 }
