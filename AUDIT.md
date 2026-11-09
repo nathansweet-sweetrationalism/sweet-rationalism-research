@@ -26,3 +26,9 @@
 - Article `2642` (*The Paper I Predicted: Mind Everywhere*): converted its in-body reference to dynamical attractors into a descriptive link to the Douglas Brash/Chladni alternative.
 - Article `892` (*The Chladni Plate Alternative*): added a concise in-body connection to the `Mind Everywhere` paper and its comparative explanatory burden.
 - Changes were applied to the live published WordPress bodies and read back before archiving. No draft, unlisted, or noindex posts were changed. The prior article text and citations were otherwise preserved.
+
+## 2026-11-09: Unresolved legacy-link integrity check
+
+- Read-only audit found 54 anchor occurrences across nine currently public articles targeting URL paths absent from the current 36-public-article inventory.
+- Some appear as historical original-text and correction references; their present HTTP response, redirect target, indexability, and intended visibility were **not independently verified**.
+- No hidden target was fetched, published, restored or archived, and no existing historical links were bulk-removed. Before modifying links, verify redirects, WordPress intended visibility and whether direct-link access is permitted for unlisted sources. Retain evidential wording and correction provenance.
