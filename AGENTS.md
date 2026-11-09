@@ -1,0 +1,12 @@
+# AGENTS.md · Editorial and publication continuity
+
+1. For **publicly listed** articles only, read the canonical article on https://sweetrationalism.com/ and check all primary evidence before revising. Never access or publish hidden/unlisted/noindex/draft articles without independent, explicit approval and audit.
+2. Preserve the author's strongest evidence-supported critiques, reductios, irony, ethical warnings and possible-harm arguments; distinguish these from alleged third-party commitments, documented appropriation, proven causation, and realized harms. Do not blunt critique merely because targets disclaim appropriating movements. Do not invent causal evidence.
+3. The active name is **Recursive Corrigibility Framework (RCF)**. Older terms, including Recursive Constraint Falsification, may occur only when explicitly marked historical or faithfully quoted.
+4. Maintain `articles/<canonical-post-slug>/article.html` as the exact published HTML body and `metadata.json` as source metadata, including the canonical WordPress permalink. Each WordPress article's near-top research-record link should point to its matching GitHub file.
+5. **Synchronize publication changes:** verify citation+DOI and editorial accuracy, update the WordPress canonical article, archive the resulting HTML to the article's GitHub path, commit with specific rationale, and verify correspondence. If a DOI exists, check its identity/version; Zenodo records require their own separately authenticated, real deposit. Never invent DOI links.
+6. Preserve separate canonical repositories and existing Zenodo DOIs for core frameworks and ethos. No mass update or replacement of these independent archives.
+7. Add natural, relevant contextual internal links among publicly listed articles, with descriptive anchors. No forced keyword stuffing or linking to hidden articles.
+8. Check Yoast canonical, indexing, snippets, XML sitemap, structured data and accessibility. `llms.txt` is optional machine-readable discovery, not evidence of Google ranking benefit.
+9. Preserve a revision audit with source provenance, exact factual changes, alternatives/defeaters, preserved historical corrections, and the affected links. If evidence fails to discriminate, state uncertainty and the test that would change the conclusion.
+10. This repository captures *claim dependencies, rival models, and conditions under which each loses support*. Do not treat the framework as privileged or form a graph of immutable conclusions.
