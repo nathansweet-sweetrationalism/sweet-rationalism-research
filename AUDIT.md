@@ -20,3 +20,9 @@
 - Article-by-article independent source audit, false-positive/false-negative checks, rivals and loss conditions.
 - Keyword/query-to-page Search Console and GA4 audit once real exports or authorized API access is provided.
 - Author-approved article-specific DOI deposit strategy.
+
+## 2026-11-09: Targeted reciprocal contextual links
+
+- Article `2642` (*The Paper I Predicted: Mind Everywhere*): converted its in-body reference to dynamical attractors into a descriptive link to the Douglas Brash/Chladni alternative.
+- Article `892` (*The Chladni Plate Alternative*): added a concise in-body connection to the `Mind Everywhere` paper and its comparative explanatory burden.
+- Changes were applied to the live published WordPress bodies and read back before archiving. No draft, unlisted, or noindex posts were changed. The prior article text and citations were otherwise preserved.
