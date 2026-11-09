@@ -1,18 +1,29 @@
 {
   "schema_version": "1.0",
   "post_id": 218725595,
-  "title": "Matthew David Segall: Scholarly Evidence, Criticism, Corrections, and Process Philosophy",
+  "title": "Process Philosopher Matthew David Segall: Evidence and Scholarly Criticism Index",
   "slug": "matthew-david-segall-scholarly-evidence-criticism-index",
   "status": "published_and_indexable",
   "canonical_url": "https://sweetrationalism.com/articles/theology/matthew-david-segall-scholarly-evidence-criticism-index/",
   "canonical_authority": "WordPress",
   "github_source_path": "articles/matthew-david-segall-scholarly-evidence-criticism-index/article.html",
   "original_publication_date": "2026-11-09T13:44:24",
-  "last_wordpress_modified": "2026-11-09T13:49:06",
+  "last_wordpress_modified": "2026-11-09T14:52:58",
   "archive_baseline_date": "2026-11-09",
   "article_specific_doi": null,
   "doi_status": "no_article_specific_deposit_verified",
   "version_policy": "Every public article revision must update WordPress canonical and this GitHub file; create/update article-specific Zenodo record only after authenticated deposit; preserve existing framework/ethos deposits.",
-  "audit_status": "verbatim_publication_snapshot_not_independent_scientific_audit",
-  "historical_terms_policy": "Preserve verified historical titles and explicit historical quotations; use Recursive Corrigibility Framework for current methodology."
+  "audit_status": "source-target typing and bibliographic plausibility review; not independent replication of cited experiments",
+  "historical_terms_policy": "Preserve verified historical titles and explicit historical quotations; use Recursive Corrigibility Framework for current methodology.",
+  "last_scholarly_index_audit": "2026-11-09",
+  "featured_image_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/matthew-david-segall-evidence-scholarly-criticism-index.png",
+  "excerpt": "An annotated research index of Matthew David Segall's process philosophy, critical responses, peer-reviewed evidence, universal prehension, divine valuation, and the questions that remain open.",
+  "evidence_classification": {
+    "direct_peer_reviewed_criticism": "none independently verified as of 2026-11-09; not evidence of nonexistence",
+    "named_direct_public_responses": 6,
+    "broader_peer_reviewed_works": 12,
+    "primary_segall_published_sources": 8
+  },
+  "archive_commit_content": "abacde457fc3562bcd97886b805c1a9e2950d4ee",
+  "correction_policy": "Preserve canonical WordPress and archive parity; label direct criticism versus relevant general literature; revise on new source, contrary evidence, or argument correction"
 }
