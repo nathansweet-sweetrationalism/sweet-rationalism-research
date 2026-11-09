@@ -8,11 +8,17 @@
   "canonical_authority": "WordPress",
   "github_source_path": "articles/logic-does-not-choose-relevance-does/article.html",
   "original_publication_date": "2026-09-22T13:25:04",
-  "last_wordpress_modified": "2026-11-09T13:47:47",
+  "last_wordpress_modified": "2026-11-09T15:45:30",
   "archive_baseline_date": "2026-11-09",
   "article_specific_doi": null,
   "doi_status": "no_article_specific_deposit_verified",
   "version_policy": "Every public article revision must update WordPress canonical and this GitHub file; create/update article-specific Zenodo record only after authenticated deposit; preserve existing framework/ethos deposits.",
   "audit_status": "verbatim_publication_snapshot_not_independent_scientific_audit",
-  "historical_terms_policy": "Preserve verified historical titles and explicit historical quotations; use Recursive Corrigibility Framework for current methodology."
+  "historical_terms_policy": "Preserve verified historical titles and explicit historical quotations; use Recursive Corrigibility Framework for current methodology.",
+  "wordpress_tags": [
+    "Alfred North Whitehead",
+    "Consciousness",
+    "Matthew David Segall",
+    "Process philosophy"
+  ]
 }
