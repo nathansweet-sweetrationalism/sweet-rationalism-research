@@ -1,0 +1,332 @@
+{
+  "schema_version": "1.0",
+  "canonical_domain": "https://sweetrationalism.com",
+  "scope": "public_indexable_articles_only",
+  "count": 36,
+  "articles": [
+    {
+      "id": 218725595,
+      "title": "Matthew David Segall: Scholarly Evidence, Criticism, Corrections, and Process Philosophy",
+      "slug": "matthew-david-segall-scholarly-evidence-criticism-index",
+      "canonical_url": "https://sweetrationalism.com/articles/theology/matthew-david-segall-scholarly-evidence-criticism-index/",
+      "html_path": "articles/matthew-david-segall-scholarly-evidence-criticism-index/article.html",
+      "last_modified": "2026-11-09T13:49:06",
+      "doi": null
+    },
+    {
+      "id": 218725528,
+      "title": "The Chladni Plate Challenge to Michael Levin’s Biological Platonism",
+      "slug": "michael-levin-biological-platonism-chladni-plate-challenge",
+      "canonical_url": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/michael-levin-biological-platonism-chladni-plate-challenge/",
+      "html_path": "articles/michael-levin-biological-platonism-chladni-plate-challenge/article.html",
+      "last_modified": "2026-11-09T13:46:58",
+      "doi": null
+    },
+    {
+      "id": 218725495,
+      "title": "What Is Truth? What I Actually Affirm, and What My Disagreement with Matthew David Segall Is Really About",
+      "slug": "what-i-mean-by-truth-what-i-actually-affirm-and-what-my-disagreement-with-matthew-david-segall-is-really-about",
+      "canonical_url": "https://sweetrationalism.com/articles/epistemology/what-i-mean-by-truth-what-i-actually-affirm-and-what-my-disagreement-with-matthew-david-segall-is-really-about/",
+      "html_path": "articles/what-i-mean-by-truth-what-i-actually-affirm-and-what-my-disagreement-with-matthew-david-segall-is-really-about/article.html",
+      "last_modified": "2026-11-09T13:47:00",
+      "doi": null
+    },
+    {
+      "id": 218725183,
+      "title": "No Evidence, No Examples, No Named Errors, No Citations: How Michael Levin’s \"Gut Feeling\" Selective Dismissal of Criticism Shields His \"Physicalism Is False\" Claim From the Objection It Most Needs to Answer",
+      "slug": "michael-levin-nathan-sweet-gut-feeling-dismissal-shield-physicalism-is-false-claim",
+      "canonical_url": "https://sweetrationalism.com/articles/ontology/michael-levin-nathan-sweet-gut-feeling-dismissal-shield-physicalism-is-false-claim/",
+      "html_path": "articles/michael-levin-nathan-sweet-gut-feeling-dismissal-shield-physicalism-is-false-claim/article.html",
+      "last_modified": "2026-11-09T13:47:03",
+      "doi": null
+    },
+    {
+      "id": 218725171,
+      "title": "Michael Levin’s Xenobots: Are They Real? Do They Prove That \"Physicalism Is False\"?",
+      "slug": "michael-levins-xenobots-are-they-real-do-they-prove-physicalism-false-as-he-claims",
+      "canonical_url": "https://sweetrationalism.com/articles/biology/michael-levins-xenobots-are-they-real-do-they-prove-physicalism-false-as-he-claims/",
+      "html_path": "articles/michael-levins-xenobots-are-they-real-do-they-prove-physicalism-false-as-he-claims/article.html",
+      "last_modified": "2026-11-09T13:47:05",
+      "doi": null
+    },
+    {
+      "id": 218725052,
+      "title": "Matthew Segall on Whitehead: What Does Segall’s God Interpretation Actually Add?",
+      "slug": "matthew-david-segall-on-whitehead-how-alleged-errors-transform-into-clarifying-his-position",
+      "canonical_url": "https://sweetrationalism.com/articles/metaphysics/matthew-david-segall-on-whitehead-how-alleged-errors-transform-into-clarifying-his-position/",
+      "html_path": "articles/matthew-david-segall-on-whitehead-how-alleged-errors-transform-into-clarifying-his-position/article.html",
+      "last_modified": "2026-11-09T13:47:07",
+      "doi": null
+    },
+    {
+      "id": 218725030,
+      "title": "The Lion Eats. God Remembers. Who Answers for the Prey?",
+      "slug": "the-lion-eats-god-remembers-who-answers-for-the-prey",
+      "canonical_url": "https://sweetrationalism.com/articles/theology/the-lion-eats-god-remembers-who-answers-for-the-prey/",
+      "html_path": "articles/the-lion-eats-god-remembers-who-answers-for-the-prey/article.html",
+      "last_modified": "2026-11-09T13:47:10",
+      "doi": null
+    },
+    {
+      "id": 218725021,
+      "title": "Evolving God Out Of The Gaps: Naturalizing Whitehead's God",
+      "slug": "evolving-god-out-of-the-gaps-naturalizing-whiteheads-god",
+      "canonical_url": "https://sweetrationalism.com/articles/methodology/evolving-god-out-of-the-gaps-naturalizing-whiteheads-god/",
+      "html_path": "articles/evolving-god-out-of-the-gaps-naturalizing-whiteheads-god/article.html",
+      "last_modified": "2026-11-09T13:47:12",
+      "doi": null
+    },
+    {
+      "id": 1187,
+      "title": "When Matthew Segall's “No Scientific Evidence For Consciousness” Becomes an Unintentional Shield",
+      "slug": "when-no-scientific-evidence-for-consciousness-becomes-an-unintentional-shield-matthew-segall",
+      "canonical_url": "https://sweetrationalism.com/articles/consciousness/when-no-scientific-evidence-for-consciousness-becomes-an-unintentional-shield-matthew-segall/",
+      "html_path": "articles/when-no-scientific-evidence-for-consciousness-becomes-an-unintentional-shield-matthew-segall/article.html",
+      "last_modified": "2026-11-09T13:47:15",
+      "doi": null
+    },
+    {
+      "id": 2130,
+      "title": "Why Michael Levin’s Bubble Sort “Revelation” Is Misunderstood Classical Algorithm Theory Meets a God-of-the-Gaps Argument",
+      "slug": "why-michael-levins-bubble-sort-revelation-is-misunderstood-classical-algorithm-theory-meets-god-of-the-gaps-argument",
+      "canonical_url": "https://sweetrationalism.com/articles/physics/computer-science/why-michael-levins-bubble-sort-revelation-is-misunderstood-classical-algorithm-theory-meets-god-of-the-gaps-argument/",
+      "html_path": "articles/why-michael-levins-bubble-sort-revelation-is-misunderstood-classical-algorithm-theory-meets-god-of-the-gaps-argument/article.html",
+      "last_modified": "2026-11-09T13:47:17",
+      "doi": null
+    },
+    {
+      "id": 218724937,
+      "title": "David Chalmers’s “Hard Problem of Consciousness” Has a Hard Problem of the Gaps: How His Own Methodology Dissolves Both",
+      "slug": "david-chalmerss-hard-problem-of-consciousness-has-a-hard-problem-of-the-gaps-how-his-own-methodology-dissolves-both",
+      "canonical_url": "https://sweetrationalism.com/articles/consciousness/david-chalmerss-hard-problem-of-consciousness-has-a-hard-problem-of-the-gaps-how-his-own-methodology-dissolves-both/",
+      "html_path": "articles/david-chalmerss-hard-problem-of-consciousness-has-a-hard-problem-of-the-gaps-how-his-own-methodology-dissolves-both/article.html",
+      "last_modified": "2026-11-09T13:47:31",
+      "doi": null
+    },
+    {
+      "id": 3038,
+      "title": "Biologist Michael Levin Evidence and Scholarly Criticism Index",
+      "slug": "michael-levin-science-or-pseudoscience-criticism-index",
+      "canonical_url": "https://sweetrationalism.com/articles/biology/michael-levin-science-or-pseudoscience-criticism-index/",
+      "html_path": "articles/michael-levin-science-or-pseudoscience-criticism-index/article.html",
+      "last_modified": "2026-11-09T13:47:34",
+      "doi": null
+    },
+    {
+      "id": 3001,
+      "title": "Religion With A Pipette: Is Michael Levin's 'Ingressing Minds' Pseudoscience? A Scholarly Analysis",
+      "slug": "religion-with-a-pipette-is-michael-levins-ingressing-minds-pseudoscience-a-scholarly-analysis",
+      "canonical_url": "https://sweetrationalism.com/articles/metaphysics/religion-with-a-pipette-is-michael-levins-ingressing-minds-pseudoscience-a-scholarly-analysis/",
+      "html_path": "articles/religion-with-a-pipette-is-michael-levins-ingressing-minds-pseudoscience-a-scholarly-analysis/article.html",
+      "last_modified": "2026-11-09T13:47:37",
+      "doi": null
+    },
+    {
+      "id": 2996,
+      "title": "What Is Provisional, Boundary- and Scale-Relative Realism?",
+      "slug": "what-is-provisional-boundary-and-scale-relative-realism",
+      "canonical_url": "https://sweetrationalism.com/articles/ontology/what-is-provisional-boundary-and-scale-relative-realism/",
+      "html_path": "articles/what-is-provisional-boundary-and-scale-relative-realism/article.html",
+      "last_modified": "2026-11-09T13:47:39",
+      "doi": null
+    },
+    {
+      "id": 2979,
+      "title": "What Is Thermodynamic Monism? Auditing My Own Framework—September 2026 Revisions and Clarifications",
+      "slug": "what-is-thermodynamic-monism-auditing-my-own-framework-september-2026-revisions-and-clarifications",
+      "canonical_url": "https://sweetrationalism.com/articles/ontology/what-is-thermodynamic-monism-auditing-my-own-framework-september-2026-revisions-and-clarifications/",
+      "html_path": "articles/what-is-thermodynamic-monism-auditing-my-own-framework-september-2026-revisions-and-clarifications/article.html",
+      "last_modified": "2026-11-09T13:47:42",
+      "doi": null
+    },
+    {
+      "id": 217313939,
+      "title": "Where the Necessity Case for Mathew Segall &amp; Whitehead’s Prehension Fails",
+      "slug": "where-the-necessity-case-for-whiteheads",
+      "canonical_url": "https://sweetrationalism.com/articles/metaphysics/where-the-necessity-case-for-whiteheads/",
+      "html_path": "articles/where-the-necessity-case-for-whiteheads/article.html",
+      "last_modified": "2026-11-09T13:47:45",
+      "doi": null
+    },
+    {
+      "id": 216896469,
+      "title": "Logic Does Not Choose Relevance. Does Feeling? Not Alone. My Response to Matthew David Segall’s “Whitehead’s Adventure in Rationality”",
+      "slug": "logic-does-not-choose-relevance-does",
+      "canonical_url": "https://sweetrationalism.com/articles/epistemology/logic-does-not-choose-relevance-does/",
+      "html_path": "articles/logic-does-not-choose-relevance-does/article.html",
+      "last_modified": "2026-11-09T13:47:47",
+      "doi": null
+    },
+    {
+      "id": 216584527,
+      "title": "What Warrants the Scope Jump?",
+      "slug": "what-warrants-the-scope-jump",
+      "canonical_url": "https://sweetrationalism.com/articles/ontology/what-warrants-the-scope-jump/",
+      "html_path": "articles/what-warrants-the-scope-jump/article.html",
+      "last_modified": "2026-11-09T13:47:50",
+      "doi": null
+    },
+    {
+      "id": 216463497,
+      "title": "Why Matthew David Segall Kept Answering Me Without Answering My Actual Argument",
+      "slug": "i-just-realized-why-matthew-david",
+      "canonical_url": "https://sweetrationalism.com/articles/metaphysics/i-just-realized-why-matthew-david/",
+      "html_path": "articles/i-just-realized-why-matthew-david/article.html",
+      "last_modified": "2026-11-09T13:47:53",
+      "doi": null
+    },
+    {
+      "id": 216065189,
+      "title": "One Nature Does Not Entail One Feeling",
+      "slug": "one-nature-does-not-entail-one-feeling",
+      "canonical_url": "https://sweetrationalism.com/articles/ontology/one-nature-does-not-entail-one-feeling/",
+      "html_path": "articles/one-nature-does-not-entail-one-feeling/article.html",
+      "last_modified": "2026-11-09T13:47:56",
+      "doi": null
+    },
+    {
+      "id": 215986921,
+      "title": "Synthbiosis: Deductive Proof That The Machine Did Not Need to Feel to Matter",
+      "slug": "synthbiosis-the-machine-did-not-need-to-feel-to-matter",
+      "canonical_url": "https://sweetrationalism.com/articles/philosophy/synthbiosis-the-machine-did-not-need-to-feel-to-matter/",
+      "html_path": "articles/synthbiosis-the-machine-did-not-need-to-feel-to-matter/article.html",
+      "last_modified": "2026-11-09T13:48:07",
+      "doi": null
+    },
+    {
+      "id": 215680353,
+      "title": "Matthew Segall’s Words Made Flesh Again, but the Evidence Never Said That?",
+      "slug": "matthew-segalls-words-made-flesh",
+      "canonical_url": "https://sweetrationalism.com/articles/ontology/matthew-segalls-words-made-flesh/",
+      "html_path": "articles/matthew-segalls-words-made-flesh/article.html",
+      "last_modified": "2026-11-09T13:48:10",
+      "doi": null
+    },
+    {
+      "id": 215566501,
+      "title": "Matthew Segall Granted My Request for Erratum. The Straw Man Came Back Wearing a Presupposition.",
+      "slug": "matthew-segall-issued-an-erratum",
+      "canonical_url": "https://sweetrationalism.com/articles/metaphysics/matthew-segall-issued-an-erratum/",
+      "html_path": "articles/matthew-segall-issued-an-erratum/article.html",
+      "last_modified": "2026-11-09T13:48:13",
+      "doi": null
+    },
+    {
+      "id": 215059102,
+      "title": "Can Anti-Theism Survive Its Own Outsider Test?",
+      "slug": "can-anti-theism-survive-its-own-outsider",
+      "canonical_url": "https://sweetrationalism.com/articles/epistemology/critical-thinking/can-anti-theism-survive-its-own-outsider/",
+      "html_path": "articles/can-anti-theism-survive-its-own-outsider/article.html",
+      "last_modified": "2026-11-09T13:48:15",
+      "doi": null
+    },
+    {
+      "id": 214297886,
+      "title": "Responding to Matthew Segall’s “Audit”: An Audit of the Audit of the Audits (LOL, ok, maybe this is getting a bit off the rails now🤣)",
+      "slug": "responding-to-mathew-segalls-audit",
+      "canonical_url": "https://sweetrationalism.com/articles/epistemology/responding-to-mathew-segalls-audit/",
+      "html_path": "articles/responding-to-mathew-segalls-audit/article.html",
+      "last_modified": "2026-11-09T13:48:18",
+      "doi": null
+    },
+    {
+      "id": 214096235,
+      "title": "Process Philosopher Matt Segall Admitted Misrepresenting My Argument To His Readers. He Updated His Page, Not His Readers",
+      "slug": "process-philosopher-matt-segall-admitted",
+      "canonical_url": "https://sweetrationalism.com/articles/epistemology/process-philosopher-matt-segall-admitted/",
+      "html_path": "articles/process-philosopher-matt-segall-admitted/article.html",
+      "last_modified": "2026-11-09T13:48:24",
+      "doi": null
+    },
+    {
+      "id": 213793714,
+      "title": "I Asked The Process Philosopher Matt Segall to Correct the Public Record. He Started Another Debate With Me Instead. The Public Record Remains Uncorrected.",
+      "slug": "i-asked-the-process-philosopher-matt",
+      "canonical_url": "https://sweetrationalism.com/articles/epistemology/i-asked-the-process-philosopher-matt/",
+      "html_path": "articles/i-asked-the-process-philosopher-matt/article.html",
+      "last_modified": "2026-11-09T13:48:20",
+      "doi": null
+    },
+    {
+      "id": 213619498,
+      "title": "Process Philosopher Matthew Segall Admitted He Attributed a Position to Me That I Did Not Hold. Why Is the Argument Still Standing?",
+      "slug": "process-philosopher-matthew-segall",
+      "canonical_url": "https://sweetrationalism.com/articles/epistemology/process-philosopher-matthew-segall/",
+      "html_path": "articles/process-philosopher-matthew-segall/article.html",
+      "last_modified": "2026-11-09T13:48:22",
+      "doi": null
+    },
+    {
+      "id": 213351299,
+      "title": "Matthew Segall’s ‘Experience Is Not a Predicate’: I Never Made the Argument He Rebutted. My Question Remains Unanswered.",
+      "slug": "matthew-segalls-experience-is-not",
+      "canonical_url": "https://sweetrationalism.com/articles/epistemology/matthew-segalls-experience-is-not/",
+      "html_path": "articles/matthew-segalls-experience-is-not/article.html",
+      "last_modified": "2026-11-09T13:48:27",
+      "doi": null
+    },
+    {
+      "id": 213052713,
+      "title": "I Wanted Erik Svensson’s Argument for Physicalism to Be Stronger. So I Tried to Build One Myself.",
+      "slug": "i-wanted-erik-svenssons-argument",
+      "canonical_url": "https://sweetrationalism.com/articles/philosophy/i-wanted-erik-svenssons-argument/",
+      "html_path": "articles/i-wanted-erik-svenssons-argument/article.html",
+      "last_modified": "2026-11-09T13:48:29",
+      "doi": null
+    },
+    {
+      "id": 212911058,
+      "title": "💫 How Can Reality Tell Our Metaphysics “No”? What Does a Metaphysical Claim Have to Do to Earn Its Keep? 🤔",
+      "slug": "how-can-reality-tell-our-metaphysics",
+      "canonical_url": "https://sweetrationalism.com/articles/methodology/how-can-reality-tell-our-metaphysics/",
+      "html_path": "articles/how-can-reality-tell-our-metaphysics/article.html",
+      "last_modified": "2026-11-09T13:48:40",
+      "doi": null
+    },
+    {
+      "id": 2734,
+      "title": "Institutional Capture &amp; Diverse Intelligence: How Unfalsifiable Metaphysics Allowed the Discovery Institute to Degenerate Levin's Bioelectricity Research Program",
+      "slug": "institutional-capture-diverse-intelligence-how-unfalsifiable-metaphysics-allowed-the-discovery-institute-to-degenerate-a-vital-bioelectricity-research-program",
+      "canonical_url": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/institutional-capture-diverse-intelligence-how-unfalsifiable-metaphysics-allowed-the-discovery-institute-to-degenerate-a-vital-bioelectricity-research-program/",
+      "html_path": "articles/institutional-capture-diverse-intelligence-how-unfalsifiable-metaphysics-allowed-the-discovery-institute-to-degenerate-a-vital-bioelectricity-research-program/article.html",
+      "last_modified": "2026-11-09T13:48:42",
+      "doi": null
+    },
+    {
+      "id": 2687,
+      "title": "David Chalmers' Own Later Work Dissolves the Hard Problem of Consciousness He Named: The Falsifiable, Peer-Reviewed, Constraint-Based Alternative He Pointed Toward",
+      "slug": "chalmers-own-later-work-dissolves-the-hard-problem-he-named-the-falsifiable-peer-reviewed-alternative-he-pointed-toward",
+      "canonical_url": "https://sweetrationalism.com/articles/consciousness/chalmers-own-later-work-dissolves-the-hard-problem-he-named-the-falsifiable-peer-reviewed-alternative-he-pointed-toward/",
+      "html_path": "articles/chalmers-own-later-work-dissolves-the-hard-problem-he-named-the-falsifiable-peer-reviewed-alternative-he-pointed-toward/article.html",
+      "last_modified": "2026-11-09T13:48:45",
+      "doi": null
+    },
+    {
+      "id": 2642,
+      "title": "The Paper I Predicted: \"Mind Everywhere\" by Michael Levin & David B. Resnik",
+      "slug": "mind-everywhere-by-michael-levin-david-b-resnik-the-paper-i-predicted",
+      "canonical_url": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/mind-everywhere-by-michael-levin-david-b-resnik-the-paper-i-predicted/",
+      "html_path": "articles/mind-everywhere-by-michael-levin-david-b-resnik-the-paper-i-predicted/article.html",
+      "last_modified": "2026-11-09T13:48:48",
+      "doi": null
+    },
+    {
+      "id": 892,
+      "title": "The Chladni Plate Alternative to Platonic Necessity: Douglas Brash, Bioelectric Morphogenesis, and Constraint-Based Explanation",
+      "slug": "chladni-plate-constraint-framework-alternative-to-platonism-douglas-brash-bioelectric-morphogenesis-attractor-dynamics-vs-platonic-forms",
+      "canonical_url": "https://sweetrationalism.com/articles/biology/chladni-plate-constraint-framework-alternative-to-platonism-douglas-brash-bioelectric-morphogenesis-attractor-dynamics-vs-platonic-forms/",
+      "html_path": "articles/chladni-plate-constraint-framework-alternative-to-platonism-douglas-brash-bioelectric-morphogenesis-attractor-dynamics-vs-platonic-forms/article.html",
+      "last_modified": "2026-11-09T13:48:50",
+      "doi": null
+    },
+    {
+      "id": 827,
+      "title": "Biologist Michael Levin’s \"Response\" to My Criticisms of Biological Platonism: Misrepresentation of My Arguments, Platonic Morphospace, and a Claim That Is Unfalsifiable As Stated",
+      "slug": "nathan-sweet-michael-levin-misrepresentation-unfalsifiable-platonic-morphospace",
+      "canonical_url": "https://sweetrationalism.com/articles/biology/nathan-sweet-michael-levin-misrepresentation-unfalsifiable-platonic-morphospace/",
+      "html_path": "articles/nathan-sweet-michael-levin-misrepresentation-unfalsifiable-platonic-morphospace/article.html",
+      "last_modified": "2026-11-09T13:46:27",
+      "doi": null
+    }
+  ]
+}
