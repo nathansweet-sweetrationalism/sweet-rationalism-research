@@ -8,7 +8,7 @@
   "canonical_authority": "WordPress",
   "github_source_path": "articles/chladni-plate-constraint-framework-alternative-to-platonism-douglas-brash-bioelectric-morphogenesis-attractor-dynamics-vs-platonic-forms/article.html",
   "original_publication_date": "2026-01-10T13:47:23",
-  "last_wordpress_modified": "2026-11-09T14:12:00",
+  "last_wordpress_modified": "2026-11-09T15:43:55",
   "archive_baseline_date": "2026-11-09",
   "article_specific_doi": null,
   "doi_status": "no_article_specific_deposit_verified",
@@ -16,5 +16,13 @@
   "audit_status": "verbatim_publication_snapshot_not_independent_scientific_audit",
   "historical_terms_policy": "Preserve verified historical titles and explicit historical quotations; use Recursive Corrigibility Framework for current methodology.",
   "last_archive_sync_date": "2026-11-09",
-  "last_audit_note": "Added a precise in-body contextual citation to reciprocal Mind Everywhere / Chladni comparison; no other claims changed."
+  "last_audit_note": "Added a precise in-body contextual citation to reciprocal Mind Everywhere / Chladni comparison; no other claims changed.",
+  "wordpress_tags": [
+    "Bioelectricity",
+    "Chladni plate",
+    "Douglas Brash",
+    "Levin critiques",
+    "Michael Levin",
+    "morphogenesis"
+  ]
 }
