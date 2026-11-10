@@ -30,7 +30,7 @@
   "release_followup": "Create a new Zenodo version using authenticated publishing access and its actual assigned DOI; refresh article badges, CITATION.cff and repository metadata only after deposit is confirmed. Independently inspect ZIP interior and latest WordPress snapshots; never invent a DOI.",
   "wordpress_status": "publish",
   "wordpress_robots": "index,follow",
-  "consolidated_wordpress_history_archive": "https://sweetrationalism.com/wp-content/uploads/2026/11/Consciousness_Naturalized_2115_Reconstruction_2026-11-10_FINAL.zip",
+  "consolidated_wordpress_history_archive": "https://sweetrationalism.com/wp-content/uploads/2026/11/Consciousness_Naturalized_2115_WordPress_Reconstruction_History_2026-11-10_FINAL_CONSOLIDATED.zip",
   "consolidated_wordpress_history_media_id": 218725757,
   "consolidated_wordpress_history_file_size_bytes": 1458596,
   "consolidated_history_content_validation": "WordPress media registry and canonical link confirmed; ZIP interior not independently extracted in this tool context",
