@@ -1,3 +1,25 @@
+# Current editorial audit status, article 2098 (November 10, 2026)
+
+The following verified release checkpoint supersedes the earlier provisional status prose preserved below. WordPress post **2098** remains `publish`; Yoast indexing is explicitly enabled (`_yoast_wpseo_meta-robots-noindex=2`), but the separate Unlist Posts & Pages checkbox was **not** independently inspected because the WP admin browser session is signed out. Do not infer that the post is publicly listed, or that it is still unlisted, from Yoast alone.
+
+## Reconciled final WordPress and archive state
+
+- Current WordPress revision: **218725721**, modified **2026-11-09T22:45:13** site time; latest approved `post_content` SHA-256: `65d868c0a32d223a89ff0ede677a0b8af701bfc1d9125f96066d29e55da85b41`. Exact REST read-back matches the submitted body.
+- [Complete v5 reconstruction archive](https://sweetrationalism.com/wp-content/uploads/2026/02/Levin_Morphospace_Complete_Revision_Archive_2026-11-10_v5.zip): **29** exact WordPress revision bodies, **28** adjacent unified diffs, verifiable checksums/manifest, current approved HTML, and prior GitHub metadata/audit snapshots. WordPress attachment **218725722**, **983,520 bytes**, ZIP SHA-256 `63ea9b31f8ef21c4b11c698e2c3073b87ab30a2a2c49bb38aabd8430dae88621`; all 63 ZIP entries passed CRC and content comparison.
+- [Human-readable v5 revision audit](https://sweetrationalism.com/wp-content/uploads/2026/02/Levin_Morphospace_Revision_Audit_2026-11-10_v5.txt): WordPress attachment **218725723**, **11,000 bytes**. Both v5 public URLs were embedded in revision 218725721 itself, making the archive self-reconstructing without a later pointer-only revision.
+- Current content adds bounded 2025 empirical evidence (Jones, Fonticella & McLaughlin, DOI `10.3390/jdb13030026`) with its negative comparison and limitations; contextual internal links to Brash/constraint rival, xenobots claims, and Levin criticism index; maintained BETSE GitHub, historical GitLab, Manicka BioElectricNetwork and ElectricMorphogenesis with its MIT/CC-BY licensing inconsistency flagged. These links disclose source/scope and do not imply scholarly endorsement, shared ontology, or code reuse rights.
+- All **51 attributed speaker quote paragraphs** and **31 chronological discussion sections** remained in place through the substantive revision, checked against prior saved article revision; an independent original-source transcript comparison remains open.
+- Zenodo version [`10.5281/zenodo.24095566`](https://doi.org/10.5281/zenodo.24095566) and concept [`10.5281/zenodo.24095565`](https://doi.org/10.5281/zenodo.24095565) are **historical**; the updated edition has no new Zenodo V2 DOI because no authenticated deposition session was available. The canonical current article remains SweetRationalism.com. The legacy URL slug is retained to avoid breaking inbound links.
+
+## Remaining gates and clear losses
+
+1. Verify the exact Unlist Posts & Pages status in WordPress admin, change ONLY post 2098 if needed, and independently check public index/follow, directory listing, and sitemap. If the plugin still forces `noindex`, visibility is **not complete** irrespective of Yoast.
+2. Authenticate to Zenodo and create a new immutable version depositing the current v5 ZIP and full edition; update visible version DOI and badge after the deposit. If new WordPress revision results, regenerate and relink a numbered archive checkpoint so the final version does not silently fall out of sync.
+3. Obtain independently sourced transcript and neutral adversarial reviewer report; compare quotes and source claims before declaring evidential completeness. Until then, label exact quote preservation as a *within-site revision check*, not as a transcript-level proof.
+4. Future automatic audits must cross-link semantically relevant internal published pages, verified external scholarly repositories/code/data, and expose full DOI resolver links with badge on next line; avoid reciprocal-link requests or ranking-oriented link spam lacking genuine value.
+
+## Historical audit snapshot (retained for provenance)
+
 # Editorial audit status, article 2098
 
 **November 10, 2026. Release gate remains OPEN pending relisting.** The article-specific Zenodo version DOI `10.5281/zenodo.24095566` and concept DOI `10.5281/zenodo.24095565` are live; 21 complete historical WordPress bodies plus final release HTML and mechanical diffs are downloadable in the public v3 ZIP. The GitHub `article.html` mirrors the current WordPress body exactly. **The post remains hidden by the Unlist Posts & Pages plugin (site option `unlist_posts`) despite Yoast recording index.** Public HTML still emits `<meta name='robots' content='noindex, follow' />`. The public `/post-sitemap.xml` currently **does include** this permalink, making the mismatch especially important to resolve before claiming correct release. A future auditor must clear only post 2098's unlisted toggle using that plugin's admin editor or Quick Edit, verify normal public listing/sitemap and robots, then update this audit and `metadata.json`. Never infer release from `post_status=publish` or Yoast alone.
