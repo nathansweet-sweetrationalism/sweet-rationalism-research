@@ -12,7 +12,7 @@
   "article_specific_doi": "10.5281/zenodo.24095566",
   "article_concept_doi": "10.5281/zenodo.24095565",
   "doi_status": "public Zenodo v1 and concept DOI verified as historical; no updated version DOI deposited",
-  "audit_status": "Article, 29-revision archive and GitHub sync complete; public badges/layout and TXT/ZIP access checked. Remaining formal gates: independent plugin checkbox/listing, authenticated Zenodo V2, primary transcript compare.",
+  "audit_status": "Public site visibility is owner-observed and signed-out page robots is index/follow; 29-revision archive, badges, mirror complete. Remaining formal gates: admin Unlist checkbox (unverified separately), authenticated Zenodo V2, independent primary transcript comparison.",
   "revision_notes_in_article": true,
   "revision_audit_url": "https://sweetrationalism.com/wp-content/uploads/2026/02/Levin_Morphospace_Revision_Audit_2026-11-10_v5.txt",
   "reconstruction_archive_url": "https://sweetrationalism.com/wp-content/uploads/2026/02/Levin_Morphospace_Complete_Revision_Archive_2026-11-10_v5.zip",
@@ -39,7 +39,7 @@
     "Historical speaker statements and chronological debate order preserved"
   ],
   "release_conditions_remaining": [
-    "Verify WordPress Unlist Posts & Pages plugin checkbox for post 2098 ONLY; signed-out page currently reports index/follow, but listing/search/sitemap and admin flag remain unverified",
+    "Inspect WordPress Unlist Posts & Pages checkbox for post 2098 only to independently reconcile plugin state; owner confirms article appears in live site listings and signed-out page shows index/follow, so public listing itself is now owner-observed",
     "Deposit a new Zenodo V2 containing the current v5 archive and approved article, then update visible version DOI/badge without removing historical v1",
     "Perform independent transcript-to-quote and citation metadata comparison if original debate transcript becomes available"
   ],
@@ -124,5 +124,15 @@
     "site_content_h1_count": 2
   },
   "handoff_file": "articles/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/gemini_antigravity_handoff.md",
-  "link_registry_file": "articles/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/link_registry.json"
+  "link_registry_file": "articles/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/link_registry.json",
+  "visibility_evidence": [
+    {
+      "claim": "The article appears in the site's public listings",
+      "exact_owner_statement": "post is listed, and is appearing on the site",
+      "source_type": "first-party owner observation",
+      "recorded_date_local": "2026-11-09",
+      "confidence_basis": "Direct report by site owner; independent admin Unlist checkbox not inspected",
+      "status": "owner_observed"
+    }
+  ]
 }
