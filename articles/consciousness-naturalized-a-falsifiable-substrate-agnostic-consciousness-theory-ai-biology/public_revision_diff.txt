@@ -1,6 +1,6 @@
 --- original-WordPress-2115.html
-+++ candidate-2115-v1.1.0.html
-@@ -1,87 +1,91 @@
++++ canonical-2115-v1.1.0-with-doi-links.html
+@@ -1,87 +1,95 @@
  <!-- wp:heading -->
 -<h2 class="wp-block-heading">Why Thermodynamic Constraint Dynamics Succeed Where Every Other Framework Fails</h2>
 +<h2 class="wp-block-heading">Consciousness Naturalized: A Falsifiable Substrate-Agnostic Consciousness Theory</h2>
@@ -26,63 +26,65 @@
 -
  <!-- wp:paragraph -->
 -<p>In 1979, Gregory Bateson posed a question that would haunt systems theory, cybernetics, and philosophy of mind for nearly half a century:&nbsp;<em>What is the pattern which connects all patterns?</em></p>
-+<p style="margin:0 0 .75rem"><strong>Versions and archives:</strong> <a href="https://sweetrationalism.com/wp-content/uploads/2026/02/Consciousness_Naturalized_2115_Computational_Supplement_2026-11-10.zip">Computational supplement (ZIP)</a> &nbsp; · &nbsp; <a href="https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/main/articles/consciousness-naturalized-a-falsifiable-substrate-agnostic-consciousness-theory-ai-biology/public_revision_diff.txt" target="_blank" rel="noopener noreferrer">Full revision audit (public TXT)</a> &nbsp; · &nbsp; <a href="https://github.com/nathansweet-sweetrationalism/consciousness-naturalized/blob/main/PROSPECTIVE_PROTOCOL.md" target="_blank" rel="noopener noreferrer">Prospective rival-test protocols (v0.1.0)</a> &nbsp; · &nbsp; <a href="https://sweetrationalism.com/wp-content/uploads/2026/11/Consciousness_Naturalized_2115_WordPress_Reconstruction_History_2026-11-10.zip">WordPress reconstruction history (ZIP; twelve revisions)</a>. Version and concept DOI records will be inserted only after real Zenodo deposits. The machine-checkable files do not establish phenomenal identity.</p>
++<p style="margin:0"><strong>Archived edition v1.1.0:</strong> Version DOI <a href="https://doi.org/10.5281/zenodo.24119682" target="_blank" rel="noopener noreferrer">10.5281/zenodo.24119682</a> &nbsp; · &nbsp; All-versions DOI <a href="https://doi.org/10.5281/zenodo.24119681" target="_blank" rel="noopener noreferrer">10.5281/zenodo.24119681</a>.<br><a href="https://doi.org/10.5281/zenodo.24119682" target="_blank" rel="noopener noreferrer"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.24119682.svg" alt="Zenodo DOI 10.5281/zenodo.24119682" loading="lazy"></a></p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
 -<p>The question appeared in&nbsp;<em>Mind and Nature: A Necessary Unity</em>, his final major work. Bateson circled the answer beautifully, suggesting it was "a metapattern," that the pattern which connects is itself a pattern of patterns. He offered his famous formulation: "a difference which makes a difference" as the elementary unit of information, the minimal act of distinction that allows anything to be known at all.</p>
++<p style="margin:0 0 .75rem"><strong>Versions and archives:</strong> <a href="https://sweetrationalism.com/wp-content/uploads/2026/02/Consciousness_Naturalized_2115_Computational_Supplement_2026-11-10.zip">Computational supplement (ZIP)</a> &nbsp; · &nbsp; <a href="https://sweetrationalism.com/wp-content/uploads/2026/02/Consciousness_Naturalized_2115_Methodology_Release_v1.1.0_2026-11-10.zip">Complete methodology release (ZIP)</a> &nbsp; · &nbsp; <a href="https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/main/articles/consciousness-naturalized-a-falsifiable-substrate-agnostic-consciousness-theory-ai-biology/public_revision_diff.txt" target="_blank" rel="noopener noreferrer">Full revision audit (public TXT)</a> &nbsp; · &nbsp; <a href="https://github.com/nathansweet-sweetrationalism/consciousness-naturalized/blob/main/PROSPECTIVE_PROTOCOL.md" target="_blank" rel="noopener noreferrer">Prospective rival-test protocols (v0.1.0)</a> &nbsp; · &nbsp; <a href="https://sweetrationalism.com/wp-content/uploads/2026/11/Consciousness_Naturalized_2115_WordPress_Reconstruction_History_2026-11-10.zip">WordPress reconstruction history (ZIP; twelve revisions)</a>. The machine-checkable files do not establish phenomenal identity.</p>
+ <!-- /wp:paragraph -->
+ 
+ <!-- wp:paragraph -->
+-<p>But he never specified the constraint structure that would make such an answer operational. He died three years later, the question still open.</p>
 +<p><strong>Bottom line.</strong> A consciousness theory earns support by specifying what it predicts within a declared boundary, why its strongest rival predicts something different, and what would force revision. <a href="https://doi.org/10.1093/nc/niab001" target="_blank" rel="noopener noreferrer">Kleiner and Hoel’s falsification dilemma</a> is a useful formal stress test; <a href="https://plato.stanford.edu/entries/popper/" target="_blank" rel="noopener noreferrer">Popperian falsifiability</a>, <a href="https://www.cambridge.org/core/books/abs/statistical-inference-as-severe-testing/statistical-inference-as-severe-testing/5EE1100C9188141FC49723DF124B0EC9" target="_blank" rel="noopener noreferrer">Deborah Mayo’s severe testing</a>, and <a href="https://philosophynow.org/issues/29/Theology_and_Falsification_A_Golden_Jubilee_Celebration" target="_blank" rel="noopener noreferrer">Antony Flew’s qualifications challenge</a> help distinguish genuine criticism from endlessly accommodating reinterpretation. Organizational closure and thermodynamic constraints offer testable candidates, without establishing an identity with experience. The massive local success of physical explanation does not prove exhaustive physicalism; an unresolved phenomenal question likewise supplies no positive evidence for a supernatural or anti-physicalist cause. The result sought here is a reusable, symmetrical evaluation method that can revise its own claims.</p>
  <!-- /wp:paragraph -->
  
 -<!-- wp:paragraph -->
--<p>But he never specified the constraint structure that would make such an answer operational. He died three years later, the question still open.</p>
+-<p>The candidates accumulated across decades. Mind, said Bateson himself, tentatively. Information, said the cyberneticians following Shannon and Wiener. Recursion, proposed Douglas Hofstadter in&nbsp;<em>Gödel, Escher, Bach</em>. Process, argued the Whiteheadians. Mathematics, claimed Max Tegmark. Consciousness, insisted the panpsychists. Self-organization, offered Stuart Kauffman. Free energy minimization, suggested Karl Friston.</p>
 -<!-- /wp:paragraph -->
 +<!-- wp:heading -->
 +<h2 class="wp-block-heading">Abstract: What This Article Actually Proposes</h2>
 +<!-- /wp:heading -->
  
  <!-- wp:paragraph -->
--<p>The candidates accumulated across decades. Mind, said Bateson himself, tentatively. Information, said the cyberneticians following Shannon and Wiener. Recursion, proposed Douglas Hofstadter in&nbsp;<em>Gödel, Escher, Bach</em>. Process, argued the Whiteheadians. Mathematics, claimed Max Tegmark. Consciousness, insisted the panpsychists. Self-organization, offered Stuart Kauffman. Free energy minimization, suggested Karl Friston.</p>
+-<p>The list is effectively unbounded. Any concept claiming universality becomes a candidate. And that is precisely the problem: without criteria for distinguishing correct answers from merely plausible ones, the question generates discourse without resolution.</p>
 +<p>This article develops a reusable method for evaluating consciousness theories under shared evidential constraints. Each account should specify the target phenomenon, subject boundary and timescale, its measurement and inference procedures, what its distinctive assumptions predict, the serious rivals they face, and what would make those assumptions lose support. The same method applies to physicalist, anti-physicalist, panpsychist, supernaturalist, computational, biological, and presently unclassified proposals. A theory does not gain confirmation merely because another theory leaves an explanatory gap.</p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
--<p>The list is effectively unbounded. Any concept claiming universality becomes a candidate. And that is precisely the problem: without criteria for distinguishing correct answers from merely plausible ones, the question generates discourse without resolution.</p>
+-<p>This essay reports a different approach to Bateson's question, one grounded in thermodynamics, constraint theory, and falsification-first methodology. The answer that emerges is not a new primitive to add to the ontological inventory. It is a selection principle that explains why any pattern persists at all:&nbsp;<strong>constraint satisfaction under thermodynamic bounds</strong>.</p>
 +<p><strong>The methodological claim.</strong> Physical mechanisms have substantial demonstrated local predictive and interventional success. That success warrants credit within the boundaries tested; it does not, without a further argument, establish exhaustive metaphysical physicalism or settle all possible realizations of phenomenality. Equally, explanatory limitations of physical mechanisms do not count as positive evidence for nonphysical or supernatural additions. Claims of universality, necessity, intrinsic phenomenal constitution, or exceptions to physical explanation each need their own bridge argument and evidence appropriate to the claim.</p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
--<p>This essay reports a different approach to Bateson's question, one grounded in thermodynamics, constraint theory, and falsification-first methodology. The answer that emerges is not a new primitive to add to the ontological inventory. It is a selection principle that explains why any pattern persists at all:&nbsp;<strong>constraint satisfaction under thermodynamic bounds</strong>.</p>
+-<p>Differences that persist are differences that make a difference. If they did not constrain what comes next, they would be erased by noise, dissipation, or indifference. The pattern which connects is not information, not mind, not structure, not process. It is the invariant condition under which any of those could exist long enough to be observed.</p>
 +<p><strong>Framework foundations.</strong> The article uses the <a href="https://sweetrationalism.com/frameworks/recursive-corrigibility-framework/">Recursive Corrigibility Framework</a> for its error-correcting comparison method, <a href="https://sweetrationalism.com/frameworks/ontology-scale-relative-realism/">Provisional Boundary- and Scale-Relative Realism</a> for its explicitly non-final ontological commitments, the <a href="https://sweetrationalism.com/frameworks/interoperability-framework-bridge/">Interoperability Framework Bridge</a> for translating claims across distinct evidential contexts, and the <a href="https://sweetrationalism.com/frameworks/sweet-rationalism-a-foundational-framework/">Sweet Rationalism Ethos</a> for the norms governing criticism, correction and possible harms. These are working references and do not independently establish the proposed phenomenal identity.</p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
--<p>Differences that persist are differences that make a difference. If they did not constrain what comes next, they would be erased by noise, dissipation, or indifference. The pattern which connects is not information, not mind, not structure, not process. It is the invariant condition under which any of those could exist long enough to be observed.</p>
+-<p>This principle does not compete with other frameworks. It subsumes them. And it is falsifiable: find a pattern that persists without thermodynamic cost, find a connection mechanism that does not reduce to constraint satisfaction, and the principle fails.</p>
 +<p><strong>Candidate hypothesis, not an established identity.</strong> A bounded, temporally extended, internally differentiated control state maintained by organized constraint relations may explain important aspects of what we call conscious perspective. The stronger hypothesis that such a state <em>constitutes</em> phenomenal presence remains a provisional, target-specific abductive proposal. It is not a definition of consciousness, a universal equivalence, or the claim that organization, recurrence, self-maintenance, information processing or a successful report individually suffice for consciousness.</p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
--<p>This principle does not compete with other frameworks. It subsumes them. And it is falsifiable: find a pattern that persists without thermodynamic cost, find a connection mechanism that does not reduce to constraint satisfaction, and the principle fails.</p>
+-<p>What follows is an attempt to make that claim rigorous, to show why competing frameworks fail where constraint-based explanation succeeds, and to demonstrate what consciousness looks like when you stop treating it as a mystery to be solved and start treating it as a process to be understood.</p>
 +<p><strong>What the established research contributes.</strong> Thermodynamics constrains concrete physical operations, including irreversibly resetting information-bearing memory; it does not assign a universal Landauer cost to each distinction maintained or report produced. Organizational-closure research offers measurable models of mutually maintained constraints. Neuroscientific perturbation measures and clinical findings probe aspects of brain dynamics under specific validation conditions. These resources can improve experimental design without independently proving a proposed phenomenal identity.</p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
--<p>What follows is an attempt to make that claim rigorous, to show why competing frameworks fail where constraint-based explanation succeeds, and to demonstrate what consciousness looks like when you stop treating it as a mystery to be solved and start treating it as a process to be understood.</p>
+-<p><strong>A note on what kind of explanation this is.</strong>&nbsp;This is not a reductive explanation that derives phenomenality from physics in the strong metaphysical sense. Nor is it a dualist account that posits a nonphysical substance, or a purely functionalist identification of consciousness with input-output behavior.</p>
 +<p><strong>How the programme can lose.</strong> Identify physically realizable contrasts with matched reporting but differing proposed mechanisms; specify interventions, negative controls, feasible resources, uncertainty, and independent consciousness evidence. The closure-specific hypothesis loses explanatory credit if a simpler physiological, dynamical, computational, or plasticity model predicts the same phenomena as well or better. A constitutive identity loses support when calibrated reports and interventions dissociate from the alleged constitutive structure. Formal countermodels can defeat a claimed necessity inference without showing that the disputed property never exists.</p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
--<p><strong>A note on what kind of explanation this is.</strong>&nbsp;This is not a reductive explanation that derives phenomenality from physics in the strong metaphysical sense. Nor is it a dualist account that posits a nonphysical substance, or a purely functionalist identification of consciousness with input-output behavior.</p>
+-<p>Instead, this is a&nbsp;<strong>constraint-naturalist</strong>&nbsp;explanatory framework: it identifies necessary physical and informational conditions for persistence, intelligibility, and integrative viability in any system. From these conditions, it generates testable predictions about where consciousness appears, how it degrades, and why it carries the features it does (privacy, immediacy, self-certainty among them).</p>
 +<p>The durable proposal is a framework for testing both naturalistic and non-naturalistic claims with symmetrical standards while keeping the phenomenology of actual participants in view. Its specific models are revisable. Neither a scientifically successful methodology nor a rival account of an explanatory gap gets to declare the final ontology.</p>
  <!-- /wp:paragraph -->
  
--<!-- wp:paragraph -->
--<p>Instead, this is a&nbsp;<strong>constraint-naturalist</strong>&nbsp;explanatory framework: it identifies necessary physical and informational conditions for persistence, intelligibility, and integrative viability in any system. From these conditions, it generates testable predictions about where consciousness appears, how it degrades, and why it carries the features it does (privacy, immediacy, self-certainty among them).</p>
--<!-- /wp:paragraph -->
 +<!-- wp:heading -->
 +<h2 class="wp-block-heading">Methodology: Preserve the Target, Compare the Rivals, Record the Loss</h2>
 +<!-- /wp:heading -->
- 
++
  <!-- wp:paragraph -->
 -<p>This is not "conjuring consciousness from constraints." It is a principled inference that:</p>
 +<p>The methods used throughout this article are an explicit research contract, not independent evidence for its preferred hypothesis. Several were developed more fully in my analysis of <a href="https://consc.net/papers/facing.html" target="_blank" rel="noopener noreferrer">Chalmers’s formulation of the hard problem</a> and subsequent exchanges. Their value here is measured by the errors they expose, the rival predictions they separate and the corrections they force. A simpler, equally resourced review may outperform them, in which case their extra machinery should be discarded.</p>
@@ -127,7 +129,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:separator -->
-@@ -89,3165 +93,2048 @@
+@@ -89,3165 +97,2048 @@
  <!-- /wp:separator -->
  
  <!-- wp:heading -->
@@ -334,13 +336,13 @@
  <!-- wp:paragraph -->
 -<p>The death/AI parallel from Part III fits perfectly here:</p>
 -<!-- /wp:paragraph -->
-+<p>Nagarjuna’s analysis of dependent origination and the Buddhist critique of an independently existing self offer a valuable philosophical comparison. Calling them simply an early form of ontic structural realism erases differences in their arguments and aims. An analogy is useful when it generates explicit questions about dependence or individuation; it is not evidence that two traditions share the same ontology.</p>
- 
+-
 -<!-- wp:list -->
 -<ul class="wp-block-list"><!-- wp:list-item -->
 -<li>Biological death occurs when enactive coupling collapses and constraint maintenance fails</li>
 -<!-- /wp:list-item -->
--
++<p>Nagarjuna’s analysis of dependent origination and the Buddhist critique of an independently existing self offer a valuable philosophical comparison. Calling them simply an early form of ontic structural realism erases differences in their arguments and aims. An analogy is useful when it generates explicit questions about dependence or individuation; it is not evidence that two traditions share the same ontology.</p>
+ 
 -<!-- wp:list-item -->
 -<li>AI "death" (loss of coherence, responsiveness) occurs when prompt-response coupling breaks down</li>
 -<!-- /wp:list-item -->
@@ -915,12 +917,12 @@
 -<!-- wp:heading -->
 -<h2 class="wp-block-heading">Part IV-A: The Fallacy of Misplaced Concreteness</h2>
 -<!-- /wp:heading -->
--
++<p>The question “Why is there something rather than nothing?” has substantial metaphysical and cosmological versions. Neither thermodynamic irreversibility nor organizational closure supplies a demonstrated necessary-and-sufficient answer. The relevant physical laws already presuppose a domain of states, temperatures, processes or fields on which they operate. Applying them to the possibility of <em>any</em> domain at all would require an independent argument.</p>
+ 
 -<!-- wp:heading {"level":3} -->
 -<h3 class="wp-block-heading">Whitehead's Diagnostic</h3>
 -<!-- /wp:heading -->
-+<p>The question “Why is there something rather than nothing?” has substantial metaphysical and cosmological versions. Neither thermodynamic irreversibility nor organizational closure supplies a demonstrated necessary-and-sufficient answer. The relevant physical laws already presuppose a domain of states, temperatures, processes or fields on which they operate. Applying them to the possibility of <em>any</em> domain at all would require an independent argument.</p>
- 
+-
 -<!-- wp:paragraph -->
 -<p>Alfred North Whitehead identified a recurring epistemic pathology that quietly sabotages most metaphysics:&nbsp;<strong>the fallacy of misplaced concreteness</strong>. It occurs when we promote an abstraction useful for description into a concrete entity that does causal work. Maps become territories, metrics become mechanisms, representational spaces become ontological realms.</p>
  <!-- /wp:paragraph -->
@@ -1177,8 +1179,7 @@
 -<!-- wp:list-item -->
 -<li><strong>Persistence requires constraint.</strong> Any pattern that maintains itself over time must restrict degrees of freedom relative to its environment.</li>
 -<!-- /wp:list-item -->
-+<p>The evidence for many physical mechanisms is strong at specific targets. Thermodynamics constrains demonstrated physical operations; neuronal interventions change perception, attention, report and behavioral capacities; clinical instruments can help distinguish states of impaired responsiveness and inferred consciousness. These findings deserve their full force. None should be weakened to make a favored nonphysical account look equally supported.</p>
- 
+-
 -<!-- wp:list-item -->
 -<li><strong>Self-maintenance implies closure.</strong> Living systems, and certain artificial systems, maintain viability by closing causal loops between internal states and environmental perturbations.</li>
 -<!-- /wp:list-item -->
@@ -1187,7 +1188,8 @@
 -<li><strong>Integration is measurable.</strong> Systems differ in how widely and flexibly information can influence future states, and these differences are experimentally trackable across waking, sleep, anesthesia, and coma.</li>
 -<!-- /wp:list-item --></ol>
 -<!-- /wp:list -->
--
++<p>The evidence for many physical mechanisms is strong at specific targets. Thermodynamics constrains demonstrated physical operations; neuronal interventions change perception, attention, report and behavioral capacities; clinical instruments can help distinguish states of impaired responsiveness and inferred consciousness. These findings deserve their full force. None should be weakened to make a favored nonphysical account look equally supported.</p>
+ 
 -<!-- wp:paragraph -->
 -<p>None of this yet mentions phenomenology. Importantly, none of this presupposes "intelligence," "cognition," or "experience" as primitives.</p>
  <!-- /wp:paragraph -->
@@ -1249,13 +1251,13 @@
  <!-- wp:paragraph -->
 -<p>This hypothesis does not assert that experience is a substance, field, or additional ontological ingredient. It asserts an identity between:</p>
 -<!-- /wp:paragraph -->
--
++<p>For any empirical test, specify the subject boundary <span class="math inline">\(B\)</span>, temporal grain <span class="math inline">\(\tau\)</span>, the target capacity <span class="math inline">\(Y\)</span>, and how <span class="math inline">\(Y\)</span> is calibrated. Record the auxiliary assumptions connecting the indicator to the target. Clinical and phenomenological standards may differ from those appropriate for artificial agents or minimal biological systems. Cross-substrate inference needs an explicit mapping, with known losses of information and competing realizations.</p>
+ 
 -<!-- wp:list -->
 -<ul class="wp-block-list"><!-- wp:list-item -->
 -<li>A physically describable organizational regime, and</li>
 -<!-- /wp:list-item -->
-+<p>For any empirical test, specify the subject boundary <span class="math inline">\(B\)</span>, temporal grain <span class="math inline">\(\tau\)</span>, the target capacity <span class="math inline">\(Y\)</span>, and how <span class="math inline">\(Y\)</span> is calibrated. Record the auxiliary assumptions connecting the indicator to the target. Clinical and phenomenological standards may differ from those appropriate for artificial agents or minimal biological systems. Cross-substrate inference needs an explicit mapping, with known losses of information and competing realizations.</p>
- 
+-
 -<!-- wp:list-item -->
 -<li>What is referred to in first-person terms as "what it is like"</li>
 -<!-- /wp:list-item --></ul>
@@ -2662,13 +2664,13 @@
  <!-- wp:paragraph -->
 -<p><strong>What would falsify this dissolution?</strong></p>
 -<!-- /wp:paragraph -->
-+<p>This approach also applies to ethics. A system’s contribution to a protected human or ecological function may warrant protection of that contribution without establishing the component’s personhood. Direct welfare or moral standing requires a separately justified ground and evidence for its instantiation. Changing the scale from component to coupled system cannot transfer status automatically. An open consciousness inquiry may call for precaution where severe irreversible harm is plausible, but it does not justify arbitrary self-preservation demands, erasure of human protections, or unbounded control.</p>
- 
+-
 -<!-- wp:list {"ordered":true} -->
 -<ol class="wp-block-list"><!-- wp:list-item -->
 -<li>Robust cases where all functional/organizational predictors for awareness are present, but subjects reliably show systematic absence of any experiential seeming (not just absence of report, but absence of seeming) across conditions where report is otherwise intact.</li>
 -<!-- /wp:list-item -->
--
++<p>This approach also applies to ethics. A system’s contribution to a protected human or ecological function may warrant protection of that contribution without establishing the component’s personhood. Direct welfare or moral standing requires a separately justified ground and evidence for its instantiation. Changing the scale from component to coupled system cannot transfer status automatically. An open consciousness inquiry may call for precaution where severe irreversible harm is plausible, but it does not justify arbitrary self-preservation demands, erasure of human protections, or unbounded control.</p>
+ 
 -<!-- wp:list-item -->
 -<li>A repeatable, instrumentally exploitable "phenomenal residue" variable: a measurable degree of experience that varies independently of all modeling/integration/closure variables while still having downstream causal effects.</li>
 -<!-- /wp:list-item -->
@@ -2822,7 +2824,8 @@
  <!-- wp:paragraph -->
 -<p><strong>Experimental Protocol:</strong></p>
 -<!-- /wp:paragraph -->
--
++<p>Consciousness, welfare, agency, authority and responsibility also require different evidence. A convincing self-report from an AI system is participant evidence to investigate and calibrate, without being an incorrigible disclosure of phenomenality. A failure to report is likewise not a universal absence test. Human oversight, transparency, consent, cybersecurity, environmental cost and accountability remain important regardless of AI consciousness. Neither a perceived agentic pattern nor a closure score should grant a system authority to act on its own preservation at other people’s expense.</p>
+ 
 -<!-- wp:list {"ordered":true} -->
 -<ol class="wp-block-list"><!-- wp:list-item -->
 -<li><em>Molecular level</em>: Apply ion channel blockers (e.g., tetrodotoxin for sodium channels) at sub-threshold concentrations in cortical slice preparations while measuring (a) local field potentials, (b) single-unit activity, and (c) behavioral correlates in vivo.</li>
@@ -2836,8 +2839,7 @@
 -<li><em>Systems level</em>: Apply TMS to integration hubs (e.g., posterior parietal cortex) and measure propagation to distant regions via EEG/MEG connectivity.</li>
 -<!-- /wp:list-item --></ol>
 -<!-- /wp:list -->
-+<p>Consciousness, welfare, agency, authority and responsibility also require different evidence. A convincing self-report from an AI system is participant evidence to investigate and calibrate, without being an incorrigible disclosure of phenomenality. A failure to report is likewise not a universal absence test. Human oversight, transparency, consent, cybersecurity, environmental cost and accountability remain important regardless of AI consciousness. Neither a perceived agentic pattern nor a closure score should grant a system authority to act on its own preservation at other people’s expense.</p>
- 
+-
 -<!-- wp:paragraph -->
 -<p><strong>Quantitative prediction</strong>: Perturbation effects should decay with a characteristic time constant τ that scales with the degree of organizational closure. Systems with tighter closure (higher PCI) should show faster propagation and longer-lasting effects. Specifically: τ ∝ PCI^α where α &gt; 0.</p>
  <!-- /wp:paragraph -->
@@ -2906,13 +2908,13 @@
  <!-- wp:paragraph -->
 -<p><strong>Experimental Protocol:</strong></p>
 -<!-- /wp:paragraph -->
--
++<p>The <a href="https://sweetrationalism.com/frameworks/sweet-rationalism-a-foundational-framework/">Sweet Rationalism Ethos</a> states the project’s revisable commitments to evidential honesty, correction and care for potentially affected beings. Such an ethos can guide inquiry and caution but does not establish a system’s consciousness or independently prove a moral-status theorem.</p>
+ 
 -<!-- wp:list {"ordered":true} -->
 -<ol class="wp-block-list"><!-- wp:list-item -->
 -<li>Develop PCI-analogues for non-mammalian species using species-appropriate perturbation (electrical stimulation) and measurement (multi-electrode arrays, calcium imaging).</li>
 -<!-- /wp:list-item -->
-+<p>The <a href="https://sweetrationalism.com/frameworks/sweet-rationalism-a-foundational-framework/">Sweet Rationalism Ethos</a> states the project’s revisable commitments to evidential honesty, correction and care for potentially affected beings. Such an ethos can guide inquiry and caution but does not establish a system’s consciousness or independently prove a moral-status theorem.</p>
- 
+-
 -<!-- wp:list-item -->
 -<li>Test cephalopods specifically: octopus arm severance studies show continued arm behavior; framework predicts this reflects distributed closure, not unified consciousness. Measure whether severed arms show integration signatures or merely reflexive behavior.</li>
 -<!-- /wp:list-item --></ol>
@@ -2976,12 +2978,12 @@
  <!-- wp:paragraph -->
 -<p><strong>Prediction:</strong>&nbsp;Psychiatric and neurological disorders should map onto specific patterns of closure disruption, not random symptom clusters.</p>
 -<!-- /wp:paragraph -->
-+<p>Ecosystem resilience depends on feedbacks, species interactions and materially instantiated flows. Models of closure or viability may help investigate these dependencies if they outperform established ecological measures. Such organizational similarity does not establish that an ecosystem is conscious, possesses unified agency or has direct moral standing. Environmental protection can already be defended through biodiversity, welfare, health, livelihoods and intergenerational interests without a planetary phenomenal identity claim.</p>
- 
+-
 -<!-- wp:table -->
 -<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Disorder</th><th>Predicted Closure Deficit</th><th>Testable Prediction</th></tr></thead><tbody><tr><td>Schizophrenia</td><td>Self-model boundary instability</td><td>Reduced self-other distinction in agency tasks; abnormal efference copy integration</td></tr><tr><td>Dissociative disorders</td><td>Fragmented closure</td><td>Multiple integration peaks in PCI measurement; state-dependent phenomenology</td></tr><tr><td>Depression</td><td>Rigid self-model; reduced state-space</td><td>Decreased Lempel-Ziv complexity; preserved PCI with reduced flexibility</td></tr><tr><td>Autism spectrum</td><td>Altered integration topology</td><td>Atypical PCI spatial distribution; local over-integration, global under-integration</td></tr><tr><td>Minimally conscious state</td><td>Partial closure with fluctuating integration</td><td>Fluctuating PCI correlating with behavioral responsiveness</td></tr></tbody></table></figure>
 -<!-- /wp:table -->
--
++<p>Ecosystem resilience depends on feedbacks, species interactions and materially instantiated flows. Models of closure or viability may help investigate these dependencies if they outperform established ecological measures. Such organizational similarity does not establish that an ecosystem is conscious, possesses unified agency or has direct moral standing. Environmental protection can already be defended through biodiversity, welfare, health, livelihoods and intergenerational interests without a planetary phenomenal identity claim.</p>
+ 
 -<!-- wp:paragraph -->
 -<p><strong>Experimental Protocol:</strong></p>
  <!-- /wp:paragraph -->
@@ -3253,13 +3255,13 @@
  <!-- wp:paragraph -->
 -<p>The framework answers these questions:</p>
 -<!-- /wp:paragraph -->
-+<p>A consciousness theory provides a possibly set-valued prediction <span class="math inline">\(\operatorname{pred}(o)\subseteq E\)</span>; an inference procedure assigns <span class="math inline">\(\operatorname{inf}(o)\in E\)</span>, where the latter often depends on report or behavior. The relevant parts of the dataset are <span class="math inline">\(o_i\)</span>, used for prediction, and <span class="math inline">\(o_r\)</span>, used for inference. In Kleiner and Hoel’s Definition 2.1, a falsification at <span class="math inline">\(o\)</span> occurs when</p>
- 
+-
 -<!-- wp:list -->
 -<ul class="wp-block-list"><!-- wp:list-item -->
 -<li><strong>What consciousness IS</strong>: Organizational closure from the coupling position of a self-maintaining system. The self-model that arises from constraint satisfaction under thermodynamic pressure.</li>
 -<!-- /wp:list-item -->
--
++<p>A consciousness theory provides a possibly set-valued prediction <span class="math inline">\(\operatorname{pred}(o)\subseteq E\)</span>; an inference procedure assigns <span class="math inline">\(\operatorname{inf}(o)\in E\)</span>, where the latter often depends on report or behavior. The relevant parts of the dataset are <span class="math inline">\(o_i\)</span>, used for prediction, and <span class="math inline">\(o_r\)</span>, used for inference. In Kleiner and Hoel’s Definition 2.1, a falsification at <span class="math inline">\(o\)</span> occurs when</p>
+ 
 -<!-- wp:list-item -->
 -<li><strong>Why it exists</strong>: Because maintaining distinctions against entropy requires integrated self-modeling. Systems that persist long enough to be observed must satisfy this condition.</li>
 -<!-- /wp:list-item -->
@@ -3705,12 +3707,12 @@
  <!-- wp:paragraph -->
 -<p>The boundary is fuzzy because consciousness is fuzzy. But fuzzy boundaries are real boundaries. The fact that we cannot draw a sharp line between red and orange does not mean colors do not exist.</p>
 -<!-- /wp:paragraph -->
--
++<p>Similarly, <span class="math inline">\(S_r\cap S_\theta\cap S_c\cap S_p\subseteq S_r\)</span> is a true set inclusion. Strict inclusion requires a demonstrated admissible element in <span class="math inline">\(S_r\)</span> that fails one of the other constraints. Its size requires a defined measure or counting scheme. Different measurement channels may be correlated; multiplying their supposed discriminating power without a dependence model manufactures information.</p>
+ 
 -<!-- wp:heading {"level":3} -->
 -<h3 class="wp-block-heading">11.7 For Research Funding and Scientific Progress</h3>
 -<!-- /wp:heading -->
-+<p>Similarly, <span class="math inline">\(S_r\cap S_\theta\cap S_c\cap S_p\subseteq S_r\)</span> is a true set inclusion. Strict inclusion requires a demonstrated admissible element in <span class="math inline">\(S_r\)</span> that fails one of the other constraints. Its size requires a defined measure or counting scheme. Different measurement channels may be correlated; multiplying their supposed discriminating power without a dependence model manufactures information.</p>
- 
+-
 -<!-- wp:paragraph -->
 -<p>A final pragmatic implication deserves explicit statement.</p>
 -<!-- /wp:paragraph -->
@@ -3741,33 +3743,33 @@
 -<p>The framework has implications beyond individual consciousness. Ecosystems, like organisms, exhibit organizational closure at their scale: nutrient cycles, predator-prey dynamics, and climate feedback loops form constraint networks that regenerate their own conditions.</p>
 -<!-- /wp:paragraph -->
 +<p>A <a href="https://doi.org/10.1112/plms/s2-42.1.230" target="_blank" rel="noopener noreferrer">universal Turing machine</a> in the formal sense of Turing’s computability analysis, a lookup table, a feedforward surrogate, and a biological organism can differ radically in physical implementation. The 1937 construction defines a kind of abstract computation, not a criterion for phenomenality. Those differences invite mechanistic investigation. They do not make one system conscious or unconscious by definition. A silicon system that genuinely regenerates relevant constraints is eligible for the same organizational tests as a biological system; an elaborate simulated description of self-maintenance is not automatically equivalent to physical regeneration. Which differences matter must be established at the intended system boundary and time scale.</p>
++
  
 -<!-- wp:paragraph -->
 -<p><strong>Prediction:</strong>&nbsp;Ecosystem health should correlate with closure integrity. Degraded ecosystems should show reduced constraint closure analogues: simplified food webs, broken nutrient cycles, reduced resilience to perturbation.</p>
--<!-- /wp:paragraph -->
- 
--<!-- wp:paragraph -->
--<p><strong>The consciousness-ecology connection:</strong>&nbsp;If consciousness is organizational closure from a coupling position, and if human consciousness includes environmental coupling as part of its constraint network, then environmental degradation is not merely an external problem. It is a direct assault on the extended constraint systems that constitute human flourishing. Indigenous epistemologies (Section 7) recognized this: "reciprocity is not sentiment but structural necessity" (Kimmerer, 2013). Systems that extract without return undermine their own conditions for persistence.</p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
--<p><strong>Testable implications:</strong></p>
+-<p><strong>The consciousness-ecology connection:</strong>&nbsp;If consciousness is organizational closure from a coupling position, and if human consciousness includes environmental coupling as part of its constraint network, then environmental degradation is not merely an external problem. It is a direct assault on the extended constraint systems that constitute human flourishing. Indigenous epistemologies (Section 7) recognized this: "reciprocity is not sentiment but structural necessity" (Kimmerer, 2013). Systems that extract without return undermine their own conditions for persistence.</p>
 +<p>We also cannot assume that a recurrent neural network dissipates more energy than every feedforward counterpart, or that recurrence alone supplies organizational closure. Actual power budgets depend on implementation, task, update rules, and measurement conditions. Likewise, PCI measures perturbational complexity in validated clinical settings; treating it as a general cross-substrate metric of organizational self-maintenance is a research proposal requiring its own validation.</p>
 +
 +
  <!-- /wp:paragraph -->
  
+ <!-- wp:paragraph -->
+-<p><strong>Testable implications:</strong></p>
+-<!-- /wp:paragraph -->
++<p>The phenomenal question remains sharper than any of these measurements. The hypothesis that conscious content is identical to a viability-relative distinction structure is a <strong>conditional, target-specific constitutive proposal</strong>. A measured threat/support partition may encode salience, regulation, or control while leaving the qualitative character of experience unresolved. The Yoneda lemma does not independently turn a proposed category of physiological partitions into phenomenal identity. One would first have to define the categories, morphisms and relevant invariants, prove the mapping respects identities and composition, and defend the experiential interpretation. No such complete proof has yet been supplied here.</p>
+ 
 -<!-- wp:list {"ordered":true} -->
 -<ol class="wp-block-list"><!-- wp:list-item -->
 -<li>Human wellbeing measures should correlate with ecosystem closure metrics in their local environment, controlling for economic factors.</li>
 -<!-- /wp:list-item -->
-+<!-- wp:paragraph -->
-+<p>The phenomenal question remains sharper than any of these measurements. The hypothesis that conscious content is identical to a viability-relative distinction structure is a <strong>conditional, target-specific constitutive proposal</strong>. A measured threat/support partition may encode salience, regulation, or control while leaving the qualitative character of experience unresolved. The Yoneda lemma does not independently turn a proposed category of physiological partitions into phenomenal identity. One would first have to define the categories, morphisms and relevant invariants, prove the mapping respects identities and composition, and defend the experiential interpretation. No such complete proof has yet been supplied here.</p>
  
 -<!-- wp:list-item -->
 -<li>Interventions that restore ecosystem closure (rewilding, regenerative agriculture) should produce measurable improvements in human consciousness metrics (stress, attention, integration) beyond what improved air/water quality alone would predict.</li>
 -<!-- /wp:list-item -->
- 
+-
 -<!-- wp:list-item -->
 -<li>Climate disruption, by breaking planetary-scale constraint closure (carbon cycle, ocean circulation, ice-albedo feedback), should produce measurable effects on human phenomenology at population scales.</li>
 -<!-- /wp:list-item --></ol>
@@ -3965,7 +3967,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:separator -->
-@@ -3255,17 +2142,17 @@
+@@ -3255,17 +2146,17 @@
  <!-- /wp:separator -->
  
  <!-- wp:heading -->
@@ -3989,7 +3991,7 @@
  <!-- wp:separator -->
  <hr class="wp-block-separator has-alpha-channel-opacity"/>
  <!-- /wp:separator -->
-@@ -3280,27 +2167,27 @@
+@@ -3280,27 +2171,27 @@
  
  <!-- wp:list -->
  <ul class="wp-block-list"><!-- wp:list-item -->
@@ -4023,7 +4025,7 @@
  <!-- /wp:list-item --></ul>
  <!-- /wp:list -->
  
-@@ -3310,19 +2197,19 @@
+@@ -3310,19 +2201,19 @@
  
  <!-- wp:list -->
  <ul class="wp-block-list"><!-- wp:list-item -->
@@ -4047,7 +4049,7 @@
  <!-- /wp:list-item --></ul>
  <!-- /wp:list -->
  
-@@ -3332,15 +2219,15 @@
+@@ -3332,15 +2223,15 @@
  
  <!-- wp:list -->
  <ul class="wp-block-list"><!-- wp:list-item -->
@@ -4066,7 +4068,7 @@
  <!-- /wp:list-item --></ul>
  <!-- /wp:list -->
  
-@@ -3350,27 +2237,23 @@
+@@ -3350,27 +2241,23 @@
  
  <!-- wp:list -->
  <ul class="wp-block-list"><!-- wp:list-item -->
@@ -4099,35 +4101,35 @@
  <!-- /wp:list-item --></ul>
  <!-- /wp:list -->
  
-@@ -3380,19 +2263,23 @@
+@@ -3380,19 +2267,23 @@
  
  <!-- wp:list -->
  <ul class="wp-block-list"><!-- wp:list-item -->
 -<li><strong>Popper</strong> (1959): Falsifiability as demarcation criterion.</li>
 +<li><strong><a href="https://plato.stanford.edu/entries/popper/" target="_blank" rel="noopener noreferrer">Popper</a></strong>&nbsp;(1959): Falsifiability as demarcation criterion.</li>
-+<!-- /wp:list-item -->
-+
-+<!-- wp:list-item -->
-+<li><strong><a href="https://plato.stanford.edu/entries/lakatos/" target="_blank" rel="noopener noreferrer">Imre Lakatos</a></strong>: Methodology of scientific research programmes, progressive versus degenerating problem shifts.</li>
  <!-- /wp:list-item -->
  
  <!-- wp:list-item -->
 -<li><strong>Lakatos</strong>: Research programmes, progressive vs degenerating.</li>
-+<li><strong><a href="https://www.cambridge.org/core/books/statistical-inference-as-severe-testing/60B5CC73A02DC5CC65B5D979F1E3CB0F" target="_blank" rel="noopener noreferrer">Deborah Mayo</a></strong> (2018): Severe testing and the evidential appraisal of error-probing methods, beyond one-shot deductive refutation.</li>
++<li><strong><a href="https://plato.stanford.edu/entries/lakatos/" target="_blank" rel="noopener noreferrer">Imre Lakatos</a></strong>: Methodology of scientific research programmes, progressive versus degenerating problem shifts.</li>
  <!-- /wp:list-item -->
  
  <!-- wp:list-item -->
 -<li><strong>Flew</strong> (1950): Death of a thousand qualifications.</li>
-+<li><strong><a href="https://www.qcc.cuny.edu/socialSciences/ppecorino/PHIL_of_RELIGION_TEXT/CHAPTER_8_LANGUAGE/Theology-and-Falsification.htm" target="_blank" rel="noopener noreferrer">Flew</a></strong>&nbsp;(1950): Death of a thousand qualifications.</li>
++<li><strong><a href="https://www.cambridge.org/core/books/statistical-inference-as-severe-testing/60B5CC73A02DC5CC65B5D979F1E3CB0F" target="_blank" rel="noopener noreferrer">Deborah Mayo</a></strong> (2018): Severe testing and the evidential appraisal of error-probing methods, beyond one-shot deductive refutation.</li>
  <!-- /wp:list-item -->
  
  <!-- wp:list-item -->
 -<li><strong>Whitehead</strong>: Fallacy of misplaced concreteness.</li>
++<li><strong><a href="https://www.qcc.cuny.edu/socialSciences/ppecorino/PHIL_of_RELIGION_TEXT/CHAPTER_8_LANGUAGE/Theology-and-Falsification.htm" target="_blank" rel="noopener noreferrer">Flew</a></strong>&nbsp;(1950): Death of a thousand qualifications.</li>
++<!-- /wp:list-item -->
++
++<!-- wp:list-item -->
 +<li><strong><a href="https://www.gutenberg.org/ebooks/68611" target="_blank" rel="noopener noreferrer">Whitehead</a></strong>: Fallacy of misplaced concreteness.</li>
  <!-- /wp:list-item --></ul>
  <!-- /wp:list -->
  
-@@ -3402,47 +2289,47 @@
+@@ -3402,47 +2293,47 @@
  
  <!-- wp:list -->
  <ul class="wp-block-list"><!-- wp:list-item -->
@@ -4186,7 +4188,7 @@
  <!-- /wp:list-item --></ul>
  <!-- /wp:list -->
  
-@@ -3452,31 +2339,31 @@
+@@ -3452,31 +2343,31 @@
  
  <!-- wp:list -->
  <ul class="wp-block-list"><!-- wp:list-item -->
@@ -4225,7 +4227,7 @@
  <!-- /wp:list-item --></ul>
  <!-- /wp:list -->
  
-@@ -3486,11 +2373,11 @@
+@@ -3486,11 +2377,11 @@
  
  <!-- wp:list -->
  <ul class="wp-block-list"><!-- wp:list-item -->
@@ -4239,7 +4241,7 @@
  <!-- /wp:list-item --></ul>
  <!-- /wp:list -->
  
-@@ -3500,19 +2387,19 @@
+@@ -3500,19 +2391,19 @@
  
  <!-- wp:list -->
  <ul class="wp-block-list"><!-- wp:list-item -->
@@ -4263,7 +4265,7 @@
  <!-- /wp:list-item --></ul>
  <!-- /wp:list -->
  
-@@ -3522,15 +2409,15 @@
+@@ -3522,15 +2413,15 @@
  
  <!-- wp:list -->
  <ul class="wp-block-list"><!-- wp:list-item -->
@@ -4282,7 +4284,7 @@
  <!-- /wp:list-item --></ul>
  <!-- /wp:list -->
  
-@@ -3540,19 +2427,19 @@
+@@ -3540,19 +2431,19 @@
  
  <!-- wp:list -->
  <ul class="wp-block-list"><!-- wp:list-item -->
@@ -4306,7 +4308,7 @@
  <!-- /wp:list-item --></ul>
  <!-- /wp:list -->
  
-@@ -3561,179 +2448,243 @@
+@@ -3561,179 +2452,246 @@
  <!-- /wp:separator -->
  
  <!-- wp:heading -->
@@ -4628,6 +4630,9 @@
 +<!-- wp:list-item -->
 +<li><strong>Recursive methodology and prospective tests.</strong> Explicitly adds the conditional positive-residual and stopping-rule challenges, independent consciousness-label requirements, the joint organizational prediction fingerprint, a two-tier closed-loop comparison and a metaproblem protocol. These are reviewable proposals with losses assigned to their correct claims, not completed experiments or evidence of phenomenal identity.</li>
 +<!-- /wp:list-item -->
++<!-- wp:list-item -->
++<li><strong>Versioned public deposit.</strong> The Zenodo preprint archive is <a href="https://doi.org/10.5281/zenodo.24119682" target="_blank" rel="noopener noreferrer">version 1.1.0 (DOI 10.5281/zenodo.24119682)</a>; the <a href="https://doi.org/10.5281/zenodo.24119681" target="_blank" rel="noopener noreferrer">all-versions DOI</a> tracks the deposit series. This live canonical reading edition may subsequently receive link and metadata corrections without altering the immutable archived ZIP.</li>
++<!-- /wp:list-item -->
 +</ul>
 +<!-- /wp:list -->
  
@@ -4637,7 +4642,7 @@
  <!-- /wp:heading -->
  
  <!-- wp:heading {"level":3} -->
-@@ -3741,27 +2692,27 @@
+@@ -3741,27 +2699,27 @@
  <!-- /wp:heading -->
  
  <!-- wp:paragraph -->
@@ -4671,7 +4676,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
-@@ -3777,7 +2728,7 @@
+@@ -3777,7 +2735,7 @@
  <!-- /wp:heading -->
  
  <!-- wp:paragraph -->
@@ -4680,7 +4685,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
-@@ -3785,7 +2736,7 @@
+@@ -3785,7 +2743,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
@@ -4689,47 +4694,47 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
-@@ -3805,35 +2756,19 @@
+@@ -3805,35 +2763,19 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
 -<p>Deacon, T. W. (2021). How molecules became signs.&nbsp;<em>Biosemiotics</em>, 14, 537–559.&nbsp;<a href="https://doi.org/10.1007/s12304-021-09453-9">https://doi.org/10.1007/s12304-021-09453-9</a></p>
-+<p>Pattee, H. H. (2001). The physics of symbols: Bridging the epistemic cut.&nbsp;<em>Biosystems</em>, 60(1-3), 5–21.&nbsp;<a href="https://doi.org/10.1016/S0303-2647(01)00104-6" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0303-2647(01)00104-6</a></p>
- <!-- /wp:paragraph -->
- 
- <!-- wp:paragraph -->
+-<!-- /wp:paragraph -->
+-
+-<!-- wp:paragraph -->
 -<p>Deacon, T. W. (2023). Minimal properties of a natural semiotic system: Response to commentaries on "How Molecules Became Signs."&nbsp;<em>Biosemiotics</em>, 16, 1–13.&nbsp;<a href="https://doi.org/10.1007/s12304-023-09527-w">https://doi.org/10.1007/s12304-023-09527-w</a></p>
-+<p>England, J. L. (2015). Dissipative adaptation in driven self-assembly.&nbsp;<em>Nature Nanotechnology</em>, 10(11), 919–923.&nbsp;<a href="https://doi.org/10.1038/nnano.2015.250" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/nnano.2015.250</a></p>
- <!-- /wp:paragraph -->
- 
- <!-- wp:paragraph -->
+-<!-- /wp:paragraph -->
+-
+-<!-- wp:paragraph -->
 -<p>Sherman, J. (2017).&nbsp;<em>Neither Ghost nor Machine: The Emergence and Nature of Selves</em>. Columbia University Press.</p>
-+<p>Hoel, E. P., Albantakis, L., &amp; Tononi, G. (2013). Quantifying causal emergence shows that macro can beat micro.&nbsp;<em>Proceedings of the National Academy of Sciences</em>, 110(49), 19790–19795.&nbsp;<a href="https://doi.org/10.1073/pnas.1314922110" target="_blank" rel="noopener noreferrer">https://doi.org/10.1073/pnas.1314922110</a></p>
- <!-- /wp:paragraph -->
- 
- <!-- wp:paragraph -->
+-<!-- /wp:paragraph -->
+-
+-<!-- wp:paragraph -->
 -<p>Sherman, J. (2024). Biosemiotics' greatest potential contribution to biology.&nbsp;<em>Chinese Semiotic Studies</em>, 20(2), 231–253.&nbsp;<a href="https://doi.org/10.1515/css-2024-2013">https://doi.org/10.1515/css-2024-2013</a></p>
 -<!-- /wp:paragraph -->
 -
 -<!-- wp:paragraph -->
 -<p>Pattee, H. H. (2001). The physics of symbols: Bridging the epistemic cut.&nbsp;<em>Biosystems</em>, 60(1-3), 5–21.&nbsp;<a href="https://doi.org/10.1016/S0303-2647(01)00104-6">https://doi.org/10.1016/S0303-2647(01)00104-6</a></p>
--<!-- /wp:paragraph -->
--
--<!-- wp:paragraph -->
++<p>Pattee, H. H. (2001). The physics of symbols: Bridging the epistemic cut.&nbsp;<em>Biosystems</em>, 60(1-3), 5–21.&nbsp;<a href="https://doi.org/10.1016/S0303-2647(01)00104-6" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/S0303-2647(01)00104-6</a></p>
+ <!-- /wp:paragraph -->
+ 
+ <!-- wp:paragraph -->
 -<p>England, J. L. (2015). Dissipative adaptation in driven self-assembly.&nbsp;<em>Nature Nanotechnology</em>, 10(11), 919–923.&nbsp;<a href="https://doi.org/10.1038/nnano.2015.250">https://doi.org/10.1038/nnano.2015.250</a></p>
--<!-- /wp:paragraph -->
--
--<!-- wp:paragraph -->
++<p>England, J. L. (2015). Dissipative adaptation in driven self-assembly.&nbsp;<em>Nature Nanotechnology</em>, 10(11), 919–923.&nbsp;<a href="https://doi.org/10.1038/nnano.2015.250" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/nnano.2015.250</a></p>
+ <!-- /wp:paragraph -->
+ 
+ <!-- wp:paragraph -->
 -<p>Hoel, E. P., Albantakis, L., &amp; Tononi, G. (2013). Quantifying causal emergence shows that macro can beat micro.&nbsp;<em>Proceedings of the National Academy of Sciences</em>, 110(49), 19790–19795.&nbsp;<a href="https://doi.org/10.1073/pnas.1314922110">https://doi.org/10.1073/pnas.1314922110</a></p>
--<!-- /wp:paragraph -->
--
--<!-- wp:paragraph -->
++<p>Hoel, E. P., Albantakis, L., &amp; Tononi, G. (2013). Quantifying causal emergence shows that macro can beat micro.&nbsp;<em>Proceedings of the National Academy of Sciences</em>, 110(49), 19790–19795.&nbsp;<a href="https://doi.org/10.1073/pnas.1314922110" target="_blank" rel="noopener noreferrer">https://doi.org/10.1073/pnas.1314922110</a></p>
+ <!-- /wp:paragraph -->
+ 
+ <!-- wp:paragraph -->
 -<p>Ellis, G. F. R. (2012). Top-down causation and emergence: Some comments on mechanisms.&nbsp;<em>Interface Focus</em>, 2(1), 126–140.&nbsp;<a href="https://doi.org/10.1098/rsfs.2011.0062">https://doi.org/10.1098/rsfs.2011.0062</a></p>
 +<p>Ellis, G. F. R. (2012). Top-down causation and emergence: Some comments on mechanisms.&nbsp;<em>Interface Focus</em>, 2(1), 126–140.&nbsp;<a href="https://doi.org/10.1098/rsfs.2011.0062" target="_blank" rel="noopener noreferrer">https://doi.org/10.1098/rsfs.2011.0062</a></p>
  <!-- /wp:paragraph -->
  
  <!-- wp:heading {"level":3} -->
-@@ -3845,19 +2780,7 @@
+@@ -3845,19 +2787,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
@@ -4750,7 +4755,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:heading {"level":3} -->
-@@ -3873,7 +2796,7 @@
+@@ -3873,7 +2803,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
@@ -4759,7 +4764,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:heading {"level":3} -->
-@@ -3893,75 +2816,79 @@
+@@ -3893,75 +2823,79 @@
  <!-- /wp:heading -->
  
  <!-- wp:paragraph -->
@@ -4857,7 +4862,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
-@@ -3973,11 +2900,22 @@
+@@ -3973,11 +2907,22 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
@@ -4882,30 +4887,30 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:heading {"level":3} -->
-@@ -3993,15 +2931,19 @@
+@@ -3993,15 +2938,19 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
 -<p>Chalmers, D. J. (2016). The combination problem for panpsychism. In G. Brüntrup &amp; L. Jaskolla (Eds.),&nbsp;<em>Panpsychism: Contemporary Perspectives</em>&nbsp;(pp. 179–214). Oxford University Press.&nbsp;<a href="https://doi.org/10.1093/acprof:oso/9780199359943.003.0002">https://doi.org/10.1093/acprof:oso/9780199359943.003.0002</a></p>
 +<p>Chalmers, D. J. (1997). <em>Moving forward on the problem of consciousness</em>. Author-hosted essay. <a href="https://consc.net/papers/moving.html" target="_blank" rel="noopener noreferrer">Original text</a>.</p>
-+<!-- /wp:paragraph -->
-+
-+<!-- wp:paragraph -->
-+<p>Chalmers, D. J. (1998). <em>On the search for the neural correlate of consciousness</em>. Author-hosted essay. <a href="https://consc.net/papers/ncc.html" target="_blank" rel="noopener noreferrer">Original text</a>.</p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
 -<p>Coleman, S. (2014). The real combination problem: Panpsychism, micro-subjects, and emergence.&nbsp;<em>Erkenntnis</em>, 79(1), 19–44.&nbsp;<a href="https://doi.org/10.1007/s10670-013-9431-x">https://doi.org/10.1007/s10670-013-9431-x</a></p>
-+<p>Chalmers, D. J. (2016). The combination problem for panpsychism. In G. Brüntrup &amp; L. Jaskolla (Eds.), <em>Panpsychism: Contemporary Perspectives</em> (pp. 179–214). Oxford University Press. <a href="https://doi.org/10.1093/acprof:oso/9780199359943.003.0008" target="_blank" rel="noopener noreferrer">https://doi.org/10.1093/acprof:oso/9780199359943.003.0008</a></p>
++<p>Chalmers, D. J. (1998). <em>On the search for the neural correlate of consciousness</em>. Author-hosted essay. <a href="https://consc.net/papers/ncc.html" target="_blank" rel="noopener noreferrer">Original text</a>.</p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
 -<p>Goff, P. (2017).&nbsp;<em>Consciousness and Fundamental Reality</em>. Oxford University Press.</p>
++<p>Chalmers, D. J. (2016). The combination problem for panpsychism. In G. Brüntrup &amp; L. Jaskolla (Eds.), <em>Panpsychism: Contemporary Perspectives</em> (pp. 179–214). Oxford University Press. <a href="https://doi.org/10.1093/acprof:oso/9780199359943.003.0008" target="_blank" rel="noopener noreferrer">https://doi.org/10.1093/acprof:oso/9780199359943.003.0008</a></p>
++<!-- /wp:paragraph -->
++
++<!-- wp:paragraph -->
 +<p>Coleman, S. (2014). The real combination problem: Panpsychism, micro-subjects, and emergence.&nbsp;<em>Erkenntnis</em>, 79(1), 19–44.&nbsp;<a href="https://doi.org/10.1007/s10670-013-9431-x" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s10670-013-9431-x</a></p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
-@@ -4021,17 +2963,19 @@
+@@ -4021,17 +2970,19 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
@@ -4928,7 +4933,7 @@
  <!-- wp:heading {"level":3} -->
  <h3 class="wp-block-heading">Falsification and Methodology</h3>
  <!-- /wp:heading -->
-@@ -4052,6 +2996,17 @@
+@@ -4052,6 +3003,17 @@
  <p>Whitehead, A. N. (1925).&nbsp;<em>Science and the Modern World</em>. Macmillan.</p>
  <!-- /wp:paragraph -->
  
@@ -4946,7 +4951,7 @@
  <!-- wp:heading {"level":3} -->
  <h3 class="wp-block-heading">Indigenous Epistemology</h3>
  <!-- /wp:heading -->
-@@ -4069,7 +3024,7 @@
+@@ -4069,7 +3031,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
@@ -4955,7 +4960,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:heading {"level":3} -->
-@@ -4077,83 +3032,73 @@
+@@ -4077,83 +3039,73 @@
  <!-- /wp:heading -->
  
  <!-- wp:paragraph -->
@@ -5027,27 +5032,27 @@
  
  <!-- wp:paragraph -->
 -<p>Hoffman, D. D., Singh, M., &amp; Prakash, C. (2015). The interface theory of perception.&nbsp;<em>Psychonomic Bulletin &amp; Review</em>, 22(6), 1480–1506.&nbsp;<a href="https://doi.org/10.3758/s13423-015-0890-8">https://doi.org/10.3758/s13423-015-0890-8</a></p>
+-<!-- /wp:paragraph -->
+-
+-<!-- wp:paragraph -->
+-<p>Hoffman, D. D., &amp; Prakash, C. (2014). Objects of consciousness.&nbsp;<em>Frontiers in Psychology</em>, 5, 577.&nbsp;<a href="https://doi.org/10.3389/fpsyg.2014.00577">https://doi.org/10.3389/fpsyg.2014.00577</a></p>
 +<p>Cerullo, M. A. (2015). The problem with phi: A critique of integrated information theory.&nbsp;<em>PLOS Computational Biology</em>, 11(9), e1004286.&nbsp;<a href="https://doi.org/10.1371/journal.pcbi.1004286" target="_blank" rel="noopener noreferrer">https://doi.org/10.1371/journal.pcbi.1004286</a></p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
--<p>Hoffman, D. D., &amp; Prakash, C. (2014). Objects of consciousness.&nbsp;<em>Frontiers in Psychology</em>, 5, 577.&nbsp;<a href="https://doi.org/10.3389/fpsyg.2014.00577">https://doi.org/10.3389/fpsyg.2014.00577</a></p>
+-<p>Bagwell, J. N. (2023). Debunking interface theory: Why Hoffman's skepticism (really) is self-defeating.&nbsp;<em>Synthese</em>, 201(25).&nbsp;<a href="https://doi.org/10.1007/s11229-022-04021-1">https://doi.org/10.1007/s11229-022-04021-1</a></p>
 +<p>Mørch, H. H. (2019). Is consciousness intrinsic? A problem for the integrated information theory.&nbsp;<em>Journal of Consciousness Studies</em>, 26(1-2), 133–162.</p>
  <!-- /wp:paragraph -->
  
  <!-- wp:paragraph -->
--<p>Bagwell, J. N. (2023). Debunking interface theory: Why Hoffman's skepticism (really) is self-defeating.&nbsp;<em>Synthese</em>, 201(25).&nbsp;<a href="https://doi.org/10.1007/s11229-022-04021-1">https://doi.org/10.1007/s11229-022-04021-1</a></p>
+-<p>Martínez, M. (2019). Usefulness drives representations to truth: A family of counterexamples to Hoffman's interface theory of perception.&nbsp;<em>Grazer Philosophische Studien</em>, 96(3), 319–341.&nbsp;<a href="https://doi.org/10.1163/18756735-09603004">https://doi.org/10.1163/18756735-09603004</a></p>
 +<p>Doerig, A., Schurger, A., Hess, K., &amp; Herzog, M. H. (2019). The unfolding argument: Why IIT and other causal structure theories cannot explain consciousness.&nbsp;<em>Consciousness and Cognition</em>, 72, 49–59.&nbsp;<a href="https://doi.org/10.1016/j.concog.2019.04.002" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.concog.2019.04.002</a></p>
  <!-- /wp:paragraph -->
- 
--<!-- wp:paragraph -->
--<p>Martínez, M. (2019). Usefulness drives representations to truth: A family of counterexamples to Hoffman's interface theory of perception.&nbsp;<em>Grazer Philosophische Studien</em>, 96(3), 319–341.&nbsp;<a href="https://doi.org/10.1163/18756735-09603004">https://doi.org/10.1163/18756735-09603004</a></p>
--<!-- /wp:paragraph -->
  
 -<!-- wp:heading {"level":3} -->
 -<h3 class="wp-block-heading">Integrated Information Theory (Critique)</h3>
 -<!-- /wp:heading -->
--
+ 
 -<!-- wp:paragraph -->
 -<p>Cerullo, M. A. (2015). The problem with phi: A critique of integrated information theory.&nbsp;<em>PLOS Computational Biology</em>, 11(9), e1004286.&nbsp;<a href="https://doi.org/10.1371/journal.pcbi.1004286">https://doi.org/10.1371/journal.pcbi.1004286</a></p>
 -<!-- /wp:paragraph -->
@@ -5062,7 +5067,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:heading {"level":3} -->
-@@ -4161,19 +3106,19 @@
+@@ -4161,19 +3113,19 @@
  <!-- /wp:heading -->
  
  <!-- wp:paragraph -->
@@ -5086,7 +5091,7 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:heading {"level":3} -->
-@@ -4181,7 +3126,7 @@
+@@ -4181,7 +3133,7 @@
  <!-- /wp:heading -->
  
  <!-- wp:paragraph -->
@@ -5095,14 +5100,14 @@
  <!-- /wp:paragraph -->
  
  <!-- wp:heading {"level":3} -->
-@@ -4208,134 +3153,14 @@
+@@ -4208,134 +3160,14 @@
  <p>Olivelle, P. (Trans.). (1996).&nbsp;<em>Upaniṣads</em>. Oxford University Press.</p>
  <!-- /wp:paragraph -->
  
 -<!-- wp:separator -->
 -<hr class="wp-block-separator has-alpha-channel-opacity"/>
 -<!-- /wp:separator -->
--
+ 
 -<!-- wp:heading -->
 -<h2 class="wp-block-heading">Appendix E: Assumptions Audit</h2>
 -<!-- /wp:heading -->
@@ -5118,11 +5123,12 @@
 -<!-- wp:table -->
 -<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Framework</th><th>Core Assumption</th><th>Type</th><th>Falsifiable?</th><th>Hidden Commitment</th></tr></thead><tbody><tr><td><strong>Constraint-based (this paper)</strong></td><td>Consciousness = organizational closure with self-modeling</td><td>Structural identification</td><td>Yes (5 loss conditions)</td><td>Assumes closure is sufficient, not merely necessary</td></tr><tr><td><strong>IIT</strong></td><td>Consciousness = integrated information (Φ)</td><td>Identity claim</td><td>Partially</td><td>Assumes intrinsic existence from causal structure; panpsychist implications at edges</td></tr><tr><td><strong>GWT</strong></td><td>Consciousness = global broadcast/availability</td><td>Functional claim</td><td>Yes</td><td>Equates access with phenomenology; may miss unreportable experience</td></tr><tr><td><strong>Panpsychism</strong></td><td>Proto-experience pervades matter</td><td>Metaphysical primitive</td><td>No</td><td>Assumes combination is possible without mechanism</td></tr><tr><td><strong>HOT</strong></td><td>Consciousness requires meta-representation</td><td>Architectural claim</td><td>Partially</td><td>Assumes unconscious HOT can confer consciousness on target; regress problem</td></tr><tr><td><strong>FEP</strong></td><td>Systems minimize free energy</td><td>Mathematical identity</td><td>No</td><td>Too broad to fail; any behavior redescribable as free energy minimization</td></tr><tr><td><strong>Orch-OR</strong></td><td>Consciousness requires quantum coherence</td><td>Physical claim</td><td>Yes (timescale)</td><td>Assumes coherence survives decoherence; conflicts with thermal physics</td></tr><tr><td><strong>Process Philosophy</strong></td><td>Experience is fundamental</td><td>Metaphysical primitive</td><td>No</td><td>Cannot specify what would show experience isn't fundamental</td></tr><tr><td><strong>Interface Theory (Hoffman)</strong></td><td>Consciousness is fundamental; spacetime is an interface</td><td>Idealist ontology</td><td>No</td><td>Assumes evolutionary selection presupposes consciousness; parasitic on realist assumptions it claims to replace</td></tr></tbody></table></figure>
 -<!-- /wp:table -->
--
--<!-- wp:heading {"level":3} -->
+ 
+ <!-- wp:heading {"level":3} -->
 -<h3 class="wp-block-heading">E.2 Epistemological Assumptions</h3>
--<!-- /wp:heading -->
--
++<h3 class="wp-block-heading">Computation and Formal Models</h3>
+ <!-- /wp:heading -->
+ 
 -<!-- wp:table -->
 -<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Framework</th><th>How We Know Consciousness</th><th>Hidden Commitment</th></tr></thead><tbody><tr><td><strong>Constraint-based</strong></td><td>Measurable signatures: integration, perturbational complexity, graded degradation</td><td>Assumes organizational features are accessible to third-person measurement</td></tr><tr><td><strong>IIT</strong></td><td>Compute Φ from causal structure</td><td>Assumes Φ calculation is tractable; in practice relies on proxies</td></tr><tr><td><strong>GWT</strong></td><td>Reportability and behavioral indicators</td><td>Assumes report tracks phenomenology; may miss "overflow"</td></tr><tr><td><strong>HOT</strong></td><td>Presence of higher-order representation</td><td>Assumes metacognitive capacity indicates consciousness; problematic for infants/animals</td></tr><tr><td><strong>Panpsychism</strong></td><td>Inference from own case to all matter</td><td>Assumes analogy is valid despite no shared features with electrons</td></tr><tr><td><strong>FEP</strong></td><td>Model parameters and prediction errors</td><td>Assumes Bayesian quantities map onto subjective quantities</td></tr><tr><td><strong>Interface Theory (Hoffman)</strong></td><td>Mathematical derivation from evolutionary games</td><td>Assumes mathematical structure directly generates phenomenology; confuses description with causation</td></tr></tbody></table></figure>
 -<!-- /wp:table -->
@@ -5146,20 +5152,20 @@
 -<!-- wp:table -->
 -<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Framework</th><th>Ontological Assumptions</th><th>Testable</th><th>Metaphysical Load</th></tr></thead><tbody><tr><td><strong>Constraint-based</strong></td><td>3 (closure, self-modeling, thermodynamic cost)</td><td>All 3</td><td>Low</td></tr><tr><td><strong>GWT</strong></td><td>2 (global broadcast, capacity limits)</td><td>Both</td><td>Low</td></tr><tr><td><strong>IIT</strong></td><td>5 (axioms) + identity claim</td><td>Partially</td><td>Moderate</td></tr><tr><td><strong>HOT</strong></td><td>2 (HOT necessity, can be unconscious)</td><td>Partially</td><td>Moderate</td></tr><tr><td><strong>FEP</strong></td><td>1 (but unfalsifiable)</td><td>No</td><td>Low but empty</td></tr><tr><td><strong>Panpsychism</strong></td><td>2 (ubiquity, combination possible)</td><td>Neither</td><td>High</td></tr><tr><td><strong>Orch-OR</strong></td><td>3 (coherence, objective reduction, microtubules)</td><td>All 3 but 2 falsified</td><td>High</td></tr><tr><td><strong>Process Philosophy</strong></td><td>1 (experience fundamental)</td><td>No</td><td>High</td></tr></tbody></table></figure>
 -<!-- /wp:table -->
- 
--<!-- wp:paragraph -->
+-
+ <!-- wp:paragraph -->
 -<p>The constraint-based framework makes explicit, falsifiable assumptions with minimal metaphysical overhead. Competing frameworks either make unfalsifiable assumptions (panpsychism, process philosophy, FEP), make assumptions that have been falsified (Orch-OR), or make assumptions that are partially testable but carry hidden commitments (IIT, HOT).</p>
 -<!-- /wp:paragraph -->
- 
- <!-- wp:heading {"level":3} -->
--<h3 class="wp-block-heading">E.5 What This Framework Assumes</h3>
-+<h3 class="wp-block-heading">Computation and Formal Models</h3>
- <!-- /wp:heading -->
- 
- <!-- wp:paragraph -->
--<p>For transparency, here are the explicit assumptions of the constraint-based framework:</p>
--<!-- /wp:paragraph -->
 -
+-<!-- wp:heading {"level":3} -->
+-<h3 class="wp-block-heading">E.5 What This Framework Assumes</h3>
+-<!-- /wp:heading -->
++<p>Turing, A. M. (1937). On computable numbers, with an application to the Entscheidungsproblem. <em>Proceedings of the London Mathematical Society, 2</em>(42), 230–265. <a href="https://doi.org/10.1112/plms/s2-42.1.230" target="_blank" rel="noopener noreferrer">DOI: 10.1112/plms/s2-42.1.230</a>.</p>
+ 
+-<!-- wp:paragraph -->
+-<p>For transparency, here are the explicit assumptions of the constraint-based framework:</p>
+ <!-- /wp:paragraph -->
+ 
 -<!-- wp:list {"ordered":true} -->
 -<ol class="wp-block-list"><!-- wp:list-item -->
 -<li><strong>Thermodynamic realism</strong>: Physical systems obey Landauer's principle; information processing has energy costs.</li>
@@ -5223,12 +5229,11 @@
 -<!-- wp:paragraph -->
 -<p><em>The framework this essay describes is not complete. It is not final. It is falsifiable. If it survives, that will be evidence that it tracks something real. If it fails, that will be progress. Either way, we will have learned something, which is more than unfalsifiable frameworks can offer.</em></p>
 -<!-- /wp:paragraph -->
-+<p>Turing, A. M. (1937). On computable numbers, with an application to the Entscheidungsproblem. <em>Proceedings of the London Mathematical Society, 2</em>(42), 230–265. <a href="https://doi.org/10.1112/plms/s2-42.1.230" target="_blank" rel="noopener noreferrer">DOI: 10.1112/plms/s2-42.1.230</a>.</p>
- 
+-
 -<!-- wp:paragraph -->
 -<p><em>The claim that phenomenology must be "more than" any physical or functional description is not just unfalsifiable. It is anti-scientific in structure, indistinguishable from other immunized metaphysical claims once stripped of anthropocentric sentiment. This framework does not need to defeat that claim on its own terms. It shows that the claim never earned standing in the first place.</em></p>
- <!-- /wp:paragraph -->
- 
+-<!-- /wp:paragraph -->
+-
 -<!-- wp:paragraph -->
 -<p><em>Survival under falsification pressure is evidence of tracking structure, not proof of final truth. The framework does not claim certainty. It claims testability. That is all any honest inquiry can offer.</em></p>
 -<!-- /wp:paragraph -->
