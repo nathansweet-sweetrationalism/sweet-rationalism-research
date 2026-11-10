@@ -89,6 +89,14 @@ Maintain a private per-item ledger with the original exact quote, author/speaker
 
 **Hard gate:** Zero material quoted passages or directly bearing peer-reviewed sources silently removed, altered or attributed without verification; unresolved cases listed for owner decision. Retest after whole-paper mergers and include the redline output in the private reconstruction ZIP. Do not claim that matching text establishes quotation authenticity, rights, factual warrant or faithful contextual interpretation.
 
+## Four canonical foundations in every article, with complete edited HTML every pass
+
+A completed article audit must link each official framework page **at least once** in context: [RCF methodology](https://sweetrationalism.com/frameworks/recursive-corrigibility-framework/), [PBSRR ontology](https://sweetrationalism.com/frameworks/ontology-scale-relative-realism/), [Framework Bridge](https://sweetrationalism.com/frameworks/interoperability-framework-bridge/), and [Sweet Rationalism Ethos](https://sweetrationalism.com/frameworks/sweet-rationalism-a-foundational-framework/). Prefer an actual proposition's relevant paragraph; if one page is merely background, put a compact reader-friendly “Related foundations” sentence in a suitable front/back matter location. This required four-link foundation layer is distinct from the **selective** contextual links to related articles and must not create a spammy reciprocal article network.
+
+Link actual authorial mentions of “Recursive Corrigibility Framework,” “RCF,” “PBSRR,” “my ontology,” “Framework Bridge,” and “Sweet Rationalism Ethos” to their correct canonical destination; preserve literal participant/source quotations and previously linked text. Editorial review decides whether closely repeated links should be condensed without leaving important named concepts inaccessible. Run `python scripts/core_framework_links_gate.py ARTICLE.html --strict`: no missing one of the four page links is the structural hard gate; its unlinked-mention queue must receive human dispositions. Check signed-out target status, anchors and rendered navigation. A script pass cannot establish that the inserted relationship is honest or useful.
+
+**Every audit pass must ship its full current edited HTML**, privately for protected articles, with pass/version/date, SHA-256, full before/after diff and evidence/audit status. The HTML must be directly accessible as its own file, even when a historical ZIP contains a copy. If unchanged since last pass, link the unchanged full file and say it is unchanged. A patch, summary, screenshot or WordPress text box alone fails this deliverable gate. Each later pass must yield a new version or explicitly attest to unchanged full bytes; do not replace historical files without provenance.
+
 ## Preflight package and release hold
 
 Before requesting final approval, assemble **privately**:
