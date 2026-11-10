@@ -10,6 +10,20 @@ Check every bibliography entry, inline citation, borrowed equation, quotation an
 
 Use the [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/) and [Internet Encyclopedia of Philosophy](https://iep.utm.edu/) to check philosophical concepts and controversies. Mathematical definitions and scientific quantities must also be checked against original mathematical/technical sources or recognized scholarly textbooks. Encyclopedia exposition does not validate any particular ontology.
 
+## Opening Bottom line gate: required for every completed article audit
+
+An article is not fully audited until its **near-top `Bottom line.` passage** has passed both a structural placement check and an editorial/source check. Place the short reader-facing statement **immediately after any `Research record` and `Versions and archives` metadata** (or after the title/deck if archive metadata is legitimately absent), before the abstract, prologue, first substantive section or extended setup. The preferred precedent is Nathan Sweet's *Michael Levin’s Platonic Morphospace: The Ingression Challenge and Its Evidence*: it affirms the biological experiments, identifies Douglas Brash's particular challenge to **ingression**, asks what unique observation would favor that added cause over physical/developmental/organizational rivals, and explicitly refuses to promote a failure of one causal account into a refutation of all Platonism.
+
+For each new article's opening, a human reviewer must be able to identify:
+
+1. **Target and conclusion:** the exact proposed claim and strongest warranted bottom-line answer, without an unjustified universal quantifier.
+2. **Positive evidence and rival:** the observation or argument that actually survives, the most serious relevant alternative and the inferential bridge that has or has not been earned.
+3. **Scholarly retrieval anchors:** named scholars, canonical paper titles or terms of art genuinely used in that article, accurately attributed and linked to verified primary papers, DOIs or SEP/IEP definitions where helpful. For example, a discussion of empirical immunization might naturally invoke **Antony Flew**, **Popperian falsificationism**, **Lakatos**, and **Deborah Mayo's severe testing**; a consciousness-substitution article might instead foreground **Kleiner and Hoel**. Never force all these names into unrelated articles, replace arguments with keyword lists, or claim a measurable SEO/computational-discovery gain without evidence.
+4. **Scope and correction:** clarify what follows and what remains undecided, including what contrary evidence or argument would change the assessment. Applied especially symmetrically to **claims of exhaustive physicalism** (not entailed by successful physical methodology) and **anti-physicalist/supernaturalist appeals to gaps** (not confirmed by a rival's limitations).
+5. **Readable prose:** normally one compact paragraph near 80–160 words, but allow shorter or slightly longer where content earns it. No canned `not X but Y` treadmill, artificial triads, grandiose claim of definitive victory, or duplicated abstract.
+
+Run `python3 scripts/bottom_line_gate.py ARTICLE.html --format html` on the **complete candidate body** and keep its receipt; a failed structural check blocks audit closure. Independently judge source fidelity, scholarly relevance and inferential fairness. A passing automated placement check only proves the phrase was found in the configured opening region. Final checklist item: **`[ ] Bottom line present, near-top, reader-tested, scholar/definition/source-linked where warranted, scope-correct, and independently reviewed.`**
+
 ## Formal mathematics, computation and logic gate
 
 Create one proof-obligation record per theorem, lemma, inequality, algorithm, logical inference, statistical claim and quantitative model:
@@ -49,6 +63,7 @@ Classify each flag as `edit`, `retain with reason`, or `investigate`. A legitima
 Before requesting final approval, assemble **privately**:
 
 - Complete proposed article master and requested versions, rendered and editorially checked.
+- A source-grounded near-top **Bottom line** that passes the placement check and a human scholarly-term, inferential-scope, and readability review; record the check-off receipt.
 - Full citation/source ledger with article-claim-to-paper-passage mappings and all unresolved full-text issues.
 - Proof-obligation list, code, exact test outputs, countermodels, dependency graph, rival comparison and unproved assumptions.
 - Prose detector output plus human dispositions and prose diff.
