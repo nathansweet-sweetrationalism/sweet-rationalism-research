@@ -119,6 +119,15 @@ Before requesting final approval, assemble **privately**:
 
 **Mandatory owner checkpoint:** Nathan reviews the exact candidate and remaining limitations. Do not submit/deposit the Zenodo article DOI, put a DOI into WordPress, publish protected archives, unlist/relist, remove noindex, alter sitemaps or declare release complete without explicit approval of this candidate and these release actions. If his review produces material changes, rerun affected checks and obtain approval of the new candidate.
 
+## Per-work source anchoring and anti-name-dropping
+
+- For each substantive mention of a named scholar, specific paper, external article, dialogue source or historical work, verify exactly **which publication, edition and claim** is meant and provide a natural inline link at the supporting paragraph. Prefer publisher/DOI/author original over derivative summaries. A shared author name is not paper identity.
+- Link external HTTP(S) research destinations with `target="_blank" rel="noopener noreferrer"`. Link canonical pages on `sweetrationalism.com` in the same tab. This is a navigation requirement, not a proven SEO ranking effect. Audit malformed redirects and duplicate anchors.
+- Every current bibliography record needs an argumentative dependency, original quotation, serious rival or a meaningful primary-sourced contribution in a scholar appendix. Remove reference-only padding and decorative name lists from the live edition, retaining source identities and before/after texts in versioned archival materials for reversal.
+- When a relevant scholar appears solely by name in prose, supply their actual substantive contribution, direct evidence, counterargument or a verified quotation; if there is no such connection, remove the name without removing a distinct argument. Where rival scholarship carries a direct objection and substantive published answer, present both.
+- Keep a review ledger per cited work with `work_id/DOI`, exact original/present context, source-match scope, decision, stronger contrary evidence, loss condition and archive destination. Classify a punctuation-shaped author hypothetical separately from a verbatim third-party quotation. Automated `95 flags` never means `95 quotation errors`.
+- The claim/quote gates, framework-link gate, archival reconstruction and owner signoff remain independent and cumulative; final release is prohibited until all required checks close.
+
 ## Interpret machine results accurately
 
 | Automated check | What it can establish | What it cannot establish |
