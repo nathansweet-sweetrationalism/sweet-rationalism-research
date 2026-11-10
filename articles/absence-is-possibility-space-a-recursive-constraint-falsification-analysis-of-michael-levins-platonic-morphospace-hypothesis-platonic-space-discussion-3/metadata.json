@@ -63,5 +63,6 @@
     }
   ],
   "known_permalink_exception": "Historical URL slug contains retired terminology; preserve canonical permalink until a tested 301 and external DOI metadata update strategy",
-  "methodology_name_current": "Recursive Corrigibility Framework"
+  "methodology_name_current": "Recursive Corrigibility Framework",
+  "sitemap_status_at_audit": "present in public post-sitemap.xml while browser HTML still says noindex"
 }
