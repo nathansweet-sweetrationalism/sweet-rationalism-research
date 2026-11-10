@@ -116,3 +116,11 @@ Final release HTML SHA-256: `566271ae4f2d1e5d80318385d7859d6028587d3720a378db603
 Total recovered WordPress revisions: **21**
 
 Note: WordPress may add new revisions on subsequent article edits. Check the exact final HTML against the read-back site editor. Future edits are not retroactively part of this release archive and should receive their own update audit.
+
+## November 10, 2026: Signed-out live-browser verification addendum
+
+- Refreshed the canonical article after the final upload. Browser DOM showed **two** official Zenodo badges, each immediately below the matching full DOI resolver link, with exactly **two total line-break tags** in the archive paragraph, **zero-pixel** gap between the Research record and Versions paragraph boxes and no trailing badge break.
+- Current signed-out article robots meta contains **`index, follow`**, consistent with the stored Yoast index setting. The **separate Unlist Posts & Pages checkbox remains uninspected**; no listing-state conclusion is warranted until WordPress admin and site searches/sitemap are examined.
+- Confirmed the public ZIP link triggers an actual browser download. Clicking the public Markdown `.txt` opens it inline as `text/plain`; the live text has **11,000 characters**, states **29 saved revisions**, and includes final revision **218725721**. The media source URLs and byte sizes independently match WordPress read-back.
+- Browser DOM also contains **two H1s with the same article title**, one theme-generated and one embedded in article HTML. This is a nonblocking but legitimate heading/accessibility cleanup candidate for a future **versioned** edit; do not silently modify the canonical version without rebuilding archival pointers.
+- Exact, typed link relationships, source provenance, claim dependencies and loss conditions: [link_registry.json](link_registry.json). Neutral bounded browser, source and archive tasks for Gemini/Antigravity: [gemini_antigravity_handoff.md](gemini_antigravity_handoff.md).
