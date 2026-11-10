@@ -16,3 +16,14 @@ Public, version-controlled research editions of Nathan Sweet's articles.
 - [Publication and correction audit](AUDIT.md): sync history, limitations, and conditions requiring re-verification.
 - [Evidence-led SEO baseline (2026-11-09)](audits/seo-baseline-2026-11-09.md): measured Search Console/GA4 signals and redirect tests.
 - [Reusable scholarly article audit and publishing prompt](prompts/Sweet_Rationalism_Article_Audit_Publication_Prompt_2026-11-09.md): methods, source verification, canonical URLs, DOI discipline and synchronization.
+
+Archived article text is **not** an independent scholarly endorsement or a guarantee of acceptance by search engines or model training systems. Read the source page and its dated corrections before relying on it.
+
+## Connected research records
+
+- [Canonical framework definitions and citation guide](https://sweetrationalism.com/frameworks/): starting point for the methodology, ontology, ethos and bridge, with article-specific version/concept DOIs.
+- [Sweet Rationalism Frameworks](https://github.com/nathansweet-sweetrationalism/sweet-rationalism-frameworks): independently versioned core framework sources and PDF releases; these are separate from this article-research archive.
+- [Levin Sorting Audits](https://github.com/nathansweet-sweetrationalism/levin-sorting-audits): executable audit artefacts, recorded outputs and correction trail for the Zhang–Goldstein–Levin sorting debate; [canonical discussion](https://sweetrationalism.com/articles/physics/computer-science/why-michael-levins-bubble-sort-revelation-is-misunderstood-classical-algorithm-theory-meets-god-of-the-gaps-argument/).
+- [Levin Lab official software catalogue](https://drmichaellevin.org/resources/software.html): primary entry point for lab-associated code such as [BioElectricNetwork](https://github.com/santamanicka/BioElectricNetwork) and [BETSE](https://gitlab.com/betse/betse). These independent sources are linked so biological and computational claims can be checked against relevant implementations. A link is not an endorsement by the lab.
+
+The [article audit prompt](prompts/Sweet_Rationalism_Article_Audit_Publication_Prompt_2026-11-09.md) requires typed internal/external link proposals, verified repository ownership, DOI badges and explicit reasons to add or withhold links. Public site pages are the reading canonicals; this repository provides auditability rather than a competing search landing page.
