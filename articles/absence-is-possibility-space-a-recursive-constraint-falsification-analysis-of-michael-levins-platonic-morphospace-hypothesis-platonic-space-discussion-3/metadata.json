@@ -8,15 +8,15 @@
   "canonical_authority": "SweetRationalism.com",
   "github_source_path": "articles/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/article.html",
   "original_publication_date": "2026-02-05T16:04:31",
-  "last_wordpress_modified": "2026-11-09T22:45:13",
-  "article_specific_doi": "10.5281/zenodo.24095566",
+  "last_wordpress_modified": "2026-11-09T23:46:38",
+  "article_specific_doi": "10.5281/zenodo.24097599",
   "article_concept_doi": "10.5281/zenodo.24095565",
-  "doi_status": "public Zenodo v1 and concept DOI verified as historical; no updated version DOI deposited",
-  "audit_status": "Public site visibility is owner-observed and signed-out page robots is index/follow; 29-revision archive, badges, mirror complete. Remaining formal gates: admin Unlist checkbox (unverified separately), authenticated Zenodo V2, independent primary transcript comparison.",
+  "doi_status": "Zenodo v2 published 2026-11-10 with four checksum-confirmed files; v1 and concept DOI retained",
+  "audit_status": "Zenodo v2 published, live WordPress post 2098 revision 218725724 includes v2 DOI/badge; frozen 29-revision ZIP ends with WordPress revision 218725721. Separate Unlist checkbox and independent quote-to-primary-source comparison remain unverified.",
   "revision_notes_in_article": true,
   "revision_audit_url": "https://sweetrationalism.com/wp-content/uploads/2026/02/Levin_Morphospace_Revision_Audit_2026-11-10_v5.txt",
   "reconstruction_archive_url": "https://sweetrationalism.com/wp-content/uploads/2026/02/Levin_Morphospace_Complete_Revision_Archive_2026-11-10_v5.zip",
-  "historical_archive_cut": "2026-11-09T20:21:53",
+  "historical_archive_cut": "2026-11-09T22:45:13",
   "recovered_exact_body_revisions": 29,
   "original_pre_audit_body_sha256": "6155128aefd4730641e02901d7cc7924222c272d023ba4d60b27dcf712a90cbf",
   "original_image_retained": true,
@@ -40,8 +40,8 @@
   ],
   "release_conditions_remaining": [
     "Inspect WordPress Unlist Posts & Pages checkbox for post 2098 only to independently reconcile plugin state; owner confirms article appears in live site listings and signed-out page shows index/follow, so public listing itself is now owner-observed",
-    "Deposit a new Zenodo V2 containing the current v5 archive and approved article, then update visible version DOI/badge without removing historical v1",
-    "Perform independent transcript-to-quote and citation metadata comparison if original debate transcript becomes available"
+    "Perform independent transcript-to-quote and citation metadata comparison if original debate transcript becomes available",
+    "A post-release DOI pointer edit produced WordPress revision 218725724 (30th saved revision); preserve immutable 29-revision Zenodo v2 cutoff and archive any subsequent revisions separately, without presenting this ZIP as current through revision 218725724."
   ],
   "archived_release_body_sha256": "65d868c0a32d223a89ff0ede677a0b8af701bfc1d9125f96066d29e55da85b41",
   "archived_first_zenodo_v1_body_sha256": "c521d89643d130600ff976346e466da589e4df862ece091b9ce9b54fc25bf0a1",
@@ -134,5 +134,22 @@
       "confidence_basis": "Direct report by site owner; independent admin Unlist checkbox not inspected",
       "status": "owner_observed"
     }
-  ]
+  ],
+  "current_wordpress_revision_id": 218725724,
+  "current_wordpress_content_length_characters": 64026,
+  "historical_article_specific_doi": "10.5281/zenodo.24095566",
+  "current_zenodo_version_record": "https://zenodo.org/records/24097599",
+  "zenodo_version_history": {
+    "v1": "https://doi.org/10.5281/zenodo.24095566",
+    "v2": "https://doi.org/10.5281/zenodo.24097599",
+    "concept": "https://doi.org/10.5281/zenodo.24095565"
+  },
+  "release_pointer_revision_id": 218725724,
+  "archived_release_latest_revision_id": 218725721,
+  "zenodo_v2_assets": {
+    "article_html_sha256": "65d868c0a32d223a89ff0ede677a0b8af701bfc1d9125f96066d29e55da85b41",
+    "zip_sha256": "63ea9b31f8ef21c4b11c698e2c3073b87ab30a2a2c49bb38aabd8430dae88621",
+    "audit_sha256": "b442b346c659048dca7da7582b770a0aeea68065adfbb32d92ee4d72c71ffdac",
+    "file_count": 4
+  }
 }
