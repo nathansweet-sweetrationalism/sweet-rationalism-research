@@ -16,6 +16,8 @@ Public, version-controlled research editions of Nathan Sweet's articles.
 - [Publication and correction audit](AUDIT.md): sync history, limitations, and conditions requiring re-verification.
 - [Evidence-led SEO baseline (2026-11-09)](audits/seo-baseline-2026-11-09.md): measured Search Console/GA4 signals and redirect tests.
 - [Reusable scholarly article audit and publishing prompt](prompts/Sweet_Rationalism_Article_Audit_Publication_Prompt_2026-11-09.md): methods, source verification, canonical URLs, DOI discipline and synchronization.
+- [Article quality gates](docs/ARTICLE_QUALITY_GATES.md): exact claim-to-source checks, formal/logic proof obligations, human-readability audit, and mandatory owner approval before DOI or release.
+- [Executable prose audit](scripts/prose_audit.py): local, dependency-free heuristic pattern report, with [regression tests](tests/test_prose_audit.py). It does not identify AI authorship and never rewrites an article.
 
 Archived article text is **not** an independent scholarly endorsement or a guarantee of acceptance by search engines or model training systems. Read the source page and its dated corrections before relying on it.
 
