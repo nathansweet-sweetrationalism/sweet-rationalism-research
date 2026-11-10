@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.1",
+  "post_id": 2098,
+  "title": "Michael Levin’s Platonic Morphospace: The Ingression Challenge and Its Evidence",
+  "slug": "absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3",
+  "status": "published_noindex_pending_article_doi",
+  "canonical_url": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+  "canonical_authority": "SweetRationalism.com",
+  "github_source_path": "articles/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/article.html",
+  "original_publication_date": "2026-02-05T16:04:31",
+  "last_wordpress_modified": "2026-11-09T20:21:53",
+  "article_specific_doi": null,
+  "article_concept_doi": null,
+  "doi_status": "not_deposited_or_verified",
+  "audit_status": "substantive revision and source audit completed locally; independent scholarly review and Zenodo DOI pending; release gate not closed",
+  "revision_notes_in_article": true,
+  "revision_audit_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/Levin_Morphospace_Revision_Audit_2026-11-10.txt",
+  "reconstruction_archive_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/Levin_Morphospace_Complete_Revision_Archive_2026-11-10.zip",
+  "historical_archive_cut": "2026-11-09T17:41:39",
+  "recovered_exact_body_revisions": 19,
+  "original_pre_audit_body_sha256": "6155128aefd4730641e02901d7cc7924222c272d023ba4d60b27dcf712a90cbf",
+  "original_image_retained": true,
+  "featured_image_id": 218725671,
+  "noindex_status_at_mirror": "1",
+  "tags": [
+    "Bioelectricity",
+    "Landauer principle",
+    "Michael Levin",
+    "morphogenesis",
+    "philosophy of biology",
+    "Platonic morphospace",
+    "Process philosophy",
+    "scientific falsifiability"
+  ],
+  "evidence_status_notes": [
+    "Corrected Richter water temperature and population-dependent rat swimming durations",
+    "Corrected bibliographic identifiers and scope for Pinet and Hughes–Preskorn",
+    "Reframed Landauer, Bennett, physical ingressions and programme-level falsification",
+    "Historical speaker statements and chronological debate order preserved"
+  ],
+  "release_conditions_remaining": [
+    "Independent source and argument review, or owner waiver",
+    "Article-specific immutable Zenodo version DOI and concept DOI",
+    "Near-top DOI citation links verified against actual Zenodo records",
+    "Visibility/noindex/sitemap verification after release"
+  ]
+}
