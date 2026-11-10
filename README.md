@@ -18,6 +18,7 @@ Public, version-controlled research editions of Nathan Sweet's articles.
 - [Reusable scholarly article audit and publishing prompt](prompts/Sweet_Rationalism_Article_Audit_Publication_Prompt_2026-11-09.md): methods, source verification, canonical URLs, DOI discipline and synchronization.
 - [Article quality gates](docs/ARTICLE_QUALITY_GATES.md): exact claim-to-source checks, formal/logic proof obligations, human-readability audit, and mandatory owner approval before DOI or release.
 - [Executable prose audit](scripts/prose_audit.py): local, dependency-free heuristic pattern report, with [regression tests](tests/test_prose_audit.py). It does not identify AI authorship and never rewrites an article.
+- [Executable logic audit](scripts/logic_audit.py): exhaustive classical propositional consequence, countermodels, and contradictory-premise detection; see [example ledger](examples/logic_claims_example.json) and [regression tests](tests/test_logic_audit.py). Source-to-formula fidelity remains a separate human obligation.
 
 Archived article text is **not** an independent scholarly endorsement or a guarantee of acceptance by search engines or model training systems. Read the source page and its dated corrections before relying on it.
 
