@@ -17,6 +17,16 @@
     },
     {
       "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://doi.org/10.5281/zenodo.24097599",
+      "relation": "citable_frozen_edition",
+      "section": "Versions and archives",
+      "why": "Immutable v2 full article snapshot and 29-body-revision archive with adjacent diffs and checksum manifest; canonical maintained source remains WordPress",
+      "verified": "Published Zenodo record 24097599 inspected 2026-11-10; four uploaded MD5 checksums matched local files",
+      "loss_condition": "If record 24097599 no longer corresponds to version v2 or any file checksum differs, demote this mapping and investigate provenance",
+      "temporal_boundary": "WordPress archive snapshot through revision 218725721; subsequent DOI pointer revision 218725724 is outside this edition"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
       "destination": "https://doi.org/10.5281/zenodo.24095566",
       "relation": "historical predecessor",
       "section": "Versions and archives",
@@ -145,5 +155,10 @@
       "decision": "unverified",
       "reason": "Admin browser signed out; Yoast setting does not control plugin option"
     }
-  ]
+  ],
+  "release_v2": {
+    "doi": "https://doi.org/10.5281/zenodo.24097599",
+    "wordpress_post_revision_after_doi_sync": 218725724,
+    "archive_cutoff_revision": 218725721
+  }
 }
