@@ -1,0 +1,7 @@
+{
+  "claims": [
+    {"id": "modus_ponens", "premises": ["P", "implies(P,Q)"], "conclusion": "Q", "translation_notes": "Schematic inference."},
+    {"id": "affirming_consequent", "premises": ["implies(P,Q)", "Q"], "conclusion": "P", "translation_notes": "Test invalid converse."},
+    {"id": "inconsistent_premises", "premises": ["P", "not P"], "conclusion": "Q", "translation_notes": "Detect classical vacuity."}
+  ]
+}
