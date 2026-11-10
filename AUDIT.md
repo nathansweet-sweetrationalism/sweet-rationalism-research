@@ -66,3 +66,9 @@
 - No protected article, visibility, WordPress, DOI or public archive content was changed by this policy update. Results of any protected-article machine checks belong in its private research record until individual release.
 
 **Loss condition:** Reopen this policy if a prose heuristic causes argument loss or systematic false positives, a test suite fails, formal encodings do not represent the article's claims, or any purported release proceeds without the owner checkpoint. The executable checker and the human decisions must be audited together.
+
+### 2026-11-10 addition: reusable classical-logic verifier
+
+- Added `scripts/logic_audit.py`, the structured input example `examples/logic_claims_example.json`, and tests. It enumerates all valuations for each supplied classical propositional inference and distinguishes nonvacuous validity, countermodels to validity, and formally vacuous consequences of contradictory premises.
+- The checker accepts only a small explicit formula grammar and cannot evaluate philosophical translation, premise truth, quantified/modal logic, causal models or physically admissible states. The quality gates, `AGENTS.md`, README and reusable handoff prompt now require evidence of independent interpretation and the correct richer tools for claims outside its scope.
+- Six new logic tests passed along with the six existing prose tests. This is a **workflow check**, not an assertion that every inference in a current article has already been extracted or verified. Protected article material remains private.
