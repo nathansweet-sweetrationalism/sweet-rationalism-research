@@ -35,3 +35,7 @@ This is an evidence-gathering brief, not an instruction to agree with Nathan Swe
 **Completed and directly verified:** WordPress post 2098 content read-back, 29 exact WordPress bodies and deterministic diffs, ZIP CRC/entry hashes, WP media upload receipts, current Yoast canonical/index and GitHub article/metadata/audit exact read-backs; focal paper/source additions and contextual public links; within-WordPress preservation of 51 quoted speaker paragraphs. The article's original permalink still has a retired expression; retain until a verified redirect plan exists.
 
 **Open:** Plugin-specific unlist state; independent live download/visual browser and original transcript checks; new Zenodo version deposit because Zenodo is signed out; any newly proposed reciprocal owner-repository links must meet relevance/authorization thresholds. Explicitly report these as open, not passed.
+
+## Subsequent owner observation
+
+On November 9, 2026 (America/New_York), Nathan Sweet reported: **“post is listed, and is appearing on the site.”** Treat publicly listed status as supported by direct owner observation and the prior signed-out browser `index, follow` check. Still inspect the separate Unlist Posts & Pages checkbox before claiming administrative-state closure. Do not unlist/relist a post that is already visibly listed unless a measured inconsistency requires a specifically authorized fix.
