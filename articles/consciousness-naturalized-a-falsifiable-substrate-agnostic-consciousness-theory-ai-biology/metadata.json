@@ -5,15 +5,15 @@
   "language": "en",
   "canonical_url": "https://sweetrationalism.com/articles/consciousness/consciousness-naturalized-a-falsifiable-substrate-agnostic-consciousness-theory-ai-biology/",
   "candidate_date": "2026-11-10",
-  "status": "substantive_methodology_revision_staged_not_yet_synchronized",
+  "status": "substantive_methodology_revision_published_wordpress_and_zenodo_v1.1.0",
   "wordPress_status_preserved": "publish",
   "wordPress_noindex_preserved": true,
   "article_specific_repository": "https://github.com/nathansweet-sweetrationalism/consciousness-naturalized",
   "article_specific_repository_verified": true,
-  "article_specific_repository_visibility_at_audit": "private",
-  "zenodo_draft_url": "https://zenodo.org/uploads/24119682",
-  "zenodo_version_doi": null,
-  "zenodo_concept_doi": null,
+  "article_specific_repository_visibility_at_audit": "private_pending_github_sudo_reauthentication_to_make_public",
+  "zenodo_record_url": "https://zenodo.org/records/24119682",
+  "zenodo_version_doi": "10.5281/zenodo.24119682",
+  "zenodo_concept_doi": "10.5281/zenodo.24119681",
   "parent_research_repository": "https://github.com/nathansweet-sweetrationalism/sweet-rationalism-research",
   "parent_research_article_path": "articles/consciousness-naturalized-a-falsifiable-substrate-agnostic-consciousness-theory-ai-biology/article.html",
   "prospective_protocol_version": "0.1.0",
@@ -22,5 +22,5 @@
   "source_and_quotation_verification": "author_confirmed_closed_2026-11-10",
   "copyright": "Copyright Nathan Sweet; third-party citations and quotations remain credited to their authors.",
   "interpretive_status": "hypothesis and methodological research program; no established phenomenal identity theorem",
-  "release_prerequisite": "Verify GitHub copies, WordPress complete-content readback and stable links, then archive final edition in existing Zenodo draft; DOI fields remain null until an actual assigned deposit is verified"
+  "release_followup": "Propagate actual DOI links through WordPress and both GitHub copies, verify public GitHub visibility after sudo reauthentication, update current public revision diff and provenance. Archived v1.1.0 ZIP is immutable."
 }
