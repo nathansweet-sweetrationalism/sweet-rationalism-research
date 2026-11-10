@@ -1,0 +1,587 @@
+{
+  "schema": "rcf-prospective-claims-and-rival-comparisons-v1",
+  "version": "0.1.0",
+  "created_on": "2026-11-10",
+  "author": "Nathan Sweet",
+  "canonical_article": "https://sweetrationalism.com/articles/consciousness/consciousness-naturalized-a-falsifiable-substrate-agnostic-consciousness-theory-ai-biology/",
+  "evidential_status": "Prospective research proposals. No study-specific preregistration, recruitment, data collection, ethics approval, power analysis, or empirical confirmation is claimed. Freeze before each decisive dataset.",
+  "protocol_concept": "Joint closure/self-world-action history fingerprint; evaluate comparative increment and separately test phenomenal bridge, never infer it from functional outcomes",
+  "authorization": {
+    "source": "Nathan Sweet, current 2026-11-10 request",
+    "scope": "Authoring public hypotheses and a pre-data protocol proposal, not authorizing interventions on participants"
+  },
+  "globally_prespecified": {
+    "claim_levels": [
+      "functional/control",
+      "state-classifier",
+      "phenomenal-necessity",
+      "phenomenal-sufficiency",
+      "phenomenal-constitution",
+      "problem-form"
+    ],
+    "label_rule": "Candidate C cannot define Y; record label source, blinding, calibration, dependencies, uncertain/no-report cases.",
+    "competitors": [
+      "simple matched history-aware dynamical baseline",
+      "GNWT version predeclared by proponents",
+      "RPT version predeclared by proponents",
+      "HOT/metacognitive model",
+      "IIT specified causal-complex metric",
+      "active-inference/enactive models",
+      "biology-dependent model",
+      "psychophysical-law accompaniment"
+    ],
+    "scoring": "On held-out interventions, Delta=Loss(best frozen rival,Y)-Loss(best rival plus closure-specific C,Y). Positive Delta supports only incremental prediction on Y. Predefine rival selection, information budget, score, complexity adjustment, alpha/multiplicity or uncertainty interval, and minimum meaningful improvement before data.",
+    "model_lock": "Archive implementations, versions, parameter counts, computational resource budgets, and adversarial forecasts before unblinding.",
+    "outputs": "Share all failures, adverse results, missing data, bridge failures, calibration checks, code, negative controls and revised claims; never count correlated measures as independent replications.",
+    "prerequisites_for_actual_registration": [
+      "named participating site/investigators and authorized system",
+      "population/sample frame, inclusion/exclusion",
+      "ethics/safety approvals where required",
+      "intervention parameters, blinding and controls",
+      "sample-size/power/precision justification",
+      "primary and secondary outcomes with units",
+      "construct and label provenance plus measurement error",
+      "analysis code, test/train separation, loss margin",
+      "missing data, deviations, multiplicity and stopping rule",
+      "per-rival written prediction signoff",
+      "timestamped public/registry record before decisive data"
+    ]
+  },
+  "proposals": [
+    {
+      "id": "P1-HYSTERESIS",
+      "status": "proposal",
+      "claim": "Endogenous self-restoration history adds held-out prediction of prespecified human conscious-state evidence after matched present state and history-aware rivals.",
+      "claim_type": "empirical-functional-and-phenomenal-bridge",
+      "boundary": "human participant in approved observational state-transition dataset, NOT all anesthetized persons",
+      "timescale": "within-session transition and cross-session recovery",
+      "rivals": [
+        {
+          "id": "RPOC",
+          "mechanism": "endogenous regeneration contributes beyond generic history"
+        },
+        {
+          "id": "DYN",
+          "mechanism": "matched history-aware neural/drug dynamical model"
+        },
+        {
+          "id": "AI",
+          "mechanism": "active inference with physiological regulation"
+        },
+        {
+          "id": "GNW",
+          "mechanism": "global broadcast with temporal state"
+        }
+      ],
+      "variables": [
+        {
+          "name": "C",
+          "definition": "quantified causal restoration/constraint regeneration",
+          "units": "standardized score",
+          "observation_route": "predeclared intervention-sensitive model, measured independently of Y"
+        },
+        {
+          "name": "Y",
+          "definition": "calibrated state/content evidence with unknown class",
+          "units": "categorical/probability",
+          "observation_route": "blinded instrument and participant report provenance"
+        },
+        {
+          "name": "X",
+          "definition": "drug/arousal, recurrence, broadcast, physiology, history",
+          "units": "mixed",
+          "observation_route": "clinically acquired measurements"
+        }
+      ],
+      "differential_predictions": [
+        {
+          "rival": "RPOC",
+          "outcome": "positive held-out improvement after inclusion C",
+          "contrast": "incremental dependence"
+        },
+        {
+          "rival": "DYN",
+          "outcome": "no additional C increment after full matched dynamical history",
+          "contrast": "generic hysteresis sufficient"
+        },
+        {
+          "rival": "AI",
+          "outcome": "may match RPOC if its endogenous control already represents same mechanism",
+          "contrast": "overlap expected; tie must be recorded"
+        },
+        {
+          "rival": "GNW",
+          "outcome": "may include temporal state and predict the same trajectory; discriminates only if frozen GNW variables and C diverge",
+          "contrast": "explicitly model history and broadcast rather than stipulating a memoryless workspace"
+        }
+      ],
+      "controls": [
+        "Matched drug exposure/arousal; nonconscious sensory controls; amnesia and response checks; autocorrelation guard"
+      ],
+      "held_out_plan": "Lock participants/sites/sessions/transitions and keep intervention classes held out; define temporal leakage gap.",
+      "loss_conditions": [
+        "C adds no stable gain beyond DYN/AI or loss reverses",
+        "measurement labels based on C",
+        "necessary version contradicted by calibrated phenomenality without C"
+      ],
+      "update_rule": "Demote functional increment only on a null calibrated test; constitutive claim remains unsettled until separate bridge; check sensitivity and power.",
+      "provenance": [
+        "Consciousness Naturalized #2115, methods and Part IX",
+        "Section Audit P1",
+        "Private 2026-11-10 methodological audit; prospective reasoning, not observed outcomes"
+      ],
+      "authorization": {
+        "source": "Nathan Sweet, 2026-11-10 request",
+        "scope": "Publish proposal; participant intervention requires separate authorization and review"
+      },
+      "data_status": "No outcome dataset selected or analyzed for this protocol",
+      "unresolved_preregistration_fields": [
+        "sample size and power/precision",
+        "facility or cohort",
+        "exact exposure/manipulation",
+        "outcome instrument reliability",
+        "minimal meaningful effect",
+        "statistical significance/interval",
+        "missingness and exclusion",
+        "independent rival forecast signoff"
+      ],
+      "ethical_notes": "Only ethically existing approved data; never introduce anesthesia for this protocol"
+    },
+    {
+      "id": "P2-DISCONNECTION",
+      "status": "proposal",
+      "claim": "Selective changes in temporally integrated self/world/action regulation predict felt ownership/continuity beyond matched local recurrence, broadcast and sensorimotor controls.",
+      "claim_type": "empirical-phenomenal-aspect",
+      "boundary": "consenting humans in permitted VR/body-ownership or observational lesion paradigms",
+      "timescale": "seconds to hours with follow-up",
+      "rivals": [
+        {
+          "id": "RPOC",
+          "mechanism": "self-restoring perspective-control integration"
+        },
+        {
+          "id": "RPT",
+          "mechanism": "local recurrent content"
+        },
+        {
+          "id": "GNW",
+          "mechanism": "broadcast/global availability"
+        },
+        {
+          "id": "HOT",
+          "mechanism": "higher-order access"
+        },
+        {
+          "id": "ENACT",
+          "mechanism": "sensorimotor predictive control"
+        }
+      ],
+      "variables": [
+        {
+          "name": "C",
+          "definition": "cross-time causal coupling of self-state/memory/value/action",
+          "units": "predeclared graph metric",
+          "observation_route": "independent telemetry/causal intervention"
+        },
+        {
+          "name": "Y",
+          "definition": "ownership, continuity, agency, particular content",
+          "units": "separate ratings/discrimination",
+          "observation_route": "blinded elicitation in distinct channels"
+        },
+        {
+          "name": "X",
+          "definition": "local recurrence, access, task performance, movement",
+          "units": "mixed",
+          "observation_route": "instrumented physiological and behavioral tasks"
+        }
+      ],
+      "differential_predictions": [
+        {
+          "rival": "RPOC",
+          "outcome": "aspect-specific differences follow C even when rival proxies stay within tolerance",
+          "contrast": "joint dependency"
+        },
+        {
+          "rival": "RPT",
+          "outcome": "preserved local content if relevant recurrent activity preserved",
+          "contrast": "local recurrency mechanism"
+        },
+        {
+          "rival": "GNW",
+          "outcome": "preserved broadcast predicts preserved globally accessible target",
+          "contrast": "access mechanism"
+        },
+        {
+          "rival": "ENACT",
+          "outcome": "may also predict contingent feedback effect; shared prediction not discriminator",
+          "contrast": "sensorimotor mechanism"
+        },
+        {
+          "rival": "HOT",
+          "outcome": "specific higher-order representation and confidence predict target awareness; divergence requires matched metarepresentational state",
+          "contrast": "do not equate metacognitive confidence with all experience"
+        }
+      ],
+      "controls": [
+        "Sham feedback, no-change and altered-report controls; counterbalanced order; motion/attention confounds"
+      ],
+      "held_out_plan": "Hold out participants and feedback mappings; preregister target aspect and matched-activity tolerances.",
+      "loss_conditions": [
+        "Target aspect persists after verified loss of C claimed necessary",
+        "matched ENACT/GNW/RPT scores as well or better",
+        "reports change but independent aspect measure does not"
+      ],
+      "update_rule": "Update only aspect-specific necessity or functional credit; do not infer count of phenomenal subjects.",
+      "provenance": [
+        "Consciousness Naturalized #2115, methods and Part IX",
+        "Section Audit P2",
+        "Private 2026-11-10 methodological audit; prospective reasoning, not observed outcomes"
+      ],
+      "authorization": {
+        "source": "Nathan Sweet, 2026-11-10 request",
+        "scope": "Publish proposal; participant intervention requires separate authorization and review"
+      },
+      "data_status": "No outcome dataset selected or analyzed for this protocol",
+      "unresolved_preregistration_fields": [
+        "sample size and power/precision",
+        "facility or cohort",
+        "exact exposure/manipulation",
+        "outcome instrument reliability",
+        "minimal meaningful effect",
+        "statistical significance/interval",
+        "missingness and exclusion",
+        "independent rival forecast signoff"
+      ],
+      "ethical_notes": "Do not diagnose diminished welfare/personhood from ownership scores"
+    },
+    {
+      "id": "P3-CLOSED-LOOP",
+      "status": "proposal",
+      "claim": "Externally corrected replay and truly endogenous self-restoration differ under unanticipated perturbation; a separate human contingent-feedback tier may affect experienced agency/ownership.",
+      "claim_type": "two-tier-engineering-and-human-phenomenology",
+      "boundary": "A: engineered controllers; B: human+VR or approved prosthetic apparatus",
+      "timescale": "A: episode horizon; B: session and adaptation",
+      "rivals": [
+        {
+          "id": "RPOC",
+          "mechanism": "causally endogenous maintenance and recovery"
+        },
+        {
+          "id": "CTRL",
+          "mechanism": "equal-budget robust controller with external scaffolding"
+        },
+        {
+          "id": "IIT",
+          "mechanism": "specified intrinsic causal complex and boundary"
+        },
+        {
+          "id": "ENACT",
+          "mechanism": "participant sensorimotor contingency"
+        },
+        {
+          "id": "GNW",
+          "mechanism": "broadcast/access in human tier"
+        }
+      ],
+      "variables": [
+        {
+          "name": "C",
+          "definition": "intervention-sensitive internally regenerated closure loops",
+          "units": "causal graph/repair time",
+          "observation_route": "ablation/rescue of internal maintenance"
+        },
+        {
+          "name": "F",
+          "definition": "recovery and viability under novel perturbation",
+          "units": "task score/time/resources",
+          "observation_route": "sealed engineering evaluation"
+        },
+        {
+          "name": "Y",
+          "definition": "human reported presence/ownership/agency",
+          "units": "separate calibrated ratings",
+          "observation_route": "blinded human elicitation; no robot phenomenal label"
+        },
+        {
+          "name": "X",
+          "definition": "IIT complex and broadcast/predictive covariates",
+          "units": "declared formal/physiological measures",
+          "observation_route": "proponent-specified computation"
+        }
+      ],
+      "differential_predictions": [
+        {
+          "rival": "RPOC",
+          "outcome": "additional effect of causally active internal repair beyond output equivalence in A; separate Y forecast in B",
+          "contrast": "counterfactual topology"
+        },
+        {
+          "rival": "CTRL",
+          "outcome": "equal performance if external support suffices in the specified task",
+          "contrast": "comparator"
+        },
+        {
+          "rival": "IIT",
+          "outcome": "may agree that causal topology matters; only predeclared boundary disagreement is discriminating",
+          "contrast": "intrinsic causal power"
+        },
+        {
+          "rival": "ENACT",
+          "outcome": "may predict live feedback phenomenology too",
+          "contrast": "human sensorimotor contingency"
+        },
+        {
+          "rival": "GNW",
+          "outcome": "human conscious access predictions track the specified broadcast and can tie RPOC when broadcast changes with feedback",
+          "contrast": "require independently matched broadcast to claim a dissociation"
+        }
+      ],
+      "controls": [
+        "Yoked replay; sham intervention; swapped support; matched resource/latency/output repertoire; positive recovery challenge"
+      ],
+      "held_out_plan": "Hold out perturbation families and apparatus settings; assess A and B with separate preregistered outcomes.",
+      "loss_conditions": [
+        "No causal gain over matched CTRL",
+        "predeclared IIT/ENACT boundary predicts better",
+        "human effects vanish after calibration",
+        "attempt to infer machine feeling from A alone"
+      ],
+      "update_rule": "Retain engineering finding if genuine, regardless of phenomenal bridge; no machine moral status determination.",
+      "provenance": [
+        "Consciousness Naturalized #2115, methods and Part IX",
+        "Section Audit P3",
+        "Private 2026-11-10 methodological audit; prospective reasoning, not observed outcomes"
+      ],
+      "authorization": {
+        "source": "Nathan Sweet, 2026-11-10 request",
+        "scope": "Publish proposal; participant intervention requires separate authorization and review"
+      },
+      "data_status": "No outcome dataset selected or analyzed for this protocol",
+      "unresolved_preregistration_fields": [
+        "sample size and power/precision",
+        "facility or cohort",
+        "exact exposure/manipulation",
+        "outcome instrument reliability",
+        "minimal meaningful effect",
+        "statistical significance/interval",
+        "missingness and exclusion",
+        "independent rival forecast signoff"
+      ],
+      "ethical_notes": "Respect consent and device safety; no unauthorized human intervention"
+    },
+    {
+      "id": "P4-BOUNDARIES",
+      "status": "proposal",
+      "claim": "A preregistered self-restoring control boundary predicts specific human unity-related evidence better than anatomical, broadcast or IIT-complex boundaries where their forecasts differ.",
+      "claim_type": "empirical-boundary-interpretation",
+      "boundary": "human clinical or noninvasive coupling data; not an automatic subject count",
+      "timescale": "event, episode and longitudinal boundary",
+      "rivals": [
+        {
+          "id": "RPOC",
+          "mechanism": "endogenous recovery topology defines candidate boundary"
+        },
+        {
+          "id": "ANAT",
+          "mechanism": "anatomical segmentation"
+        },
+        {
+          "id": "GNW",
+          "mechanism": "broadcast connectivity boundary"
+        },
+        {
+          "id": "IIT",
+          "mechanism": "formal maximum complex"
+        },
+        {
+          "id": "AGN",
+          "mechanism": "subject count remains underdetermined"
+        }
+      ],
+      "variables": [
+        {
+          "name": "B",
+          "definition": "candidate self-restoring control boundary",
+          "units": "typed graph partition",
+          "observation_route": "prospectively calculated from intervention/telemetry"
+        },
+        {
+          "name": "Y",
+          "definition": "calibrated unity/disunity phenomenological indicators",
+          "units": "separate participant outcomes",
+          "observation_route": "protected records and calibrated reports"
+        },
+        {
+          "name": "X",
+          "definition": "rival anatomical/broadcast/IIT boundaries",
+          "units": "declared graph partitions",
+          "observation_route": "predeclared model computations"
+        }
+      ],
+      "differential_predictions": [
+        {
+          "rival": "RPOC",
+          "outcome": "best match to aspect-specific unity outcomes",
+          "contrast": "endogenous topology"
+        },
+        {
+          "rival": "IIT",
+          "outcome": "predictions follow complex boundaries, potentially diverging from RPOC",
+          "contrast": "causal integration"
+        },
+        {
+          "rival": "AGN",
+          "outcome": "no unique subject-count inference even from correlation",
+          "contrast": "interpretive caution"
+        },
+        {
+          "rival": "ANAT",
+          "outcome": "specified anatomical connections predict the unity indicator; any RPOC gain must survive anatomical controls",
+          "contrast": "anatomical boundary not automatically phenomenal subject"
+        },
+        {
+          "rival": "GNW",
+          "outcome": "broadcast-connected units predict unity when broadcast is the intended explanatory variable",
+          "contrast": "contrast only when broadcast and closure partitions differ"
+        }
+      ],
+      "controls": [
+        "Negative controls for network density, anatomy, signal threshold and reporting ability"
+      ],
+      "held_out_plan": "Only select cases in which predeclared boundaries genuinely disagree; hold out facilities or subjects.",
+      "loss_conditions": [
+        "Unreliable C boundary estimation",
+        "IIT/anatomical rival consistently predicts better",
+        "no independent unity label or irreducible ambiguity"
+      ],
+      "update_rule": "Demote predictive boundary claim on matched loss; leave consciousness subject enumeration open if no bridge.",
+      "provenance": [
+        "Consciousness Naturalized #2115, methods and Part IX",
+        "Section Audit P4",
+        "Private 2026-11-10 methodological audit; prospective reasoning, not observed outcomes"
+      ],
+      "authorization": {
+        "source": "Nathan Sweet, 2026-11-10 request",
+        "scope": "Publish proposal; participant intervention requires separate authorization and review"
+      },
+      "data_status": "No outcome dataset selected or analyzed for this protocol",
+      "unresolved_preregistration_fields": [
+        "sample size and power/precision",
+        "facility or cohort",
+        "exact exposure/manipulation",
+        "outcome instrument reliability",
+        "minimal meaningful effect",
+        "statistical significance/interval",
+        "missingness and exclusion",
+        "independent rival forecast signoff"
+      ],
+      "ethical_notes": "Privacy, clinical protections and consent override model-driven subject-number speculation"
+    },
+    {
+      "id": "P5-METAPROBLEM",
+      "status": "proposal",
+      "claim": "Judgments that experience is inexplicable may be sensitive to semantic framing independent of any change in the phenomenally targeted experience; the unitary Hard Problem may lack a positive residual after proper decomposition.",
+      "claim_type": "empirical-metajudgment-plus-philosophical-argument",
+      "boundary": "human survey participants for judgment; philosophical target is a propositional problem-form",
+      "timescale": "trial, repeated reflective judgment, philosophical comparison",
+      "rivals": [
+        {
+          "id": "GENEAL",
+          "mechanism": "cognitive genealogy/semantic framing influences gap judgment"
+        },
+        {
+          "id": "MODAL",
+          "mechanism": "stable modal intuitions with defensible independent inference"
+        },
+        {
+          "id": "UNIT",
+          "mechanism": "unitary Hard Problem has indispensable positive surplus"
+        },
+        {
+          "id": "DECOMP",
+          "mechanism": "component/relation decomposition preserves complete target"
+        }
+      ],
+      "variables": [
+        {
+          "name": "J",
+          "definition": "gap/irreducibility judgment",
+          "units": "Likert or ordinal plus text",
+          "observation_route": "counterbalanced framing and confidence"
+        },
+        {
+          "name": "E",
+          "definition": "reported phenomenal content",
+          "units": "independent narrative",
+          "observation_route": "participant evidence separate from J"
+        },
+        {
+          "name": "R",
+          "definition": "positive nonreconstructible residual",
+          "units": "argument record, nonquantitative",
+          "observation_route": "adversarial expert comparison with stable target"
+        },
+        {
+          "name": "X",
+          "definition": "prior philosophy, language, comprehension and culture",
+          "units": "stratified attributes",
+          "observation_route": "voluntary questionnaire"
+        }
+      ],
+      "differential_predictions": [
+        {
+          "rival": "GENEAL",
+          "outcome": "relevant judgement change with irrelevant framing after comprehension controls",
+          "contrast": "reliability challenge"
+        },
+        {
+          "rival": "MODAL",
+          "outcome": "stable reasons that predict cross-framing calibration",
+          "contrast": "modal reasoning"
+        },
+        {
+          "rival": "UNIT",
+          "outcome": "nonreconstructible joint relation survives adversarial decomposition",
+          "contrast": "positive residual"
+        },
+        {
+          "rival": "DECOMP",
+          "outcome": "no explanatory content lost after all relations restored",
+          "contrast": "conditional problem-form dissolution"
+        }
+      ],
+      "controls": [
+        "Counterbalanced texts; comprehension checks; independent raters; neutral phrasing; preregister culturally appropriate translations"
+      ],
+      "held_out_plan": "Hold out participants and wording sets; separate philosophical expert critique from empirical sample.",
+      "loss_conditions": [
+        "Stable independently grounded modal judgments challenge genealogy",
+        "demonstrated positive residual defeats decomposition",
+        "framing study cannot identify phenomenal state"
+      ],
+      "update_rule": "Changes to J do not alter E by assumption; update genealogy and unitary problem-form separately; no derivation of physicalism.",
+      "provenance": [
+        "Consciousness Naturalized #2115, methods and Part IX",
+        "Section Audit P5",
+        "Private 2026-11-10 methodological audit; prospective reasoning, not observed outcomes"
+      ],
+      "authorization": {
+        "source": "Nathan Sweet, 2026-11-10 request",
+        "scope": "Publish proposal; participant intervention requires separate authorization and review"
+      },
+      "data_status": "No outcome dataset selected or analyzed for this protocol",
+      "unresolved_preregistration_fields": [
+        "sample size and power/precision",
+        "facility or cohort",
+        "exact exposure/manipulation",
+        "outcome instrument reliability",
+        "minimal meaningful effect",
+        "statistical significance/interval",
+        "missingness and exclusion",
+        "independent rival forecast signoff"
+      ],
+      "ethical_notes": "Do not dismiss participants' experiential evidence because of philosophical background"
+    }
+  ]
+}

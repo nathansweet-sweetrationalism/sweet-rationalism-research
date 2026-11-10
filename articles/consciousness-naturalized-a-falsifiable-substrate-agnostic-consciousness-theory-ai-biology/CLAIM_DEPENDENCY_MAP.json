@@ -1,0 +1,111 @@
+{
+  "schema": "claim-dependency-rival-loss-v1",
+  "scope": "Article #2115 at bounded systems and timescales; claims and revision conditions, not final conclusions",
+  "claims": [
+    {
+      "id": "C1",
+      "type": "methodological_norm",
+      "claim": "Accounts of consciousness should face explicit shared measurements, rival comparisons and specified support-loss conditions.",
+      "dependencies": ["C5"],
+      "rival_models": ["conventional-theory-by-theory-review", "simpler-blinded-error-review-protocol"],
+      "discriminating_test": "Blind independent teams to source labels, compare predeclared error detection, correction and out-of-sample performance with equal resources.",
+      "loss_condition": "If a simpler equally resourced method performs as well or better on preregistered valid correction measures, remove any alleged special RCF advantage.",
+      "status": "proposed_operational_protocol"
+    },
+    {
+      "id": "C2",
+      "type": "constitutive_hypothesis",
+      "claim": "Some bounded, differentiated, temporally sustained organization may constitute a perspectival conscious occurrence.",
+      "dependencies": ["C3", "C4", "C5"],
+      "rival_models": ["global-neuronal-workspace", "recurrent-processing", "higher-order", "integrated-information", "biological-realization-sensitive", "agnostic-construct-separation"],
+      "discriminating_test": "Match reporting and task performance across perturbations changing predicted closure properties; independently calibrate awareness, pathology and confounds.",
+      "loss_condition": "Stable, independently calibrated experiential evidence without predicted organization or matched organization with divergent experiential evidence reduces constitutive support; do not claim decisive status for unvalidated markers.",
+      "status": "unverified_conditional_hypothesis"
+    },
+    {
+      "id": "C3",
+      "type": "physical_constraint",
+      "claim": "A proposed physical interaction has implementational thermodynamic costs and boundary-dependent energy/information accounting; this does not imply that each distinction dissipates kT ln 2.",
+      "dependencies": [],
+      "rival_models": ["reversible-logical-processing", "alternative-energy-cost-model", "non-physical-hypothesis-with-explicit-discriminators"],
+      "discriminating_test": "Specify physical transition, logical erasure/reversibility, temperature, units, work/heat channels, measurement boundary and control for implementation-specific costs.",
+      "loss_condition": "Remove a particular Landauer lower-bound inference if the operation is reversible, unmeasured, incorrectly typed or violates the necessary premises.",
+      "status": "bounded_physical_accounting_requirements"
+    },
+    {
+      "id": "C4",
+      "type": "biological_mechanism_hypothesis",
+      "claim": "Organizational closure/constraint regeneration can be measured and may predict selected agency, viability and cognitive capacities.",
+      "dependencies": ["C3"],
+      "rival_models": ["nonclosure-plasticity", "ordinary-network-dynamics", "simple-metabolic-viability", "baseline-behavior-model"],
+      "discriminating_test": "Independent intervention on closure mechanisms with energy-flow controls, viability measurements, held-out transfer tasks and matched simpler baselines.",
+      "loss_condition": "If closure-specific variables fail to improve prediction or causal control over simpler measured mechanisms, compress or drop their special explanatory claim.",
+      "status": "measurable_mechanistic_program_not_phenomenal_identity"
+    },
+    {
+      "id": "C5",
+      "type": "formal_inference_condition",
+      "claim": "Kleiner–Hoel independence and strict-dependence results constrain theory-testing under their respective quantifiers; a lenient middle relation requires physical demonstration.",
+      "dependencies": [],
+      "rival_models": ["formal-substitution-model", "history-dependent-plasticity-restrictions", "measurement-invariance-constraint"],
+      "discriminating_test": "Define the physically realizable substitution space, inference/prediction observables and exact Definition 3.8/Appendix A quantifiers; attempt finite and constructive countermodels.",
+      "loss_condition": "Any universal recovery claim fails if a physically plausible substitution still meets the original theorem premises or if no validated lenient relation is exhibited.",
+      "status": "original_formal_results_respected_bridge_open"
+    },
+    {
+      "id": "C6",
+      "type": "empirical_measurement_limit",
+      "claim": "Behavior, report, perturbational complexity and clinical scales offer fallible evidence at stated scopes, not individually infallible phenomenal meters.",
+      "dependencies": ["C1"],
+      "rival_models": ["marker-identity", "pure-report-verification", "no-report-paradigms"],
+      "discriminating_test": "Test convergent/discrepant measures under no-report paradigms, anesthesia, disorders of consciousness and negative controls; separately validate construct sensitivity and specificity.",
+      "loss_condition": "Revise any marker's confidence if independent dissociations, confounds or failed transport across patient classes show it lacks a claimed necessary or sufficient link.",
+      "status": "measurement_calibration_claim"
+    },
+    {
+      "id": "C7",
+      "type": "measurement_bridge_anti_circularity",
+      "claim": "A candidate closure variable can earn independent phenomenal-marker credit only when it is not already used to construct its own target labels.",
+      "dependencies": ["C2", "C6"],
+      "rival_models": ["circular_marker-defined_classification", "independent_report-based_calibration", "multi-channel-but-dependent_ground_truth"],
+      "discriminating_test": "Predeclare blinded label sources and shared dependencies, then compare marker scores against independent and adversarial labels on held-out interventions.",
+      "loss_condition": "If target labels contain the candidate marker or are not transport-valid, withdraw claims of independent phenomenal corroboration; any separately measured functional result survives.",
+      "provenance": ["Chalmers 1998 author-hosted NCC discussion", "2026-11-10 recursive methodological audit"],
+      "status": "proposed_methodological_requirement"
+    },
+    {
+      "id": "C8",
+      "type": "philosophical_problem_form",
+      "claim": "The hypothesis that the Hard Problem is an additional unitary explanandum loses explanatory support if all constituent questions and necessary relations reconstruct its target without a positive residual.",
+      "dependencies": ["C1"],
+      "rival_models": ["unitary_hard_problem_with_necessary_relation", "irreducible_physical_phenomenal_explanation_requirement", "decomposed_problem_family"],
+      "discriminating_test": "Adversarially enumerate occurrence, character, state, subject, access, labeling, metaproblem, relation, modality and completion, then invite a positive nonreconstructible residual or indispensable joint relation.",
+      "loss_condition": "A demonstrated extra target, necessary irreconstructible relation, or superior explanatory yield of the unitary framing defeats the proposed problem-form dissolution. No empirical consciousness claim automatically changes.",
+      "provenance": ["Chalmers 1997 author-hosted discussion", "2026-11-10 recursive methodological audit"],
+      "status": "proposed_conditional_philosophical_argument"
+    },
+    {
+      "id": "C9",
+      "type": "comparative_functional_prediction",
+      "claim": "A joint measurement of endogenous constraint maintenance, self/world/action coupling, temporal self-restoration and counterfactual control may improve held-out prediction of separately measured human phenomenal aspects or engineering capacities beyond strongest rival versions.",
+      "dependencies": ["C4", "C6", "C7"],
+      "rival_models": ["history-aware_neural_dynamics", "global-neuronal-workspace", "recurrent-processing", "higher-order", "integrated-information", "active-inference", "enactivism", "biological-realization"],
+      "discriminating_test": "Compare the predeclared five prospective protocols, exact rival implementations and boundary forecasts under genuinely held-out perturbations; score only the specified target.",
+      "loss_condition": "No robust improvement over an equal-budget, history-aware and proponent-approved rival on appropriate independent labels removes claimed special functional credit; phenotype-to-feeling bridge remains independently open.",
+      "provenance": ["Part IX 2026-11-10 revision", "PROSPECTIVE_COMPARISON_PROTOCOL_v0.1.0.json"],
+      "status": "prospective_unobserved_hypothesis"
+    },
+    {
+      "id": "C10",
+      "type": "metaproblem_empirical_hypothesis",
+      "claim": "Judgments of irreducibility may vary with semantically irrelevant framing independently of the first-person phenomenon discussed.",
+      "dependencies": ["C6", "C8"],
+      "rival_models": ["reliable_modal_intuition", "stable_philosophical_argument", "semantic_framing_bias"],
+      "discriminating_test": "Predeclare counterbalanced philosophical framings, comprehension checks, participant reasons, test-retest stability and calibration to independent arguments.",
+      "loss_condition": "Stable, independently argued judgments that survive framing controls weaken the genealogy hypothesis; a framing effect never disproves the reality of experience.",
+      "provenance": ["2026-11-10 recursive methodological audit", "Part IX 9.6.8"],
+      "status": "prospective_unobserved_hypothesis"
+    }
+  ],
+  "publication_warning": "Formal satisfiability, citation identity, theory compatibility and an observed clinical correlate each have distinct evidential scope. No automatic promotion across these bridges."
+}
