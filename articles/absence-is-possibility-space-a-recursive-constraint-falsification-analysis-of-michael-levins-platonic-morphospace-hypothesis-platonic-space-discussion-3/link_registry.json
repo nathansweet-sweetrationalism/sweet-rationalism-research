@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "record_type": "typed_link_provenance_with_falsifiable_claim_dependencies",
+  "post_id": 2098,
+  "canonical_source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+  "as_of": "2026-11-10",
+  "curation_rule": "No automatic reciprocal link rings, protected article disclosure or implied scholar endorsement. Claims are provisional and contain loss conditions.",
+  "links": [
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://github.com/nathansweet-sweetrationalism/sweet-rationalism-research/blob/main/articles/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/article.html",
+      "relation": "historical/research-record mirror",
+      "section": "Near-top Research record",
+      "why": "Exact editable source and provenance for researchers and computational audits",
+      "verified": "exact GitHub read-back 2026-11-10",
+      "loss_condition": "If GitHub HTML diverges from WordPress read-back, mark mirror stale and refresh it"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://doi.org/10.5281/zenodo.24095566",
+      "relation": "historical predecessor",
+      "section": "Versions and archives",
+      "why": "Citable immutable v1 checkpoint, not current edition",
+      "verified": "article-specific deposit inspected earlier",
+      "loss_condition": "If record does not match the cited artifact, remove current-edition implication"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://doi.org/10.5281/zenodo.24095565",
+      "relation": "all-version concept DOI",
+      "section": "Versions and archives",
+      "why": "Connects archived release family without conflating historic and current HTML",
+      "verified": "article-specific concept record inspected earlier",
+      "loss_condition": "If concept/version relation is wrong, withdraw link and correct metadata"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://sweetrationalism.com/wp-content/uploads/2026/02/Levin_Morphospace_Complete_Revision_Archive_2026-11-10_v5.zip",
+      "relation": "reconstructs",
+      "section": "Near-top and bottom archive references",
+      "why": "29 exact prior/current WordPress revisions with deterministic diffs and hashes",
+      "verified": "WordPress media receipt and ZIP CRC/checksums",
+      "loss_condition": "If download, CRC or manifest/body SHA fails, demote archive and regenerate"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://sweetrationalism.com/articles/biology/chladni-plate-constraint-framework-alternative-to-platonism-douglas-brash-bioelectric-morphogenesis-attractor-dynamics-vs-platonic-forms/",
+      "relation": "contrasts with",
+      "section": "Constraint dynamics rival",
+      "why": "Operational alternative and rival explanatory commitments",
+      "verified": "previous public page review",
+      "loss_condition": "If destination is unlisted or ceases to address the contrast, remove or replace"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://sweetrationalism.com/articles/biology/michael-levins-xenobots-are-they-real-do-they-prove-physicalism-false-as-he-claims/",
+      "relation": "contrasts with",
+      "section": "Xenobot competence",
+      "why": "Related test of capacity-to-ontology extrapolation",
+      "verified": "previous public page review",
+      "loss_condition": "If that page becomes protected or irrelevant, remove the live link"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://sweetrationalism.com/articles/biology/michael-levin-science-or-pseudoscience-criticism-index/",
+      "relation": "indexes",
+      "section": "Article conclusion",
+      "why": "Route to other critiques and relevant counterarguments",
+      "verified": "previous public page review",
+      "loss_condition": "If page is unlisted or not an accurate index, correct/remove"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://drmichaellevin.org/resources/software.html",
+      "relation": "primary scholar directory",
+      "section": "Relevant research code",
+      "why": "Levin Lab's own catalog of software, distinguishing catalog from endorsement",
+      "verified": "lab-hosted official catalog",
+      "loss_condition": "If site ownership or directory content changes, reverify"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://github.com/betsee/betse",
+      "relation": "implementation/code",
+      "section": "Relevant research code",
+      "why": "Maintained BETSE bioelectric tissue simulation and testable implementation",
+      "verified": "maintained GitHub, BSD-2-Clause",
+      "loss_condition": "If archived, stale, or ownership changes, label status accordingly"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://gitlab.com/betse/betse",
+      "relation": "historical predecessor",
+      "section": "Relevant research code",
+      "why": "Preserves previous repository trail",
+      "verified": "archived GitLab",
+      "loss_condition": "If archival continuity is false, remove predecessor label"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://github.com/santamanicka/BioElectricNetwork",
+      "relation": "implementation/code",
+      "section": "Relevant research code",
+      "why": "Bioelectric network model linked to relevant Manicka and Levin work",
+      "verified": "related repository, GPL-3.0",
+      "loss_condition": "If scholarly authorship or model relation fails, reattribute"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://github.com/santamanicka/ElectricMorphogenesis",
+      "relation": "implementation/code",
+      "section": "Relevant research code",
+      "why": "2025 field-mediated bioelectric prepatterning research code; README/LICENSE conflict warned",
+      "verified": "repo content/ownership inspected, license conflict unresolved",
+      "loss_condition": "Do not reuse/derive code while rights are unresolved"
+    },
+    {
+      "source": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
+      "destination": "https://doi.org/10.3390/jdb13030026",
+      "relation": "supplies evidence to",
+      "section": "Picasso Tadpoles bounded intervention paragraph",
+      "why": "Primary developmental observation, different perturbation and measured premetamorphic time window",
+      "verified": "owner approved source selection; paper inspected",
+      "loss_condition": "Withdraw scope-generalization if paper conditions do not support comparison"
+    }
+  ],
+  "proposals_not_executed": [
+    {
+      "candidate": "Insert backlinks into Levin Lab or other scholars' repositories",
+      "decision": "excluded",
+      "reason": "Outreach/edit requires separate authorization plus independently valuable bug fix, benchmark, reproduction, or source correction"
+    },
+    {
+      "candidate": "Cross-link every owner-controlled repository indiscriminately",
+      "decision": "excluded",
+      "reason": "Indiscriminate rings impair relevance; require explicit claim/context edges and reader utility"
+    },
+    {
+      "candidate": "Create new Zenodo version DOI",
+      "decision": "blocked",
+      "reason": "Zenodo browser signed out; do not invent deposit identifier"
+    },
+    {
+      "candidate": "Claim Unlist Posts & Pages checkbox cleared",
+      "decision": "unverified",
+      "reason": "Admin browser signed out; Yoast setting does not control plugin option"
+    }
+  ]
+}
