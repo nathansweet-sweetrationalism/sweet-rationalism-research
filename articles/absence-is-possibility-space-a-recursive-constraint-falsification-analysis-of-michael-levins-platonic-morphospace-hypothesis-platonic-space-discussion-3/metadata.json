@@ -12,7 +12,7 @@
   "article_specific_doi": "10.5281/zenodo.24095566",
   "article_concept_doi": "10.5281/zenodo.24095565",
   "doi_status": "public Zenodo v1 and concept DOI verified as historical; no updated version DOI deposited",
-  "audit_status": "Article edits complete; exact v5 WordPress revision archive and public media uploaded; remaining independent gates are Unlist Posts & Pages visibility and new Zenodo V2 deposit",
+  "audit_status": "Article, 29-revision archive and GitHub sync complete; public badges/layout and TXT/ZIP access checked. Remaining formal gates: independent plugin checkbox/listing, authenticated Zenodo V2, primary transcript compare.",
   "revision_notes_in_article": true,
   "revision_audit_url": "https://sweetrationalism.com/wp-content/uploads/2026/02/Levin_Morphospace_Revision_Audit_2026-11-10_v5.txt",
   "reconstruction_archive_url": "https://sweetrationalism.com/wp-content/uploads/2026/02/Levin_Morphospace_Complete_Revision_Archive_2026-11-10_v5.zip",
@@ -21,7 +21,7 @@
   "original_pre_audit_body_sha256": "6155128aefd4730641e02901d7cc7924222c272d023ba4d60b27dcf712a90cbf",
   "original_image_retained": true,
   "featured_image_id": 218725671,
-  "noindex_status_at_mirror": "Yoast explicit index setting (2); plugin unlist checkbox not independently verifiable without logged-in WordPress admin; historical browser/robots evidence conflicting",
+  "noindex_status_at_mirror": "Signed-out current page observed index, follow; Yoast index explicitly enabled (2); separate Unlist Posts & Pages checkbox still unverified, do not equate this with post listing",
   "tags": [
     "Bioelectricity",
     "Landauer principle",
@@ -39,7 +39,7 @@
     "Historical speaker statements and chronological debate order preserved"
   ],
   "release_conditions_remaining": [
-    "Confirm the Unlist Posts & Pages checkbox and reset ONLY post 2098 if checked; verify public robots and listing/search-sitemap consistency",
+    "Verify WordPress Unlist Posts & Pages plugin checkbox for post 2098 ONLY; signed-out page currently reports index/follow, but listing/search/sitemap and admin flag remain unverified",
     "Deposit a new Zenodo V2 containing the current v5 archive and approved article, then update visible version DOI/badge without removing historical v1",
     "Perform independent transcript-to-quote and citation metadata comparison if original debate transcript becomes available"
   ],
@@ -109,5 +109,20 @@
       218725723,
       218725722
     ]
-  }
+  },
+  "browser_verification": {
+    "site_robots_meta": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "checked": "2026-11-10",
+    "badge_count": 2,
+    "doi_url_to_badge_breaks": 2,
+    "research_versions_paragraph_gap_px": 0,
+    "public_zip_browser_download_event": true,
+    "public_text_url_load": true,
+    "public_text_characters": 11000,
+    "public_text_contains_final_revision": true,
+    "wordpress_unlist_checkbox": "unverified",
+    "site_content_h1_count": 2
+  },
+  "handoff_file": "articles/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/gemini_antigravity_handoff.md",
+  "link_registry_file": "articles/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/link_registry.json"
 }
