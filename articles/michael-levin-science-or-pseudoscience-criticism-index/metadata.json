@@ -8,7 +8,7 @@
   "canonical_authority": "WordPress",
   "github_source_path": "articles/michael-levin-science-or-pseudoscience-criticism-index/article.html",
   "original_publication_date": "2026-10-06T13:00:12",
-  "last_wordpress_modified": "2026-11-09T15:46:14",
+  "last_wordpress_modified": "2026-11-09T22:04:14",
   "archive_baseline_date": "2026-11-09",
   "article_specific_doi": null,
   "doi_status": "no_article_specific_deposit_verified",
@@ -21,5 +21,29 @@
     "Levin critiques",
     "Michael Levin",
     "Scholarly criticism"
-  ]
+  ],
+  "scholar_repository_links": [
+    {
+      "name": "Levin Lab official software catalogue",
+      "url": "https://drmichaellevin.org/resources/software.html",
+      "relation": "primary lab software source index",
+      "claim_scope": "links to bioelectric modeling implementations; not evidence for Platonic ingression",
+      "source_verified": "2026-11-09"
+    },
+    {
+      "name": "BioElectricNetwork",
+      "url": "https://github.com/santamanicka/BioElectricNetwork",
+      "relation": "lab-linked modeling code",
+      "claim_scope": "somatic bioelectric network simulations; model assumptions and validation require separate appraisal",
+      "source_verified": "2026-11-09"
+    },
+    {
+      "name": "BETSE",
+      "url": "https://gitlab.com/betse/betse",
+      "relation": "bioelectric tissue simulation engine",
+      "claim_scope": "physical modeling alternative for specified test domains; not exhaustive ontology",
+      "source_verified": "2026-11-09"
+    }
+  ],
+  "link_audit_note": "A single primary-code source path was added after the claim/source map; readback matched the WordPress body. This is a connectivity correction, not a newly completed citation-by-citation scientific audit."
 }
