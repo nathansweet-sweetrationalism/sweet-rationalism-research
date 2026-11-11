@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3",
   "post_id": 2098,
-  "title": "Michael Levin’s Platonic Morphospace: The Ingression Challenge and Its Evidence",
+  "title": "Michael Levin\u2019s Platonic Morphospace: The Ingression Challenge and Its Evidence",
   "slug": "absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3",
   "status": "published; Unlist Posts & Pages checkbox unresolved",
   "canonical_url": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
@@ -34,7 +34,7 @@
   ],
   "evidence_status_notes": [
     "Corrected Richter water temperature and population-dependent rat swimming durations",
-    "Corrected bibliographic identifiers and scope for Pinet and Hughes–Preskorn",
+    "Corrected bibliographic identifiers and scope for Pinet and Hughes\u2013Preskorn",
     "Reframed Landauer, Bennett, physical ingressions and programme-level falsification",
     "Historical speaker statements and chronological debate order preserved"
   ],
@@ -151,5 +151,16 @@
     "zip_sha256": "63ea9b31f8ef21c4b11c698e2c3073b87ab30a2a2c49bb38aabd8430dae88621",
     "audit_sha256": "b442b346c659048dca7da7582b770a0aeea68065adfbb32d92ee4d72c71ffdac",
     "file_count": 4
-  }
+  },
+  "wordpress_tags": [
+    "Bioelectricity",
+    "Landauer principle",
+    "Levin critiques",
+    "Michael Levin",
+    "morphogenesis",
+    "philosophy of biology",
+    "Platonic morphospace",
+    "Process philosophy",
+    "scientific falsifiability"
+  ]
 }

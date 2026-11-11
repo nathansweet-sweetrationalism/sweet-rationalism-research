@@ -36,5 +36,15 @@
   "consolidated_history_content_validation": "WordPress media registry and canonical link confirmed; ZIP interior not independently extracted in this tool context",
   "public_revision_diff_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/main/articles/consciousness-naturalized-a-falsifiable-substrate-agnostic-consciousness-theory-ai-biology/public_revision_diff.txt",
   "zenodo_status": "v1.1.0 published; updated reading edition and consolidated archive await authenticated Zenodo new-version deposit",
-  "post_id": 2115
+  "post_id": 2115,
+  "wordpress_tags": [
+    "Artificial Intelligence",
+    "Consciousness",
+    "Falsifiability",
+    "Landauer principle",
+    "Philosophy of Science",
+    "Physicalism",
+    "Scientific Realism",
+    "Thermodynamic Monism"
+  ]
 }
