@@ -1,0 +1,30 @@
+{
+  "id": "doi",
+  "title": "Bibliography DOI source-identity cross-check",
+  "status": "source_verification_required",
+  "upstream_pin": "4bed72c17f09bf336e36e7472e64d457db3b0195",
+  "question": "Compare the exact cited DOI strings against publisher/PubMed metadata by matched article title and author.",
+  "sources": {
+    "bibliography": {
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_ARTICLE.md",
+      "fixture": "4. Claverie, T. & Wainwright P.C. A morphospace for reef fishes [doi:10.1111/evo.12502]\n7. Friedman et al. Body shape diversification along the benthic [doi:10.1093/sysbio/syz029]\n20. Pinet et al. Adaptive correction of craniofacial [doi:10.1242/dev.175950]\n"
+    }
+  },
+  "doi_cases": [
+    {
+      "title_fragment": "A morphospace for reef fishes",
+      "pmid": "25409027",
+      "primary_doi": "10.1371/journal.pone.0112732"
+    },
+    {
+      "title_fragment": "Body shape diversification along the benthic",
+      "pmid": "32693721",
+      "primary_doi": "10.1098/rspb.2020.1053"
+    },
+    {
+      "title_fragment": "Adaptive correction of craniofacial",
+      "pmid": "31253636",
+      "primary_doi": "10.1242/dev.175893"
+    }
+  ]
+}
