@@ -1,18 +1,18 @@
 {
   "schema_version": "1.3",
   "post_id": 2098,
-  "title": "Michael Levin\u2019s Platonic Morphospace: The Ingression Challenge and Its Evidence",
+  "title": "Michael Levin’s Platonic Morphospace: The Ingression Challenge and Its Evidence",
   "slug": "absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3",
   "status": "published; Unlist Posts & Pages checkbox unresolved",
   "canonical_url": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/",
   "canonical_authority": "SweetRationalism.com",
   "github_source_path": "articles/absence-is-possibility-space-a-recursive-constraint-falsification-analysis-of-michael-levins-platonic-morphospace-hypothesis-platonic-space-discussion-3/article.html",
   "original_publication_date": "2026-02-05T16:04:31",
-  "last_wordpress_modified": "2026-11-09T23:46:38",
+  "last_wordpress_modified": "2026-11-11T03:37:15",
   "article_specific_doi": "10.5281/zenodo.24097599",
   "article_concept_doi": "10.5281/zenodo.24095565",
-  "doi_status": "Zenodo v2 published 2026-11-10 with four checksum-confirmed files; v1 and concept DOI retained",
-  "audit_status": "Zenodo v2 published, live WordPress post 2098 revision 218725724 includes v2 DOI/badge; frozen 29-revision ZIP ends with WordPress revision 218725721. Separate Unlist checkbox and independent quote-to-primary-source comparison remain unverified.",
+  "doi_status": "Zenodo v2 frozen deposit retained; November 11 website and GitHub editorial scope corrections have no new DOI deposit",
+  "audit_status": "Zenodo v2 is frozen and preserved. Live WordPress text received a November 11 contextual revision-note clarification after the DOI deposit; this metadata and article.html mirror the newer website edition. The Unlist checkbox and complete primary-quote re-verification remain outside this editorial pass.",
   "revision_notes_in_article": true,
   "revision_audit_url": "https://sweetrationalism.com/wp-content/uploads/2026/02/Levin_Morphospace_Revision_Audit_2026-11-10_v5.txt",
   "reconstruction_archive_url": "https://sweetrationalism.com/wp-content/uploads/2026/02/Levin_Morphospace_Complete_Revision_Archive_2026-11-10_v5.zip",
@@ -34,7 +34,7 @@
   ],
   "evidence_status_notes": [
     "Corrected Richter water temperature and population-dependent rat swimming durations",
-    "Corrected bibliographic identifiers and scope for Pinet and Hughes\u2013Preskorn",
+    "Corrected bibliographic identifiers and scope for Pinet and Hughes–Preskorn",
     "Reframed Landauer, Bennett, physical ingressions and programme-level falsification",
     "Historical speaker statements and chronological debate order preserved"
   ],
@@ -162,5 +162,7 @@
     "Platonic morphospace",
     "Process philosophy",
     "scientific falsifiability"
-  ]
+  ],
+  "last_archive_sync_date": "2026-11-11",
+  "last_audit_note": "2026-11-11: narrowed historical revision-note characterizations to distinguish the original target (causal ingression), genuinely overbroad Landauer phrasing, and the interaction/accounting question; current WordPress text is newer than Zenodo v2 frozen release."
 }
