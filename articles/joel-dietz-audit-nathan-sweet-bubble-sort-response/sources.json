@@ -1,0 +1,63 @@
+{
+  "schema": "sweet-rationalism-audit-sources/v1",
+  "date": "2026-11-11",
+  "status": "prerelease_methods_only",
+  "canonical_site": "https://sweetrationalism.com/?p=218725796",
+  "repo": "nathansweet-sweetrationalism/sweet-rationalism-research",
+  "upstream_repo": "fractastical/morpholib",
+  "upstream_pin": "4bed72c17f09bf336e36e7472e64d457db3b0195",
+  "tests": {
+    "validator": {
+      "paths": [
+        "sorting-morphogenesis/validate_kymograph_and_paper.py",
+        "sorting-morphogenesis/figures/zhang_2025_validation_benchmarks.csv"
+      ],
+      "wp_zip": "RCF-Dietz-Test-01-verification-label-2026-11-11.zip"
+    },
+    "xenobot": {
+      "paths": [
+        "docs/SUBSTACK_LEVIN_LATENT_SPACE_CLAIMS.md",
+        "models/2020-kriegman-xenobot-evolutionary-biobots.py"
+      ],
+      "wp_zip": "RCF-Dietz-Test-02-xenobot-angle-2026-11-11.zip"
+    },
+    "tadpole": {
+      "paths": [
+        "models/2019-bischof-xenopus-craniofacial-remap.py"
+      ],
+      "wp_zip": "RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11.zip"
+    },
+    "score": {
+      "paths": [
+        "docs/SUBSTACK_LEVIN_LATENT_SPACE_ARTICLE.md",
+        "docs/ERRATA_AND_REFEREE_AUDIT_LOG.md",
+        "docs/media/make_claim_aggregation.py"
+      ],
+      "wp_zip": "RCF-Dietz-Test-04-score-arithmetic-2026-11-11.zip"
+    },
+    "ports": {
+      "paths": [
+        "sorting-morphogenesis/verify_multilang_ports.py",
+        "sorting-morphogenesis/REPLICATION_AND_PORT_GUIDE.md"
+      ],
+      "wp_zip": "RCF-Dietz-Test-05-port-assertion-scope-2026-11-11.zip"
+    },
+    "authorship": {
+      "paths": [
+        "sorting-morphogenesis/render_13yo_illustrations.py"
+      ],
+      "wp_zip": "RCF-Dietz-Test-06-authorship-denominator-2026-11-11.zip"
+    },
+    "doi": {
+      "paths": [
+        "docs/SUBSTACK_LEVIN_LATENT_SPACE_ARTICLE.md"
+      ],
+      "pmids": [
+        "25409027",
+        "32693721",
+        "31253636"
+      ],
+      "wp_zip": "RCF-Dietz-Test-07-bibliography-doi-2026-11-11.zip"
+    }
+  }
+}
