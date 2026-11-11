@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "post_id": 218725528,
-  "title": "The Chladni Plate Challenge to Michael Levin\u2019s Biological Platonism",
+  "title": "Douglas Brash’s Chladni Plate Challenge to Michael Levin’s Biological Platonism",
   "slug": "michael-levin-biological-platonism-chladni-plate-challenge",
   "status": "published_and_indexable",
   "canonical_url": "https://sweetrationalism.com/articles/biology/bioelectricity-morphogenesis/michael-levin-biological-platonism-chladni-plate-challenge/",
   "canonical_authority": "WordPress",
   "github_source_path": "articles/michael-levin-biological-platonism-chladni-plate-challenge/article.html",
   "original_publication_date": "2026-11-09T00:01:00",
-  "last_wordpress_modified": "2026-11-09T15:45:49",
+  "last_wordpress_modified": "2026-11-11T03:37:13",
   "archive_baseline_date": "2026-11-09",
   "article_specific_doi": null,
   "doi_status": "no_article_specific_deposit_verified",
@@ -25,5 +25,7 @@
     "Levin critiques",
     "Michael Levin",
     "Planarian regeneration"
-  ]
+  ],
+  "last_archive_sync_date": "2026-11-11",
+  "last_audit_note": "2026-11-11: clarified the burden of an added Platonic cause without implying Brash owes a completed universal model; mirrored current canonical HTML after reconciling preexisting GitHub drift."
 }
