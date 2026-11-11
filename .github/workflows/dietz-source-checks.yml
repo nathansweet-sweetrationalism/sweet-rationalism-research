@@ -1,0 +1,29 @@
+name: Dietz article source-check fixture self-tests
+
+on:
+  push:
+    paths:
+      - 'articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/**'
+      - '.github/workflows/dietz-source-checks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-check-fixtures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Fixture-only checks (NOT primary-source verification)
+        shell: bash
+        working-directory: articles/joel-dietz-audit-nathan-sweet-bubble-sort-response
+        run: |
+          set -euo pipefail
+          python --version
+          for test in validator xenobot tadpole score ports authorship doi; do
+            echo "Fixture smoke test: $test"
+            python audit.py --selftest --config "test-data/$test.json"
+          done
