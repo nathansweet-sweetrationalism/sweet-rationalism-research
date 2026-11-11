@@ -12,20 +12,26 @@
         "sorting-morphogenesis/validate_kymograph_and_paper.py",
         "sorting-morphogenesis/figures/zhang_2025_validation_benchmarks.csv"
       ],
-      "wp_zip": "RCF-Dietz-Test-01-verification-label-2026-11-11.zip"
+      "wp_zip": "RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+      "github_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+      "wp_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip"
     },
     "xenobot": {
       "paths": [
         "docs/SUBSTACK_LEVIN_LATENT_SPACE_CLAIMS.md",
         "models/2020-kriegman-xenobot-evolutionary-biobots.py"
       ],
-      "wp_zip": "RCF-Dietz-Test-02-xenobot-angle-2026-11-11.zip"
+      "wp_zip": "RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+      "github_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+      "wp_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip"
     },
     "tadpole": {
       "paths": [
         "models/2019-bischof-xenopus-craniofacial-remap.py"
       ],
-      "wp_zip": "RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11.zip"
+      "wp_zip": "RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+      "github_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+      "wp_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip"
     },
     "score": {
       "paths": [
@@ -33,20 +39,26 @@
         "docs/ERRATA_AND_REFEREE_AUDIT_LOG.md",
         "docs/media/make_claim_aggregation.py"
       ],
-      "wp_zip": "RCF-Dietz-Test-04-score-arithmetic-2026-11-11.zip"
+      "wp_zip": "RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+      "github_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+      "wp_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip"
     },
     "ports": {
       "paths": [
         "sorting-morphogenesis/verify_multilang_ports.py",
         "sorting-morphogenesis/REPLICATION_AND_PORT_GUIDE.md"
       ],
-      "wp_zip": "RCF-Dietz-Test-05-port-assertion-scope-2026-11-11.zip"
+      "wp_zip": "RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+      "github_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+      "wp_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip"
     },
     "authorship": {
       "paths": [
         "sorting-morphogenesis/render_13yo_illustrations.py"
       ],
-      "wp_zip": "RCF-Dietz-Test-06-authorship-denominator-2026-11-11.zip"
+      "wp_zip": "RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+      "github_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+      "wp_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip"
     },
     "doi": {
       "paths": [
@@ -57,7 +69,11 @@
         "32693721",
         "31253636"
       ],
-      "wp_zip": "RCF-Dietz-Test-07-bibliography-doi-2026-11-11.zip"
+      "wp_zip": "RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+      "github_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+      "wp_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip"
     }
-  }
+  },
+  "github_package_commit": "7eeb8ccd1f7b4d81186340b62ef300cfacdee14f",
+  "retrieval_policy": "Agent automatically downloads test-specific ZIP from commit-pinned GitHub URL; on failure tries matching WordPress URL; if both inaccessible, use versioned source files where available or report UNRESOLVED."
 }
