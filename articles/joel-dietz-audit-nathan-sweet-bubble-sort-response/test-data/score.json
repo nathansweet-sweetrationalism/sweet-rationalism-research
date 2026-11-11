@@ -1,0 +1,13 @@
+{
+  "id": "score",
+  "title": "Score arithmetic and denominator sensitivity",
+  "status": "source_verification_required",
+  "upstream_pin": "4bed72c17f09bf336e36e7472e64d457db3b0195",
+  "question": "How does the graphic compute its displayed mean, and how sensitive is it to inclusion of claims?",
+  "sources": {
+    "generator": {
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/media/make_claim_aggregation.py",
+      "fixture": "TILES = [\n(\"a\",\"1\",\"Frozen\",\"66.7%\"),\n(\"b\",\"2\",\"Rulers\",\"13.5%\"),\n(\"c\",\"3\",\"Clustering\",\"86.5%\"),\n(\"d\",\"4\",\"Thompson\",\"96.1%\"),\n(\"e\",\"5\",\"Planarian\",\"95.0%\"),\n(\"f\",\"6\",\"Tadpole\",\"95.0%\"),\n(\"g\",\"7\",\"Xenobot\",\"90.1%\"),\n]\nMEAN = \"77.6%\"\n"
+    }
+  }
+}
