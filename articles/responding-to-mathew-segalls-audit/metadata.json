@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "post_id": 214297886,
-  "title": "Responding to Matthew Segall\u2019s \u201cAudit\u201d: An Audit of the Audit of the Audits (LOL, ok, maybe this is getting a bit off the rails now\ud83e\udd23)",
+  "title": "Responding to Matthew Segall’s “Audit”: An Audit of the Audit of the Audits (LOL, ok, maybe this is getting a bit off the rails now🤣)",
   "slug": "responding-to-mathew-segalls-audit",
   "status": "published_and_indexable",
   "canonical_url": "https://sweetrationalism.com/articles/epistemology/responding-to-mathew-segalls-audit/",
   "canonical_authority": "WordPress",
   "github_source_path": "articles/responding-to-mathew-segalls-audit/article.html",
   "original_publication_date": "2026-09-05T15:19:10",
-  "last_wordpress_modified": "2026-11-09T15:44:56",
+  "last_wordpress_modified": "2026-11-11T03:54:17",
   "archive_baseline_date": "2026-11-09",
   "article_specific_doi": null,
   "doi_status": "no_article_specific_deposit_verified",
@@ -23,5 +23,7 @@
     "Philosophy of Science",
     "Process philosophy",
     "Scholarly criticism"
-  ]
+  ],
+  "last_archive_sync_date": "2026-11-11",
+  "last_audit_note": "2026-11-11: dated revision note clarifies historical Landauer shorthand in preserved dialogue without altering quoted exchange or demanding a fixed cost for each distinction."
 }
