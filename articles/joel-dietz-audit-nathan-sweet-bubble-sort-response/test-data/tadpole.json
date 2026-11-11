@@ -1,0 +1,13 @@
+{
+  "id": "tadpole",
+  "title": "Tadpole supplied target",
+  "status": "source_verification_required",
+  "upstream_pin": "4bed72c17f09bf336e36e7472e64d457db3b0195",
+  "question": "Does the model load target landmarks from fixed input, and what does a target-change test establish?",
+  "sources": {
+    "model": {
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/models/2019-bischof-xenopus-craniofacial-remap.py",
+      "fixture": "def closed_loop_attractor_rhs(\n    X: np.ndarray,\n    X_star: np.ndarray,\n    K: np.ndarray,\n    C: np.ndarray,\n    eta_mmp: float,\n):\n    diff = X - X_star\n    homing = -K[:, None] * diff\n    x_star = np.array(params[\"target_nf65_landmarks\"], dtype=float)\n"
+    }
+  }
+}
