@@ -1,0 +1,17 @@
+{
+  "id": "xenobot",
+  "title": "Xenobot angle and programmed peak",
+  "status": "source_verification_required",
+  "upstream_pin": "4bed72c17f09bf336e36e7472e64d457db3b0195",
+  "question": "Is the source narrative's 105° angle consistent with the programmed efficiency peak or a different angle convention?",
+  "sources": {
+    "claim": {
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_CLAIMS.md",
+      "fixture": "Both of our fluid simulations find the same angle: `105°` is where capture works."
+    },
+    "model": {
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/models/2020-kriegman-xenobot-evolutionary-biobots.py",
+      "fixture": "eta_sweep = 6.0 + 12.5 * np.exp(-(((theta_deg - 65.0) / 26.0) ** 2))\nspill_penalty = np.where(theta_deg > 85.0, np.exp(-(((theta_deg - 85.0) / 38.0) ** 2)), 1.0)\n"
+    }
+  }
+}
