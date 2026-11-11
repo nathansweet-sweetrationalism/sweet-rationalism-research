@@ -1,0 +1,13 @@
+{
+  "id": "validator",
+  "title": "Validator labels and negative control",
+  "status": "source_verification_required",
+  "upstream_pin": "4bed72c17f09bf336e36e7472e64d457db3b0195",
+  "question": "Is VERIFIED computed from benchmark error or assigned unconditionally? Keep the synthetic 900% control separate from the source data.",
+  "sources": {
+    "validator": {
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/validate_kymograph_and_paper.py",
+      "fixture": "\"relative_error_pct\": round(34.11, 2),\n\"status\": \"VERIFIED\",\n"
+    }
+  }
+}
