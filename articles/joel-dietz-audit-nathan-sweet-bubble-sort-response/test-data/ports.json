@@ -1,0 +1,13 @@
+{
+  "id": "ports",
+  "title": "Scope of cross-language asserts",
+  "status": "source_verification_required",
+  "upstream_pin": "4bed72c17f09bf336e36e7472e64d457db3b0195",
+  "question": "Which actual arrays and benchmark tables are compared? Do not infer the absence of other tests without a repo-wide search.",
+  "sources": {
+    "verifier": {
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/verify_multilang_ports.py",
+      "fixture": "assert cpp_data[\"kymograph_n42\"][\"selection_final_values\"] == js_data[\"kymograph_n42\"][\"selection_final_values\"] == py_kymo[\"selection\"][\"final_values\"], \"Selection mismatch\"\nassert cpp_data[\"benchmarks\"] == js_data[\"benchmarks\"], \"C++20 vs Node.js benchmark mismatch!\"\n"
+    }
+  }
+}
