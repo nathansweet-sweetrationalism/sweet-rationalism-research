@@ -58,7 +58,7 @@ This archive was assembled in a Claude Code session running Claude Sonnet 5.5 (A
 
 The article has 14 expandable instruction panels: 7 test types, each shown twice (a short placement near the top and a fuller one in the analysis). Within each pair the copyable prompt text is byte-identical (checked by SHA-256), so there are 7 unique prompts and 7 unique packages.
 
-Candidate: WordPress raw body SHA-256 `ec6bf0953965399e6949a3023c738eb6aadf41e904df1210863dc7c4b151975a`, modified 2026-11-12T00:49:08 (site local time). Receipts are in `evidence/`; the date of the runs is 2026-11-12 UTC.
+Candidate: WordPress raw body SHA-256 `c47a2c0736cfd4f90203e6ff5fb467c4dee0bf0f88999a2fa4fc61c561c33a01`, modified 2026-11-12T01:00:29 (site local time). Receipts are in `evidence/`; the date of the runs is 2026-11-12 UTC.
 
 | Test | Package ZIP SHA-256 (GitHub = WordPress) | Live run of `audit.py --live` | Self-test (fixture only) | Independent second implementation |
 |---|---|---|---|---|
@@ -188,6 +188,9 @@ Point 1 was addressed at the owner's request on 2026-11-12 by rewording rather t
 
 ## Evidence-retention check against all 58 saved revisions
 Run with `scripts/evidence_retention_audit.py`, each revision as the original and the candidate as the new text (`evidence/evidence_retention_all_revisions.json`). Finding: three DOIs that appear in earlier revisions are absent now. They are the corrected targets for two further wrong DOIs in Dietz's materials that earlier drafts reported. Vandenberg et al. 2012: the printed DOI 10.1016/j.ydbio.2012.01.027 resolves to an integrin paper, and the correct one is 10.1002/dvdy.23770. Pietak and Levin 2016: the printed 10.3389/fphys.2016.00178 resolves to a Kv1.3 mitochondria paper, and the correct one is 10.3389/fbioe.2016.00055. I confirmed both mismatches against Crossref and the pinned companion. The article had kept three. At the owner's instruction both were restored on 2026-11-12 with correct references (the third dropped DOI, Pezzulo and Levin 2015, checks out and was correctly removed).
+
+## Later change: Bottom line, deck and typed-in section (2026-11-12)
+At the owner's request the Bottom line was rewritten to list the main discrepancies compactly (721 characters), the opening deck was cut to its headline and question, and a short section was added that defines typed-in and stipulated results with a four-row table (validator label, 77.6% display string, 65-degree stipulated peak, supplied tadpole target) and notes that the first version of the test script has the same kind of fixed line. No source or number changed.
 
 
 ---
