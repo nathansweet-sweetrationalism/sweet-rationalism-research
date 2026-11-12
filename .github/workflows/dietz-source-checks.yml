@@ -34,5 +34,7 @@ jobs:
 
       - name: Opening metadata and Bottom line regression tests
         run: python3 -m unittest discover -s tests -p test_bottom_line_gate.py -v
+      - name: Verify MailPoet deep links and collapsed panels
+        run: python3 -m unittest discover -s tests -p test_mailpoet_deep_links.py -v
       - name: Actual published article opening-order gate
         run: python3 scripts/bottom_line_gate.py articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/article.html --json
