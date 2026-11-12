@@ -36,6 +36,19 @@ class MailPoetDeepLinkTests(unittest.TestCase):
         self.assertFalse(any(re.search(r'\bopen(?:\s|>|=)', s) for s in detail_starts),
                          "All instruction panels should remain collapsed until opened")
 
+    def test_opening_archive_metadata_retains_both_inline_doi_badges(self):
+        marker = '<p class="sr-citation-and-archives"'
+        self.assertEqual(self.body.count(marker), 1)
+        opening = self.body.split(marker, 1)[1].split("</p>", 1)[0]
+        self.assertEqual(opening.count('<img '), 2)
+        self.assertNotIn("<br", opening)
+        self.assertEqual(opening.count('class="sr-doi-badge"'), 2)
+        for doi in ("10.5281/zenodo.24151128", "10.5281/zenodo.24151127"):
+            self.assertIn("https://doi.org/" + doi, opening)
+            self.assertIn("https://zenodo.org/badge/DOI/" + doi + ".svg", opening)
+            self.assertIn('alt="DOI: ' + doi + '"', opening)
+        self.assertIn("display:inline !important", opening)
+
     def test_existing_opening_citation_doi_and_bottom_line_order(self):
         positions = [self.body.index(marker) for marker in (
             "<strong>Cite as:</strong>", "<strong>Versions and archives:</strong>",
