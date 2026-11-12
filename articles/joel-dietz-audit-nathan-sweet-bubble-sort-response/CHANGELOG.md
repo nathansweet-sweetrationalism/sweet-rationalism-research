@@ -11,3 +11,8 @@ The copyable instructions in the 14 test panels now name the real command and st
 ## 12 November 2026, after publication
 
 The Zenodo record was published by the owner (version DOI 10.5281/zenodo.24151128, concept DOI 10.5281/zenodo.24151127). After publication the live WordPress article gained one additive block under its image note: a formatted citation line and a Versions and archives line (both DOIs, Zenodo record, this GitHub folder). The block is saved as `doi/POST_PUBLICATION_CITATION_BLOCK.html`. Nothing else in the article changed, so the live article equals the deposited `article/article.html` plus that block. The deposited archive, its `metadata.json` (which still records the DOI as reserved at the time of deposit) and `article.html` in this folder are the as-deposited copies and were not altered. A published snapshot of the Zenodo record is in `doi/ZENODO_PUBLISHED_RECORD_2026-11-12.json`.
+
+
+## 12 November 2026, post-publication metadata ordering
+
+At the owner's request, moved the existing `Cite as:` and `Versions and archives:` Gutenberg paragraphs from **below** the `Bottom line.` paragraph to **above** it, directly after the opening italic deck. Text, DOI URLs, both official badge images, licence, source links and changelog link were preserved; no argument or source claim was revised. WordPress post 218725796 remains published. Authenticated readback modified 2026-11-12T13:08:10 site time; current full raw body SHA-256: `70f5e521e39984172fd6033397b5bb56b5221f7bfba1199fa37609c902b47fc9`. Top-level `article.html` now tracks that exact live body. The Zenodo 1.0.0 deposited files remain immutable and represent the earlier archived edition; the current site edition is not claimed byte-identical to that deposit.
