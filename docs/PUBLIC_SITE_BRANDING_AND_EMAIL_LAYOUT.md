@@ -21,7 +21,7 @@ Applies to public Sweet Rationalism website articles, pages, excerpts, email new
 - Use a small **GitHub mark**, rendered automatically by site-wide CSS as an **accessible-decorative pseudo-element** in front of ordinary direct `https://github.com/` links, using a self-contained SVG mask and `currentColor`. There is no portable Unicode character that is the actual GitHub mark; do not prepend substitute emoji or manually edit every anchor.
 - Preserve the anchor's readable text, actual URL, keyboard operation and accessible name. Do not add a duplicate icon for a link already containing its own GitHub branding; opt out of the CSS with `class="sr-no-github-icon"`. The icon is decorative; it does not replace textual link context.
 - CSS is site-specific. It does not automatically appear in newsletters or feed readers, which often discard site CSS. Do not rely on the mark for meaning.
-- Implemented as scoped public-site Code Snippets entry **#119**, active at the time of writing. No external icon CDN or font required.
+- Implemented in the Sweet Rationalism website's **persistent Additional CSS** (stylesheet setting, recorded revision 218725935 on 2026-11-12); the original site-scoped snippet **#119 was deactivated** after browsers did not see its injected style. No external icon CDN or font required. The Additional CSS copy was read back and confirmed to contain the `github.com` selector and SVG mask; a signed-out computed-style/visual check is still required before calling it fully verified.
 
 ## 3. DOI badges on the website vs in email
 
