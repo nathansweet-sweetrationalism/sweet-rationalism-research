@@ -49,11 +49,9 @@ def main():
         r["has_verify_py"] = "verify.py" in names
         r["has_PROMPT_md"] = "PROMPT.md" in names
         if "audit.py" in names:
-            r["bundled_audit_equals_repo_audit"] = z.read(names["audit.py"]).replace(b"
-", b"
-") == repo_audit.replace(b"
-", b"
-")  # newline-normalized: Windows checkouts convert LF to CRLF
+            norm = lambda b: b.replace(bytes([13, 10]), bytes([10]))  # Windows checkouts convert LF to CRLF
+            r["bundled_audit_equals_repo_audit"] = norm(z.read(names["audit.py"])) == norm(repo_audit)
+            r["bundled_audit_sha256"] = sha(z.read(names["audit.py"]))
         if "test.json" in names:
             a = json.loads(z.read(names["test.json"])); b = json.loads((art / "test-data" / f"{tid}.json").read_text(encoding="utf-8"))
             r["bundled_test_json_equals_repo_test_data"] = a == b

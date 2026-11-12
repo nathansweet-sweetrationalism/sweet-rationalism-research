@@ -1,4 +1,14 @@
-  File "C:\Users\micom\OneDrive\Documents\sweetrationalism\scratch\repos\srr-audit-claude-fable-20261112T0220Z\articles\joel-dietz-audit-nathan-sweet-bubble-sort-response\audits\agents\claude-fable-20261112T0220Z\scripts\package_check.py", line 52
-    r["bundled_audit_equals_repo_audit"] = z.read(names["audit.py"]).replace(b"
-                                                                             ^
-SyntaxError: unterminated string literal (detected at line 52)
+Traceback (most recent call last):
+  File "C:\Users\micom\OneDrive\Documents\sweetrationalism\scratch\repos\srr-audit-claude-fable-20261112T0220Z\articles\joel-dietz-audit-nathan-sweet-bubble-sort-response\audits\agents\claude-fable-20261112T0220Z\scripts\package_check.py", line 91, in <module>
+    main()
+  File "C:\Users\micom\OneDrive\Documents\sweetrationalism\scratch\repos\srr-audit-claude-fable-20261112T0220Z\articles\joel-dietz-audit-nathan-sweet-bubble-sort-response\audits\agents\claude-fable-20261112T0220Z\scripts\package_check.py", line 59, in main
+    if d.exists(): shutil.rmtree(d)
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\micom\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 787, in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\micom\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 638, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "C:\Users\micom\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 636, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\micom\\OneDrive\\Documents\\sweetrationalism\\scratch\\private\\dietz-claude-fable-20261112T0220Z\\pkgwork\\validator'
