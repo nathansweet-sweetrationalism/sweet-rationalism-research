@@ -98,7 +98,7 @@
       "group": "Archives & reproducibility",
       "label": "Public UTF-8 audit TXT, full reconstruction ZIP, checksums and verified download links",
       "state": "partial",
-      "evidence": "2026-11-12: release candidate built and verified locally on article sha256 38fff624... (live, with the replacement hero image and the reserved DOI link): main archive (106 files, sha256 9be65f0ef01ddfe7d454eb45d92e36e4252bc612df38b9d06a3c1a1c8a5acc03), history ZIP (136 files, sha256 71c01792237f7ed6b6947482c868eb1dbccd42cf8de37e9f33af373fc477861b), audit TXT (sha256 790d29ea8b20940e384be043fd16a7620cf646b44c408852b09440c42aeb0a67). Fresh extraction: 0 checksum mismatches. Uploaded to the unpublished Zenodo draft 24151128 only."
+      "evidence": "2026-11-12: release candidate built and verified locally on article sha256 38fff624... (live, with the replacement hero image and the reserved DOI link): main archive (106 files, sha256 ac8f507980374b32cae371f9e54b3e2c9ab6d645efb37db42be445b4bb070e7d), history ZIP (136 files, sha256 71c01792237f7ed6b6947482c868eb1dbccd42cf8de37e9f33af373fc477861b), audit TXT (sha256 e72f2ae5967c22f0b9fd85c11d557cd9bb39164f189313c0c5ff2fe017682044). Fresh extraction: 0 checksum mismatches. Uploaded to the unpublished Zenodo draft 24151128 only."
     },
     {
       "id": "github_snapshot",
