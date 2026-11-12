@@ -32,3 +32,6 @@ The article text changed again (never-made wording, journal-quoted Zhang sentenc
 
 ## Update 8: files swapped to the final candidate with the compact Bottom line and typed-in section (still unpublished)
 Published raw body SHA-256 c47a2c0736cfd4f90203e6ff5fb467c4dee0bf0f88999a2fa4fc61c561c33a01. Draft 24151128 now holds: joel-dietz-response-1.0.0.zip 353,026 bytes md5 7de818289ffb380ad9e29d441b513481; joel-dietz-response-history-1.0.0.zip 2,210,946 bytes md5 342b3a3072a706d8d85bf3f73b80cc41; joel-dietz-response-audit-1.0.0.txt 27,023 bytes md5 e8e4c6282c9716b8f9da5669be598a74 (size and MD5 match the GitHub copies). Metadata and five related works re-read intact. Not published.
+
+## Update 9: files swapped to the version with the image note (still unpublished)
+Published raw body SHA-256 77ea9112229ae2e6454f8fb8b1e252e8f528a614ad14eb6d609ea816587db3b3. Draft 24151128 holds: joel-dietz-response-1.0.0.zip 353,938 bytes md5 d8a495b099d513d0e0f012b243b64c84; joel-dietz-response-history-1.0.0.zip 2,261,376 bytes md5 a379e10baab1ea32b177c13ac3e84b37; joel-dietz-response-audit-1.0.0.txt 27,395 bytes md5 5ec6f64badfc3e6c1dfa57bf7b649e52 (match the GitHub copies). Metadata and five related works intact. Not published.
