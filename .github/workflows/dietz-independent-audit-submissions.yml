@@ -1,6 +1,10 @@
 name: Joel Dietz independent audit submission checks
 
 on:
+  push:
+    paths:
+      - 'articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/agents/**'
+      - '.github/workflows/dietz-independent-audit-submissions.yml'
   pull_request:
     paths:
       - 'articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/audits/agents/**'
@@ -17,6 +21,8 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+      - name: Validate audit coordinator script syntax
+        run: python3 -m py_compile articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/agents/validate_submission.py
       - name: Validate submitted run directories (metadata, evidence coverage and hashes only)
         working-directory: articles/joel-dietz-audit-nathan-sweet-bubble-sort-response
         shell: bash
