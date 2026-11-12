@@ -34,8 +34,8 @@
       "id": "source_ledger",
       "group": "Evidence & analysis",
       "label": "Final per-claim primary-source, exact-quotation and DOI verification ledger",
-      "state": "partial",
-      "evidence": "One attribution/quotation issue reconciled against published Substack subtitle and two pinned source files: audits/coordinator/2026-11-12-reductionist-attribution-adjudication.md. Other primary-paper passage checks and mathematical/model support remain open."
+      "state": "done",
+      "evidence": "Author attestation on 2026-11-11 America/Detroit: Nathan Sweet completed all primary-source verifications himself and authorized moving to the DOI preparation stage. Provenance: author sign-off, not independent replication of every source check. Original remaining mathematical, live-source code, and formal validation duties stay on their separate gates."
     },
     {
       "id": "executable_live",
@@ -112,7 +112,7 @@
       "group": "Archives & reproducibility",
       "label": "Article-specific Zenodo concept DOI and immutable version DOI verified",
       "state": "open",
-      "evidence": "No article DOI deposit yet; requires closed quality gate and owner signoff"
+      "evidence": "DOI stage authorized for preparation after author source sign-off; exact deposit/archives, final release checks and registered DOI still pending. Do not represent a reserved DOI as registered."
     },
     {
       "id": "owner",
@@ -156,6 +156,10 @@
     {
       "date": "2026-11-12",
       "event": "WordPress #218725796 remains draft. At local modified 2026-11-11 22:21:52, one precision edit changed 'while naming me as his only critic' to 'while I am the only critic individually named in his article and companion.' This avoids claiming Dietz asserted he had no other critics. No test block or release status changed."
+    },
+    {
+      "date": "2026-11-11",
+      "event": "Author confirmed all primary-source verifications personally and authorized DOI-stage work. Source ledger accepted as author-attested; outstanding independent computational, mathematical, archive and publication gates remain separate. No DOI registration or public release is implied."
     }
   ]
 }
