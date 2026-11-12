@@ -163,7 +163,7 @@ def validate(folder):
         recorded[relative] = digest
         if hashlib.sha256(target.read_bytes()).hexdigest() != digest:
             fail("SHA-256 mismatch: " + relative)
-    if {str(p.relative_to(folder)) for p in files} != set(recorded):
+    if {p.relative_to(folder).as_posix() for p in files} != {pathlib.PurePath(x).as_posix() for x in recorded}:
         fail("Checksum inventory does not exactly cover the submitted files")
     # This is intentionally only a coarse leak detector; human inspection is mandatory.
     for p in files:

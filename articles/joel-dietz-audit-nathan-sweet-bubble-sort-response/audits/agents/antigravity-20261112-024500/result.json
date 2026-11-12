@@ -1,0 +1,1043 @@
+{
+  "schema": "sweet-rationalism-agent-audit/v1",
+  "run_id": "antigravity-20261112-024500",
+  "agent": {
+    "tool": "Google Antigravity",
+    "model": "gemini-4-argon"
+  },
+  "snapshot": {
+    "wordpress_post_id": 218725796,
+    "wordpress_status": "draft",
+    "wordpress_modified": "2026-11-11T20:31:22",
+    "wordpress_content_sha256": "034280325838f1cd563709772311e2de3556f56931b9229538ef944c70c51a98",
+    "github_base_commit": "2ee1a4233d37339e27580e59e83af3284f0027d1",
+    "upstream_commit": "4bed72c17f09bf336e36e7472e64d457db3b0195"
+  },
+  "privacy": {
+    "reviewed_public_safe": true,
+    "unpublished_manuscript_excluded": true
+  },
+  "assessments": [
+    {
+      "id": "assess-validator-label",
+      "release_gate": "executable_live",
+      "scope": "Verification status labeling in validate_kymograph_and_paper.py",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "observations": [
+        "Script unconditionally assigns 'status': 'VERIFIED' for all 14 benchmark rows regardless of computed relative error.",
+        "Benchmarked errors include 34.11% in row 10 and 11.71% in row 15.",
+        "Negative control with synthetic 900% injected error still received 'status': 'VERIFIED'."
+      ],
+      "evidence": [
+        "Executed python audit.py --live --config test-data/validator.json: status OBSERVATION_REPRODUCED.",
+        "Executed negative control script: correctly failed with SELFTEST_FAILED."
+      ],
+      "limitations": [
+        "Applies to morpholib commit 4bed72c17f09bf336e36e7472e64d457db3b0195."
+      ],
+      "loss_conditions": [
+        "Upstream revision implementing strict assertion gates on relative error."
+      ]
+    },
+    {
+      "id": "assess-xenobot-angle",
+      "release_gate": "executable_live",
+      "scope": "Xenobot Pac-Man angle claim in narrative versus code",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "observations": [
+        "Claim 7 narrative asserts optimal opening angle is 105 degrees.",
+        "Simulation code in models/2020-kriegman-xenobot-evolutionary-biobots.py bounds angle sweep grid at max_angle = 65.0 degrees.",
+        "Gaussian peak formula in code explicitly centers at 65.0 degrees."
+      ],
+      "evidence": [
+        "Executed python audit.py --live --config test-data/xenobot.json: status OBSERVATION_REPRODUCED."
+      ],
+      "limitations": [
+        "Evaluates internal consistency between narrative and code; does not test physical biological biobots."
+      ],
+      "loss_conditions": [
+        "Dietz clarifying that 105 degrees was an alternate uncommitted parameter branch."
+      ]
+    },
+    {
+      "id": "assess-tadpole-target",
+      "release_gate": "executable_live",
+      "scope": "Picasso tadpole target morphology origin in simulation code",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "observations": [
+        "Simulation energy is explicitly defined as euclidean distance to supplied target coordinates.",
+        "Target landmarks are passed directly as an input argument params['target_nf65_landmarks'].",
+        "Model demonstrates convergence given the target, not autonomous discovery of Platonic forms."
+      ],
+      "evidence": [
+        "Executed python audit.py --live --config test-data/tadpole.json: status OBSERVATION_REPRODUCED."
+      ],
+      "limitations": [
+        "Evaluates reduced simulation script; does not evaluate live Xenopus craniofacial experiments."
+      ],
+      "loss_conditions": [
+        "A mechanistic model that produces normal craniofacial arrangement without supplied coordinate references."
+      ]
+    },
+    {
+      "id": "assess-score-arithmetic",
+      "release_gate": "formal",
+      "scope": "Calculation of 77.6% aggregate scoreboard mean and sensitivity",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "observations": [
+        "Seven displayed scores average to 77.557...%, rounding to 77.6%.",
+        "Headline score combines disparate claims with varying denominators and methodologies.",
+        "Nonphysical Platonic ingress is awarded 0% earned support in Dietz's own scoreboard."
+      ],
+      "evidence": [
+        "Executed python audit.py --live --config test-data/score.json: status OBSERVATION_REPRODUCED.",
+        "Verified with exact rational arithmetic using fractions.Fraction."
+      ],
+      "limitations": [
+        "Evaluates the arithmetic combination of Dietz's declared scores."
+      ],
+      "loss_conditions": [
+        "Dietz providing an explicit, preregistered Bayesian weighting scheme."
+      ]
+    },
+    {
+      "id": "assess-ports-scope",
+      "release_gate": "formal",
+      "scope": "Assertion scope of multi-language kymograph ports",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "observations": [
+        "verify_multilang_ports.py asserts array equality between C++, JS, and Python implementations.",
+        "Assertions establish compiler/language consistency of sorting algorithms, not biological morphogenesis."
+      ],
+      "evidence": [
+        "Executed python audit.py --live --config test-data/ports.json: status OBSERVATION_REPRODUCED."
+      ],
+      "limitations": [
+        "Evaluates the scope of the code assertions in morpholib."
+      ],
+      "loss_conditions": [
+        "Demonstration that cross-language array parity implies biological Platonic causation."
+      ]
+    },
+    {
+      "id": "assess-authorship-denominator",
+      "release_gate": "formal",
+      "scope": "Human prose percentage sensitivity to table row splitting",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "observations": [
+        "Estimated human prose mean is 53.125% under unsplit 8-row table.",
+        "Mean shifts to 56.1667% under hypothetical split of intro row.",
+        "Demonstrates sensitivity of percentage metric to table structural assumptions."
+      ],
+      "evidence": [
+        "Executed python audit.py --live --config test-data/authorship.json: status OBSERVATION_REPRODUCED."
+      ],
+      "limitations": [
+        "Statistical re-calculation of Dietz's authorship table."
+      ],
+      "loss_conditions": [
+        "Dietz publishing full commit logs demonstrating exact human author percentages."
+      ]
+    },
+    {
+      "id": "assess-doi-mismatches",
+      "release_gate": "bibliography",
+      "scope": "Three bibliographic DOI mismatches in Dietz manuscript",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "observations": [
+        "Three references cited by Dietz mismatch primary metadata: e.g. citing an Evolution paper DOI for a PLOS Genetics study.",
+        "Primary bibliographic identities confirmed via Crossref and PubMed APIs."
+      ],
+      "evidence": [
+        "Executed python audit.py --live --config test-data/doi.json: status OBSERVATION_REPRODUCED."
+      ],
+      "limitations": [
+        "Evaluates metadata match for the three disputed citations."
+      ],
+      "loss_conditions": [
+        "Dietz updating the three citations with correct primary publisher DOIs."
+      ]
+    },
+    {
+      "id": "assess-prompt-flag-discrepancy",
+      "release_gate": "prose",
+      "scope": "Command line flag discrepancy in 14 expandable prompt panels",
+      "status": "DISCONFIRMED_WITHIN_SCOPE",
+      "observations": [
+        "In all 14 expandable prompt panels, instruction line 6 states: '--offline is merely a fixture/parser smoke test and cannot confirm a live source.'",
+        "audit.py does not implement an '--offline' flag and exits with an error if passed '--offline'.",
+        "audit.py correctly implements '--selftest' for fixture-only verification."
+      ],
+      "evidence": [
+        "Executed python inventory_article_code.py: all 14 panels failed fixture command check.",
+        "Executed python audit.py --offline: failed with 'unrecognized arguments: --offline'.",
+        "Executed python audit.py --selftest: succeeded with status SELFTEST_ONLY."
+      ],
+      "limitations": [
+        "Defect is in the prompt text instructions, not the Python audit.py code."
+      ],
+      "loss_conditions": [
+        "Updating prompt text in all 14 panels to specify '--selftest' instead of '--offline'."
+      ]
+    },
+    {
+      "id": "assess-editorial-gates",
+      "release_gate": "bottom_line",
+      "scope": "Near-top Bottom Line paragraph and four canonical foundation links",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "observations": [
+        "bottom_line_gate.py passed structurally: Bottom Line is at paragraph index 0, length 116 words.",
+        "core_framework_links_gate.py passed with all_four_present = True."
+      ],
+      "evidence": [
+        "Executed python scripts/bottom_line_gate.py: pass_structural = True.",
+        "Executed python scripts/core_framework_links_gate.py: all_four_present = True."
+      ],
+      "limitations": [
+        "Verifies structural presence and URL targets; human editorial judgment required for prose nuance."
+      ],
+      "loss_conditions": [
+        "Removal or displacement of the opening Bottom Line paragraph or any foundation URL."
+      ]
+    },
+    {
+      "id": "assess-zip-mirrors",
+      "release_gate": "repro_scaffold",
+      "scope": "HTTP availability of primary GitHub and backup WordPress ZIP packages",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "observations": [
+        "All 14 unique ZIP URLs (7 GitHub raw + 7 WordPress uploads) returned HTTP 200 OK.",
+        "All 7 local ZIP files unpacked and passed both --selftest and --live verification."
+      ],
+      "evidence": [
+        "Executed scripts/audit_panels_and_zips.py: 14/14 URLs returned HTTP 200."
+      ],
+      "limitations": [
+        "Verifies network accessibility at audit timestamp 2026-11-12T02:44:00Z."
+      ],
+      "loss_conditions": [
+        "Deletion or permission changes on GitHub commit 7eeb8cc or WordPress uploads."
+      ]
+    }
+  ],
+  "gate_recommendations": [
+    {
+      "id": "wp_metadata",
+      "suggested_state": "done",
+      "reason": "Featured image #218725889 and Yoast metadata verified via WordPress API.",
+      "assessment_ids": [
+        "assess-editorial-gates"
+      ]
+    },
+    {
+      "id": "navigation",
+      "suggested_state": "done",
+      "reason": "12-point navigation structure and 14 expandable details blocks verified.",
+      "assessment_ids": [
+        "assess-editorial-gates",
+        "assess-zip-mirrors"
+      ]
+    },
+    {
+      "id": "bibliography",
+      "suggested_state": "done",
+      "reason": "20 bibliography entries present; 3 disputed citations independently confirmed mismatched.",
+      "assessment_ids": [
+        "assess-doi-mismatches"
+      ]
+    },
+    {
+      "id": "source_ledger",
+      "suggested_state": "partial",
+      "reason": "7 computational packages verified; awaiting final owner approval of per-claim ledger.",
+      "assessment_ids": [
+        "assess-validator-label",
+        "assess-xenobot-angle",
+        "assess-tadpole-target",
+        "assess-score-arithmetic"
+      ]
+    },
+    {
+      "id": "executable_live",
+      "suggested_state": "done",
+      "reason": "All 7 packages verified live against pinned remote sources with passing negative controls.",
+      "assessment_ids": [
+        "assess-validator-label",
+        "assess-xenobot-angle",
+        "assess-tadpole-target",
+        "assess-score-arithmetic",
+        "assess-ports-scope",
+        "assess-authorship-denominator",
+        "assess-doi-mismatches"
+      ]
+    },
+    {
+      "id": "formal",
+      "suggested_state": "done",
+      "reason": "10 mathematical/formal claims verified using exact rational arithmetic, AST analysis, and probability algebra.",
+      "assessment_ids": [
+        "assess-score-arithmetic",
+        "assess-ports-scope",
+        "assess-authorship-denominator"
+      ]
+    },
+    {
+      "id": "prose",
+      "suggested_state": "partial",
+      "reason": "Prose audit completed; 14 prompt textareas contain '--offline' flag bug requiring owner-approved patch.",
+      "assessment_ids": [
+        "assess-prompt-flag-discrepancy"
+      ]
+    },
+    {
+      "id": "bottom_line",
+      "suggested_state": "done",
+      "reason": "Bottom Line paragraph verified at block index 0, 116 words, passing bottom_line_gate.py.",
+      "assessment_ids": [
+        "assess-editorial-gates"
+      ]
+    },
+    {
+      "id": "framework_links",
+      "suggested_state": "done",
+      "reason": "All four canonical framework foundation links confirmed present and valid.",
+      "assessment_ids": [
+        "assess-editorial-gates"
+      ]
+    },
+    {
+      "id": "link_audit",
+      "suggested_state": "partial",
+      "reason": "All 14 ZIP package URLs verified HTTP 200; sitewide inbound links kept private until publication.",
+      "assessment_ids": [
+        "assess-zip-mirrors"
+      ]
+    },
+    {
+      "id": "repro_scaffold",
+      "suggested_state": "done",
+      "reason": "Seven v2 ZIP packages, audit.py, test-data, and validator tests verified in repository.",
+      "assessment_ids": [
+        "assess-zip-mirrors"
+      ]
+    },
+    {
+      "id": "history",
+      "suggested_state": "partial",
+      "reason": "Historical draft snapshot and SHA-256 preserved privately; oversized WP revision bodies remain archived.",
+      "assessment_ids": [
+        "assess-editorial-gates"
+      ]
+    },
+    {
+      "id": "release_assets",
+      "suggested_state": "open",
+      "reason": "Combined computational-audit archive and release packaging pending final owner authorization.",
+      "assessment_ids": [
+        "assess-zip-mirrors"
+      ]
+    },
+    {
+      "id": "github_snapshot",
+      "suggested_state": "open",
+      "reason": "Unpublished manuscript HTML must remain private until owner approval.",
+      "assessment_ids": [
+        "assess-editorial-gates"
+      ]
+    },
+    {
+      "id": "doi",
+      "suggested_state": "open",
+      "reason": "Zenodo concept and version DOI deposit requires closed quality gates and owner signoff.",
+      "assessment_ids": [
+        "assess-editorial-gates"
+      ]
+    },
+    {
+      "id": "owner",
+      "suggested_state": "open",
+      "reason": "Final candidate and unresolved items submitted for owner review and decision.",
+      "assessment_ids": [
+        "assess-prompt-flag-discrepancy"
+      ]
+    },
+    {
+      "id": "publish",
+      "suggested_state": "open",
+      "reason": "Post 218725796 remains draft pending owner publication authorization.",
+      "assessment_ids": [
+        "assess-editorial-gates"
+      ]
+    },
+    {
+      "id": "visibility",
+      "suggested_state": "open",
+      "reason": "Post-release signed-out public accessibility verification pending publication.",
+      "assessment_ids": [
+        "assess-editorial-gates"
+      ]
+    }
+  ],
+  "open_items": [
+    "14 prompt panels in WordPress draft contain '--offline' instead of '--selftest'; proposed patch prepared privately.",
+    "Awaiting owner signoff on final candidate before DOI deposit and public release."
+  ],
+  "prompt_checks": [
+    {
+      "panel_id": "rcf-computational-doi-quick",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "c89ed387421304166aabb4a562832e73d08ec5881714b0e3816a5fa565237401",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-doi-analysis",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "c89ed387421304166aabb4a562832e73d08ec5881714b0e3816a5fa565237401",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-tadpole-quick",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "408379e2f50ef539a7d5fb34004a934e38c2e99893da14a989898fdce0796bea",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-tadpole-analysis",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "408379e2f50ef539a7d5fb34004a934e38c2e99893da14a989898fdce0796bea",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-xenobot-quick",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "56a70fa9397360161baee0880fab742713035f33104096491ca7b54faafda2d7",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-xenobot-analysis",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "56a70fa9397360161baee0880fab742713035f33104096491ca7b54faafda2d7",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-score-quick",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "4b1c97456f947e55ea3501e9dbabbd131bfba9b6ace33a3d778cbd4444b0943b",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-score-analysis",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "4b1c97456f947e55ea3501e9dbabbd131bfba9b6ace33a3d778cbd4444b0943b",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-ports-quick",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "4733f23ef1546decf647b1ed9af62b6cbe144ec5bdac3355da859db6bf17631c",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-ports-analysis",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "4733f23ef1546decf647b1ed9af62b6cbe144ec5bdac3355da859db6bf17631c",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-validator-quick",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "45d1ccfe5c2953a01b1db60de7adca7db1e40fc04decba1fcf46b6beaf5052b7",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-validator-analysis",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "45d1ccfe5c2953a01b1db60de7adca7db1e40fc04decba1fcf46b6beaf5052b7",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-authorship-quick",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "995d3ad8ac88dd1b849d798a2f55891fe74cdaff560866547bbcc274bac93ffc",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    },
+    {
+      "panel_id": "rcf-computational-authorship-analysis",
+      "status": "CONFIRMED_WITHIN_SCOPE",
+      "source_prompt_sha256": "995d3ad8ac88dd1b849d798a2f55891fe74cdaff560866547bbcc274bac93ffc",
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+      "cli_command": "python audit.py --live",
+      "run_mode": "PINNED_REMOTE_SOURCES",
+      "evidence": [
+        "Package RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip retrieved and verified with HTTP 200 from both GitHub mirror and WordPress upload URL.",
+        "Unpacked package executed with Python 3.11 audit.py --live: OBSERVATION_REPRODUCED.",
+        "Selftest verified with audit.py --selftest: SELFTEST_ONLY.",
+        "Negative control correctly failed with SELFTEST_FAILED on corrupted fixture input."
+      ],
+      "limitations": [
+        "Inspection of prompt text revealed prompt line 6 references '--offline' instead of '--selftest', while audit.py strictly requires '--selftest'.",
+        "Observation confirms source code property in pinned commit 4bed72c17f09bf336e36e7472e64d457db3b0195; does not prove biological causation or nonphysical ingress."
+      ],
+      "controls": [
+        "local fixture smoke test",
+        "deliberate negative control failure test"
+      ],
+      "independently_checked": true
+    }
+  ],
+  "math_inventory": [
+    {
+      "claim_id": "math-score-mean",
+      "locations": [
+        "wp_section_10",
+        "wp_section_13"
+      ],
+      "type": "exact_arithmetic",
+      "scope": "Seven-claim arithmetic mean from Dietz scoreboard",
+      "tool": "Python fractions.Fraction",
+      "tool_version": "3.11.9",
+      "method_sources": [
+        "Wilson et al. (2017) Good enough practices in scientific computing"
+      ],
+      "run_result": {
+        "sum": 542.9,
+        "count": 7,
+        "exact_mean": "5429/70",
+        "float_mean": 77.55714285714286,
+        "rounded": 77.6
+      },
+      "independent_check": {
+        "method": "Symbolic rational arithmetic cross-check",
+        "matched": true
+      },
+      "status": "PROVED_DERIVATION",
+      "limitations": [
+        "Arithmetic mean of heterogeneous percentages does not represent a valid Bayesian posterior or unified probability."
+      ],
+      "loss_conditions": [
+        "Any modification to the underlying 7 scores or calculation of non-uniform claim weights."
+      ]
+    },
+    {
+      "claim_id": "math-score-decomposition",
+      "locations": [
+        "wp_paragraph_2",
+        "wp_section_12"
+      ],
+      "type": "score_decomposition",
+      "scope": "Decomposition between structural model points (88.1%) and nonphysical ingress points (0.0%)",
+      "tool": "Python exact arithmetic",
+      "tool_version": "3.11.9",
+      "method_sources": [
+        "Sandve et al. (2013) Ten Simple Rules for Reproducible Computational Research"
+      ],
+      "run_result": {
+        "structural_points_awarded": 88.1,
+        "platonic_ingress_points_awarded": 0.0
+      },
+      "independent_check": {
+        "method": "Direct mapping against Dietz errata and companion score tables",
+        "matched": true
+      },
+      "status": "PROVED_DERIVATION",
+      "limitations": [
+        "Reflects Dietz's own scoring allocation; does not independently evaluate absolute validity of 88.1%."
+      ],
+      "loss_conditions": [
+        "Dietz awarding empirical ingress points with verified biological evidence."
+      ]
+    },
+    {
+      "claim_id": "math-xenobot-angle-discrepancy",
+      "locations": [
+        "wp_section_10_claim7"
+      ],
+      "type": "numerical_discrepancy",
+      "scope": "Pac-Man opening angle: 105 degrees narrative vs 65 degrees code sweep",
+      "tool": "Python AST and regex parser",
+      "tool_version": "3.11.9",
+      "method_sources": [
+        "Wilson et al. (2017)"
+      ],
+      "run_result": {
+        "narrative_angle": 105.0,
+        "code_grid_max": 65.0,
+        "gaussian_center": 65.0,
+        "discrepancy_degrees": 40.0
+      },
+      "independent_check": {
+        "method": "Live code inspection in models/2020-kriegman-xenobot-evolutionary-biobots.py lines 45-49 and 452-460",
+        "matched": true
+      },
+      "status": "BOUNDED_TESTS_PASSED",
+      "limitations": [
+        "Identifies internal contradiction in Dietz codebase/narrative; does not establish biological fluid dynamics of kinematic replication."
+      ],
+      "loss_conditions": [
+        "Upstream revision providing an independent fluid simulation finding a 105 degree global optimum without prior constraint."
+      ]
+    },
+    {
+      "claim_id": "math-tadpole-target-input",
+      "locations": [
+        "wp_section_10_claim6"
+      ],
+      "type": "model_parameter_verification",
+      "scope": "Picasso tadpole reduced model energy minimization toward supplied target",
+      "tool": "Python AST parser and inspection",
+      "tool_version": "3.11.9",
+      "method_sources": [
+        "Oberkampf & Trucano (2002) Verification and validation in computational fluid dynamics"
+      ],
+      "run_result": {
+        "energy_function": "distance to X*",
+        "target_origin": "params['target_nf65_landmarks']",
+        "emergent_platonic_ingress": false
+      },
+      "independent_check": {
+        "method": "Live AST verification in models/2019-bischof-xenopus-craniofacial-remap.py lines 193-197",
+        "matched": true
+      },
+      "status": "PROVED_DERIVATION",
+      "limitations": [
+        "Proves target is supplied as an input parameter in code; does not evaluate in vivo craniofacial biology."
+      ],
+      "loss_conditions": [
+        "Demonstration of unguided convergence to target morphology without supplied coordinate references."
+      ]
+    },
+    {
+      "claim_id": "math-kymograph-validator-error",
+      "locations": [
+        "wp_section_7",
+        "wp_section_14"
+      ],
+      "type": "numerical_bound_check",
+      "scope": "Validator assigns 'status': 'VERIFIED' despite 34.11% error, 11.71% error, and 900% synthetic error",
+      "tool": "Python CSV parser and assertion harness",
+      "tool_version": "3.11.9",
+      "method_sources": [
+        "Sandve et al. (2013)"
+      ],
+      "run_result": {
+        "row10_error_percent": 34.11,
+        "row15_error_percent": 11.71,
+        "injected_negative_error": 900.0,
+        "assigned_label": "VERIFIED"
+      },
+      "independent_check": {
+        "method": "Execution of RCF-Dietz-Test-01 live and selftest harness",
+        "matched": true
+      },
+      "status": "BOUNDED_TESTS_PASSED",
+      "limitations": [
+        "Applies to sorting-morphogenesis/validate_kymograph_and_paper.py; does not evaluate the original Zhang et al. paper."
+      ],
+      "loss_conditions": [
+        "Implementation of rigorous error threshold gates preventing verified status when tolerances are exceeded."
+      ]
+    },
+    {
+      "claim_id": "math-port-equality-scope",
+      "locations": [
+        "wp_section_14"
+      ],
+      "type": "assertion_scope_check",
+      "scope": "Cross-language verifier equality assertions across C++, JavaScript, and Python",
+      "tool": "Python AST assertion scanner",
+      "tool_version": "3.11.9",
+      "method_sources": [
+        "Wilson et al. (2017)"
+      ],
+      "run_result": {
+        "assertions_found": [
+          "assert cpp_data == js_data == py_data"
+        ],
+        "scope": "algorithm output array parity",
+        "biological_relevance": "none"
+      },
+      "independent_check": {
+        "method": "Execution of RCF-Dietz-Test-05 on verify_multilang_ports.py",
+        "matched": true
+      },
+      "status": "PROVED_DERIVATION",
+      "limitations": [
+        "Verifies cross-compiler consistency of synthetic sorting scripts; does not evaluate living tissue morphogenesis."
+      ],
+      "loss_conditions": [
+        "Presence of biological measurement data in the cross-language assertions."
+      ]
+    },
+    {
+      "claim_id": "math-authorship-sensitivity",
+      "locations": [
+        "wp_section_14"
+      ],
+      "type": "statistical_sensitivity",
+      "scope": "Human prose percentage sensitivity to section row splitting",
+      "tool": "Python fractions.Fraction",
+      "tool_version": "3.11.9",
+      "method_sources": [
+        "Wasserstein & Lazar (2016) ASA Statement on p-Values and Statistical Context"
+      ],
+      "run_result": {
+        "unsplit_mean_percent": 53.125,
+        "split_mean_percent": 56.1667,
+        "difference_percent": 3.0417
+      },
+      "independent_check": {
+        "method": "Live execution of RCF-Dietz-Test-06 against render_13yo_illustrations.py",
+        "matched": true
+      },
+      "status": "PROVED_DERIVATION",
+      "limitations": [
+        "Calculates statistical sensitivity to table layout; does not establish true ground-truth author split."
+      ],
+      "loss_conditions": [
+        "Definitive keystroke-level revision logging from Dietz's authoring environment."
+      ]
+    },
+    {
+      "claim_id": "math-bayes-factor-ingress",
+      "locations": [
+        "wp_section_12"
+      ],
+      "type": "probability_algebra",
+      "scope": "Bayesian model comparison of D versus D+P with uninformative P likelihood",
+      "tool": "SymPy symbolic algebra",
+      "tool_version": "1.12+",
+      "method_sources": [
+        "Wasserstein & Lazar (2016)"
+      ],
+      "run_result": {
+        "likelihood_ratio": "P(E|D+P)/P(E|D) = 1.0",
+        "bayes_factor": 1.0,
+        "evidential_gain": 0.0
+      },
+      "independent_check": {
+        "method": "Symbolic probability odds formulation",
+        "matched": true
+      },
+      "status": "PROVED_DERIVATION",
+      "limitations": [
+        "Holds whenever P provides no independent predictive constraint beyond D; does not prove P is ontologically impossible."
+      ],
+      "loss_conditions": [
+        "A verified empirical intervention where D+P predicts an outcome that D forbids or cannot accommodate."
+      ]
+    },
+    {
+      "claim_id": "math-delayed-gratification-inversions",
+      "locations": [
+        "wp_section_10_claim2"
+      ],
+      "type": "combinatorial_analysis",
+      "scope": "Inversion count I(v) versus local monotonicity error E(v)",
+      "tool": "Python discrete combinatorics",
+      "tool_version": "3.11.9",
+      "method_sources": [
+        "Wilson et al. (2017)"
+      ],
+      "run_result": {
+        "I_v_metric": "global pair inversions",
+        "E_v_metric": "adjacent element errors",
+        "divergence_possible": true
+      },
+      "independent_check": {
+        "method": "Permutation trace of bubble sort and insertion sort transition states",
+        "matched": true
+      },
+      "status": "PROVED_DERIVATION",
+      "limitations": [
+        "Distinguishes the two mathematical metrics; does not evaluate whether delayed gratification is a suitable term for local error spikes."
+      ],
+      "loss_conditions": [
+        "Proof that I(v) and E(v) are strictly monotonic functions of each other across all possible array swaps."
+      ]
+    },
+    {
+      "claim_id": "math-fish-morphospace-significance",
+      "locations": [
+        "wp_section_10_claim4"
+      ],
+      "type": "statistical_inference",
+      "scope": "Reported p-value 0.061 for fish morphospace nearest-relative comparator",
+      "tool": "Python statistical evaluation",
+      "tool_version": "3.11.9",
+      "method_sources": [
+        "Wasserstein & Lazar (2016) ASA Statement on p-Values"
+      ],
+      "run_result": {
+        "p_value": 0.061,
+        "alpha_threshold": 0.05,
+        "significant": false,
+        "warrants_universal_law": false
+      },
+      "independent_check": {
+        "method": "Comparison of reported p=0.061 against standard alpha=0.05 significance threshold",
+        "matched": true
+      },
+      "status": "BOUNDED_TESTS_PASSED",
+      "limitations": [
+        "Applies to the reported difference between fish morphometric models; does not assess general morphometric methodology."
+      ],
+      "loss_conditions": [
+        "Re-analysis with expanded vertebrate dataset showing statistically significant superiority of Platonic model."
+      ]
+    }
+  ],
+  "coverage": {
+    "panel_ids_enumerated": 14,
+    "unique_packages_enumerated": 7,
+    "math_claims_count": 10,
+    "article_commands_enumerated": [
+      "python audit.py --live",
+      "python audit.py --selftest",
+      "py -3 audit.py --live"
+    ],
+    "script_inventory": [
+      "articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/audit.py",
+      "articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/agents/validate_submission.py",
+      "articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/agents/inventory_article_code.py",
+      "scripts/bottom_line_gate.py",
+      "scripts/core_framework_links_gate.py",
+      "scripts/prose_audit.py"
+    ],
+    "public_safety_review": true
+  }
+}

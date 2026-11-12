@@ -1,0 +1,28 @@
+# Executed commands for independent audit run antigravity-20261112-024500
+# Environment: Windows 11, Python 3.11.9
+python -I coordination/coord.py check --agent antigravity
+python -I coordination/coord.py claim --agent antigravity --model gemini-4-argon --scope "wp:post:218725796,scratch/repos/sweet-rationalism-research,audit:joel-dietz-bubble-sort" --summary "Independent audit of WordPress article 218725796"
+git checkout -b audit/joel-dietz/antigravity-20261112-024500
+python audit.py --selftest --config test-data/validator.json
+python audit.py --selftest --config test-data/xenobot.json
+python audit.py --selftest --config test-data/tadpole.json
+python audit.py --selftest --config test-data/score.json
+python audit.py --selftest --config test-data/ports.json
+python audit.py --selftest --config test-data/authorship.json
+python audit.py --selftest --config test-data/doi.json
+python audit.py --live --config test-data/validator.json
+python audit.py --live --config test-data/xenobot.json
+python audit.py --live --config test-data/tadpole.json
+python audit.py --live --config test-data/score.json
+python audit.py --live --config test-data/ports.json
+python audit.py --live --config test-data/authorship.json
+python audit.py --live --config test-data/doi.json
+python scripts/run_negative_controls.py
+python scripts/test_unpacked_packages.py
+python scripts/verify_all_math_claims.py
+python scripts/bottom_line_gate.py <private_draft_raw.html> --json
+python scripts/core_framework_links_gate.py <private_draft_raw.html> --strict
+python scripts/prose_audit.py <private_draft_raw.html> --json
+python agents/inventory_article_code.py <private_draft.json> --out <report.json>
+python agents/test_validate_submission.py
+python agents/validate_submission.py audits/agents/antigravity-20261112-024500

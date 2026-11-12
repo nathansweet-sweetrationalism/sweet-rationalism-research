@@ -1,0 +1,37 @@
+{
+  "validator": {
+    "mode": "live",
+    "status": "OBSERVATION_REPRODUCED",
+    "exit_code": 0
+  },
+  "xenobot": {
+    "mode": "live",
+    "status": "OBSERVATION_REPRODUCED",
+    "exit_code": 0
+  },
+  "tadpole": {
+    "mode": "live",
+    "status": "OBSERVATION_REPRODUCED",
+    "exit_code": 0
+  },
+  "score": {
+    "mode": "live",
+    "status": "OBSERVATION_REPRODUCED",
+    "exit_code": 0
+  },
+  "ports": {
+    "mode": "live",
+    "status": "OBSERVATION_REPRODUCED",
+    "exit_code": 0
+  },
+  "authorship": {
+    "mode": "live",
+    "status": "OBSERVATION_REPRODUCED",
+    "exit_code": 0
+  },
+  "doi": {
+    "mode": "live",
+    "status": "OBSERVATION_REPRODUCED",
+    "exit_code": 0
+  }
+}

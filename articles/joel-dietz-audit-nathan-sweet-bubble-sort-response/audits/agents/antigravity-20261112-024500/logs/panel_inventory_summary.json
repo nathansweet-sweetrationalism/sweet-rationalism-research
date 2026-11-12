@@ -1,0 +1,19 @@
+{
+  "total_panels": 14,
+  "panel_ids": [
+    "rcf-computational-doi-quick",
+    "rcf-computational-doi-analysis",
+    "rcf-computational-tadpole-quick",
+    "rcf-computational-tadpole-analysis",
+    "rcf-computational-xenobot-quick",
+    "rcf-computational-xenobot-analysis",
+    "rcf-computational-score-quick",
+    "rcf-computational-score-analysis",
+    "rcf-computational-ports-quick",
+    "rcf-computational-ports-analysis",
+    "rcf-computational-validator-quick",
+    "rcf-computational-validator-analysis",
+    "rcf-computational-authorship-quick",
+    "rcf-computational-authorship-analysis"
+  ]
+}

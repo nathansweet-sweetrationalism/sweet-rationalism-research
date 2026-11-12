@@ -1,0 +1,44 @@
+{
+  "validator": {
+    "control_type": "corrupted_fixture_no_verified_status",
+    "exit_code": 1,
+    "status": "SELFTEST_FAILED",
+    "detected_failure": true
+  },
+  "xenobot": {
+    "control_type": "no_discrepancy_narrative_matches_code",
+    "exit_code": 1,
+    "status": "SELFTEST_FAILED",
+    "detected_failure": true
+  },
+  "tadpole": {
+    "control_type": "missing_target_input_parameter",
+    "exit_code": 1,
+    "status": "SELFTEST_FAILED",
+    "detected_failure": true
+  },
+  "score": {
+    "control_type": "corrupted_score_mean",
+    "exit_code": 1,
+    "status": "SELFTEST_FAILED",
+    "detected_failure": true
+  },
+  "ports": {
+    "control_type": "missing_multilang_equality_assertions",
+    "exit_code": 1,
+    "status": "SELFTEST_FAILED",
+    "detected_failure": true
+  },
+  "authorship": {
+    "control_type": "corrupted_authorship_table",
+    "exit_code": 1,
+    "status": "SELFTEST_FAILED",
+    "detected_failure": true
+  },
+  "doi": {
+    "control_type": "no_doi_mismatch",
+    "exit_code": 1,
+    "status": "SELFTEST_FAILED",
+    "detected_failure": true
+  }
+}

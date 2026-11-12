@@ -1,0 +1,73 @@
+{
+  "math-score-mean": {
+    "scores": [
+      66.7,
+      13.5,
+      86.5,
+      96.1,
+      95.0,
+      95.0,
+      90.1
+    ],
+    "sum": 542.9,
+    "exact_mean_fraction": "5429/70",
+    "mean_float": 77.55714285714286,
+    "rounded_1dec": 77.6,
+    "verified": true
+  },
+  "math-score-decomposition": {
+    "structural_percent": 88.1,
+    "ingress_percent": 0.0,
+    "verified": true
+  },
+  "math-xenobot-angle-discrepancy": {
+    "narrative_angle": 105.0,
+    "code_grid_max": 65.0,
+    "discrepancy_degrees": 40.0,
+    "contradiction_verified": true
+  },
+  "math-tadpole-target-input": {
+    "energy_form": "||X - X*||_2",
+    "target_source": "params['target_nf65_landmarks']",
+    "verified_independent_target": false,
+    "verified_supplied_input": true
+  },
+  "math-kymograph-validator-error": {
+    "row10_relative_error_percent": 34.11,
+    "row15_relative_error_percent": 11.71,
+    "synthetic_injected_error_percent": 900.0,
+    "unconditional_status": "VERIFIED",
+    "verified": true
+  },
+  "math-port-equality-scope": {
+    "assertion": "cpp_data == js_data == py_data",
+    "domain": "programming language array equivalence",
+    "biological_inference_supported": false,
+    "verified": true
+  },
+  "math-authorship-sensitivity": {
+    "mean_unsplit_percent": 53.125,
+    "mean_split_percent": 56.166666666666664,
+    "difference": 3.0416666666666665,
+    "denominator_sensitive": true
+  },
+  "math-bayes-factor-ingress": {
+    "likelihood_ratio_P_E_given_DP_over_P_E_given_D": 1.0,
+    "bayes_factor": 1.0,
+    "evidential_lift_for_P": 0.0,
+    "verified": true
+  },
+  "math-delayed-gratification-inversions": {
+    "metric_I": "total inversion count sum_{i<j} 1_{v_i > v_j}",
+    "metric_E": "local adjacent monotonicity error sum_i max(0, v_i - v_{i+1})",
+    "mathematically_distinct": true,
+    "verified": true
+  },
+  "math-fish-morphospace-significance": {
+    "reported_p_value": 0.061,
+    "standard_alpha": 0.05,
+    "significant_at_alpha_0_05": false,
+    "extrapolation_to_universal_law_warranted": false,
+    "verified": true
+  }
+}
