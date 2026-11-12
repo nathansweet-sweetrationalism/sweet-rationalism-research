@@ -34,8 +34,8 @@
       "id": "source_ledger",
       "group": "Evidence & analysis",
       "label": "Final per-claim primary-source, exact-quotation and DOI verification ledger",
-      "state": "open",
-      "evidence": "Outstanding final release pass"
+      "state": "partial",
+      "evidence": "One attribution/quotation issue reconciled against published Substack subtitle and two pinned source files: audits/coordinator/2026-11-12-reductionist-attribution-adjudication.md. Other primary-paper passage checks and mathematical/model support remain open."
     },
     {
       "id": "executable_live",
@@ -148,6 +148,10 @@
     {
       "date": "2026-11-11",
       "event": "Rechecked authenticated WordPress draft: opening Bottom line and all four foundation URLs now present. Both remain partial until semantic, source and rendered-link review."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Reviewed public Substack subtitle and pinned Dietz article/companion. Confirmed exact plural 'reductionist blog critics' and Nathan Sweet as the only individually named critic in that dispute. Current WordPress draft already corrected the singular misquotation; issued public source-provenance adjudication. Source-ledger gate partial, not done."
     }
   ]
 }
