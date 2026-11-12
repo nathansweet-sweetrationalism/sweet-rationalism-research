@@ -86,6 +86,19 @@ class MailPoetDeepLinkTests(unittest.TestCase):
             self.assertIn("https://zenodo.org/badge/DOI/" + doi + ".svg", badges)
             self.assertIn('alt="DOI: ' + doi + '"', badges)
 
+    def test_metadata_blocks_not_accidentally_nested(self):
+        # Newsletter HTML reconstruction can create massive gaps when an
+        # editor accidentally merges citation, badges and Bottom line into
+        # a single malformed nested paragraph block.
+        self.assertNotRegex(self.body, r"<p>\\s*<p\\b")
+        self.assertEqual(self.body.count('<p class="sr-citation-and-archives"'), 1)
+        self.assertEqual(self.body.count('<p class="sr-doi-badges"'), 1)
+        self.assertEqual(self.body.count('<strong>Bottom line.</strong>'), 1)
+        for marker in ('<p class="sr-citation-and-archives"',
+                       '<p class="sr-doi-badges"',
+                       '<p><strong>Bottom line.</strong>'):
+            self.assertIn(marker, self.body)
+
     def test_opening_order_keeps_bottom_line_after_badges(self):
         markers = ("<strong>Cite as:</strong>",
                    "<strong>Versions and archives:</strong>",
