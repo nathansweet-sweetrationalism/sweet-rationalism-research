@@ -24,7 +24,7 @@ Cite as: Sweet, N. (2026). *Responding to Joel Dietz (MIT)’s “77.6++%” Def
 - Machine-readable citation: [`CITATION.cff`](CITATION.cff)
 
 
-**Current article snapshot:** The top-level `article.html` follows WordPress post 218725796 after the 2026-11-12 opening-citation placement edit (raw Gutenberg body SHA-256 `70f5e521e39984172fd6033397b5bb56b5221f7bfba1199fa37609c902b47fc9`). The DOI-linked Zenodo 1.0.0 archive in `release/` preserves the earlier as-deposited edition and has not been rewritten. Consult [CHANGELOG.md](CHANGELOG.md) for the precise post-publication ordering change. Citation and Versions and archives blocks now precede the opening Bottom line.
+**Current article snapshot:** The top-level `article.html` follows WordPress post 218725796 after the 2026-11-12 opening-citation and deep-link edits (raw Gutenberg body SHA-256 `dcdbf12002d15d47d6ce012992ff97dadad4e53d8780e242151e7acb55853551`). The DOI-linked Zenodo 1.0.0 archive in `release/` preserves the earlier as-deposited edition and has not been rewritten. Consult [CHANGELOG.md](CHANGELOG.md) for the precise post-publication ordering change. Citation and Versions and archives blocks now precede the opening Bottom line.
 
 ## Seven executable source checks
 
@@ -47,3 +47,7 @@ See [tool-first verification standard](../../docs/TOOL_FIRST_VERIFICATION_STANDA
 ## Independent coding-agent audit intake
 
 For Codex, Claude Code, Antigravity, and other coding agents with authenticated WordPress and GitHub access, use the [full independent audit handoff](agents/INDEPENDENT_AUDIT_HANDOFF.md) and the [submission guide](agents/README.md). Each agent submits evidence, tests, and gate recommendations in a separate PR under `audits/agents/<run-id>/`; the release coordinator reconciles accepted findings into [release_status.json](release_status.json). All public submissions must exclude unpublished manuscript content and private correspondence. This does not authorize article publication or DOI deposits.
+
+### Newsletter distribution
+
+The seven distinct computational test types are each shown in a quick and detailed expandable HTML panel (14 total). MailPoet must not ingest the full article as a newsletter, because email clients do not reliably preserve expansion controls and code blocks are far too long. Use the compact, one-block email material in [mailpoet/](mailpoet/), with links to the `-open` descendant anchors, or set MailPoet's post content to Excerpt and include a Read More link. Keep the complete computational instructions on the website. The MailPoet draft #63 was not sent or activated by this change.
