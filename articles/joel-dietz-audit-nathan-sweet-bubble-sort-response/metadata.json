@@ -5,9 +5,9 @@
   "wordpress": {
     "post_id": 218725796,
     "status_at_freeze": "publish",
-    "modified_local": "2026-11-12T01:00:29",
-    "raw_body_sha256": "c47a2c0736cfd4f90203e6ff5fb467c4dee0bf0f88999a2fa4fc61c561c33a01",
-    "raw_body_utf16_units": 321466,
+    "modified_local": "2026-11-12T01:07:59",
+    "raw_body_sha256": "77ea9112229ae2e6454f8fb8b1e252e8f528a614ad14eb6d609ea816587db3b3",
+    "raw_body_utf16_units": 322247,
     "slug": "joel-dietz-audit-nathan-sweet-bubble-sort-response",
     "final_permalink": "https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/",
     "published_local": "2026-11-12T00:09:00",
@@ -36,8 +36,8 @@
   "peer_review": "None. Independent article.",
   "history_zip": {
     "file": "joel-dietz-response-history-1.0.0.zip",
-    "sha256": "d8c565d01494b763e457ed56f81b816d4a8fd63b1d4eb6abafeaa1c149bc2b96",
+    "sha256": "aa48089ab351c1ae74eb074390b0803c97e354f4e2fc3af2c5da2a0d1407593c",
     "revisions": 58,
-    "states_after_export": 7
+    "states_after_export": 8
   }
 }

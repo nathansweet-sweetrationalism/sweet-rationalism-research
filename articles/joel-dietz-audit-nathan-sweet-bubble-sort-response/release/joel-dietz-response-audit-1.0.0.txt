@@ -58,7 +58,7 @@ This archive was assembled in a Claude Code session running Claude Sonnet 5.5 (A
 
 The article has 14 expandable instruction panels: 7 test types, each shown twice (a short placement near the top and a fuller one in the analysis). Within each pair the copyable prompt text is byte-identical (checked by SHA-256), so there are 7 unique prompts and 7 unique packages.
 
-Candidate: WordPress raw body SHA-256 `c47a2c0736cfd4f90203e6ff5fb467c4dee0bf0f88999a2fa4fc61c561c33a01`, modified 2026-11-12T01:00:29 (site local time). Receipts are in `evidence/`; the date of the runs is 2026-11-12 UTC.
+Candidate: WordPress raw body SHA-256 `77ea9112229ae2e6454f8fb8b1e252e8f528a614ad14eb6d609ea816587db3b3`, modified 2026-11-12T01:07:59 (site local time). Receipts are in `evidence/`; the date of the runs is 2026-11-12 UTC.
 
 | Test | Package ZIP SHA-256 (GitHub = WordPress) | Live run of `audit.py --live` | Self-test (fixture only) | Independent second implementation |
 |---|---|---|---|---|
@@ -191,6 +191,8 @@ Run with `scripts/evidence_retention_audit.py`, each revision as the original an
 
 ## Later change: Bottom line, deck and typed-in section (2026-11-12)
 At the owner's request the Bottom line was rewritten to list the main discrepancies compactly (721 characters), the opening deck was cut to its headline and question, and a short section was added that defines typed-in and stipulated results with a four-row table (validator label, 77.6% display string, 65-degree stipulated peak, supplied tadpole target) and notes that the first version of the test script has the same kind of fixed line. No source or number changed.
+
+An image note was added under the Bottom line (2026-11-12): the hero illustration is satire; the stamp is the validator's constant label; the 900% sheet is the author's synthetic control; the 0% panel is Dietz's score, not stamped by his validator; and the article does not claim Michael Levin wrote the validator or endorsed the audit. The image itself was not changed.
 
 
 ---
