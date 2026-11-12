@@ -54,3 +54,7 @@
 
 **Email DOI badges:** preserve the full citation and the original two linked DOI badges on the site. For email, the content transformer can turn adjacent site images into vertically spaced blocks. Use one tight email-compatible two-cell presentation-table row after the citation, preserving two separate DOI hyperlinks; validate the rendered email rather than inferring layout from stored article HTML. Keep the computational instruction payload browser-only and email links direct to anchors. Never send an unapproved campaign.
 
+
+### Verified publication-email badge implementation (2026-11-12)
+
+When two official DOI badge images appear in separate generated email image rows, the renderer may insert an empty padded text row between them even though the Sweet Rationalism website source has no forced line breaks. For the current published article, the **final email rendering** repair groups only the matching badge pair into a single two-cell presentation table. The earlier pre-processing hook does not run for this browser preview. The later final-render hook was independently observed firing and the resulting HTML checked to have exactly one row with two badge links, without an interstitial padded row. Do not regress to website CSS-only fixes or remove the original DOI badges. See [docs/PUBLIC_SITE_BRANDING_AND_EMAIL_LAYOUT.md](docs/PUBLIC_SITE_BRANDING_AND_EMAIL_LAYOUT.md). Future articles with paired badges should follow this representation and rerun a newsletter draft preview before email dispatch.
