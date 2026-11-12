@@ -26,6 +26,18 @@ class BottomLineGateTests(unittest.TestCase):
         result = inspect_html(page, required_terms=["Mayo", "Popper"])
         self.assertTrue(result["pass_structural"])
 
+    def test_single_italic_deck_before_bottom_line_passes(self):
+        deck = "<!-- wp:paragraph -->" + "<p><em>" + "word " * 60 + "</em></p>" + "<!-- /wp:paragraph -->"
+        self.assertTrue(inspect_html(deck + CONTENT)["pass_structural"])
+
+    def test_non_italic_long_preamble_still_fails(self):
+        preamble = "<p>" + "word " * 60 + "</p>"
+        self.assertFalse(inspect_html(preamble + CONTENT)["pass_structural"])
+
+    def test_second_long_paragraph_after_deck_still_fails(self):
+        deck = "<p><em>" + "word " * 60 + "</em></p><p>" + "word " * 60 + "</p>"
+        self.assertFalse(inspect_html(deck + CONTENT)["pass_structural"])
+
     def test_absent_fails(self):
         self.assertFalse(inspect_html("<h1>Article</h1><p>The question is difficult.</p>")["pass_structural"])
 

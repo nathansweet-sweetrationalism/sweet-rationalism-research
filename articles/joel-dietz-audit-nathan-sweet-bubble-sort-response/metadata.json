@@ -1,0 +1,43 @@
+{
+  "title": "Responding to Joel Dietz (MIT)’s \"77.6++%\" Defense of Michael Levin's Biological Causal Platonism and His Demonstrable Misrepresentations of My Actual Argument",
+  "author": "Nathan Sweet",
+  "version": "1.0.0",
+  "wordpress": {
+    "post_id": 218725796,
+    "status_at_freeze": "publish",
+    "modified_local": "2026-11-12T01:34:05",
+    "raw_body_sha256": "0e1603ff88e9c7e313aa6cd0435f9a0711afa6820cc397471283a756d1907b01",
+    "raw_body_utf16_units": 320492,
+    "slug": "joel-dietz-audit-nathan-sweet-bubble-sort-response",
+    "final_permalink": "https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/",
+    "published_local": "2026-11-12T00:09:00",
+    "note": "Published on the owner's instruction 2026-11-12; the body in this archive is the published raw body before any DOI links were added."
+  },
+  "zenodo": {
+    "draft_record_id": "24151128",
+    "reserved_doi": "10.5281/zenodo.24151128",
+    "state": "RESERVED_NOT_REGISTERED",
+    "concept_doi": null,
+    "version_doi": null
+  },
+  "github": {
+    "repository": "nathansweet-sweetrationalism/sweet-rationalism-research",
+    "article_directory": "articles/joel-dietz-audit-nathan-sweet-bubble-sort-response",
+    "commit_at_freeze": "9f1ab622a693879ab901d6d9bc9b5f0fcadc5495",
+    "upstream_pin": "fractastical/morpholib@4bed72c17f09bf336e36e7472e64d457db3b0195"
+  },
+  "original_research": {
+    "paper_doi": "10.1177/10597123241269740",
+    "code": "https://github.com/Zhangtaining/cell_research",
+    "code_commit_used_by_prior_audit": "1fd2bd5921c1f6b423a71f691d5189106a8a1020",
+    "note": "Cited, not redistributed. No claim of endorsement or evaluation by the original authors."
+  },
+  "license_proposed": "CC-BY-4.0 (matches the author's other Zenodo records; owner to confirm)",
+  "peer_review": "None. Independent article.",
+  "history_zip": {
+    "file": "joel-dietz-response-history-1.0.0.zip",
+    "sha256": "461e97f69651a7bd4cef860868db7bd7f267647e3850a7ebd5172eb7db1dc19d",
+    "revisions": 58,
+    "states_after_export": 10
+  }
+}

@@ -54,7 +54,7 @@ def inspect_html(content: str, required_terms: list[str] | None = None) -> dict:
     # substantive paragraph. Restrict this exception to a complete first
     # paragraph whose sole content is inside <em>; subsequent prose still blocks.
     leading_deck = bool(re.match(
-        r"^\\s*(?:<!--\\s*wp:paragraph[^>]*-->\\s*)?<p>\\s*<em>.*?</em>\\s*</p>",
+        r"^\s*(?:<!--\s*wp:paragraph[^>]*-->\s*)?<p>\s*<em>.*?</em>\s*</p>",
         content, flags=re.I | re.S,
     ))
     core: list[tuple[int, str, str]] = []

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use or cite this work, please cite the Zenodo record."
+title: "Responding to Joel Dietz (MIT)’s “77.6++%” Defense of Michael Levin’s Biological Causal Platonism and His Demonstrable Misrepresentations of My Actual Argument"
+type: report
+authors:
+  - family-names: Sweet
+    given-names: Nathan
+version: "1.0.0"
+date-released: "2026-11-12"
+doi: "10.5281/zenodo.24151128"
+license: CC-BY-4.0
+url: "https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/"
+repository-code: "https://github.com/nathansweet-sweetrationalism/sweet-rationalism-research/tree/main/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24151128"
+    description: "This version"
+  - type: doi
+    value: "10.5281/zenodo.24151127"
+    description: "All versions (concept DOI)"

@@ -1,0 +1,3 @@
+0e64e0328e3fa75a72e5e7231cb3090a3bfeb671bae629ebd7d3aba66b8716cc  joel-dietz-response-1.0.0.zip
+1be5e3307e46d464f41915b19bb1ddcceb1b3499bd4363b9759d650500b3ff1a  joel-dietz-response-audit-1.0.0.txt
+461e97f69651a7bd4cef860868db7bd7f267647e3850a7ebd5172eb7db1dc19d  joel-dietz-response-history-1.0.0.zip

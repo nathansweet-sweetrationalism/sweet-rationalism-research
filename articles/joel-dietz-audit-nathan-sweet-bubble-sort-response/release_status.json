@@ -4,9 +4,9 @@
   "article_id": 218725796,
   "article_editor": "https://sweetrationalism.com/wp-admin/post.php?post=218725796&action=edit",
   "research_directory": "https://github.com/nathansweet-sweetrationalism/sweet-rationalism-research/tree/main/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response",
-  "as_of": "2026-11-11",
-  "visibility": "draft",
-  "publication_state": "HELD: final quality gates and owner approval required",
+  "as_of": "2026-11-12",
+  "visibility": "public",
+  "publication_state": "PUBLISHED on WordPress 2026-11-12; Zenodo record published 2026-11-12 (version DOI 10.5281/zenodo.24151128, concept DOI 10.5281/zenodo.24151127)",
   "notes": "This public progress record contains no unpublished manuscript text. The statuses change only when evidence is checked and this file is committed; the dashboard polls for those commits, not live tool activity.",
   "gates": [
     {
@@ -21,49 +21,49 @@
       "group": "WordPress & presentation",
       "label": "Article structure, 12-point navigation and 14 expandable source tests",
       "state": "done",
-      "evidence": "Readback of WordPress draft: all internal anchors and test blocks retained"
+      "evidence": "Readback 2026-11-12 (draft modified 2026-11-12T00:03:26, sha256 0e1603ff...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text."
     },
     {
       "id": "bibliography",
       "group": "Evidence & analysis",
       "label": "Linked scholarly bibliography and original debate documents present",
       "state": "done",
-      "evidence": "20 bibliography entries in draft; bibliographic identities still subject to final source ledger"
+      "evidence": "22 entries in the draft's reference list after adding Pietak and Levin 2016 and Vandenberg et al. 2012; all DOIs in the draft (12 doi.org links) resolve in Crossref or DataCite to the cited works. Passage support is tracked under source_ledger."
     },
     {
       "id": "source_ledger",
       "group": "Evidence & analysis",
       "label": "Final per-claim primary-source, exact-quotation and DOI verification ledger",
       "state": "done",
-      "evidence": "Author attestation on 2026-11-11 America/Detroit: Nathan Sweet completed all primary-source verifications himself and authorized moving to the DOI preparation stage. Provenance: author sign-off, not independent replication of every source check. Original remaining mathematical, live-source code, and formal validation duties stay on their separate gates."
+      "evidence": "Author attestation 2026-11-11 stands. Independent checks 2026-11-12: quoted Levin sentence, Zhang et al. delayed-gratification definition and the 'perturbative experiments are needed to distinguish these cases' passage (confirmed in the free-access journal version), Huh et al. and Jiang et al. characterizations all confirmed; Kriegman main text states no mouth angle and its supplement could not be retrieved (65 vs 105 degrees still unresolved). The nearest-relative comparison was recomputed from hash-checked raw inputs: direction confirmed, exact p not reproduced (0.044-0.057 vs 0.0607), above the pre-registered 0.01 in every variant. Author's sorting article: none of 25 saved states before 2026-11-01 contains the 0.50 forecast. Two verified wrong DOIs restored."
     },
     {
       "id": "executable_live",
       "group": "Evidence & analysis",
       "label": "Seven test packages: independent live-source checks and negative controls",
-      "state": "open",
-      "evidence": "Previously confirmed offline selftests; live-source checks not yet all evidenced"
+      "state": "partial",
+      "evidence": "2026-11-12: all seven packages run with audit.py --live from both mirrors (exit 0, OBSERVATION_REPRODUCED), each confirmed by an independent AST/exact-arithmetic reimplementation with negative controls (evidence in the release candidate archive and audits/agents/claude-fable-20261112T0220Z). Kept partial: Stokes solver not run; v2 harness self-audit weakness not yet fixed in a v3 package; no end-to-end run of a prompt in a second agent; agent agreement shares code and data."
     },
     {
       "id": "formal",
       "group": "Evidence & analysis",
       "label": "Formal logic, statistics, causal-bridge and mathematical proof-duty checks",
-      "state": "open",
-      "evidence": "Formal preflight not yet closed"
+      "state": "partial",
+      "evidence": "Arithmetic and one field identity reproduce (17 claims). The p = 0.061 comparison recomputed from raw inputs with scipy (direction and verdict reproduce; exact p does not). No proof assistant or SMT solver used."
     },
     {
       "id": "prose",
       "group": "Evidence & analysis",
       "label": "Whole-article prose, compression, quote retention and adversarial review",
       "state": "open",
-      "evidence": "Needs final quality-gate report and owner review"
+      "evidence": "Measured and read once on 2026-11-12 (no em dashes; mean sentence 15.5 words; heuristic flags come from instruction-panel text). Repeated restatements of the conclusion reworded into distinct points at the owner's request; remaining suggestions (the if-he-means device, address switch) not applied. Human read-aloud review and owner decision pending."
     },
     {
       "id": "bottom_line",
       "group": "Editorial requirements",
       "label": "Mandatory near-top Bottom line paragraph",
       "state": "partial",
-      "evidence": "Bottom line is the first paragraph of the authenticated WordPress draft (readback 2026-11-11T20:31:22); formal source and human prose review still pending."
+      "evidence": "Structural gate: the committed script fails the candidate because its italic-deck regex is over-escaped; with the one-line fix (tests added) the candidate passes (116 words, first block after a deck). Semantic review still pending."
     },
     {
       "id": "framework_links",
@@ -77,7 +77,7 @@
       "group": "Editorial requirements",
       "label": "Internal/external link audit and verified scholar-repository links",
       "state": "partial",
-      "evidence": "Relevant inline links added; full typed link audit pending"
+      "evidence": "2026-11-12: all 38 published articles decided one by one: 9 already linked from the draft, 4 deferred, 25 rejected; 4 inbound links planned for after publication only. Page-by-page human relevance read and post-publication verification still pending."
     },
     {
       "id": "repro_scaffold",
@@ -90,50 +90,50 @@
       "id": "history",
       "group": "Archives & reproducibility",
       "label": "Exact private historical snapshots, diffs and restorable Git history",
-      "state": "partial",
-      "evidence": "Prior private archive reconstructed from 39 available states; six oversized WP revision bodies unavailable"
+      "state": "done",
+      "evidence": "2026-11-12: all 58 saved WordPress revisions (218725797 to 218725897) retrieved, hashed and diffed, plus three later post states; none unavailable (supersedes the earlier 39-state reconstruction with six missing). Packaged as a separate history ZIP in the release candidate. GitHub-side snapshot still depends on owner approval."
     },
     {
       "id": "release_assets",
       "group": "Archives & reproducibility",
       "label": "Public UTF-8 audit TXT, full reconstruction ZIP, checksums and verified download links",
-      "state": "open",
-      "evidence": "Prepared privately; public links and release packaging pending"
+      "state": "partial",
+      "evidence": "2026-11-12: release candidate built and verified locally on article sha256 0e1603ff... (live, Revision notes moved to CHANGELOG.md): main archive (108 files, sha256 0e64e0328e3fa75a72e5e7231cb3090a3bfeb671bae629ebd7d3aba66b8716cc), history ZIP (138 files, sha256 461e97f69651a7bd4cef860868db7bd7f267647e3850a7ebd5172eb7db1dc19d), audit TXT (sha256 1be5e3307e46d464f41915b19bb1ddcceb1b3499bd4363b9759d650500b3ff1a). Fresh extraction: 0 checksum mismatches. Uploaded to the unpublished Zenodo draft 24151128 only."
     },
     {
       "id": "github_snapshot",
       "group": "Archives & reproducibility",
       "label": "Exact final article.html and metadata.json in article-specific GitHub directory",
-      "state": "open",
-      "evidence": "Do not expose unpublished manuscript before publication approval"
+      "state": "partial",
+      "evidence": "Exact published article.html, metadata.json and the release archive files are committed on the pull-request branch (not yet on main until the PR is merged by the owner)."
     },
     {
       "id": "doi",
       "group": "Archives & reproducibility",
       "label": "Article-specific Zenodo concept DOI and immutable version DOI verified",
-      "state": "open",
-      "evidence": "DOI preparation note at doi/RELEASE_PREP_2026-11-12.md records 2026-11-11 author source-signoff, Gutenberg snapshot fingerprint, immutable-artifact requirements and Zenodo authentication blocker. No reserved or registered article DOI. Final release gates still open."
+      "state": "partial",
+      "evidence": "Unpublished Zenodo draft 24151128: DOI 10.5281/zenodo.24151128 reserved (NOT registered; public record 404), metadata and five related works saved, three release files attached and checked against the GitHub copies (size and MD5). Awaiting the owner's Publish click; version and concept DOIs to be read back afterwards."
     },
     {
       "id": "owner",
       "group": "Publication sequence",
       "label": "Final candidate and unresolved limitations presented for explicit owner signoff",
-      "state": "open",
-      "evidence": "General readiness request is not a substitute for final reviewed-candidate signoff"
+      "state": "done",
+      "evidence": "Owner approved the release candidate in conversation on 2026-11-12 ('Approve the candidate', then 'Go live') after requesting and receiving the fixes described in the history; the approval text is the conversation, not a file."
     },
     {
       "id": "publish",
       "group": "Publication sequence",
       "label": "Publish approved WordPress edition and preserve canonical URL",
-      "state": "open",
-      "evidence": "Current WordPress status draft"
+      "state": "done",
+      "evidence": "Published 2026-11-12 on the owner's instruction (post 218725796, status publish, date 2026-11-12T00:09:00 site time) at https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/ ; final raw body sha256 0e1603ff88e9c7e313aa6cd0435f9a0711afa6820cc397471283a756d1907b01; page cache purged and the live HTML serves the final text."
     },
     {
       "id": "visibility",
       "group": "Publication sequence",
       "label": "After release: robots, sitemap, unlist plugin, canonical, schema and public links",
-      "state": "open",
-      "evidence": "Requires live signed-out verification"
+      "state": "partial",
+      "evidence": "Signed-out check of the live URL 2026-11-12: HTTP 200, no X-Robots-Tag, robots meta index/follow, self-canonical, JSON-LD parses, present in the public REST list and post sitemap, four framework links. Not yet done: inbound links from four related articles, Zenodo DOI links, and re-check after the DOIs are added."
     }
   ],
   "history": [
@@ -164,6 +164,62 @@
     {
       "date": "2026-11-12",
       "event": "Committed article-specific Zenodo release preparation record with raw WordPress draft SHA-256, 14-panel static scan, archive inventory and publication-order safeguards. Unauthenticated Zenodo browser; deposit not created."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Zenodo draft 24151128 created with reserved DOI 10.5281/zenodo.24151128 (not registered). Release candidate archive built and checksum-verified locally, not uploaded and not public. Gate evidence updated; prose, formal, history, github_snapshot, owner, publish and visibility remain open or partial. Publication awaits the owner's approval of the exact candidate."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Owner approved the release candidate in conversation, conditional on a computational disclosure, and asked for broken items to be fixed. Added Computational disclosure, dated Revision notes and an original-code link to the draft (readback hash equals expected c217fdaad74bf7d665b2c6f6d334a33a279825388caec32c4f01e8a1513cd060); rebuilt the archive. The owner will review the draft once more before going live, so WordPress and Zenodo remain unpublished."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Owner-requested follow-up checks run: full-text passage checks, p = 0.061 analysis, sitewide link matrix, pre-publication visibility checks, prose review, evidence retention across 58 revisions, history reconstruction. Draft corrected once (direction of the nearest-relative fish comparison); candidate hash now 86592ee1e07791bdf0ee320a31c67f65102b4401853c325aa099fa4427e8c72d; release archive rebuilt. Owner has approved the candidate in conversation subject to his own last read of the draft; nothing is published."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Owner instructed restoring the two dropped wrong-DOI findings and fixing remaining evidence-supported issues. Draft now sha256 c06cae7b2c5cdfae08180b3dee1116cd6d9881517ebe55fbe7576e713b76b58b; archive rebuilt. Items deliberately not changed: prose trims (judgement calls), ZIP README/PROMPT.md link text and the v2 harness control line (would need new package hashes), publication-time DOI text. Nothing published."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "At the owner's request five paragraphs that restated the central result (opening deck, opening paragraph, closing sections) were reworded so each makes a distinct point; the Bottom line, formal section and all sources, numbers and claims were left as they were. Draft now sha256 c06cae7b61277dfb3a9549422b22eb9daf716d4390ca1ba604ce971e071949d4; archive rebuilt. Not published."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Immunization wording applied at the owner's request; WordPress article published; live signed-out checks passed; final archive rebuilt on published raw body sha256 77ea9112229ae2e6454f8fb8b1e252e8f528a614ad14eb6d609ea816587db3b3; snapshot committed to the PR branch. Zenodo draft 24151128 not yet published."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Release files uploaded to Zenodo draft 24151128 and verified by size and MD5; isIdenticalTo relation to the published permalink added; the record is unpublished and waits for the owner's Publish click."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "At the owner's request: 'invented' replaced by 'never made' for the 0.50 forecast (supported by a check of all 25 earlier saved states of the author's sorting article), the Zhang sentence restored to quote the journal version, and a recomputation of the nearest-relative comparison added. Article now sha256 77ea9112229ae2e6454f8fb8b1e252e8f528a614ad14eb6d609ea816587db3b3; archive rebuilt; Zenodo draft files to be replaced before the owner's Publish click."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "At the owner's request: Bottom line rewritten compactly, opening deck cut to headline and question, and a section added defining typed-in and stipulated results; article now sha256 77ea9112229ae2e6454f8fb8b1e252e8f528a614ad14eb6d609ea816587db3b3. Archive rebuilt; Zenodo draft files to be swapped before the owner's Publish click."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Image note added under the Bottom line (hero illustration is satire; 900% sheet is a synthetic control; the 0% panel was not stamped by the validator; no claim that Michael Levin wrote the validator or endorsed the audit). Article sha256 77ea9112229ae2e6454f8fb8b1e252e8f528a614ad14eb6d609ea816587db3b3; archive rebuilt; Zenodo files to be swapped."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "At the owner's request: replacement hero image (green NEGATIVE RESULT label on the 0% panel instead of a red VERIFIED stamp; image sha256 e4423483aa194e5e5ffc23145b1f13fd9e6ee6c22019ee8fe2a4ccb2be72bf1a, committed under assets/), image caption and alt text updated, and the reserved Zenodo DOI 10.5281/zenodo.24151128 linked in the article in place of the 'DOI will be linked' and 'unpublished draft' wording. Article sha256 38fff624f6ac395e91cf045f6574613abd295cd590ae8b0a0a1f8e7a9e300e81; archive rebuilt; Zenodo draft files to be swapped before the owner's Publish click."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Final hero image applied at the owner's request: green 'my argument all along' callout plus green NEGATIVE RESULT label (file assets/joel-dietz-michael-levin-audit-green-callout-hero.png, sha256 4f34eec7ee5180c72becf860bd0d310655dfcc65f21cb17b5f6b7b38c4466b0e; WordPress attachment 218725908, featured image; alt text, caption and social image set). The earlier file assets/joel-dietz-michael-levin-audit-negative-result-hero.png is superseded. The image is not part of the Zenodo archive, so no archive change was needed. The site serves a resized 1600x900 copy at the file URL."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "At the owner's request: the dated Revision notes section was removed from the published article and moved to CHANGELOG.md (article folder and archive root). Article sha256 0e1603ff88e9c7e313aa6cd0435f9a0711afa6820cc397471283a756d1907b01; archive rebuilt; Zenodo draft files to be swapped before the owner's Publish click."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Zenodo record 24151128 published by the owner; public record verified (three files, md5 equal to release/, five related links, CC BY 4.0). Live article gained the post-publication citation and versions block (live raw body sha256 6ca0c150b42eac444aaeaf989a85194ca90f6dcb227c68e7872ed8b0fefe311e, equal to the deposited article plus that block). README, CITATION.cff, CHANGELOG and doi/ snapshots updated on the PR branch; merge to main pending the owner."
     }
   ]
 }
