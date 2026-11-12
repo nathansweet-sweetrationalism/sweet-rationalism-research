@@ -24,6 +24,8 @@ Cite as: Sweet, N. (2026). *Responding to Joel Dietz (MIT)’s “77.6++%” Def
 - Machine-readable citation: [`CITATION.cff`](CITATION.cff)
 
 
+**Current article snapshot:** The top-level `article.html` follows WordPress post 218725796 after the 2026-11-12 opening-citation placement edit (raw Gutenberg body SHA-256 `70f5e521e39984172fd6033397b5bb56b5221f7bfba1199fa37609c902b47fc9`). The DOI-linked Zenodo 1.0.0 archive in `release/` preserves the earlier as-deposited edition and has not been rewritten. Consult [CHANGELOG.md](CHANGELOG.md) for the precise post-publication ordering change. Citation and Versions and archives blocks now precede the opening Bottom line.
+
 ## Seven executable source checks
 
 Each test has two directly downloadable ZIP mirrors. Coding agents should fetch the GitHub version automatically; if it is unavailable, use WordPress. The manually clickable links are optional. Both distributions are intended to hold the same v2 contents; compare SHA-256 hashes if both can be downloaded. The [plain-text audit harness](audit.py) and [per-test JSON inputs](test-data/) are additional source-code fallbacks, not substitutes for retrieving the original primary sources.
