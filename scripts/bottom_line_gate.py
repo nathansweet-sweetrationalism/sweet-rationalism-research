@@ -50,6 +50,13 @@ class ArticleBlocks(HTMLParser):
 def inspect_html(content: str, required_terms: list[str] | None = None) -> dict:
     parser = ArticleBlocks()
     parser.feed(content)
+    # An optional initial italic deck is reader-facing metadata, not a
+    # substantive paragraph. Restrict this exception to a complete first
+    # paragraph whose sole content is inside <em>; subsequent prose still blocks.
+    leading_deck = bool(re.match(
+        r"^\\s*(?:<!--\\s*wp:paragraph[^>]*-->\\s*)?<p>\\s*<em>.*?</em>\\s*</p>",
+        content, flags=re.I | re.S,
+    ))
     core: list[tuple[int, str, str]] = []
     for i, (tag, s) in enumerate(parser.blocks):
         lower = s.lower()
@@ -76,7 +83,8 @@ def inspect_html(content: str, required_terms: list[str] | None = None) -> dict:
             failures.append(f"Bottom line follows {len(preceding)} non-archive blocks; expected near the top")
         if any(SECTION_HEADER.match(s) for _, s in preceding):
             failures.append("Bottom line follows an abstract, introduction or major-section heading")
-        if any(t == "p" and len(s.split()) > 38 for t, s in preceding):
+        if any(t == "p" and len(text.split()) > 38 and not (leading_deck and pos == 0)
+               for pos, t, text in core if pos < i):
             failures.append("A full substantive paragraph precedes the Bottom line")
         if word_count < 55 or word_count > 230:
             cautions.append(f"Bottom line length is {word_count} words; normally aim near 80–160 where useful")
