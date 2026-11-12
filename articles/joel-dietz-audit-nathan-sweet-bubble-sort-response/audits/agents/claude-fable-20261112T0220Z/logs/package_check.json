@@ -1,0 +1,819 @@
+{
+ "python": "3.11.9",
+ "platform": "Windows-10-10.0.26100-SP0",
+ "repo_audit_sha256": "fa28a5a2964bb525ea8735398d0aa866887adec3fa1e8499d60786d6d36e1095",
+ "tests": {
+  "validator": {
+   "github": {
+    "http": 200,
+    "sha256": "d650355507f16015f33f8351ff802c6ac139d10a7a7c1c7b18419145a3939113",
+    "bytes": 13916,
+    "info": "application/zip"
+   },
+   "wordpress": {
+    "http": 200,
+    "sha256": "d650355507f16015f33f8351ff802c6ac139d10a7a7c1c7b18419145a3939113",
+    "bytes": 13916,
+    "info": null
+   },
+   "repo_head_copy_sha256": "d650355507f16015f33f8351ff802c6ac139d10a7a7c1c7b18419145a3939113",
+   "mirrors_identical": true,
+   "github_equals_repo_head": true,
+   "zip_testzip_bad_member": null,
+   "members": [
+    {
+     "name": "README.md",
+     "size": 1614,
+     "crc": "a994ba6f",
+     "sha256": "cb05fef0c8f95c3f81ba6114bec68c73980fd66bb6710c884baa89553a1a69b1"
+    },
+    {
+     "name": "PROMPT.md",
+     "size": 1736,
+     "crc": "4fcffda6",
+     "sha256": "4ab7e1eb8dabb67add306aedf579cf6f39a18ce49b565d0e597d3675415cb7b7"
+    },
+    {
+     "name": "test.json",
+     "size": 635,
+     "crc": "d21ba8ae",
+     "sha256": "9d5a1fa428420ca2c1ef29ad01f873b150e5c8a20b9c3827804265ff28e26546"
+    },
+    {
+     "name": "audit.py",
+     "size": 9535,
+     "crc": "b0580df2",
+     "sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    }
+   ],
+   "unsafe_paths": [],
+   "has_verify_py": false,
+   "has_PROMPT_md": true,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
+   "bundled_test_json_equals_repo_test_data": true,
+   "runs": [
+    {
+     "cmd": "-I audit.py --live",
+     "exit": 0,
+     "status": "OBSERVATION_REPRODUCED",
+     "stdout_sha256": "2c9341bfe316765f12c19e511d3ef0e246df410688447275637a61cb863f9500",
+     "stderr_head": "",
+     "label": "live"
+    },
+    {
+     "cmd": "-I audit.py --selftest",
+     "exit": 0,
+     "status": "SELFTEST_ONLY",
+     "stdout_sha256": "ca1411484db2370781147e41dd0136417d7f2a485e0934d2a466350272929a95",
+     "stderr_head": "",
+     "label": "selftest"
+    },
+    {
+     "cmd": "-I audit.py --offline",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: unrecognized arguments: --offline\n",
+     "label": "obsolete_offline_flag"
+    },
+    {
+     "cmd": "-I audit.py",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "no_flag"
+    },
+    {
+     "cmd": "-I audit.py --live --selftest",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "both_flags"
+    },
+    {
+     "cmd": "-I audit.py --live --config nope.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "afc050fb3505d26dc90536b9771a99c87c38851295864bbc19667504eaf72a28",
+     "stderr_head": "",
+     "label": "missing_config"
+    },
+    {
+     "cmd": "-I audit.py --selftest --config bad.json",
+     "exit": 1,
+     "status": "SELFTEST_FAILED",
+     "stdout_sha256": "74c9f58f4fac6bad1abecafa66b6f10494968f4edb2228482dddaa311f7a5964",
+     "stderr_head": "",
+     "label": "malformed_config"
+    },
+    {
+     "cmd": "-I audit.py --live --config dead.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "c43461eba89921639e85b10bf1bb024473add47196582e67421441e8fc647f27",
+     "stderr_head": "",
+     "label": "dead_source_url"
+    }
+   ]
+  },
+  "xenobot": {
+   "github": {
+    "http": 200,
+    "sha256": "ed37bb577fce98b5f96786bede1743246dceda68888e85c2f981489796dd889e",
+    "bytes": 14505,
+    "info": "application/zip"
+   },
+   "wordpress": {
+    "http": 200,
+    "sha256": "ed37bb577fce98b5f96786bede1743246dceda68888e85c2f981489796dd889e",
+    "bytes": 14505,
+    "info": null
+   },
+   "repo_head_copy_sha256": "ed37bb577fce98b5f96786bede1743246dceda68888e85c2f981489796dd889e",
+   "mirrors_identical": true,
+   "github_equals_repo_head": true,
+   "zip_testzip_bad_member": null,
+   "members": [
+    {
+     "name": "README.md",
+     "size": 1724,
+     "crc": "612e0a45",
+     "sha256": "4ca59fa724aa74d0f347c6b523bf608337245d3c93d7b2993eafa2352e0f6e56"
+    },
+    {
+     "name": "PROMPT.md",
+     "size": 1866,
+     "crc": "8a848539",
+     "sha256": "6ae2d0169ad34284ec424ecbb8b0635f38a38c0f63510470fb076561ffe54677"
+    },
+    {
+     "name": "test.json",
+     "size": 984,
+     "crc": "ff52519a",
+     "sha256": "ff35ef921acad7f955c0d6fd4e77a5648c5d93ee9ec1450893ca5a68d8b0604a"
+    },
+    {
+     "name": "audit.py",
+     "size": 9535,
+     "crc": "b0580df2",
+     "sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    }
+   ],
+   "unsafe_paths": [],
+   "has_verify_py": false,
+   "has_PROMPT_md": true,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
+   "bundled_test_json_equals_repo_test_data": true,
+   "runs": [
+    {
+     "cmd": "-I audit.py --live",
+     "exit": 0,
+     "status": "OBSERVATION_REPRODUCED",
+     "stdout_sha256": "a9022335c1b4e96f85e48435055bbc6f7523101f7317c0fa3e75e50f55968522",
+     "stderr_head": "",
+     "label": "live"
+    },
+    {
+     "cmd": "-I audit.py --selftest",
+     "exit": 0,
+     "status": "SELFTEST_ONLY",
+     "stdout_sha256": "69f206de6ea40885032f9fa954f53cf02d8d2a6785b9c4da4f1095e4a73fb111",
+     "stderr_head": "",
+     "label": "selftest"
+    },
+    {
+     "cmd": "-I audit.py --offline",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: unrecognized arguments: --offline\n",
+     "label": "obsolete_offline_flag"
+    },
+    {
+     "cmd": "-I audit.py",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "no_flag"
+    },
+    {
+     "cmd": "-I audit.py --live --selftest",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "both_flags"
+    },
+    {
+     "cmd": "-I audit.py --live --config nope.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "5ddadfeaeccd2f9d18835f98bc97c45f91037ca4e8943724f432a0102e6ab7e2",
+     "stderr_head": "",
+     "label": "missing_config"
+    },
+    {
+     "cmd": "-I audit.py --selftest --config bad.json",
+     "exit": 1,
+     "status": "SELFTEST_FAILED",
+     "stdout_sha256": "bbfc9570597361c6a5f90b466bd82d3ee8ca6320c2925beee481b5cbeea5bc4f",
+     "stderr_head": "",
+     "label": "malformed_config"
+    },
+    {
+     "cmd": "-I audit.py --live --config dead.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "c3566eff687a833b0e03e115dfef75dd2625fda6548d4a39cf1b9b2aa3e77871",
+     "stderr_head": "",
+     "label": "dead_source_url"
+    }
+   ]
+  },
+  "tadpole": {
+   "github": {
+    "http": 200,
+    "sha256": "0b0e68e01322e76189c9b1b1bfc9971dcedb124479360f1ccbf64c5f68a76bfa",
+    "bytes": 14022,
+    "info": "application/zip"
+   },
+   "wordpress": {
+    "http": 200,
+    "sha256": "0b0e68e01322e76189c9b1b1bfc9971dcedb124479360f1ccbf64c5f68a76bfa",
+    "bytes": 14022,
+    "info": null
+   },
+   "repo_head_copy_sha256": "0b0e68e01322e76189c9b1b1bfc9971dcedb124479360f1ccbf64c5f68a76bfa",
+   "mirrors_identical": true,
+   "github_equals_repo_head": true,
+   "zip_testzip_bad_member": null,
+   "members": [
+    {
+     "name": "README.md",
+     "size": 1573,
+     "crc": "6ce033b3",
+     "sha256": "1e78bb031e223d0600a2a28453e9acaa57c74cc6354acc4119c5c0dc12e4f9e0"
+    },
+    {
+     "name": "PROMPT.md",
+     "size": 1740,
+     "crc": "90c78d32",
+     "sha256": "110714915b66efd026e4b7cd52b8703521b1a17f5bbcca6426d7cbc2d425129b"
+    },
+    {
+     "name": "test.json",
+     "size": 778,
+     "crc": "98d66064",
+     "sha256": "55f98d88539e91ef61d9c8c9bc3ab33d9b0cb8a68d668a1a79ec4fc53eb76a97"
+    },
+    {
+     "name": "audit.py",
+     "size": 9535,
+     "crc": "b0580df2",
+     "sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    }
+   ],
+   "unsafe_paths": [],
+   "has_verify_py": false,
+   "has_PROMPT_md": true,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
+   "bundled_test_json_equals_repo_test_data": true,
+   "runs": [
+    {
+     "cmd": "-I audit.py --live",
+     "exit": 0,
+     "status": "OBSERVATION_REPRODUCED",
+     "stdout_sha256": "a7798446932b8c9c2575cb47fbbc3d4745dc71469a5f0034bf27aef54b0797a5",
+     "stderr_head": "",
+     "label": "live"
+    },
+    {
+     "cmd": "-I audit.py --selftest",
+     "exit": 0,
+     "status": "SELFTEST_ONLY",
+     "stdout_sha256": "32b692db344f683f6b9d1ab74c21cd406f8b9c42b8d11857a4916aa076b1e90e",
+     "stderr_head": "",
+     "label": "selftest"
+    },
+    {
+     "cmd": "-I audit.py --offline",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: unrecognized arguments: --offline\n",
+     "label": "obsolete_offline_flag"
+    },
+    {
+     "cmd": "-I audit.py",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "no_flag"
+    },
+    {
+     "cmd": "-I audit.py --live --selftest",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "both_flags"
+    },
+    {
+     "cmd": "-I audit.py --live --config nope.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "fbab24e3a25abc685615f91f58a67b29577642e96f245f92a95629b2aa5c7fe3",
+     "stderr_head": "",
+     "label": "missing_config"
+    },
+    {
+     "cmd": "-I audit.py --selftest --config bad.json",
+     "exit": 1,
+     "status": "SELFTEST_FAILED",
+     "stdout_sha256": "731950ab5e3427844b08693bf009a5eb59e379587875151467aee44e94f6e7e6",
+     "stderr_head": "",
+     "label": "malformed_config"
+    },
+    {
+     "cmd": "-I audit.py --live --config dead.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "e02ec8d68c21d51ea72536f64381c03c7c353bb43568cdad78faa703aae95ba6",
+     "stderr_head": "",
+     "label": "dead_source_url"
+    }
+   ]
+  },
+  "score": {
+   "github": {
+    "http": 200,
+    "sha256": "0167c45f80fff8bccb3cf483b83d04cadf501c9847f914773911709abcd19745",
+    "bytes": 14022,
+    "info": "application/zip"
+   },
+   "wordpress": {
+    "http": 200,
+    "sha256": "0167c45f80fff8bccb3cf483b83d04cadf501c9847f914773911709abcd19745",
+    "bytes": 14022,
+    "info": null
+   },
+   "repo_head_copy_sha256": "0167c45f80fff8bccb3cf483b83d04cadf501c9847f914773911709abcd19745",
+   "mirrors_identical": true,
+   "github_equals_repo_head": true,
+   "zip_testzip_bad_member": null,
+   "members": [
+    {
+     "name": "README.md",
+     "size": 1563,
+     "crc": "b87df3a9",
+     "sha256": "e5b33f9387c8da75d2e3ee9150078f3d0a5bd1f879efdf5b49f7e1297481548d"
+    },
+    {
+     "name": "PROMPT.md",
+     "size": 1711,
+     "crc": "30d07dd8",
+     "sha256": "c2240d04ad998662641ef7a4591d94c290ad896c582b7158b7b0e43ba4d31c03"
+    },
+    {
+     "name": "test.json",
+     "size": 817,
+     "crc": "73beeb9b",
+     "sha256": "d8b5bc2cbf78c2af042765f830ddcd843fee1401fb5995b5bb092b10407b1273"
+    },
+    {
+     "name": "audit.py",
+     "size": 9535,
+     "crc": "b0580df2",
+     "sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    }
+   ],
+   "unsafe_paths": [],
+   "has_verify_py": false,
+   "has_PROMPT_md": true,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
+   "bundled_test_json_equals_repo_test_data": true,
+   "runs": [
+    {
+     "cmd": "-I audit.py --live",
+     "exit": 0,
+     "status": "OBSERVATION_REPRODUCED",
+     "stdout_sha256": "e727f87376454de261aaf45043c3d225889e3535fee37e42cbc45447554b2192",
+     "stderr_head": "",
+     "label": "live"
+    },
+    {
+     "cmd": "-I audit.py --selftest",
+     "exit": 0,
+     "status": "SELFTEST_ONLY",
+     "stdout_sha256": "c9e99455545ff7c654b2ce0935dae0d9349d6f9d5262281189318ef0a206c2cf",
+     "stderr_head": "",
+     "label": "selftest"
+    },
+    {
+     "cmd": "-I audit.py --offline",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: unrecognized arguments: --offline\n",
+     "label": "obsolete_offline_flag"
+    },
+    {
+     "cmd": "-I audit.py",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "no_flag"
+    },
+    {
+     "cmd": "-I audit.py --live --selftest",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "both_flags"
+    },
+    {
+     "cmd": "-I audit.py --live --config nope.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "eb7fa2e3b1094b07720244eab875f6ad94b9340bde60900ba9c14f67fdc86383",
+     "stderr_head": "",
+     "label": "missing_config"
+    },
+    {
+     "cmd": "-I audit.py --selftest --config bad.json",
+     "exit": 1,
+     "status": "SELFTEST_FAILED",
+     "stdout_sha256": "e4760bbecd8d0f9a7975f116a8579502b09eaf7815d2a8a4a6d2d054125e1bfe",
+     "stderr_head": "",
+     "label": "malformed_config"
+    },
+    {
+     "cmd": "-I audit.py --live --config dead.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "f18a7806ce7e2de6cbeabf698ddfca4a29318e639db98eb0940a2c65f19a1cfd",
+     "stderr_head": "",
+     "label": "dead_source_url"
+    }
+   ]
+  },
+  "ports": {
+   "github": {
+    "http": 200,
+    "sha256": "81ca725f9564f36feec2c6536e52ed68e762196338748f85cf193d3ceaae8622",
+    "bytes": 14086,
+    "info": "application/zip"
+   },
+   "wordpress": {
+    "http": 200,
+    "sha256": "81ca725f9564f36feec2c6536e52ed68e762196338748f85cf193d3ceaae8622",
+    "bytes": 14086,
+    "info": null
+   },
+   "repo_head_copy_sha256": "81ca725f9564f36feec2c6536e52ed68e762196338748f85cf193d3ceaae8622",
+   "mirrors_identical": true,
+   "github_equals_repo_head": true,
+   "zip_testzip_bad_member": null,
+   "members": [
+    {
+     "name": "README.md",
+     "size": 1595,
+     "crc": "4f59d3ac",
+     "sha256": "dca0c6c767d69d65daf00f0a998c8430edb71f29992330c1f486bff43a0717ba"
+    },
+    {
+     "name": "PROMPT.md",
+     "size": 1730,
+     "crc": "a7809fd3",
+     "sha256": "ec6cd0cd121c7ddd5d6b1578027f173054fcfb283e76bfe34319b988f1bfb1a1"
+    },
+    {
+     "name": "test.json",
+     "size": 830,
+     "crc": "890f3164",
+     "sha256": "c9b121fd898e017c0b0d9a3ed8e02617735cc600738c4636936432eb70fb9681"
+    },
+    {
+     "name": "audit.py",
+     "size": 9535,
+     "crc": "b0580df2",
+     "sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    }
+   ],
+   "unsafe_paths": [],
+   "has_verify_py": false,
+   "has_PROMPT_md": true,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
+   "bundled_test_json_equals_repo_test_data": true,
+   "runs": [
+    {
+     "cmd": "-I audit.py --live",
+     "exit": 0,
+     "status": "OBSERVATION_REPRODUCED",
+     "stdout_sha256": "da2856c54bec2e924a630abec5d0e20777cd854f9304e095b34865f47455c451",
+     "stderr_head": "",
+     "label": "live"
+    },
+    {
+     "cmd": "-I audit.py --selftest",
+     "exit": 0,
+     "status": "SELFTEST_ONLY",
+     "stdout_sha256": "be5d7d12edbd1c7696ac1b9856f1affc76af23b5975e2f0cb95f891338060135",
+     "stderr_head": "",
+     "label": "selftest"
+    },
+    {
+     "cmd": "-I audit.py --offline",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: unrecognized arguments: --offline\n",
+     "label": "obsolete_offline_flag"
+    },
+    {
+     "cmd": "-I audit.py",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "no_flag"
+    },
+    {
+     "cmd": "-I audit.py --live --selftest",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "both_flags"
+    },
+    {
+     "cmd": "-I audit.py --live --config nope.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "074d25f0578c8001756e3e092e94068d4765b407222b93756473847d09dfa760",
+     "stderr_head": "",
+     "label": "missing_config"
+    },
+    {
+     "cmd": "-I audit.py --selftest --config bad.json",
+     "exit": 1,
+     "status": "SELFTEST_FAILED",
+     "stdout_sha256": "a5e06633a702f0a3c7120c8dbe5a7b3bde8878104348bce1b134618235b199ac",
+     "stderr_head": "",
+     "label": "malformed_config"
+    },
+    {
+     "cmd": "-I audit.py --live --config dead.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "6576071e971317a8bb66e7ad55b105a8713c0251537f73fd6bac5cf3fc26c14d",
+     "stderr_head": "",
+     "label": "dead_source_url"
+    }
+   ]
+  },
+  "authorship": {
+   "github": {
+    "http": 200,
+    "sha256": "ea0490e2ae7e072f8040d8a1937d08ddc15956e0d28c24de07a731c491910a28",
+    "bytes": 13990,
+    "info": "application/zip"
+   },
+   "wordpress": {
+    "http": 200,
+    "sha256": "ea0490e2ae7e072f8040d8a1937d08ddc15956e0d28c24de07a731c491910a28",
+    "bytes": 13990,
+    "info": null
+   },
+   "repo_head_copy_sha256": "ea0490e2ae7e072f8040d8a1937d08ddc15956e0d28c24de07a731c491910a28",
+   "mirrors_identical": true,
+   "github_equals_repo_head": true,
+   "zip_testzip_bad_member": null,
+   "members": [
+    {
+     "name": "README.md",
+     "size": 1595,
+     "crc": "fabbec31",
+     "sha256": "d2572b493dfce15b4ade5b0e76c9792d90041c91d0890a390e5492838e7d2e36"
+    },
+    {
+     "name": "PROMPT.md",
+     "size": 1742,
+     "crc": "4b9cb02a",
+     "sha256": "4d60eb3984ced599289eaff4df13c9590783de33402c71fca1a4d2faee004e2d"
+    },
+    {
+     "name": "test.json",
+     "size": 722,
+     "crc": "fec933b9",
+     "sha256": "dc7966ef34676a09c3b02b102b5f3986192c49f7645b28b8b0cf09a209dd074b"
+    },
+    {
+     "name": "audit.py",
+     "size": 9535,
+     "crc": "b0580df2",
+     "sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    }
+   ],
+   "unsafe_paths": [],
+   "has_verify_py": false,
+   "has_PROMPT_md": true,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
+   "bundled_test_json_equals_repo_test_data": true,
+   "runs": [
+    {
+     "cmd": "-I audit.py --live",
+     "exit": 0,
+     "status": "OBSERVATION_REPRODUCED",
+     "stdout_sha256": "a5a3019da69a45e75a6e13c56f47e8768719c32ad2c1664d026bfc296486d158",
+     "stderr_head": "",
+     "label": "live"
+    },
+    {
+     "cmd": "-I audit.py --selftest",
+     "exit": 0,
+     "status": "SELFTEST_ONLY",
+     "stdout_sha256": "ae874f0f629434c1ca12be043502a5943702b4fafa1ad7798e1d77f33ba380c3",
+     "stderr_head": "",
+     "label": "selftest"
+    },
+    {
+     "cmd": "-I audit.py --offline",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: unrecognized arguments: --offline\n",
+     "label": "obsolete_offline_flag"
+    },
+    {
+     "cmd": "-I audit.py",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "no_flag"
+    },
+    {
+     "cmd": "-I audit.py --live --selftest",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "both_flags"
+    },
+    {
+     "cmd": "-I audit.py --live --config nope.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "e6cc56076d2e7da9d0e0225373379ac221fe45a08a54d2bd8bd2f8688bc303c4",
+     "stderr_head": "",
+     "label": "missing_config"
+    },
+    {
+     "cmd": "-I audit.py --selftest --config bad.json",
+     "exit": 1,
+     "status": "SELFTEST_FAILED",
+     "stdout_sha256": "3e691a0be87e67b3044a6ded852b4736df4abc7401b492b34fea06f59a4de9b1",
+     "stderr_head": "",
+     "label": "malformed_config"
+    },
+    {
+     "cmd": "-I audit.py --live --config dead.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "09cf1dea39feb2d76670dc9391bc2116aac191871f38d9db93ac997282ac5e56",
+     "stderr_head": "",
+     "label": "dead_source_url"
+    }
+   ]
+  },
+  "doi": {
+   "github": {
+    "http": 200,
+    "sha256": "85a8307ec44b07fc8b9b2fb19f86de368cd3b5a194a0dde97bf824de4b89d811",
+    "bytes": 14491,
+    "info": "application/zip"
+   },
+   "wordpress": {
+    "http": 200,
+    "sha256": "85a8307ec44b07fc8b9b2fb19f86de368cd3b5a194a0dde97bf824de4b89d811",
+    "bytes": 14491,
+    "info": null
+   },
+   "repo_head_copy_sha256": "85a8307ec44b07fc8b9b2fb19f86de368cd3b5a194a0dde97bf824de4b89d811",
+   "mirrors_identical": true,
+   "github_equals_repo_head": true,
+   "zip_testzip_bad_member": null,
+   "members": [
+    {
+     "name": "README.md",
+     "size": 1580,
+     "crc": "dd541ada",
+     "sha256": "d3c4192167800fe53f327d6245d63d6654205c5a09b355ca7052f94947319f2e"
+    },
+    {
+     "name": "PROMPT.md",
+     "size": 1716,
+     "crc": "c0a74721",
+     "sha256": "9b10f4cf7d362aeedbd7b320c113f54cc8e3c7b24f5d0e530c75b34f610e5a8c"
+    },
+    {
+     "name": "test.json",
+     "size": 1264,
+     "crc": "193f0ef9",
+     "sha256": "6a7be2dc5b2b0f16b12794e434032e6d3a1dda35d8023eb8c3ef66221cbbca4e"
+    },
+    {
+     "name": "audit.py",
+     "size": 9535,
+     "crc": "b0580df2",
+     "sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    }
+   ],
+   "unsafe_paths": [],
+   "has_verify_py": false,
+   "has_PROMPT_md": true,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
+   "bundled_test_json_equals_repo_test_data": true,
+   "runs": [
+    {
+     "cmd": "-I audit.py --live",
+     "exit": 0,
+     "status": "OBSERVATION_REPRODUCED",
+     "stdout_sha256": "00d5809b124b5706b69d1df764c13d11c151c7f0ac83aef046bb5aaa418d8cba",
+     "stderr_head": "",
+     "label": "live"
+    },
+    {
+     "cmd": "-I audit.py --selftest",
+     "exit": 0,
+     "status": "SELFTEST_ONLY",
+     "stdout_sha256": "30b225833e359536c9be5d5e54841f6398447e2680f04342b474240b77e0be38",
+     "stderr_head": "",
+     "label": "selftest"
+    },
+    {
+     "cmd": "-I audit.py --offline",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: unrecognized arguments: --offline\n",
+     "label": "obsolete_offline_flag"
+    },
+    {
+     "cmd": "-I audit.py",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "no_flag"
+    },
+    {
+     "cmd": "-I audit.py --live --selftest",
+     "exit": 2,
+     "status": null,
+     "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stderr_head": "usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]\naudit.py: error: Choose exactly one of --live or --selftest\n",
+     "label": "both_flags"
+    },
+    {
+     "cmd": "-I audit.py --live --config nope.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "ff84e50f9017453fb1edb3adedce51d96ffffe023982129705b271da567227c3",
+     "stderr_head": "",
+     "label": "missing_config"
+    },
+    {
+     "cmd": "-I audit.py --selftest --config bad.json",
+     "exit": 1,
+     "status": "SELFTEST_FAILED",
+     "stdout_sha256": "dfa83c0160914c9bedee778c9be2f1cc86db9ea573a137fcbd9c1ff0eceef81e",
+     "stderr_head": "",
+     "label": "malformed_config"
+    },
+    {
+     "cmd": "-I audit.py --live --config dead.json",
+     "exit": 2,
+     "status": "UNRESOLVED",
+     "stdout_sha256": "e1ac4b73046c3c02c8064f471de5f177c0aa2502db36c9687ff455c973bcdf50",
+     "stderr_head": "",
+     "label": "dead_source_url"
+    }
+   ]
+  }
+ }
+}

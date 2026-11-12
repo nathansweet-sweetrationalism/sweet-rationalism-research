@@ -1,0 +1,36 @@
+{
+  "status": "SELFTEST_ONLY",
+  "time_utc": "2026-11-12T02:20:15.674145+00:00",
+  "mode": "LOCAL_FIXTURE_SELFTEST",
+  "observations": [
+    {
+      "name": "estimated_human_prose_mean_percent",
+      "value": 56.1667
+    },
+    {
+      "name": "after_hypothetical_intro_row_split_percent",
+      "value": 61.2857
+    },
+    {
+      "name": "row_count_before_after",
+      "value": [
+        6,
+        7
+      ]
+    }
+  ],
+  "source_hashes": [
+    {
+      "name": "renderer",
+      "url": "FIXTURE_ONLY",
+      "sha256": "f45621102a4c46d2e36ba4659b8920e7856cc99b59a079576e18adfb2fa659fa",
+      "bytes": 175
+    }
+  ],
+  "limitations": [
+    "This check establishes only the stated source/code observation, not an ontology.",
+    "Fixture mode is a parser smoke test, NOT an independent check of online sources.",
+    "Section-boundary sensitivity does not reveal real authorship contribution shares."
+  ],
+  "test_id": "authorship"
+}

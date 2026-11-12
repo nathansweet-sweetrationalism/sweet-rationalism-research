@@ -1,0 +1,18 @@
+BEFORE missing config:
+  "status": "UNRESOLVED",
+  "error": "Source retrieval failed; no offline fallback was substituted: [Errno 2] No such file or directory: '<local path>/nope.json'"
+exit 2
+AFTER missing config:
+  "status": "NOT_RUN",
+  "error": "Local configuration file missing or unreadable (not a source-retrieval failure): FileNotFoundError: [Errno 2] No such file or directory: '<local path>/nope.json'"
+exit 1
+AFTER malformed config:
+  "status": "NOT_RUN",
+exit 1
+validator patched=[OBSERVATION_REPRODUCED bb5d0e7430eb6102] original=[OBSERVATION_REPRODUCED bb5d0e7430eb6102] selftest_ok=1
+xenobot patched=[OBSERVATION_REPRODUCED 0cc6e867a06989cd] original=[OBSERVATION_REPRODUCED 0cc6e867a06989cd] selftest_ok=1
+tadpole patched=[OBSERVATION_REPRODUCED 824a45f6242cb09e] original=[OBSERVATION_REPRODUCED 824a45f6242cb09e] selftest_ok=1
+score patched=[OBSERVATION_REPRODUCED f11286c2b57061ed] original=[OBSERVATION_REPRODUCED f11286c2b57061ed] selftest_ok=1
+ports patched=[OBSERVATION_REPRODUCED f6fe575c32b608c6] original=[OBSERVATION_REPRODUCED f6fe575c32b608c6] selftest_ok=1
+authorship patched=[OBSERVATION_REPRODUCED e94339a68802b86b] original=[OBSERVATION_REPRODUCED e94339a68802b86b] selftest_ok=1
+doi patched=[OBSERVATION_REPRODUCED 637ee07c8fad79ce] original=[OBSERVATION_REPRODUCED 637ee07c8fad79ce] selftest_ok=1

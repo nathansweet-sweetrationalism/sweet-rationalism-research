@@ -1,0 +1,32 @@
+{
+  "status": "SELFTEST_ONLY",
+  "time_utc": "2026-11-12T02:20:12.882679+00:00",
+  "mode": "LOCAL_FIXTURE_SELFTEST",
+  "observations": [
+    {
+      "name": "matching_array_and_dictionary_assertions",
+      "value": [
+        "assert cpp_data[\"kymograph_n42\"][\"selection_final_values\"] == js_data[\"kymograph_n42\"][\"selection_final_values\"] == py_kymo[\"selection\"][\"final_values\"], \"Selection mismatch\"",
+        "assert cpp_data[\"benchmarks\"] == js_data[\"benchmarks\"], \"C++20 vs Node.js benchmark mismatch!\""
+      ]
+    },
+    {
+      "name": "full_intermediate_frames_proved_by_these_assertions",
+      "value": false
+    }
+  ],
+  "source_hashes": [
+    {
+      "name": "verifier",
+      "url": "FIXTURE_ONLY",
+      "sha256": "2c63d77391fbbdb06f03dbf768f412d18f4c659698cd0007092acc6f1409cb58",
+      "bytes": 270
+    }
+  ],
+  "limitations": [
+    "This check establishes only the stated source/code observation, not an ontology.",
+    "Fixture mode is a parser smoke test, NOT an independent check of online sources.",
+    "Other repository tests might cover additional outputs; search before declaring absence."
+  ],
+  "test_id": "ports"
+}

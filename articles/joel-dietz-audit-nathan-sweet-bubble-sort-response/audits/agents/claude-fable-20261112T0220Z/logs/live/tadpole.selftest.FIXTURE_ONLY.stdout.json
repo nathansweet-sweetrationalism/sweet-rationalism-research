@@ -1,0 +1,32 @@
+{
+  "status": "SELFTEST_ONLY",
+  "time_utc": "2026-11-12T02:20:07.421894+00:00",
+  "mode": "LOCAL_FIXTURE_SELFTEST",
+  "observations": [
+    {
+      "name": "model_target_input",
+      "value": "params[\"target_nf65_landmarks\"]"
+    },
+    {
+      "name": "illustrative_target_intervention",
+      "value": {
+        "target_minus_2": -1.99976,
+        "target_plus_9": 8.9998
+      }
+    }
+  ],
+  "source_hashes": [
+    {
+      "name": "model",
+      "url": "FIXTURE_ONLY",
+      "sha256": "5429a7b1fd041f89b7f8866248b89310e1dd3ba2f15a0e45c70508e8e229d14e",
+      "bytes": 257
+    }
+  ],
+  "limitations": [
+    "This check establishes only the stated source/code observation, not an ontology.",
+    "Fixture mode is a parser smoke test, NOT an independent check of online sources.",
+    "The illustrative ODE is not a tadpole experiment or a proof about target origin."
+  ],
+  "test_id": "tadpole"
+}

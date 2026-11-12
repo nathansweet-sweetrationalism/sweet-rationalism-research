@@ -1,0 +1,19 @@
+{
+ "before": {
+  "offline_flag": 14,
+  "verify_py": 14,
+  "FIXTURE_CHECK_ONLY": 14,
+  "selftest_command_in_textareas": 0
+ },
+ "after": {
+  "offline_flag": 0,
+  "verify_py": 0,
+  "FIXTURE_CHECK_ONLY": 0,
+  "selftest_command_in_textareas": 14
+ },
+ "lines_changed": 42,
+ "line_count_equal": true,
+ "char_delta": 154,
+ "before_sha256": "034280325838f1cd563709772311e2de3556f56931b9229538ef944c70c51a98",
+ "after_sha256": "f4d791fda72274f5e310ffcf8c36453cb068153bfa65080f0cbb4aef3de16734"
+}

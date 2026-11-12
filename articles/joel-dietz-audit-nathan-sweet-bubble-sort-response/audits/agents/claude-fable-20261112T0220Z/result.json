@@ -1,0 +1,1915 @@
+{
+ "schema": "sweet-rationalism-agent-audit/v1",
+ "run_id": "claude-fable-20261112T0220Z",
+ "agent": {
+  "tool": "Claude Code (desktop app, Agent SDK)",
+  "model": "Claude Fable 5.2 (claude-fable-5-2), Anthropic",
+  "runtime": "Windows 11, Python 3.11.9, git; no proof assistant, SMT solver or CAS installed or used"
+ },
+ "snapshot": {
+  "wordpress_post_id": 218725796,
+  "wordpress_status": "draft",
+  "wordpress_modified": "2026-11-11T20:31:22",
+  "wordpress_modified_gmt": "2026-11-12T01:31:22",
+  "wordpress_content_sha256": "034280325838f1cd563709772311e2de3556f56931b9229538ef944c70c51a98",
+  "wordpress_content_characters": 312103,
+  "rechecked_unchanged_before_submission": true,
+  "github_base_commit": "2ee1a4233d37339e27580e59e83af3284f0027d1",
+  "upstream_commit": "4bed72c17f09bf336e36e7472e64d457db3b0195",
+  "upstream_head_at_audit": "8965854534703a1083974929cb19bd1dc83ef8a2",
+  "upstream_tested_files_changed_since_pin": 0,
+  "package_commit": "7eeb8ccd1f7b4d81186340b62ef300cfacdee14f"
+ },
+ "assessments": [
+  {
+   "id": "T-validator",
+   "release_gate": "executable_live",
+   "scope": "Whether the pinned validator's VERIFIED label depends on the computed error; what the saved CSV records.",
+   "status": "CONFIRMED_WITHIN_SCOPE",
+   "observations": [
+    "AST: 14 dict literals carry relative_error_pct and status; all 14 status values are the constant \"VERIFIED\"; 0 if/compare/assert nodes reference the error.",
+    "CSV: 14 rows, all VERIFIED; largest saved error 34.11% (0.37 published, 0.496 replicated), next 11.71%.",
+    "File contains the literal title \"14/14 Published Benchmarks Verified\", two PASS literals, no FAIL literal.",
+    "Guide table: 0.5581 (C++), 0.5581 (JS), 0.496 (Python) for the same target; 0.5581 is 50.84% above 0.37."
+   ],
+   "evidence": [
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/validate_kymograph_and_paper.py",
+     "sha256": "f292b78a5707dfe81fd3b8f97fb3b523da56e2491467ca2bd30b25b536c6b2cd"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/figures/zhang_2025_validation_benchmarks.csv",
+     "sha256": "458f9363d86e4142c9eeb30b2984d2f4949a5d8f1d583dedf94bc563bf3d8bb1"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/REPLICATION_AND_PORT_GUIDE.md",
+     "sha256": "2248e5abcc86d9fa597e58aab26a5817c55d5cb960978ff1ed0992c67974b6b5"
+    },
+    {
+     "file": "logs/independent_checks.json"
+    },
+    {
+     "file": "logs/live/validator.live.stdout.json"
+    }
+   ],
+   "limitations": [
+    "Verdict logic and saved numbers only; nothing here says the simulations are wrong.",
+    "The 900% figure in the article is a synthetic control, not an upstream measurement."
+   ],
+   "loss_conditions": [
+    "An acceptance threshold or uncertainty test applied to these rows anywhere in the pinned repository would change the finding.",
+    "A later upstream commit making status conditional (none as of upstream HEAD 8965854)."
+   ],
+   "controls": [
+    "Hypothetical thresholds (ours): 1% fails 7 rows, 5% fails 2, 10% fails 2, 25% fails 1.",
+    "A constant expression cannot vary with input, so any synthetic error value keeps VERIFIED."
+   ],
+   "rivals": [
+    "The label may be intended as 'benchmark was executed' or 'qualitative trend reproduced'; the code states no such criterion."
+   ],
+   "commands": [
+    {
+     "command": "python audit.py --live   (inside the extracted validator ZIP; also python audit.py --live --config test-data/validator.json from the article directory)",
+     "exit_code": 0,
+     "stdout_path": "logs/live/validator.live.stdout.json"
+    },
+    {
+     "command": "python scripts/independent_checks.py <cache> logs/independent_checks.json",
+     "exit_code": 0,
+     "stdout_path": "logs/independent_checks.json"
+    }
+   ]
+  },
+  {
+   "id": "T-xenobot",
+   "release_gate": "executable_live",
+   "scope": "Whether the pinned companion's 105 degree statement matches the pinned model's closed-form efficiency sweep.",
+   "status": "CONFIRMED_WITHIN_SCOPE",
+   "observations": [
+    "Companion text says 105 degrees three times, including that both fluid simulations find it.",
+    "Model: eta_sweep is a Gaussian centred at 65.0; argmax 65.0 on the code grid and on a 0.001 degree grid; value at 65 is 3.4 times value at 105.",
+    "The token 105 does not occur in the model file; theta_mouth_deg defaults to 65.0."
+   ],
+   "evidence": [
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_CLAIMS.md",
+     "sha256": "fae2a9c1bdc658a21d4ba79245b86976b2d7d40715567f6e99e99cb8808c6eac"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/models/2020-kriegman-xenobot-evolutionary-biobots.py",
+     "sha256": "ea9dad82946cd76c9f357d2cb94eb06dbfef505a6f3febffb0fb0a92139d7580"
+    },
+    {
+     "file": "logs/independent_checks.json"
+    },
+    {
+     "file": "logs/live/xenobot.live.stdout.json"
+    }
+   ],
+   "limitations": [
+    "Upstream code was not executed. The separate Stokes capture sweep was not run; its sampled angles (0,20,35,50,65,80,95,110,120) do not include 105.",
+    "Kriegman et al. 2021 full text was not checked for the angle convention."
+   ],
+   "loss_conditions": [
+    "A documented second angle convention mapping 65 to 105 (for example opening versus body arc) in the paper or repository.",
+    "A Stokes sweep result peaking near 105 under an independently specified geometry."
+   ],
+   "controls": [
+    "Moving the stipulated centre to 40, 80 moves the optimum to 40, 80; a centre of 105 gives 96.6 because of the spill penalty."
+   ],
+   "rivals": [
+    "105 and 65 may be two conventions for one geometry; or the companion text carries a transcription error."
+   ],
+   "commands": [
+    {
+     "command": "python audit.py --live   (inside the extracted xenobot ZIP; also python audit.py --live --config test-data/xenobot.json from the article directory)",
+     "exit_code": 0,
+     "stdout_path": "logs/live/xenobot.live.stdout.json"
+    },
+    {
+     "command": "python scripts/independent_checks.py <cache> logs/independent_checks.json",
+     "exit_code": 0,
+     "stdout_path": "logs/independent_checks.json"
+    }
+   ]
+  },
+  {
+   "id": "T-tadpole",
+   "release_gate": "executable_live",
+   "scope": "Whether the reduced tadpole model's target is an input, and what convergence then shows.",
+   "status": "CONFIRMED_WITHIN_SCOPE",
+   "observations": [
+    "closed_loop_attractor_rhs is linear in X - X_star (homing plus pairwise coupling) and vanishes at the target.",
+    "X_star is read from params[\"target_nf65_landmarks\"] (4 loads).",
+    "Independent RK4 reimplementation with 200 seeded random targets converges to whichever target is supplied (worst distance 9.6e-6)."
+   ],
+   "evidence": [
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/models/2019-bischof-xenopus-craniofacial-remap.py",
+     "sha256": "fccee236c856696f65a2edc65c16250fd4201e8c0fb0e493721ac9bc6b2ab3b6"
+    },
+    {
+     "file": "logs/independent_checks.json"
+    },
+    {
+     "file": "logs/live/tadpole.live.stdout.json"
+    }
+   ],
+   "limitations": [
+    "A statement about the reduced model only; not about embryos or the origin of a biological target.",
+    "The upstream parameter JSON was not fetched; the property test uses random positive K and nonnegative symmetric C."
+   ],
+   "loss_conditions": [
+    "A model variant in which the target is derived from data not supplied as a parameter.",
+    "Negative K or asymmetric C in the canonical parameters (would break the convergence argument)."
+   ],
+   "controls": [
+    "eta = 0 (the model's off switch): landmarks do not move."
+   ],
+   "rivals": [
+    "The simulation may be offered only as a conditional illustration, in which case a supplied target is unobjectionable."
+   ],
+   "commands": [
+    {
+     "command": "python audit.py --live   (inside the extracted tadpole ZIP; also python audit.py --live --config test-data/tadpole.json from the article directory)",
+     "exit_code": 0,
+     "stdout_path": "logs/live/tadpole.live.stdout.json"
+    },
+    {
+     "command": "python scripts/independent_checks.py <cache> logs/independent_checks.json",
+     "exit_code": 0,
+     "stdout_path": "logs/independent_checks.json"
+    }
+   ]
+  },
+  {
+   "id": "T-score",
+   "release_gate": "executable_live",
+   "scope": "Arithmetic and provenance of the 77.6% headline and its sensitivity.",
+   "status": "CONFIRMED_WITHIN_SCOPE",
+   "observations": [
+    "Seven labels 66.7, 13.5, 86.5, 96.1, 95.0, 95.0, 90.1; exact mean 5429/70 = 77.557..., displayed 77.6.",
+    "MEAN is a string literal; the generator has no numeric aggregation call.",
+    "Leave-one-out range 74.47 to 88.23. Errata formulas reproduce 88.1, 65.7, 84.2 and 81.6 exactly as printed."
+   ],
+   "evidence": [
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/media/make_claim_aggregation.py",
+     "sha256": "7449df97210d50bfe5adbd75b5aa342fcebdc04c1949132cfc6e7d4e88f28943"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/ERRATA_AND_REFEREE_AUDIT_LOG.md",
+     "sha256": "f0905d3d477ae5204984a7c83231d7b1c905c67ed96db689e5f415672e441fcb"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_ARTICLE.md",
+     "sha256": "15128797b75b65902277fba779560c6c7d1d0c25eae587fe0510ed60c42c5261"
+    },
+    {
+     "file": "logs/independent_checks.json"
+    },
+    {
+     "file": "logs/live/score.live.stdout.json"
+    }
+   ],
+   "limitations": [
+    "Arithmetic of displayed labels. Hardcoding does not show the scores were invented; the errata documents the arithmetic.",
+    "An unweighted mean of unlike judgments is not a probability."
+   ],
+   "loss_conditions": [
+    "A pipeline upstream that regenerates the tile labels from per-claim test results."
+   ],
+   "controls": [
+    "Altering one score makes the hardcoded label disagree with the recomputed mean (detected).",
+    "Hypothetical Claim 2 weight 0, 0.5, 1, 2, 3 gives 88.23, 82.48, 77.56, 69.55, 63.32."
+   ],
+   "rivals": [
+    "Hardcoded labels are normal in figure scripts; the score may be computed elsewhere."
+   ],
+   "commands": [
+    {
+     "command": "python audit.py --live   (inside the extracted score ZIP; also python audit.py --live --config test-data/score.json from the article directory)",
+     "exit_code": 0,
+     "stdout_path": "logs/live/score.live.stdout.json"
+    },
+    {
+     "command": "python scripts/independent_checks.py <cache> logs/independent_checks.json",
+     "exit_code": 0,
+     "stdout_path": "logs/independent_checks.json"
+    }
+   ]
+  },
+  {
+   "id": "T-ports",
+   "release_gate": "executable_live",
+   "scope": "Which quantities the pinned cross-language verifier asserts equal.",
+   "status": "CONFIRMED_WITHIN_SCOPE",
+   "observations": [
+    "Five assert statements; four are cross-language: three final-array equalities (C++, JS, Python) and one C++ versus JS benchmark dictionary.",
+    "No assert compares Python benchmark values or intermediate frames.",
+    "The Python paper-benchmark routine uses numpy default_rng; the cross-language path uses SplitMix64."
+   ],
+   "evidence": [
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/verify_multilang_ports.py",
+     "sha256": "19da933acba5bbaa0979493c8d34eb6aa2d31f2d86ea9d9eec06bb87ec7626f8"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/REPLICATION_AND_PORT_GUIDE.md",
+     "sha256": "2248e5abcc86d9fa597e58aab26a5817c55d5cb960978ff1ed0992c67974b6b5"
+    },
+    {
+     "file": "logs/independent_checks.json"
+    },
+    {
+     "file": "logs/live/ports.live.stdout.json"
+    }
+   ],
+   "limitations": [
+    "Only this verifier and the guide were parsed; a grep of sorting-morphogenesis at the pin found no other frame comparison, but this is not a proof of absence across the whole repository."
+   ],
+   "loss_conditions": [
+    "Another upstream test asserting frame-by-frame or Python benchmark parity."
+   ],
+   "rivals": [
+    "Final-state equality may be all the 'bit-exact' claim was meant to cover."
+   ],
+   "commands": [
+    {
+     "command": "python audit.py --live   (inside the extracted ports ZIP; also python audit.py --live --config test-data/ports.json from the article directory)",
+     "exit_code": 0,
+     "stdout_path": "logs/live/ports.live.stdout.json"
+    },
+    {
+     "command": "python scripts/independent_checks.py <cache> logs/independent_checks.json",
+     "exit_code": 0,
+     "stdout_path": "logs/independent_checks.json"
+    }
+   ]
+  },
+  {
+   "id": "T-authorship",
+   "release_gate": "executable_live",
+   "scope": "Sensitivity of the mean human-prose estimate to how sections are divided.",
+   "status": "CONFIRMED_WITHIN_SCOPE",
+   "observations": [
+    "Prose column estimates (% AI) 8, 50, 60, 58, 25, 40, 72, 62; mean human share 53.125%.",
+    "Duplicating the intro row gives 57.444%.",
+    "Splitting other rows instead moves the mean the other way or less: range 50.33 to 57.44 across the eight possible splits."
+   ],
+   "evidence": [
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/render_13yo_illustrations.py",
+     "sha256": "bf02ff2958dd90f0b24fe6e47d663c438d9c8a77afe978478f237f0e56c13ce8"
+    },
+    {
+     "file": "logs/independent_checks.json"
+    },
+    {
+     "file": "logs/live/authorship.live.stdout.json"
+    }
+   ],
+   "limitations": [
+    "Assumes both halves of a split row keep the same estimate.",
+    "Says nothing about real contribution shares."
+   ],
+   "loss_conditions": [
+    "A documented unit (words, time, decisions) and weighting rule for the estimates."
+   ],
+   "controls": [
+    "All eight single-row splits computed."
+   ],
+   "rivals": [
+    "The author presents them as estimates, and the figure is computed from its own matrix, as its docstring says."
+   ],
+   "commands": [
+    {
+     "command": "python audit.py --live   (inside the extracted authorship ZIP; also python audit.py --live --config test-data/authorship.json from the article directory)",
+     "exit_code": 0,
+     "stdout_path": "logs/live/authorship.live.stdout.json"
+    },
+    {
+     "command": "python scripts/independent_checks.py <cache> logs/independent_checks.json",
+     "exit_code": 0,
+     "stdout_path": "logs/independent_checks.json"
+    }
+   ]
+  },
+  {
+   "id": "T-doi",
+   "release_gate": "executable_live",
+   "scope": "Whether three DOIs printed in the pinned bibliography identify the cited papers.",
+   "status": "CONFIRMED_WITHIN_SCOPE",
+   "observations": [
+    "10.1111/evo.12502 resolves to a copepod dominance paper in Evolution; 10.1093/sysbio/syz029 to a Basidiomycota phylogenomics paper; 10.1242/dev.175950 to a DND1 germ-cell paper.",
+    "PubMed gives 10.1371/journal.pone.0112732, 10.1098/rspb.2020.1053 and 10.1242/dev.175893 for the cited titles; Crossref metadata for those matches title, journal, volume and authors."
+   ],
+   "evidence": [
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_ARTICLE.md",
+     "sha256": "15128797b75b65902277fba779560c6c7d1d0c25eae587fe0510ed60c42c5261"
+    },
+    {
+     "file": "logs/link_doi_results.json"
+    },
+    {
+     "file": "logs/live/doi.live.stdout.json"
+    }
+   ],
+   "limitations": [
+    "Identity only. A wrong DOI does not bear on the cited experiments."
+   ],
+   "loss_conditions": [
+    "A corrected upstream bibliography (none at HEAD 8965854)."
+   ],
+   "controls": [
+    "Fixture control with all-correct DOIs: per-row matches become true (logs/harness_status_controls.FIXTURE_ONLY.json)."
+   ],
+   "commands": [
+    {
+     "command": "python audit.py --live   (inside the extracted doi ZIP; also python audit.py --live --config test-data/doi.json from the article directory)",
+     "exit_code": 0,
+     "stdout_path": "logs/live/doi.live.stdout.json"
+    },
+    {
+     "command": "python scripts/independent_checks.py <cache> logs/independent_checks.json",
+     "exit_code": 0,
+     "stdout_path": "logs/independent_checks.json"
+    }
+   ]
+  },
+  {
+   "id": "PKG-mirrors",
+   "release_gate": "repro_scaffold",
+   "scope": "Identity, integrity and CLI behaviour of the seven v2 ZIPs on both hosts.",
+   "status": "CONFIRMED_WITHIN_SCOPE",
+   "observations": [
+    "Both mirrors HTTP 200 for all seven; bytes identical across mirrors and to the repository copy; CRC clean; no unsafe paths.",
+    "Bundled audit.py identical in all seven and equal to the repository file after newline normalization; bundled test.json equals test-data/<id>.json.",
+    "--live exit 0 OBSERVATION_REPRODUCED x7; --selftest exit 0 SELFTEST_ONLY x7 (fixture only); dead source URL gives exit 2 UNRESOLVED with no fixture fallback."
+   ],
+   "evidence": [
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/package_check.stdout.txt"
+    }
+   ],
+   "limitations": [
+    "Two hosts are availability channels, not independent corroboration."
+   ],
+   "loss_conditions": [
+    "Any byte difference between mirrors or a changed ZIP at the pinned commit URL."
+   ],
+   "controls": [
+    "--offline, no flag, both flags, missing config, malformed config, dead URL each run for all seven."
+   ]
+  },
+  {
+   "id": "PROMPT-defects",
+   "release_gate": "navigation",
+   "scope": "Whether the 14 copyable prompts and their human instructions match the shipped packages and CLI.",
+   "status": "DISCONFIRMED_WITHIN_SCOPE",
+   "observations": [
+    "All 14 prompts name a flag --offline that audit.py does not accept (exit 2, argparse error) and never name --selftest.",
+    "All 14 prompts tell the agent to read verify.py; no ZIP contains it.",
+    "All 14 human-instruction blocks name a status FIXTURE_CHECK_ONLY; audit.py prints SELFTEST_ONLY.",
+    "The repository's own inventory_article_code.py fails on the current draft with 14 structural failures.",
+    "ZIP PROMPT.md is a different, shorter text than the article prompt, and it and README.md link the GitHub ZIP on branch main, not the pinned commit."
+   ],
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/proposed_prompt_patch.before_after.json"
+    }
+   ],
+   "limitations": [
+    "The live path (--live) is stated correctly everywhere, so an agent following the prompt still gets a real result; the defects affect the fixture path and file-inspection step."
+   ],
+   "loss_conditions": [
+    "A package version that ships verify.py and accepts --offline."
+   ],
+   "controls": [
+    "Three-substitution private patch: defects 14/14/14 to 0/0/0; inventory script 14 failures to 0; ZIP URLs, escaping and pair identity unchanged."
+   ]
+  },
+  {
+   "id": "HARNESS-symmetry",
+   "release_gate": "executable_live",
+   "scope": "Whether the article's own audit.py computes the outcomes it reports.",
+   "status": "PARTIAL",
+   "observations": [
+    "validator test: the 'synthetic_900_pct_negative_control' observation is a hardcoded sentence; the regex also counts a conditional `\"status\": \"VERIFIED\" if ...` as a literal assignment.",
+    "doi test: status is the same whether DOIs match or not; the per-row matches field carries the result.",
+    "A missing --config file is reported as UNRESOLVED 'Source retrieval failed' (FileNotFoundError is an OSError)."
+   ],
+   "evidence": [
+    {
+     "file": "logs/harness_status_controls.FIXTURE_ONLY.json"
+    },
+    {
+     "file": "logs/audit_py_patch_before_after.txt"
+    },
+    {
+     "file": "proposed_patches/audit_py_config_error.patch"
+    }
+   ],
+   "limitations": [
+    "On the real pinned source the reported conclusions are correct (independent AST check). The weakness is that the harness would not notice an upstream fix."
+   ],
+   "loss_conditions": [
+    "Harness revised to derive the control from the parsed status expression."
+   ],
+   "controls": [
+    "Fixture with one conditional status and fixture with all-correct DOIs (FIXTURE-ONLY, synthetic)."
+   ]
+  },
+  {
+   "id": "QUOTE-attribution",
+   "release_gate": "source_ledger",
+   "scope": "Verbatim checks of the draft's attributions against the pinned Dietz files, the live Substack page and the author's published article.",
+   "status": "PARTIAL",
+   "observations": [
+    "Present verbatim at the pin: p = 0.061; 'quantitative law of vertebrate evolution'; '4.5x higher (from 4.90 to 21.95)'; '400+ papers in the last decade'; '36,000 words'; 'blog critics' flat 0.50 prediction'; 'Computer-science bloggers, Nathan Sweet among them'; 'none of this required \"Platonism,\"'; '0.0% is a lower bound'.",
+    "Dietz's block quotation opens 'Joel Dietz points...' where the original's subject is the 2025 talk; it ends at 'A repair must buy fresh risk.'; the symmetry paragraph follows immediately in the original and is absent from the pinned article.",
+    "The author's three self-quotations are verbatim in his published article.",
+    "Linked biography says over 400 peer-reviewed publications and an independent lab from 2000; the linked automated transcript contains 'physicalism is false'.",
+    "NOT verbatim: the phrase 'reductionist blogger' (Substack subtitle says 'reductionist blog critics'; pinned text says 'reductionist dismissals'); the draft headline's quoted score phrase (Dietz writes '77.6++% Overall'; the draft's quoted form orders the symbols differently and adds a word that does not occur in his text).",
+    "The draft's self-quotation block shows two passages as consecutive; 487 characters separate them in the original."
+   ],
+   "evidence": [
+    {
+     "file": "logs/public_text_checks.json"
+    },
+    {
+     "file": "logs/independent_checks.json"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_ARTICLE.md",
+     "sha256": "15128797b75b65902277fba779560c6c7d1d0c25eae587fe0510ed60c42c5261"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_CLAIMS.md",
+     "sha256": "fae2a9c1bdc658a21d4ba79245b86976b2d7d40715567f6e99e99cb8808c6eac"
+    }
+   ],
+   "limitations": [
+    "Exact-substring checks; they do not judge whether a characterization is fair.",
+    "'Only critic named' was not exhaustively verified.",
+    "Private correspondence (25 October emails) was not examined."
+   ],
+   "loss_conditions": [
+    "A Dietz text containing the exact quoted phrases."
+   ],
+   "rivals": [
+    "Quotation marks around 'reductionist blogger' may be intended as scare quotes for the author's own compression; a reader cannot tell."
+   ]
+  },
+  {
+   "id": "BIB-identity",
+   "release_gate": "bibliography",
+   "scope": "Identity of the ten DOIs in the draft's reference list.",
+   "status": "CONFIRMED_WITHIN_SCOPE",
+   "observations": [
+    "All ten resolve in Crossref or DataCite to the cited title, container, volume, pages and author family names; no update or retraction notices returned."
+   ],
+   "evidence": [
+    {
+     "file": "logs/link_doi_results.json"
+    }
+   ],
+   "limitations": [
+    "Metadata identity only; no cited passage was read in full text.",
+    "Entries without a DOI (Balaguer SEP, Huh et al. PMLR, Jiang et al. arXiv) were link-status checked only."
+   ],
+   "loss_conditions": [
+    "A Crossref record that changes, or a retraction notice."
+   ]
+  },
+  {
+   "id": "LINK-status",
+   "release_gate": "link_audit",
+   "scope": "Signed-out availability and link attributes of the draft's links.",
+   "status": "PARTIAL",
+   "observations": [
+    "93 unique HTTP links; 83 return 200; the others are publisher 403 bot blocks and the draft's own URL (404 signed-out).",
+    "All 16 in-page anchors resolve.",
+    "Raw stored HTML: 84 of 103 external links lack target=_blank and 102 lack noreferrer. CORRECTION (see ADDENDUM.md): the site adds these attributes at render time, so this is not a rule 26 failure on served pages; rendered draft not verified."
+   ],
+   "evidence": [
+    {
+     "file": "logs/link_doi_results.json"
+    },
+    {
+     "file": "logs/panel_checks.json"
+    }
+   ],
+   "limitations": [
+    "Status codes only; destination relevance was not reviewed link by link.",
+    "No sitewide inbound-link inventory was made."
+   ],
+   "loss_conditions": [
+    "Draft links edited."
+   ]
+  },
+  {
+   "id": "GATE-structural",
+   "release_gate": "bottom_line",
+   "scope": "Structural editorial gates run on the private draft.",
+   "status": "PARTIAL",
+   "observations": [
+    "bottom_line_gate.py passes: Bottom line is the first block, 116 words.",
+    "core_framework_links_gate.py --strict: all four canonical framework URLs present; all four return 200 signed-out."
+   ],
+   "evidence": [
+    {
+     "file": "PRIVATE_EVIDENCE_INDEX.md"
+    }
+   ],
+   "limitations": [
+    "Structural only; semantic and source review of the Bottom line remains a human task."
+   ],
+   "loss_conditions": [
+    "Draft edited."
+   ]
+  },
+  {
+   "id": "MATH-formal",
+   "release_gate": "formal",
+   "scope": "Formal and arithmetic content of the draft (see math_inventory).",
+   "status": "PARTIAL",
+   "observations": [
+    "All 17 inventoried numerical statements reproduce exactly from pinned sources.",
+    "The Bayes-factor sentence is a field identity valid for Pr(E|D) > 0.",
+    "No proof assistant or SMT solver was used: no claim exceeds exact rational arithmetic and one field identity."
+   ],
+   "evidence": [
+    {
+     "file": "logs/independent_checks.json"
+    }
+   ],
+   "limitations": [
+    "Empirical premises (equal likelihoods, what the experiments show) are not checked by arithmetic.",
+    "The 'smallest formal statement' does not state the Pr(E|D) > 0 condition."
+   ],
+   "loss_conditions": [
+    "Any transcription difference between the draft's numbers and the pinned sources."
+   ]
+  },
+  {
+   "id": "NOT-RUN",
+   "release_gate": "prose",
+   "scope": "Categories not executed in this run.",
+   "status": "NOT_RUN",
+   "observations": [
+    "Upstream Stokes solver not executed; full-text passage checks of peer-reviewed papers not done; browser copy/expand behaviour not tested; evidence-retention audit against a historical snapshot not run; whole-article prose and cohesion review not done; sitewide inbound-link inventory, Yoast head and unlist-plugin state not inspected; WordPress revisions list unavailable (connector timeout)."
+   ],
+   "evidence": [],
+   "limitations": [
+    "These remain open for another agent or the owner."
+   ],
+   "loss_conditions": []
+  }
+ ],
+ "gate_recommendations": [
+  {
+   "id": "wp_metadata",
+   "suggested_state": "partial",
+   "reason": "Not re-audited beyond reading the Yoast fields; the headline's quoted score phrase is not verbatim (see QUOTE-attribution).",
+   "assessment_ids": [
+    "QUOTE-attribution"
+   ]
+  },
+  {
+   "id": "navigation",
+   "suggested_state": "partial",
+   "reason": "All 14 panels and 16 anchors are present and intact, but every panel carries three instruction defects; reopen until the three-substitution repair is applied.",
+   "assessment_ids": [
+    "PROMPT-defects"
+   ]
+  },
+  {
+   "id": "bibliography",
+   "suggested_state": "done",
+   "reason": "All ten DOIs match their cited works in Crossref/DataCite. Passage-level support is tracked under source_ledger, not here.",
+   "assessment_ids": [
+    "BIB-identity"
+   ]
+  },
+  {
+   "id": "source_ledger",
+   "suggested_state": "partial",
+   "reason": "Most attributions are verbatim at the pin; two quoted phrases are not verbatim and one self-quotation elides a paragraph. Paper full texts and correspondence were not checked.",
+   "assessment_ids": [
+    "QUOTE-attribution",
+    "BIB-identity"
+   ]
+  },
+  {
+   "id": "executable_live",
+   "suggested_state": "done",
+   "reason": "All seven live checks reproduce, each has an independent second implementation and negative controls. Harness weaknesses are recorded and do not change the seven results.",
+   "assessment_ids": [
+    "T-validator",
+    "T-xenobot",
+    "T-tadpole",
+    "T-score",
+    "T-ports",
+    "T-authorship",
+    "T-doi",
+    "HARNESS-symmetry"
+   ]
+  },
+  {
+   "id": "formal",
+   "suggested_state": "partial",
+   "reason": "Every numerical statement reproduces and the one formal identity holds with a positivity condition the draft omits. Empirical bridges and the p = 0.061 analysis are unverified.",
+   "assessment_ids": [
+    "MATH-formal"
+   ]
+  },
+  {
+   "id": "prose",
+   "suggested_state": "open",
+   "reason": "Not run.",
+   "assessment_ids": [
+    "NOT-RUN"
+   ]
+  },
+  {
+   "id": "bottom_line",
+   "suggested_state": "partial",
+   "reason": "Structural gate passes; semantic and source review is a human task.",
+   "assessment_ids": [
+    "GATE-structural"
+   ]
+  },
+  {
+   "id": "framework_links",
+   "suggested_state": "partial",
+   "reason": "All four canonical URLs present and return 200 signed-out; contextual placement not reviewed.",
+   "assessment_ids": [
+    "GATE-structural",
+    "LINK-status"
+   ]
+  },
+  {
+   "id": "link_audit",
+   "suggested_state": "partial",
+   "reason": "Link status and anchors checked; typed inbound/outbound audit not done.",
+   "assessment_ids": [
+    "LINK-status"
+   ]
+  },
+  {
+   "id": "repro_scaffold",
+   "suggested_state": "done",
+   "reason": "Seven ZIPs byte-identical on both hosts and to the repository, CRC clean, harness identical to repository copy. ZIP README/PROMPT.md point to branch main, a minor inconsistency.",
+   "assessment_ids": [
+    "PKG-mirrors"
+   ]
+  },
+  {
+   "id": "history",
+   "suggested_state": "partial",
+   "reason": "Not examined; the revisions list could not be read (connector timeout).",
+   "assessment_ids": []
+  },
+  {
+   "id": "release_assets",
+   "suggested_state": "open",
+   "reason": "Not examined.",
+   "assessment_ids": []
+  },
+  {
+   "id": "github_snapshot",
+   "suggested_state": "open",
+   "reason": "Must stay open until owner-approved publication.",
+   "assessment_ids": []
+  },
+  {
+   "id": "doi",
+   "suggested_state": "open",
+   "reason": "No article DOI exists; not examined further.",
+   "assessment_ids": []
+  },
+  {
+   "id": "owner",
+   "suggested_state": "open",
+   "reason": "Owner decision.",
+   "assessment_ids": []
+  },
+  {
+   "id": "publish",
+   "suggested_state": "open",
+   "reason": "Post is a draft at snapshot and at recheck.",
+   "assessment_ids": []
+  },
+  {
+   "id": "visibility",
+   "suggested_state": "open",
+   "reason": "Not examined; draft URL returns 404 signed-out, as expected.",
+   "assessment_ids": [
+    "LINK-status"
+   ]
+  }
+ ],
+ "open_items": [
+  "Apply the three-substitution prompt repair to all 14 panels (owner; private diff prepared).",
+  "Replace or unquote the two non-verbatim quoted phrases so quoted words match Dietz's ('reductionist blog critics'; '77.6++% Overall').",
+  "Mark the elision in the D-versus-D+P self-quotation block.",
+  "State Pr(E|D) > 0 in the Bayes-factor sentence.",
+  "Consider noting that the authorship split direction depends on the row chosen (range 50.3 to 57.4).",
+  "Make audit.py compute its validator control and distinguish conditional from literal status; apply proposed config-error patch.",
+  "Align ZIP README/PROMPT.md with the commit-pinned URL and the article prompt, or state that they differ (requires new ZIPs and hashes).",
+  "Verify link attributes on the rendered draft (raw-HTML finding withdrawn; see ADDENDUM.md).",
+  "ADDENDUM: draft changed after snapshot by owner-approved panel repair; new content SHA-256 f4d791fda72274f5e310ffcf8c36453cb068153bfa65080f0cbb4aef3de16734.",
+  "UNRESOLVED: xenobot angle convention (65 vs 105); Stokes sweep not executed.",
+  "NOT_RUN: full-text passage support in Zhang et al., Kriegman et al., Pinet et al., Huh et al., Jiang et al.; the p = 0.061 analysis; browser copy/expand; prose, cohesion and evidence-retention gates; inbound-link inventory; Yoast head and unlist-plugin state; WordPress revisions; private correspondence."
+ ],
+ "privacy": {
+  "reviewed_public_safe": true,
+  "unpublished_manuscript_excluded": true,
+  "reviewed_by": "Claude Fable 5.2 (agent self-review; owner review still required)",
+  "note": "Public files contain hashes, counts, public-source quotations and short phrase-level findings only. The draft, extracted prompts, patched HTML and diff are held locally."
+ },
+ "prompt_checks": [
+  {
+   "panel_id": "rcf-computational-authorship-analysis",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "995d3ad8ac88dd1b849d798a2f55891fe74cdaff560866547bbcc274bac93ffc",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/authorship.live.stdout.json"
+    },
+    {
+     "zip_sha256": "ea0490e2ae7e072f8040d8a1937d08ddc15956e0d28c24de07a731c491910a28",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-authorship-quick",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "995d3ad8ac88dd1b849d798a2f55891fe74cdaff560866547bbcc274bac93ffc",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/authorship.live.stdout.json"
+    },
+    {
+     "zip_sha256": "ea0490e2ae7e072f8040d8a1937d08ddc15956e0d28c24de07a731c491910a28",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-doi-analysis",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "c89ed387421304166aabb4a562832e73d08ec5881714b0e3816a5fa565237401",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/doi.live.stdout.json"
+    },
+    {
+     "zip_sha256": "85a8307ec44b07fc8b9b2fb19f86de368cd3b5a194a0dde97bf824de4b89d811",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-doi-quick",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "c89ed387421304166aabb4a562832e73d08ec5881714b0e3816a5fa565237401",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/doi.live.stdout.json"
+    },
+    {
+     "zip_sha256": "85a8307ec44b07fc8b9b2fb19f86de368cd3b5a194a0dde97bf824de4b89d811",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-ports-analysis",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "4733f23ef1546decf647b1ed9af62b6cbe144ec5bdac3355da859db6bf17631c",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/ports.live.stdout.json"
+    },
+    {
+     "zip_sha256": "81ca725f9564f36feec2c6536e52ed68e762196338748f85cf193d3ceaae8622",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-ports-quick",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "4733f23ef1546decf647b1ed9af62b6cbe144ec5bdac3355da859db6bf17631c",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/ports.live.stdout.json"
+    },
+    {
+     "zip_sha256": "81ca725f9564f36feec2c6536e52ed68e762196338748f85cf193d3ceaae8622",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-score-analysis",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "4b1c97456f947e55ea3501e9dbabbd131bfba9b6ace33a3d778cbd4444b0943b",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/score.live.stdout.json"
+    },
+    {
+     "zip_sha256": "0167c45f80fff8bccb3cf483b83d04cadf501c9847f914773911709abcd19745",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-score-quick",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "4b1c97456f947e55ea3501e9dbabbd131bfba9b6ace33a3d778cbd4444b0943b",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/score.live.stdout.json"
+    },
+    {
+     "zip_sha256": "0167c45f80fff8bccb3cf483b83d04cadf501c9847f914773911709abcd19745",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-tadpole-analysis",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "408379e2f50ef539a7d5fb34004a934e38c2e99893da14a989898fdce0796bea",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/tadpole.live.stdout.json"
+    },
+    {
+     "zip_sha256": "0b0e68e01322e76189c9b1b1bfc9971dcedb124479360f1ccbf64c5f68a76bfa",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-tadpole-quick",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "408379e2f50ef539a7d5fb34004a934e38c2e99893da14a989898fdce0796bea",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/tadpole.live.stdout.json"
+    },
+    {
+     "zip_sha256": "0b0e68e01322e76189c9b1b1bfc9971dcedb124479360f1ccbf64c5f68a76bfa",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-validator-analysis",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "45d1ccfe5c2953a01b1db60de7adca7db1e40fc04decba1fcf46b6beaf5052b7",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/validator.live.stdout.json"
+    },
+    {
+     "zip_sha256": "d650355507f16015f33f8351ff802c6ac139d10a7a7c1c7b18419145a3939113",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-validator-quick",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "45d1ccfe5c2953a01b1db60de7adca7db1e40fc04decba1fcf46b6beaf5052b7",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/validator.live.stdout.json"
+    },
+    {
+     "zip_sha256": "d650355507f16015f33f8351ff802c6ac139d10a7a7c1c7b18419145a3939113",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-xenobot-analysis",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "56a70fa9397360161baee0880fab742713035f33104096491ca7b54faafda2d7",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/xenobot.live.stdout.json"
+    },
+    {
+     "zip_sha256": "ed37bb577fce98b5f96786bede1743246dceda68888e85c2f981489796dd889e",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  },
+  {
+   "panel_id": "rcf-computational-xenobot-quick",
+   "status": "PARTIAL",
+   "source_prompt_sha256": "56a70fa9397360161baee0880fab742713035f33104096491ca7b54faafda2d7",
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+   "cli_command": "python audit.py --live",
+   "run_mode": "PINNED_REMOTE_SOURCES (live) executed once per unique package; quick/analysis prompts are byte-identical",
+   "evidence": [
+    {
+     "file": "logs/panel_checks.json"
+    },
+    {
+     "file": "logs/package_check.json"
+    },
+    {
+     "file": "logs/live/xenobot.live.stdout.json"
+    },
+    {
+     "zip_sha256": "ed37bb577fce98b5f96786bede1743246dceda68888e85c2f981489796dd889e",
+     "mirrors_identical": true,
+     "live_exit": 0,
+     "live_status": "OBSERVATION_REPRODUCED"
+    }
+   ],
+   "limitations": [
+    "Prompt names nonexistent --offline flag and never names --selftest.",
+    "Prompt names verify.py; package ships audit.py.",
+    "Adjacent human instructions name status FIXTURE_CHECK_ONLY; code prints SELFTEST_ONLY.",
+    "Copy/expand behaviour not tested in a browser.",
+    "Prompt was not run end to end inside a second coding agent."
+   ],
+   "controls": [
+    "--offline exits 2",
+    "no flag exits 2",
+    "dead source URL exits 2 UNRESOLVED",
+    "malformed config exits 1"
+   ],
+   "independently_checked": true
+  }
+ ],
+ "math_inventory": [
+  {
+   "claim_id": "M01-mean-77.6",
+   "locations": [
+    "bottom line",
+    "seven-claims section",
+    "score figure caption",
+    "score panels"
+   ],
+   "type": "exact arithmetic",
+   "scope": "Mean of seven displayed scores",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Wilson et al. 2017, PLOS Comput Biol, doi:10.1371/journal.pcbi.1005510 (versioned scripts, raw data kept)"
+   ],
+   "run_result": {
+    "exact": "5429/70",
+    "rounded": "77.6"
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "PROVED_DERIVATION",
+   "limitations": [
+    "Rounded to one decimal."
+   ],
+   "loss_conditions": [
+    "Different source labels."
+   ]
+  },
+  {
+   "claim_id": "M02-structural-88.1",
+   "locations": [
+    "opening paragraph",
+    "score discussion"
+   ],
+   "type": "exact arithmetic",
+   "scope": "Upstream structural mean (100, 40.5, 100, 96.1, 95, 95, 90.1)/7",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Wilson et al. 2017, PLOS Comput Biol, doi:10.1371/journal.pcbi.1005510 (versioned scripts, raw data kept)"
+   ],
+   "run_result": {
+    "rounded": "88.1",
+    "formula_present_at_pin": true
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "PROVED_DERIVATION",
+   "limitations": [
+    "Inputs are upstream's own adjusted scores."
+   ],
+   "loss_conditions": [
+    "Formula absent at pin."
+   ]
+  },
+  {
+   "claim_id": "M03-leave-one-out",
+   "locations": [
+    "sensitivity caption"
+   ],
+   "type": "exact arithmetic",
+   "scope": "Leave-one-out means of the seven scores",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Wilson et al. 2017, PLOS Comput Biol, doi:10.1371/journal.pcbi.1005510 (versioned scripts, raw data kept)"
+   ],
+   "run_result": {
+    "min_max": [
+     "74.47",
+     "88.23"
+    ]
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "PROVED_DERIVATION",
+   "limitations": [
+    "Draft rounds to 74.5 and 88.2."
+   ],
+   "loss_conditions": [
+    "Different labels."
+   ]
+  },
+  {
+   "claim_id": "M04-errata-history",
+   "locations": [
+    "'++' section"
+   ],
+   "type": "exact arithmetic",
+   "scope": "81.6 then 65.7 then 77.6 headline history (errata S16, S17)",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Wilson et al. 2017, PLOS Comput Biol, doi:10.1371/journal.pcbi.1005510 (versioned scripts, raw data kept)"
+   ],
+   "run_result": {
+    "pillars": "81.6",
+    "four_claim": "65.7",
+    "structural4": "84.2",
+    "present": {
+     "structural7_in_article": true,
+     "s16_four_claim_in_errata": true,
+     "s16_pillars_in_errata": true,
+     "zero_dualist_in_article": true
+    }
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "PROVED_DERIVATION",
+   "limitations": [
+    "Order of revisions read from errata rows."
+   ],
+   "loss_conditions": [
+    "Errata text differs."
+   ]
+  },
+  {
+   "claim_id": "M05-claim2-weight",
+   "locations": [
+    "weighting figure caption"
+   ],
+   "type": "exact arithmetic",
+   "scope": "Hypothetical reweighting of Claim 2 changes the aggregate",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Wilson et al. 2017, PLOS Comput Biol, doi:10.1371/journal.pcbi.1005510 (versioned scripts, raw data kept)"
+   ],
+   "run_result": {
+    "weight_to_mean": {
+     "0": "88.23",
+     "0.5": "82.48",
+     "1": "77.56",
+     "2": "69.55",
+     "3": "63.32"
+    }
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "PROVED_DERIVATION",
+   "limitations": [
+    "Hypothetical, not the source's method. The draft's figure values were not read from the image."
+   ],
+   "loss_conditions": [
+    "n/a"
+   ]
+  },
+  {
+   "claim_id": "M06-zero-dualist",
+   "locations": [
+    "bottom line",
+    "score discussion"
+   ],
+   "type": "source statement",
+   "scope": "Upstream reports 0.0% of dualist points earned",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Wilson et al. 2017, PLOS Comput Biol, doi:10.1371/journal.pcbi.1005510 (versioned scripts, raw data kept)"
+   ],
+   "run_result": {
+    "present_at_pin": true
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "BOUNDED_TESTS_PASSED",
+   "limitations": [
+    "A scoring statement by the source, not a measurement."
+   ],
+   "loss_conditions": [
+    "Sentence absent."
+   ]
+  },
+  {
+   "claim_id": "M07-34.11",
+   "locations": [
+    "quick checks",
+    "benchmark section",
+    "CSV figure caption"
+   ],
+   "type": "exact arithmetic",
+   "scope": "0.370 vs 0.496 recorded as 34.11% error",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Wilson et al. 2017, PLOS Comput Biol, doi:10.1371/journal.pcbi.1005510 (versioned scripts, raw data kept)"
+   ],
+   "run_result": {
+    "csv_max_error": "3411/100",
+    "recomputed_from_rounded": {
+     "id": "fig7a_bubble_dg_f3",
+     "csv_err": "34.11",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "34.05"
+    }
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "BOUNDED_TESTS_PASSED",
+   "limitations": [
+    "Recomputing from the rounded CSV values gives 34.05; the CSV's 34.11 comes from the unrounded replicate. The draft quotes the CSV."
+   ],
+   "loss_conditions": [
+    "CSV differs."
+   ]
+  },
+  {
+   "claim_id": "M08-11.71",
+   "locations": [
+    "quick checks",
+    "benchmark section"
+   ],
+   "type": "exact arithmetic",
+   "scope": "Second benchmark row at 11.71%",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Wilson et al. 2017, PLOS Comput Biol, doi:10.1371/journal.pcbi.1005510 (versioned scripts, raw data kept)"
+   ],
+   "run_result": {
+    "row": {
+     "id": "fig9_cross_purpose_hierarchy",
+     "csv_err": "11.71",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "11.69"
+    }
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "BOUNDED_TESTS_PASSED",
+   "limitations": [
+    "Same rounding note (11.69 from rounded values)."
+   ],
+   "loss_conditions": [
+    "CSV differs."
+   ]
+  },
+  {
+   "claim_id": "M09-50.8",
+   "locations": [
+    "benchmark section"
+   ],
+   "type": "exact arithmetic",
+   "scope": "0.5581 is about 50.8% above 0.37",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Wilson et al. 2017, PLOS Comput Biol, doi:10.1371/journal.pcbi.1005510 (versioned scripts, raw data kept)"
+   ],
+   "run_result": {
+    "pct": "50.84"
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "PROVED_DERIVATION",
+   "limitations": [],
+   "loss_conditions": [
+    "Guide table differs."
+   ]
+  },
+  {
+   "claim_id": "M10-14-of-14-unconditional",
+   "locations": [
+    "quick checks",
+    "benchmark section",
+    "validator panels"
+   ],
+   "type": "algorithm property",
+   "scope": "VERIFIED label is independent of computed error",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Oberkampf & Trucano 2002, Prog Aerosp Sci, doi:10.1016/S0376-0421(02)00005-2 (code verification vs model validation)"
+   ],
+   "run_result": {
+    "literal_statuses": 14,
+    "conditionals": 0,
+    "lines_352_353": [
+     "\"relative_error_pct\": round(abs(float(np.mean(dg_by_f[\"B\"][3])) - 0.37) / 0.37 * 100.0, 2),",
+     "\"status\": \"VERIFIED\","
+    ]
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "PROVED_DERIVATION",
+   "limitations": [
+    "Static AST property of one file at the pin."
+   ],
+   "loss_conditions": [
+    "A conditional elsewhere post-processing the status."
+   ]
+  },
+  {
+   "claim_id": "M11-900-control",
+   "locations": [
+    "negative control captions"
+   ],
+   "type": "algorithm property",
+   "scope": "Synthetic 900% input keeps VERIFIED",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Oberkampf & Trucano 2002, Prog Aerosp Sci, doi:10.1016/S0376-0421(02)00005-2 (code verification vs model validation)"
+   ],
+   "run_result": {
+    "reason": "status expression is a constant; no input value can change it"
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "note": "Follows from M10; the shipped audit.py does not compute it (see HARNESS-symmetry)."
+   },
+   "status": "PROVED_DERIVATION",
+   "limitations": [
+    "Synthetic control, not a measurement."
+   ],
+   "loss_conditions": [
+    "M10 fails."
+   ]
+  },
+  {
+   "claim_id": "M12-xenobot-65-105",
+   "locations": [
+    "quick checks",
+    "Claim 7",
+    "xenobot panels"
+   ],
+   "type": "numerical model",
+   "scope": "Closed-form sweep peaks at stipulated 65; text says 105",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Oberkampf & Trucano 2002, Prog Aerosp Sci, doi:10.1016/S0376-0421(02)00005-2 (code verification vs model validation)",
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)"
+   ],
+   "run_result": {
+    "centre": 65.0,
+    "argmax_fine": 65.0,
+    "at_65": 222.0,
+    "at_105": 65.2423
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "BOUNDED_TESTS_PASSED",
+   "limitations": [
+    "Stokes solver not run; angle convention unresolved."
+   ],
+   "loss_conditions": [
+    "Second documented convention."
+   ]
+  },
+  {
+   "claim_id": "M13-tadpole-target",
+   "locations": [
+    "Claim 6",
+    "tadpole figure captions",
+    "tadpole panels"
+   ],
+   "type": "numerical solution",
+   "scope": "Model converges to whichever target is supplied",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Oberkampf & Trucano 2002, Prog Aerosp Sci, doi:10.1016/S0376-0421(02)00005-2 (code verification vs model validation)"
+   ],
+   "run_result": {
+    "trials": 200,
+    "worst_distance": 9.563374739229857e-06,
+    "argument": "RHS is linear in diff = X - X_star and vanishes at diff = 0; with K_i > 0 and symmetric C >= 0 the matrix K + Laplacian(C) is positive definite, so diff -> 0 for any supplied X_star."
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "BOUNDED_TESTS_PASSED",
+   "limitations": [
+    "Linear-stability argument stated, not machine-checked; random parameters, RK4 step 0.01, T = 40."
+   ],
+   "loss_conditions": [
+    "Non-positive K or asymmetric C."
+   ]
+  },
+  {
+   "claim_id": "M14-authorship-53.1-57.4",
+   "locations": [
+    "authorship paragraph",
+    "authorship panels"
+   ],
+   "type": "exact arithmetic",
+   "scope": "Row split changes mean human-prose estimate",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Wilson et al. 2017, PLOS Comput Biol, doi:10.1371/journal.pcbi.1005510 (versioned scripts, raw data kept)"
+   ],
+   "run_result": {
+    "before_after": [
+     "53.1",
+     "57.4"
+    ],
+    "all_splits": {
+     "1. Intro: Bach, Levin & the Tools": "57.44",
+     "2. The Seven Claims (headers + GIF)": "52.78",
+     "3. The Score": "51.67",
+     "4. Rationalism: Short and Sweet": "51.89",
+     "5. On Dualism: Within/Without": "55.56",
+     "6. Conclusion": "53.89",
+     "7. Footnotes, the ++ & Problem Graph": "50.33",
+     "8. Appendix: How This Was Audited": "51.44"
+    }
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "PROVED_DERIVATION",
+   "limitations": [
+    "Result depends on which row is split; intro is the maximum."
+   ],
+   "loss_conditions": [
+    "Matrix differs."
+   ]
+  },
+  {
+   "claim_id": "M15-bayes-factor-1",
+   "locations": [
+    "'crucial result' section"
+   ],
+   "type": "formal identity",
+   "scope": "Equal likelihoods give Bayes factor 1",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Wasserstein & Lazar 2016, The American Statistician, doi:10.1080/00031305.2016.1154108 (p-value is not a hypothesis probability)"
+   ],
+   "run_result": {
+    "statement": "For real p with 0 < p <= 1: if Pr(E|D+P) = Pr(E|D) = p then Pr(E|D+P)/Pr(E|D) = 1.",
+    "derivation": "p/p = 1 for every nonzero element of a field (multiplicative inverse axiom).",
+    "exact_rational_samples_checked": 15,
+    "all_equal_one": true,
+    "boundary_case_p_zero_is_undefined": true,
+    "scope": "Algebra only. Whether D and D+P really assign equal likelihood to E is an empirical/modelling premise, not checked here."
+   },
+   "independent_check": {
+    "note": "Exact rational samples plus the field axiom p * p^-1 = 1 for p != 0; no proof assistant used because the statement is a one-line field identity."
+   },
+   "status": "PROVED_DERIVATION",
+   "limitations": [
+    "Requires Pr(E|D) > 0, which the draft does not state.",
+    "Whether D and D+P assign equal likelihoods is a modelling premise."
+   ],
+   "loss_conditions": [
+    "P specified so that it assigns a different likelihood."
+   ]
+  },
+  {
+   "claim_id": "M16-p-0.061",
+   "locations": [
+    "Claim 4"
+   ],
+   "type": "statistical statement",
+   "scope": "Upstream reports p = 0.061 for the nearest-relative comparison",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Wasserstein & Lazar 2016, The American Statistician, doi:10.1080/00031305.2016.1154108 (p-value is not a hypothesis probability)"
+   ],
+   "run_result": {
+    "present_at_pin": true
+   },
+   "independent_check": {
+    "note": "Substring presence only; the underlying test, data and assumptions were not reproduced."
+   },
+   "status": "EMPIRICAL_BRIDGE_UNVERIFIED",
+   "limitations": [
+    "p = 0.061 is not below 0.05; 'did better' is a point-estimate statement. Underlying analysis not rerun."
+   ],
+   "loss_conditions": [
+    "Upstream registry record differs."
+   ]
+  },
+  {
+   "claim_id": "M17-ablation-4.5",
+   "locations": [
+    "Claim 1"
+   ],
+   "type": "exact arithmetic",
+   "scope": "4.90 to 21.95 described as 4.5-fold",
+   "tool": "Python 3.11.9 standard library (fractions, decimal, ast, csv)",
+   "tool_version": "3.11.9",
+   "method_sources": [
+    "Sandve et al. 2013, PLOS Comput Biol, doi:10.1371/journal.pcbi.1003285 (recorded inputs, versions, exact transformations)",
+    "Wilson et al. 2017, PLOS Comput Biol, doi:10.1371/journal.pcbi.1005510 (versioned scripts, raw data kept)"
+   ],
+   "run_result": {
+    "ratio": "4.48",
+    "present_at_pin": true
+   },
+   "independent_check": {
+    "receipt": "logs/independent_checks.json",
+    "second_implementation": "scripts/independent_checks.py (AST and Fraction), compared with audit.py --live output in logs/live/"
+   },
+   "status": "PROVED_DERIVATION",
+   "limitations": [
+    "21.95/4.90 = 4.48."
+   ],
+   "loss_conditions": [
+    "Numbers differ at pin."
+   ]
+  }
+ ],
+ "coverage": {
+  "panel_ids_enumerated": 14,
+  "unique_packages_enumerated": 7,
+  "math_claims_count": 17,
+  "article_commands_enumerated": [
+   "python audit.py --live",
+   "py -3 audit.py --live",
+   "python audit.py --selftest",
+   "python audit.py --offline (named in prompts; does not exist)",
+   "python audit.py --live --config test-data/<id>.json (repository form)"
+  ],
+  "script_inventory": [
+   "audit.py (repository and seven bundled copies, identical)",
+   "test-data/*.json x7 and bundled test.json x7 (identical)",
+   "agents/inventory_article_code.py",
+   "agents/validate_submission.py",
+   "scripts/bottom_line_gate.py",
+   "scripts/core_framework_links_gate.py",
+   "scripts/prose_audit.py (ran; output not analysed)",
+   "scripts/evidence_retention_audit.py (NOT_RUN)",
+   "scripts/logic_audit.py (NOT_RUN: no propositional ledger built)",
+   "upstream, read not executed: make_claim_aggregation.py, validate_kymograph_and_paper.py, verify_multilang_ports.py, render_13yo_illustrations.py, 2020-kriegman-xenobot-evolutionary-biobots.py, 2019-bischof-xenopus-craniofacial-remap.py"
+  ],
+  "public_safety_review": true,
+  "math_sections_summary": "17 distinct claims inventoried: 11 derived exactly, 5 bounded tests passed, 1 empirical bridge unverified, 0 refuted."
+ }
+}

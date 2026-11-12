@@ -1,0 +1,34 @@
+{
+  "status": "OBSERVATION_REPRODUCED",
+  "time_utc": "2026-11-12T02:20:12.533894+00:00",
+  "mode": "PINNED_REMOTE_SOURCES",
+  "observations": [
+    {
+      "name": "matching_array_and_dictionary_assertions",
+      "value": [
+        "assert cpp_data[\"kymograph_n42\"][\"selection_final_values\"] == js_data[\"kymograph_n42\"][\"selection_final_values\"] == py_kymo[\"selection\"][\"final_values\"], \"Selection final array mismatch!\"",
+        "assert cpp_data[\"kymograph_n42\"][\"bubble_final_values\"] == js_data[\"kymograph_n42\"][\"bubble_final_values\"] == py_kymo[\"bubble\"][\"final_values\"], \"Bubble final array mismatch!\"",
+        "assert cpp_data[\"kymograph_n42\"][\"insertion_final_values\"] == js_data[\"kymograph_n42\"][\"insertion_final_values\"] == py_kymo[\"insertion\"][\"final_values\"], \"Insertion final array mismatch!\"",
+        "assert cpp_data[\"benchmarks\"] == js_data[\"benchmarks\"], \"C++20 vs Node.js benchmark mismatch!\""
+      ]
+    },
+    {
+      "name": "full_intermediate_frames_proved_by_these_assertions",
+      "value": false
+    }
+  ],
+  "source_hashes": [
+    {
+      "name": "verifier",
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/verify_multilang_ports.py",
+      "sha256": "19da933acba5bbaa0979493c8d34eb6aa2d31f2d86ea9d9eec06bb87ec7626f8",
+      "bytes": 23142
+    }
+  ],
+  "limitations": [
+    "This check establishes only the stated source/code observation, not an ontology.",
+    "Fixture mode is a parser smoke test, NOT an independent check of online sources.",
+    "Other repository tests might cover additional outputs; search before declaring absence."
+  ],
+  "test_id": "ports"
+}

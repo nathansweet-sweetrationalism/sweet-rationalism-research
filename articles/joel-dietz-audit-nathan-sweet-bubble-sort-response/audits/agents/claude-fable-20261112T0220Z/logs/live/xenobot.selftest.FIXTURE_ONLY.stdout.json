@@ -1,0 +1,42 @@
+{
+  "status": "SELFTEST_ONLY",
+  "time_utc": "2026-11-12T02:20:04.671340+00:00",
+  "mode": "LOCAL_FIXTURE_SELFTEST",
+  "observations": [
+    {
+      "name": "narrative_angle_degrees",
+      "value": 105.0
+    },
+    {
+      "name": "programmed_grid_maximum_degrees",
+      "value": 65.0
+    },
+    {
+      "name": "computed_sweep_65_vs_105",
+      "value": {
+        "at_65": 222.0,
+        "at_105": 65.2423
+      }
+    }
+  ],
+  "source_hashes": [
+    {
+      "name": "claim",
+      "url": "FIXTURE_ONLY",
+      "sha256": "0e203b16fbea4180e392b542cdb9ac1ab53bb474e2b4f89446c069f0ff985e73",
+      "bytes": 82
+    },
+    {
+      "name": "model",
+      "url": "FIXTURE_ONLY",
+      "sha256": "85c0b3b950acf9de500685f9fdf7a50ad4673e27e4a580641183956f0f27bc6e",
+      "bytes": 162
+    }
+  ],
+  "limitations": [
+    "This check establishes only the stated source/code observation, not an ontology.",
+    "Fixture mode is a parser smoke test, NOT an independent check of online sources.",
+    "Different angle conventions or another solver could reconcile the numerical contrast."
+  ],
+  "test_id": "xenobot"
+}

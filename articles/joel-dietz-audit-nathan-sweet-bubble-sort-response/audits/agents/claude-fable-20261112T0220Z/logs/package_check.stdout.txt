@@ -1,0 +1,63 @@
+validator gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+xenobot gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+tadpole gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+score gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+ports gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+authorship gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+doi gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
