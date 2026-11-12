@@ -6,7 +6,7 @@
   "research_directory": "https://github.com/nathansweet-sweetrationalism/sweet-rationalism-research/tree/main/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response",
   "as_of": "2026-11-12",
   "visibility": "public",
-  "publication_state": "PUBLISHED on WordPress 2026-11-12; Zenodo record awaiting owner click",
+  "publication_state": "PUBLISHED on WordPress 2026-11-12; Zenodo record published 2026-11-12 (version DOI 10.5281/zenodo.24151128, concept DOI 10.5281/zenodo.24151127)",
   "notes": "This public progress record contains no unpublished manuscript text. The statuses change only when evidence is checked and this file is committed; the dashboard polls for those commits, not live tool activity.",
   "gates": [
     {
@@ -216,6 +216,10 @@
     {
       "date": "2026-11-12",
       "event": "At the owner's request: the dated Revision notes section was removed from the published article and moved to CHANGELOG.md (article folder and archive root). Article sha256 0e1603ff88e9c7e313aa6cd0435f9a0711afa6820cc397471283a756d1907b01; archive rebuilt; Zenodo draft files to be swapped before the owner's Publish click."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Zenodo record 24151128 published by the owner; public record verified (three files, md5 equal to release/, five related links, CC BY 4.0). Live article gained the post-publication citation and versions block (live raw body sha256 6ca0c150b42eac444aaeaf989a85194ca90f6dcb227c68e7872ed8b0fefe311e, equal to the deposited article plus that block). README, CITATION.cff, CHANGELOG and doi/ snapshots updated on the PR branch; merge to main pending the owner."
     }
   ]
 }

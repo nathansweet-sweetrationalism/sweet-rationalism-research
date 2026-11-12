@@ -1,15 +1,28 @@
 # Responding to Joel Dietz: independent reproducibility materials
 
-**Status: prerelease tooling and provenance scaffold, dated 2026-11-11.** This public directory contains *methods and external source references*, not the unpublished article text. It is not a DOI deposit or a certification of the conclusions.
+**Status: published 2026-11-12.** The article is public, and its archived release is deposited on Zenodo (DOIs below). This directory holds the reproducibility materials, source references, audit evidence and release files for it. It is a record of narrow code, arithmetic and source checks, not a certification of any biological or metaphysical conclusion. Agreement among AI audits is not independent replication.
 
-Canonical WordPress article (the URL becomes publicly readable upon publication):
-https://sweetrationalism.com/?p=218725796
+Canonical WordPress article:
+https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/
 
 Canonical site: https://sweetrationalism.com/
 
 Research repository: https://github.com/nathansweet-sweetrationalism/sweet-rationalism-research
 
 External material under assessment: https://github.com/fractastical/morpholib/tree/4bed72c17f09bf336e36e7472e64d457db3b0195
+
+## Cite and versions
+
+Cite as: Sweet, N. (2026). *Responding to Joel Dietz (MIT)’s “77.6++%” Defense of Michael Levin’s Biological Causal Platonism and His Demonstrable Misrepresentations of My Actual Argument* [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.24151128. The Zenodo archive is licensed CC BY 4.0.
+
+- This version (DOI): https://doi.org/10.5281/zenodo.24151128
+- All versions (concept DOI): https://doi.org/10.5281/zenodo.24151127
+- Zenodo record: https://zenodo.org/records/24151128
+- Article: https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/
+- Release files in this directory: [`release/`](release/) (main archive, revision-history archive, audit text, `SHA256SUMS.txt`); the Zenodo copies have identical MD5s
+- [Changelog](CHANGELOG.md) and [release status](release_status.json)
+- Machine-readable citation: [`CITATION.cff`](CITATION.cff)
+
 
 ## Seven executable source checks
 

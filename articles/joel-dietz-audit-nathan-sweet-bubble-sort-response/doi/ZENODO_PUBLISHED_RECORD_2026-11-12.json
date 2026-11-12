@@ -1,0 +1,61 @@
+{
+  "retrieved": "2026-11-12",
+  "record_id": 24151128,
+  "doi": "10.5281/zenodo.24151128",
+  "concept_doi": "10.5281/zenodo.24151127",
+  "concept_record_id": "24151127",
+  "publication_date": "2026-11-12",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "html": "https://zenodo.org/records/24151128",
+  "files": [
+    {
+      "key": "joel-dietz-response-history-1.0.0.zip",
+      "size": 2361611,
+      "checksum": "md5:b79135a5efebe5b4ed92a5a326d433ae"
+    },
+    {
+      "key": "joel-dietz-response-audit-1.0.0.txt",
+      "size": 28012,
+      "checksum": "md5:54956ca40cdd2789773032ed0407e706"
+    },
+    {
+      "key": "joel-dietz-response-1.0.0.zip",
+      "size": 356809,
+      "checksum": "md5:4cad476f49ad8e04f98cd509fd6de03a"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "relation": "cites",
+      "identifier": "10.1177/10597123241269740",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "https://github.com/Zhangtaining/cell_research",
+      "scheme": "url"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.5281/zenodo.23866847",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "https://github.com/nathansweet-sweetrationalism/sweet-rationalism-research/tree/main/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response",
+      "scheme": "url"
+    },
+    {
+      "relation": "isIdenticalTo",
+      "identifier": "https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/",
+      "scheme": "url"
+    }
+  ]
+}
