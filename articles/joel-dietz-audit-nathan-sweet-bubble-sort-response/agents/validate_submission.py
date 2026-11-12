@@ -67,6 +67,65 @@ def validate(folder):
         if item["status"] in ("CONFIRMED_WITHIN_SCOPE", "DISCONFIRMED_WITHIN_SCOPE"):
             if not item.get("evidence") or not item.get("observations") or not item.get("loss_conditions"):
                 fail("Decisive claim lacks source evidence, observation or defeater: " + ident)
+    # Article has 14 separately positioned prompts, seven code-test packages.
+    kinds = ("doi", "tadpole", "xenobot", "score", "ports", "validator", "authorship")
+    expected_panels = {f"rcf-computational-{kind}-{place}" for kind in kinds
+                       for place in ("quick", "analysis")}
+    panel_results = result.get("prompt_checks", [])
+    if not isinstance(panel_results, list) or len(panel_results) != 14:
+        fail("Each of the fourteen prompt-panel occurrences requires a result")
+    submitted_ids = [item.get("panel_id") for item in panel_results]
+    if len(set(submitted_ids)) != 14 or set(submitted_ids) != expected_panels:
+        fail("Prompt-panel IDs missing, duplicated or inconsistent with the actual article")
+    for item in panel_results:
+        panel_id = item["panel_id"]
+        if item.get("status") not in VALID:
+            fail("Invalid prompt status: " + panel_id)
+        digest = item.get("source_prompt_sha256", "")
+        if not re.fullmatch(r"[a-f0-9]{64}", digest):
+            fail("Hash the exact copyable prompt bytes: " + panel_id)
+        if not all(str(item.get(k, "")).startswith("https://") for k in
+                   ("primary_zip_url", "backup_zip_url")):
+            fail("Both independently downloadable package URLs required: " + panel_id)
+        if not item.get("cli_command") or not isinstance(item.get("evidence"), list):
+            fail("Every prompt needs a command and evidence array: " + panel_id)
+        if item["status"] == "CONFIRMED_WITHIN_SCOPE" and not item["evidence"]:
+            fail("A passed prompt requires source/check evidence: " + panel_id)
+        if not isinstance(item.get("limitations"), list):
+            fail("List limitations for " + panel_id)
+    math_items = result.get("math_inventory", [])
+    if not isinstance(math_items, list) or not math_items:
+        fail("Mathematical inventory must include every quantitative/formal claim")
+    seen_math = set()
+    resolved_math = {"PROVED_DERIVATION", "KERNEL_CHECKED",
+                     "SMT_UNSAT_WITH_ENCODING", "BOUNDED_TESTS_PASSED", "COUNTEREXAMPLE"}
+    for item in math_items:
+        cid = item.get("claim_id")
+        if not cid or cid in seen_math:
+            fail("Mathematical claim IDs must be nonempty and unique")
+        seen_math.add(cid)
+        for key in ("locations", "type", "scope", "tool", "tool_version",
+                    "method_sources", "run_result", "independent_check",
+                    "status", "limitations", "loss_conditions"):
+            if key not in item:
+                fail("Missing mathematical proof duty " + key + " for " + cid)
+        if not isinstance(item["locations"], list) or not item["locations"]:
+            fail("Mathematical claim needs one or more article locations: " + cid)
+        if item["status"] in resolved_math and (
+            not item["method_sources"] or not item["run_result"] or
+            not item["independent_check"]):
+            fail("No methods, executed result or independent check for " + cid)
+    coverage = result.get("coverage", {})
+    if coverage.get("panel_ids_enumerated") != 14 or coverage.get("unique_packages_enumerated") != 7:
+        fail("Expected full fourteen-panel and seven-package audit coverage")
+    if coverage.get("math_claims_count") != len(math_items):
+        fail("Mathematical inventory count mismatch")
+    if coverage.get("public_safety_review") is not True:
+        fail("Record separate public-safety review")
+    if not isinstance(coverage.get("article_commands_enumerated"), list) or not isinstance(
+            coverage.get("script_inventory"), list):
+        fail("Missing complete article commands/script inventories")
+
     gates = {x["id"] for x in json.loads((ROOT / "release_status.json").read_text(encoding="utf-8"))["gates"]}
     submitted = {}
     for x in result.get("gate_recommendations", []):
@@ -116,6 +175,8 @@ def validate(folder):
     return {"result":"SUBMISSION_STRUCTURALLY_VALID_NOT_SCHOLARLY_CERTIFIED", "run_id":folder.name,
             "assessments":len(assessments),"gates_accounted_for":len(submitted),
             "hashed_files":len(files),
+            "prompt_panels":len(panel_results),
+            "math_claims":len(math_items),
             "warning":"The owner/coordinator must still audit source fidelity and possible private content."}
 
 def main():
