@@ -1,0 +1,37 @@
+# Real commands run for this audit. Paths shortened:
+#   <A> = articles/joel-dietz-audit-nathan-sweet-bubble-sort-response
+#   <R> = <A>/audits/agents/claude-fable-20261112T0220Z
+#   <priv> = private local directory outside the repository; <tmp> = temporary directory
+# Environment: Windows 11, Git Bash, Python 3.11.9 (every python call used -I), git. No extra packages installed.
+
+git fetch --all
+git worktree add -b audit/joel-dietz/claude-fable-20261112T0220Z ../srr-audit-claude-fable-20261112T0220Z origin/main
+
+# WordPress, read only, through the authenticated connector:
+#   get post 218725796 with metadata (no content); get raw content (saved to <priv>);
+#   REST read of id,status,modified before submission (unchanged). The revisions list call timed out.
+
+python <A>/agents/inventory_article_code.py <priv>/article.json --out <priv>/panel_inventory.json     # exit 1: 14 structural failures
+python <R>/scripts/package_check.py <A> <tmp>/pkgwork2 <R>/logs/package_check.json                         # exit 0
+git clone --filter=blob:none --no-checkout https://github.com/fractastical/morpholib.git                   # history only; no upstream code executed
+git diff --stat 4bed72c..origin/HEAD -- <the eleven tested files>                                          # empty
+git grep -n "14/14" 4bed72c -- sorting-morphogenesis docs
+git grep -n -i "frames" 4bed72c -- sorting-morphogenesis
+python <R>/scripts/independent_checks.py <tmp>/srccache <R>/logs/independent_checks.json                   # exit 0
+python <R>/scripts/link_doi_check.py <priv>/links.json <priv>/link_results.json 10.1111/evo.12502 10.1093/sysbio/syz029 10.1242/dev.175950   # exit 0
+python <R>/scripts/public_text_checks.py <R>/logs/public_text_checks.json                                  # exit 0
+python <R>/scripts/panel_checks.py <priv>/article.json <A> <R>/logs/panel_checks.json --net                # exit 0
+python <R>/scripts/proposed_prompt_patch.py <priv>/article.json <priv>/patch                               # exit 0
+python <A>/agents/inventory_article_code.py <priv>/patch/article_patched.json --out <priv>/inv_after.json # exit 0: 0 structural failures
+python <A>/audit.py --live --config test-data/<id>.json        # x7 with the repository harness and x7 with the patched copy: exit 0 x14
+python <A>/audit.py --selftest --config test-data/<id>.json    # x7 with the patched copy, FIXTURE-ONLY: exit 0 x7
+python <A>/audit.py --live --config nope.json                  # exit 2 (repository harness); exit 1 (patched copy)
+python <A>/audit.py --selftest --config <synthetic control fixtures>   # FIXTURE-ONLY harness controls
+python scripts/bottom_line_gate.py <priv>/article_raw.html --json                                          # exit 0
+python scripts/core_framework_links_gate.py <priv>/article_raw.html --strict                               # exit 0
+python scripts/prose_audit.py <priv>/article_nopanels.html --format html --json                            # exit 0; output not analysed
+curl -sL https://metameditations.substack.com/p/auditing-michael-levins-platonism                          # substring checks
+curl -sL https://foresight.org/people/michael-levin/                                                       # substring checks
+curl -sL https://thoughtforms-life.aipodcast.ing/new-bodies-unconventional-minds-a-continuum-of-cognition-consciousness-by-michael-levin/   # substring check
+python <R>/scripts/build_result.py <R>
+python <A>/agents/validate_submission.py <R>

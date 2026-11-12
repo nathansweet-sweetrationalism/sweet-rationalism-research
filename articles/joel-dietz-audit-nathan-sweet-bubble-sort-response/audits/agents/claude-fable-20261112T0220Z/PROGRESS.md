@@ -1,4 +1,4 @@
-# Independent audit, run `claude-fable-20261112T0220Z` (IN PROGRESS)
+# Independent audit, run `claude-fable-20261112T0220Z` (COMPLETE: see report.md and result.json)
 
 Agent: Claude Code (desktop), model Claude Fable 5.2 (`claude-fable-5-2`), Anthropic.
 Branch: `audit/joel-dietz/claude-fable-20261112T0220Z`. Base commit: `2ee1a4233d37339e27580e59e83af3284f0027d1`.
@@ -58,7 +58,7 @@ Scripts: `scripts/panel_checks.py`, `scripts/link_doi_check.py`, `scripts/public
 - F11 (new, minor): the draft's "My actual words" block shows two passages as consecutive; in the original 487 characters (the "decisive experiment" paragraph, which Dietz did quote) sit between them. An ellipsis would mark the elision.
 - Editorial gate scripts on the private draft: `bottom_line_gate.py` passes structurally (first block, 116 words); `core_framework_links_gate.py --strict` finds all four canonical URLs. Both are structural only.
 
-## Not yet done (in order)
-7. `result.json`, `report.md`, `commands.txt`, `SHA256SUMS.txt`, validator run, pull request.
+## Final stage
+Done: `result.json`, `report.md`, `commands.txt`, `SHA256SUMS.txt` written; submission validator passed.
 
 Not attempted in this run (recorded as NOT_RUN/UNRESOLVED in the final result): executing the upstream Stokes solver; full-text passage checks of the peer-reviewed papers; the Levin transcript; browser copy/expand behaviour; evidence-retention audit against a historical snapshot; sitewide inbound-link inventory; Yoast/unlist-plugin state.
