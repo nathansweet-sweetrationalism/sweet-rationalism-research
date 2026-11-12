@@ -18,3 +18,6 @@ Still an unpublished draft with no files; DOI reserved only. The WordPress draft
 
 ## Update 4, later 2026-11-12
 Still an unpublished draft with no files; DOI reserved only. Draft reworded in five paragraphs (no source, number or claim removed): SHA-256 c06cae7b61277dfb3a9549422b22eb9daf716d4390ca1ba604ce971e071949d4, modified 2026-11-12T00:03:26 site time. Rebuilt candidate: main archive 341,729 bytes, SHA-256 6d02b0b11f4466f097c2911d90dcb8140ca789152d4e7d2d5e3d0de7996d8749; history ZIP 2,006,386 bytes, SHA-256 966ef2d33196c1345e5036716d6d71f00699a9a1700187656e884fe630eeac9e; audit TXT SHA-256 a06971d2d0dbc94e3703155bec412d6f8dd6a9152da7c7b0ac6a29bcc7199804. These supersede earlier hashes.
+
+## Update 5, later 2026-11-12
+The WordPress article is now published; the Zenodo draft is still unpublished with the DOI only reserved. Final candidate files (built on the published raw body, SHA-256 7d3cfa9c0a11b7d387f1c09e1b6ad08519de00337baeda724c42c228031e8c8c): see `release/SHA256SUMS.txt`. These supersede earlier hashes.

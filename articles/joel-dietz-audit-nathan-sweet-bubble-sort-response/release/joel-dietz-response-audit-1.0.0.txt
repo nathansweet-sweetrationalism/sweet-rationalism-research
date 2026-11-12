@@ -1,0 +1,213 @@
+# Release candidate 1.0.0: reconstruction and verification
+
+Article: the WordPress article with post ID 218725796 (title in `metadata.json`), by Nathan Sweet. The WordPress article was published on 2026-11-12 on the owner's instruction (permalink in `metadata.json`). This archive holds the published raw body before any DOI links were added. It becomes the citable release when the Zenodo record is published.
+
+The article is canonical on sweetrationalism.com. This archive preserves one frozen edition with its evidence. It has not been externally peer reviewed. Nothing in it implies that Zhang, Goldstein, Levin or Dietz have read, evaluated or endorsed it.
+
+## What is here
+
+| Path | Contents |
+|---|---|
+| `article/article.html` | The WordPress raw post body, byte for byte (SHA-256 in `metadata.json`) |
+| `article/article.txt` | Readable UTF-8 rendering, with the 14 instruction panels shown as indented blocks |
+| `article/bibliography.txt` | The article's reference section as text |
+| `code/` | The audit harness `audit.py`, test inputs, the seven test packages (ZIP), submission validator, two editorial gate scripts, the release ledger and source manifest, as at the GitHub commit in `metadata.json` |
+| `audits/` | Accepted independent audit evidence as merged into the repository, the coordinator's adjudication, and the DOI preparation note |
+| `evidence/` | Receipts generated against this exact candidate (see `REPRODUCTION_STATUS.md`) and two proposed patches |
+| `tools/` | The script that assembled this archive and the post-publication visibility check |
+| `LIMITATIONS.md` | Unresolved issues, stated plainly |
+| `SOURCE_PASSAGE_CHECKS.md`, `P061_ANALYSIS.md`, `VISIBILITY_AND_LINK_CHECKS.md`, `PROSE_AND_COHESION_REVIEW.md` | Reports of the full-text, statistics, visibility, link, prose and evidence-retention checks |
+| `history/manifest.json` | Hashes and sizes of all 58 saved WordPress revisions and the current state; the bodies and diffs are in the separate `joel-dietz-response-history-1.0.0.zip` |
+| `SHA256SUMS.txt` | SHA-256 of every other file |
+
+Third-party papers and code are cited by DOI and URL and are not redistributed.
+
+## Verify the archive (Python 3.10+, standard library)
+
+```
+unzip joel-dietz-response-1.0.0.zip
+cd joel-dietz-response-1.0.0
+python -c "import hashlib,pathlib,sys;bad=[l for l in pathlib.Path('SHA256SUMS.txt').read_text(encoding='utf-8').splitlines() if hashlib.sha256(pathlib.Path(l[66:]).read_bytes()).hexdigest()!=l[:64]];print('mismatches:',bad)"
+```
+
+Expected: `mismatches: []`. Then compare the SHA-256 of `article/article.html` with `wordpress.raw_body_sha256` in `metadata.json`.
+
+## Re-run the source checks
+
+Each package in `code/packages/` holds `audit.py`, a `test.json`, `README.md` and `PROMPT.md`. Read `audit.py` first. Then, inside an extracted package:
+
+```
+python audit.py --live        # downloads commit-pinned upstream files and checks them; needs network
+python audit.py --selftest    # fixture-only parser check; NOT a check of any online source
+```
+
+`--live` downloads text and never runs upstream code. Exit code 2 and status `UNRESOLVED` mean a source could not be retrieved; no fixture is substituted.
+
+## What the evidence does and does not show
+
+See `REPRODUCTION_STATUS.md` (which of the 14 panels and 7 test packages were actually run, and how) and `LIMITATIONS.md`. In short: seven narrow source and code observations were reproduced from live pinned sources by independent implementations. That is a statement about code, saved data and arithmetic. It is not a replication of any biological experiment and says nothing about whether nonphysical causes exist.
+
+## Computational disclosure for this archive
+
+This archive was assembled in a Claude Code session running Claude Sonnet 5.5 (Anthropic) on 12 November 2026, following an earlier session of the same harness running Claude Fable 5.2 (Anthropic) that produced the merged audit evidence in `audits/agents/claude-fable-20261112T0220Z/`. The tools gathered and hashed sources, wrote and ran the checks, and assembled the files. The owner directed the work, personally completed the primary-source verification (author attestation, not independently reproduced), and decides what is released. The article's own computational disclosure appears in the article and was confirmed by the owner.
+
+
+---
+
+# Which instruction panels and test packages were actually run
+
+The article has 14 expandable instruction panels: 7 test types, each shown twice (a short placement near the top and a fuller one in the analysis). Within each pair the copyable prompt text is byte-identical (checked by SHA-256), so there are 7 unique prompts and 7 unique packages.
+
+Candidate: WordPress raw body SHA-256 `7d3cfa9c0a11b7d387f1c09e1b6ad08519de00337baeda724c42c228031e8c8c`, modified 2026-11-12T00:11:27 (site local time). Receipts are in `evidence/`; the date of the runs is 2026-11-12 UTC.
+
+| Test | Package ZIP SHA-256 (GitHub = WordPress) | Live run of `audit.py --live` | Self-test (fixture only) | Independent second implementation |
+|---|---|---|---|---|
+| validator | d650355507f1... | exit 0, OBSERVATION_REPRODUCED | exit 0, SELFTEST_ONLY | yes, AST parse, 14 literal "VERIFIED", 0 conditionals |
+| xenobot | ed37bb577fce... | exit 0, OBSERVATION_REPRODUCED | exit 0, SELFTEST_ONLY | yes, closed-form sweep recomputed; Stokes solver NOT run |
+| tadpole | 0b0e68e01322... | exit 0, OBSERVATION_REPRODUCED | exit 0, SELFTEST_ONLY | yes, 200 seeded random targets, RK4 |
+| score | 0167c45f80ff... | exit 0, OBSERVATION_REPRODUCED | exit 0, SELFTEST_ONLY | yes, exact fractions, 5429/70 |
+| ports | 81ca725f9564... | exit 0, OBSERVATION_REPRODUCED | exit 0, SELFTEST_ONLY | yes, AST: 5 asserts, 4 cross-language |
+| authorship | ea0490e2ae7e... | exit 0, OBSERVATION_REPRODUCED | exit 0, SELFTEST_ONLY | yes, all eight single-row splits |
+| doi | 85a8307ec44b... | exit 0, OBSERVATION_REPRODUCED | exit 0, SELFTEST_ONLY | yes, Crossref/PubMed identity |
+
+Full hashes: `evidence/package_live_run_candidate.json`. Independent implementation receipt: `evidence/independent_checks_candidate.json`.
+
+## Per panel
+
+All 14 panels: both ZIP URLs in the prompt match `code/sources.json`; the prompt contains the commit pin and every upstream path; no `--offline` flag, no `verify.py`, and `--selftest` named (`evidence/panel_receipts_candidate.json`); the repository inventory script reports 14 panels and 0 structural failures (`evidence/panel_inventory_candidate.json`).
+
+## Not done
+
+- No prompt was run end to end inside a second, separate coding agent as a reader would use it.
+- Copy and expand behaviour was not tested in a browser.
+- Both ZIP hosts are availability channels, not independent corroboration.
+- Agreement between the audit agents shares the same pinned code and data and is not independent empirical replication.
+- The audit harness `audit.py` v2 has a known self-audit weakness (hardcoded 900 percent negative-control line; regex counts conditional status as literal). The independent AST check supports the real result, but the harness alone does not. See `audits/agents/claude-fable-20261112T0220Z/report.md`, defect 5.
+
+
+---
+
+# Source-passage checks against full texts (2026-11-12)
+
+Method: retrieve the open full text, extract text, search for the exact passage the article relies on. Hashes are in the project's literature index. Peer-review status is stated per source.
+
+| # | What the article says | Source and version read | Result |
+|---|---|---|---|
+| 1 | Levin states "we did not add steps to the algorithm to check whether a swap had been completed, or to do specific things if an operation failed" | Levin (2026), *Philosophies* 11(5):161, open-access HTML page; page text SHA-256 `7a4ba9598b1d74ea4c36350483577568145da83f9c76b4d1799da579a3684f15` | CONFIRMED verbatim |
+| 2 | The paper defines delayed gratification through actions that temporarily raise monotonicity error | Zhang, Goldstein, Levin, arXiv:2401.05375 (preprint of the *Adaptive Behavior* paper) | CONFIRMED: "actions that temporarily increase Monotonicity Error in order to achieve gains later on" |
+| 3 | The draft's sentence about what the Zhang authors say on distinguishing strategic backtracking | same arXiv text | The first wording ("perturbations are needed") is not in the preprint. The preprint does say: "A random walker will sometimes move further from its goal and thus exhibit what may look like Delayed Gratification. To demonstrate DG as a problem-solving strategy it must be shown to be performed specifically in the context of barriers, not just part of a random strategy", and then compares Bubble and Insertion sort across numbers of frozen cells ("context-sensitive manner"). SUPPORTED IN SUBSTANCE; the draft sentence was reworded to follow that text. The journal version was not compared |
+| 4 | Huh et al. propose convergence toward a shared statistical model of reality and discuss limitations and counterexamples | arXiv:2405.07987 (ICML 2024 paper) | CONFIRMED in the abstract |
+| 5 | Jiang et al. study intra-model repetition and inter-model homogeneity, not awareness | arXiv:2510.22954 | CONFIRMED: both terms are defined in the abstract; no occurrence of conscious, phenomenal or self-aware |
+| 6 | The Kriegman et al. mouth angle (65 versus 105 degrees) | Kriegman et al. (2021), *PNAS*, Europe PMC main text | UNRESOLVED. The main text describes a "C-shape" with "a single narrow mouth" and states no angle at all. Supplementary information was not retrieved |
+| 7 | Quotes and attributions to Dietz's text | pinned upstream files and live Substack page (earlier audit stage) | CONFIRMED except two phrases fixed before the freeze |
+
+Not checked against a passage: Anderson (1972), Beane et al. (2011), Pinet et al. (2019), Claverie and Wainwright (2014), Friedman et al. (2020), Kennedy et al. (2024), Balaguer (SEP), and Rabosky et al. (2018). For these only the DOI identity was verified. Crossref returned no retraction or correction notice for the ten DOIs in the reference list.
+
+Item 3 was corrected in the draft on 2026-11-12. The preprint is the text checked; if the *Adaptive Behavior* version words this differently, the sentence should be compared against it.
+
+
+---
+
+# The p = 0.061 comparison
+
+Source: Dietz's signed outcome record (nanopublication) https://registry.knowledgepixels.com/np/RAJancwGOPEkHzBoZXGv_vu_snW0Lff2FktE85Me1P-fI and its pre-registration https://registry.knowledgepixels.com/np/RAilN4nbRHp3e3ZHqlbIgeL3UGPRV_KtQHtJD3gzVVdqw, fetched 2026-11-12. Digital signatures were not verified.
+
+## What the record says
+- Hypothesis H2 (primary): for target species within 50 Myr of a training species, the full 30-dimensional prediction has smaller absolute error than copying the nearest training relative. Test: one-sided paired Wilcoxon signed-rank on absolute error, n = 1,122; pre-registered alpha 0.01 for primary hypotheses.
+- Result: median absolute error 0.038344 (full prediction) versus 0.039993 (nearest relative); ratio 0.95877; one-sided p = 0.060682. H2 is recorded as not supported.
+- For comparison, H1 (full prediction versus consensus): ratio 0.4136, p = 1.05e-103, supported.
+
+## Checks I ran
+- The ratio recomputes from the two reported medians: 0.038344 / 0.039993 = 0.95877, a 4.12% reduction. Passed.
+- Direction: the record's own test is "less", so the full prediction had the lower median error. Dietz's prose (article and companion) says copying the nearest relative "won by 4%". That reverses the direction in his own record. The draft had repeated his wording and has been corrected (below).
+- The raw per-species errors were not rerun, because that needs the FishShapes data and the author's pipeline. The p-value is taken from the record, not reproduced.
+- The fish "Thompson predictor" in his prose is the full 30-dimensional phylogenetic prediction. The 7-mode Thompson version is H6, which beats the consensus but has about 50% higher median error than the full prediction.
+
+## Reading
+A one-sided p of 0.061 against alpha = 0.01 is not significant, so H2 failed on the pre-registered criterion. It is not evidence that the nearest relative did better. It also says nothing about P: a predictive win for a geometric model over a rival is a statement within D.
+
+## Change made to the draft
+Two sentences and the revision note now describe the comparison in the direction recorded, with the pre-registered alpha, and link the record. This corrects Dietz's wording that the draft had inherited, and it changes the draft's hash (see `metadata.json`).
+
+
+---
+
+# Signed-out visibility, indexing and link checks
+
+## Before publication (what can be checked now)
+- The draft is not publicly reachable: `?p=218725796` returns 404 signed out, and it is absent from the public REST posts list and the post sitemap. Correct for a draft.
+- Unlisting: the site's `unlist_posts` option holds 38 IDs and does not contain 218725796. After publication the article will therefore be listed and indexable. If the plan is to publish it hidden first, that has to be set before publishing.
+- Yoast stored fields: no noindex or nofollow, canonical empty (a self-canonical is generated), schema article type Article, primary category Epistemology, SEO title, description, Open Graph and X fields set, hero image set with alt text. Yoast's stored scores (content 60, SEO title 28, meta description 22) are low; they may be stale until the post is re-saved in the editor.
+
+## Baseline from a published sibling article
+The same checks on the published Platonic-morphospace article give HTTP 200, an `index, follow` robots meta, self-canonical, Open Graph present, one JSON-LD graph (Article, WebPage, WebSite, Person and BreadcrumbList nodes), presence in the REST list and the sitemap, all four framework links, and three Zenodo DOI links (`evidence/signed_out_baseline_published_article.json`). It has two h1 elements (theme title plus a body h1), which the new article may share.
+
+## After publication: result of the live check (2026-11-12)
+The article was published and checked signed out (`evidence/signed_out_published_article.json`): HTTP 200, no redirect, no X-Robots-Tag, robots meta `index, follow`, self-canonical equal to the permalink, one JSON-LD graph with no parse errors, present in the public REST list and the post sitemap, all four framework links, one h1. The LiteSpeed page cache was purged and the live page serves the final text. No Zenodo DOI link is in the article yet.
+
+## The script used
+
+`tools/post_publish_checks.py <permalink>` repeats the baseline checks on the new URL. Expected: HTTP 200, `index, follow`, canonical equal to the permalink, JSON-LD without parse errors, listed in REST and the sitemap, four framework links, and the two Zenodo DOI links once added.
+
+## Sitewide link matrix
+All 38 published articles were scored by topical overlap and decided one by one (`evidence/link_matrix.csv`).
+- Outbound: 9 are already linked from the draft. 4 are deferred (Levin Platonism background without Dietz or sorting content). 25 are rejected as a different interlocutor or question (mostly the Segall and consciousness series).
+- Inbound plan, to apply only after publication: the bubble-sort article (direct sequel, one sentence), the "Religion with a pipette" article (source of the D-versus-D+P challenge), the xenobots article (Claim 7), and an entry in the Levin criticism index. No other article has a direct substantive connection. None of the 38 links to the draft now.
+- Method limit: relevance was scored by keyword counts plus my reading of titles and excerpts, not a page-by-page human read.
+
+
+---
+
+# Prose and cohesion review (machine measurement plus one read)
+
+This is a review for the owner to act on, not a rewrite. The article was read once end to end in this session and measured with the repository's heuristic prose audit and my own counts. It was not read aloud or by text-to-speech, and the owner has read it several times.
+
+## Measurements (authorial prose, instruction panels excluded)
+- 95 paragraphs, 415 sentences, mean 15.5 words per sentence, none over 55 words. No em dashes. No stock phrases from the project's tic list.
+- 30 question marks. 23 sentences start with "If". Direct address to Dietz ("Joel," or "your") appears about 9 times against third person elsewhere.
+- The repository audit's near-duplicate paragraph flags are all the instruction-panel summary lines, not authorial prose. Its other flags (three-part lists, repeated openings, reverse contrasts) sit mostly inside the panel text and the procedural prompt.
+
+## What I would look at
+1. The same conclusion appears in at least six places: the deck, the Bottom line, the "crucial result" section, the closing sections and the test paragraph (zero earned support; the 77.6% is not a probability; sufficiency of D does not refute P). Each has a different job, but the third and fourth restatements could be shortened without losing a premise.
+2. The "If he means X ... if he means Y" device is used about a dozen times. It is fair-minded but monotone in the middle sections.
+3. The person switches to "Joel, ..." and "your validator" in the "audit the auditor" section while the rest says "Joel says". If deliberate, fine; otherwise unify.
+4. The satire ("a rubber stamp that learned Python") is intact and should stay.
+
+Point 1 was addressed at the owner's request on 2026-11-12 by rewording rather than cutting: the opening deck (the headline average), the opening paragraph (a rebuttal whose numbers sit on the author's side), the closing-section paragraph on where Dietz ends, the "what do the tests license" paragraph and the final paragraph (a label cannot win a disagreement) now each make a distinct point. The Bottom line, the formal section and the subtraction test paragraph were left as they were. No source, number or claim was removed. Point 2 (the "if he means X, if he means Y" device) and point 3 (the switch to "Joel," address) were also addressed later on 2026-11-12: six of the paired if-sentences were recast as "read as / as a" constructions and all second-person address to Dietz was moved to third person (18 if-sentences remain, most of them single conditionals). Point 4 is unchanged.
+
+## Evidence-retention check against all 58 saved revisions
+Run with `scripts/evidence_retention_audit.py`, each revision as the original and the candidate as the new text (`evidence/evidence_retention_all_revisions.json`). Finding: three DOIs that appear in earlier revisions are absent now. They are the corrected targets for two further wrong DOIs in Dietz's materials that earlier drafts reported. Vandenberg et al. 2012: the printed DOI 10.1016/j.ydbio.2012.01.027 resolves to an integrin paper, and the correct one is 10.1002/dvdy.23770. Pietak and Levin 2016: the printed 10.3389/fphys.2016.00178 resolves to a Kv1.3 mitochondria paper, and the correct one is 10.3389/fbioe.2016.00055. I confirmed both mismatches against Crossref and the pinned companion. The article had kept three. At the owner's instruction both were restored on 2026-11-12 with correct references (the third dropped DOI, Pezzulo and Levin 2015, checks out and was correctly removed).
+
+
+---
+
+# Unresolved issues at freeze
+
+Carried from the coordinator's adjudication (`audits/AGENT_ADJUDICATION_2026-11-12.md`) and the audits in this archive, with the status found when freezing. Nothing is silently closed.
+
+## What was done since the first freeze (2026-11-12)
+Full-text passage checks (`SOURCE_PASSAGE_CHECKS.md`), the p = 0.061 analysis (`P061_ANALYSIS.md`), the sitewide link matrix and visibility checks (`VISIBILITY_AND_LINK_CHECKS.md`), a prose and cohesion review plus an evidence-retention run over all 58 saved revisions (`PROSE_AND_COHESION_REVIEW.md`), and the revision-history reconstruction (`history/`, shipped as a separate ZIP). On the owner's request the draft gained a Computational disclosure section, dated Revision notes and an original-code link, and two rounds of correction: the direction of the nearest-relative fish comparison, and the restoration of two verified wrong DOIs together with a reworded sentence about the Zhang et al. preprint.
+
+## Still open
+1. The sentence about what the Zhang et al. authors say on random walkers and barriers was reworded to the arXiv preprint's text. The journal version was not compared.
+2. The p = 0.061 value is taken from Dietz's signed record, not reproduced from the raw FishShapes data; nanopublication signatures were not verified.
+3. Xenobot 65 versus 105 degrees remains unresolved. The Kriegman et al. main text states no angle; its supplement and the upstream Stokes solver were not examined.
+4. Passage-level checks were not done for Anderson (1972), Beane et al. (2011), Pinet et al. (2019), Claverie and Wainwright (2014), Friedman et al. (2020), Kennedy et al. (2024), Balaguer (SEP) and Rabosky et al. (2018). Only DOI identity was checked for those.
+5. Formal duties: no proof assistant or SMT solver was used; the 17 inventoried numerical statements reproduce by exact arithmetic or bounded tests.
+6. Prose: reviewed by measurement and one read, not by ear. The repeated restatements of the conclusion were reworded into distinct points (2026-11-12); the repeated if-then device and the switch to second-person address were reworded later the same day.
+7. Five wrong DOIs in Dietz's materials are now stated in the article (the three covered by the executable test, plus Pietak and Levin 2016 and Vandenberg et al. 2012, each a single lookup). Both additions were verified against Crossref and PubMed and are in the reference list.
+8. The signed-out indexing, canonical, sitemap and structured-data checks passed on the live article (2026-11-12). Inbound links from other articles have not been added yet. The article does not yet link its Zenodo DOIs; that is a post-publication step.
+9. The agents' agreement shares the same pinned code and data and is not independent empirical replication.
+
+## Candidate facts the owner should know
+- The original code repository (`Zhangtaining/cell_research`) carries no licence file on GitHub, was last pushed 2024-10-30, and the earlier audit ran its commit `1fd2bd5`.
+- The article body cites the earlier audit by its concept DOI 10.5281/zenodo.23866304; the Zenodo record references the version DOI 10.5281/zenodo.23866847. Both resolve to the same work.
+- The history ZIP publishes all 58 saved revisions plus the current state, including earlier wording the author later changed.
+
+## Tooling issues found
+- `scripts/bottom_line_gate.py` rejects every article with an italic opening deck because its regular expression is over-escaped. The candidate fails the original gate and passes with the one-line fix (`evidence/bottom_line_gate_candidate.*`, `evidence/proposed_patch_bottom_line_gate.patch`). The fix is in an open pull request, not merged.
+- `scripts/prose_audit.py --json` crashes on Windows unless run in UTF-8 mode.
+- The audit harness v2 has a known self-audit weakness (hardcoded 900 percent negative-control line; a regular expression that counts a conditional status as literal). See `audits/agents/claude-fable-20261112T0220Z/report.md`, defect 5.
+
+## Scope reminders
+Agreement among AI audits is not independent replication. A source-code or arithmetic check does not establish or refute any biological or metaphysical claim. The reserved DOI is not registered until Zenodo publication.

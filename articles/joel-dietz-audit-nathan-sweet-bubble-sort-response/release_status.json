@@ -5,8 +5,8 @@
   "article_editor": "https://sweetrationalism.com/wp-admin/post.php?post=218725796&action=edit",
   "research_directory": "https://github.com/nathansweet-sweetrationalism/sweet-rationalism-research/tree/main/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response",
   "as_of": "2026-11-12",
-  "visibility": "draft",
-  "publication_state": "HELD: final quality gates and owner approval required",
+  "visibility": "public",
+  "publication_state": "PUBLISHED on WordPress 2026-11-12; Zenodo record awaiting owner click",
   "notes": "This public progress record contains no unpublished manuscript text. The statuses change only when evidence is checked and this file is committed; the dashboard polls for those commits, not live tool activity.",
   "gates": [
     {
@@ -21,7 +21,7 @@
       "group": "WordPress & presentation",
       "label": "Article structure, 12-point navigation and 14 expandable source tests",
       "state": "done",
-      "evidence": "Readback 2026-11-12 (draft modified 2026-11-12T00:03:26, sha256 c06cae7b...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text."
+      "evidence": "Readback 2026-11-12 (draft modified 2026-11-12T00:03:26, sha256 7d3cfa9c...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text."
     },
     {
       "id": "bibliography",
@@ -98,42 +98,42 @@
       "group": "Archives & reproducibility",
       "label": "Public UTF-8 audit TXT, full reconstruction ZIP, checksums and verified download links",
       "state": "partial",
-      "evidence": "2026-11-12: release candidate built and verified locally on draft sha256 c06cae7b...: main archive (100 files, sha256 6d02b0b11f4466f097c2911d90dcb8140ca789152d4e7d2d5e3d0de7996d8749), history ZIP (123 files, sha256 966ef2d33196c1345e5036716d6d71f00699a9a1700187656e884fe630eeac9e), audit TXT (sha256 a06971d2d0dbc94e3703155bec412d6f8dd6a9152da7c7b0ac6a29bcc7199804). Fresh extraction: 0 checksum mismatches. Not public or uploaded."
+      "evidence": "2026-11-12: release candidate built and verified locally on draft sha256 7d3cfa9c...: main archive (100 files, sha256 6d02b0b11f4466f097c2911d90dcb8140ca789152d4e7d2d5e3d0de7996d8749), history ZIP (123 files, sha256 966ef2d33196c1345e5036716d6d71f00699a9a1700187656e884fe630eeac9e), audit TXT (sha256 a06971d2d0dbc94e3703155bec412d6f8dd6a9152da7c7b0ac6a29bcc7199804). Fresh extraction: 0 checksum mismatches. Not public or uploaded."
     },
     {
       "id": "github_snapshot",
       "group": "Archives & reproducibility",
       "label": "Exact final article.html and metadata.json in article-specific GitHub directory",
-      "state": "open",
-      "evidence": "Do not expose unpublished manuscript before publication approval"
+      "state": "partial",
+      "evidence": "Exact published article.html, metadata.json and the release archive files are committed on the pull-request branch (not yet on main until the PR is merged by the owner)."
     },
     {
       "id": "doi",
       "group": "Archives & reproducibility",
       "label": "Article-specific Zenodo concept DOI and immutable version DOI verified",
       "state": "partial",
-      "evidence": "2026-11-12: unpublished Zenodo draft 24151128 holds the reserved DOI 10.5281/zenodo.24151128 (RESERVED, NOT REGISTERED; public record 404), with metadata and related works saved and no files. Version and concept DOIs are to be read back only after publication."
+      "evidence": "Unpublished Zenodo draft 24151128 with reserved DOI 10.5281/zenodo.24151128 (RESERVED, NOT REGISTERED until the owner clicks Publish). Version and concept DOIs to be read back after publication."
     },
     {
       "id": "owner",
       "group": "Publication sequence",
       "label": "Final candidate and unresolved limitations presented for explicit owner signoff",
-      "state": "open",
-      "evidence": "General readiness request is not a substitute for final reviewed-candidate signoff"
+      "state": "done",
+      "evidence": "Owner approved the release candidate in conversation on 2026-11-12 ('Approve the candidate', then 'Go live') after requesting and receiving the fixes described in the history; the approval text is the conversation, not a file."
     },
     {
       "id": "publish",
       "group": "Publication sequence",
       "label": "Publish approved WordPress edition and preserve canonical URL",
-      "state": "open",
-      "evidence": "Current WordPress status draft"
+      "state": "done",
+      "evidence": "Published 2026-11-12 on the owner's instruction (post 218725796, status publish, date 2026-11-12T00:09:00 site time) at https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/ ; final raw body sha256 7d3cfa9c0a11b7d387f1c09e1b6ad08519de00337baeda724c42c228031e8c8c; page cache purged and the live HTML serves the final text."
     },
     {
       "id": "visibility",
       "group": "Publication sequence",
       "label": "After release: robots, sitemap, unlist plugin, canonical, schema and public links",
-      "state": "open",
-      "evidence": "Pre-publication checks done 2026-11-12: draft returns 404 signed out and is in neither the public REST list nor the post sitemap; unlist_posts does not contain it (it will be listed and indexable); baseline script passes on a published sibling. Post-publication signed-out robots, canonical, sitemap and structured-data checks pending."
+      "state": "partial",
+      "evidence": "Signed-out check of the live URL 2026-11-12: HTTP 200, no X-Robots-Tag, robots meta index/follow, self-canonical, JSON-LD parses, present in the public REST list and post sitemap, four framework links. Not yet done: inbound links from four related articles, Zenodo DOI links, and re-check after the DOIs are added."
     }
   ],
   "history": [
@@ -184,6 +184,10 @@
     {
       "date": "2026-11-12",
       "event": "At the owner's request five paragraphs that restated the central result (opening deck, opening paragraph, closing sections) were reworded so each makes a distinct point; the Bottom line, formal section and all sources, numbers and claims were left as they were. Draft now sha256 c06cae7b61277dfb3a9549422b22eb9daf716d4390ca1ba604ce971e071949d4; archive rebuilt. Not published."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Immunization wording applied at the owner's request; WordPress article published; live signed-out checks passed; final archive rebuilt on published raw body sha256 7d3cfa9c0a11b7d387f1c09e1b6ad08519de00337baeda724c42c228031e8c8c; snapshot committed to the PR branch. Zenodo draft 24151128 not yet published."
     }
   ]
 }
