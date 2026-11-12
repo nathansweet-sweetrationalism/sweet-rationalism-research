@@ -17,7 +17,7 @@ import sys
 
 
 BLOCKS = {"p", "h1", "h2", "h3", "h4", "h5", "h6"}
-META_PREFIXES = ("research record:", "versions and archives:")
+META_PREFIXES = ("research record:", "cite as:", "versions and archives:")
 BOTTOM_LINE = re.compile(r"^\s*bottom\s+line\s*[.:]\s*", re.IGNORECASE)
 SECTION_HEADER = re.compile(r"^(abstract|prologue|part\s+[ivx]+|section\s+[ivx]+|introduction|overview|method(?:ology)?)\b", re.I)
 
@@ -78,6 +78,18 @@ def inspect_html(content: str, required_terms: list[str] | None = None) -> dict:
         word_count = len(extract.split())
         if tag != "p":
             failures.append("The Bottom line must begin a paragraph, not a heading or list")
+        # Opening citation/license and archive metadata belong ABOVE the Bottom line.
+        # Do not mistake a long Cite as paragraph for a substantive preamble.
+        metadata = [(pos, prefix) for pos, (t, val) in enumerate(parser.blocks)
+                    if t == "p" for prefix in META_PREFIXES
+                    if val.casefold().startswith(prefix)]
+        after = [prefix for pos, prefix in metadata if pos > i]
+        if after:
+            failures.append("Opening provenance metadata must precede Bottom line: " + ", ".join(after))
+        before = [prefix for pos, prefix in metadata if pos < i]
+        ranks = [META_PREFIXES.index(prefix) for prefix in before]
+        if ranks != sorted(ranks):
+            failures.append("Opening provenance metadata order must be Research record, Cite as, Versions and archives")
         preceding = [(t, s) for pos, t, s in core if pos < i]
         if len(preceding) > 2:
             failures.append(f"Bottom line follows {len(preceding)} non-archive blocks; expected near the top")
