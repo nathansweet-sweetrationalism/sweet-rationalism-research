@@ -152,6 +152,10 @@
     {
       "date": "2026-11-12",
       "event": "Reviewed public Substack subtitle and pinned Dietz article/companion. Confirmed exact plural 'reductionist blog critics' and Nathan Sweet as the only individually named critic in that dispute. Current WordPress draft already corrected the singular misquotation; issued public source-provenance adjudication. Source-ledger gate partial, not done."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "WordPress #218725796 remains draft. At local modified 2026-11-11 22:21:52, one precision edit changed 'while naming me as his only critic' to 'while I am the only critic individually named in his article and companion.' This avoids claiming Dietz asserted he had no other critics. No test block or release status changed."
     }
   ]
 }
