@@ -540,7 +540,7 @@
    "observations": [
     "93 unique HTTP links; 83 return 200; the others are publisher 403 bot blocks and the draft's own URL (404 signed-out).",
     "All 16 in-page anchors resolve.",
-    "84 of 103 external links lack target=_blank; 102 of 103 lack noreferrer; 3 of 47 internal links open a new tab (AGENTS.md rule 26)."
+    "Raw stored HTML: 84 of 103 external links lack target=_blank and 102 lack noreferrer. CORRECTION (see ADDENDUM.md): the site adds these attributes at render time, so this is not a rule 26 failure on served pages; rendered draft not verified."
    ],
    "evidence": [
     {
@@ -702,7 +702,7 @@
   {
    "id": "link_audit",
    "suggested_state": "partial",
-   "reason": "Link status and anchors checked; link-attribute rule 26 is not met; typed inbound/outbound audit not done.",
+   "reason": "Link status and anchors checked; typed inbound/outbound audit not done.",
    "assessment_ids": [
     "LINK-status"
    ]
@@ -768,7 +768,8 @@
   "Consider noting that the authorship split direction depends on the row chosen (range 50.3 to 57.4).",
   "Make audit.py compute its validator control and distinguish conditional from literal status; apply proposed config-error patch.",
   "Align ZIP README/PROMPT.md with the commit-pinned URL and the article prompt, or state that they differ (requires new ZIPs and hashes).",
-  "Bring external/internal link attributes into line with AGENTS.md rule 26.",
+  "Verify link attributes on the rendered draft (raw-HTML finding withdrawn; see ADDENDUM.md).",
+  "ADDENDUM: draft changed after snapshot by owner-approved panel repair; new content SHA-256 f4d791fda72274f5e310ffcf8c36453cb068153bfa65080f0cbb4aef3de16734.",
   "UNRESOLVED: xenobot angle convention (65 vs 105); Stokes sweep not executed.",
   "NOT_RUN: full-text passage support in Zhang et al., Kriegman et al., Pinet et al., Huh et al., Jiang et al.; the p = 0.061 analysis; browser copy/expand; prose, cohesion and evidence-retention gates; inbound-link inventory; Yoast head and unlist-plugin state; WordPress revisions; private correspondence."
  ],

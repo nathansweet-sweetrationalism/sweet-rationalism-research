@@ -4,6 +4,8 @@ Agent: Claude Code (desktop) running Claude Fable 5.2 (`claude-fable-5-2`, Anthr
 Target: WordPress post 218725796, status `draft`, modified `2026-11-11T20:31:22`, content SHA-256 `034280325838f1cd563709772311e2de3556f56931b9229538ef944c70c51a98`. Rechecked unchanged before submission.
 Base commit `2ee1a42`; upstream pin `fractastical/morpholib@4bed72c`; upstream HEAD at audit `8965854` (one commit later, none of the tested files changed).
 
+**Read `ADDENDUM.md` first: the draft changed after this report (owner-approved panel repair) and defect 8 is withdrawn.**
+
 This is evidence for the release coordinator. It does not close any gate and does not authorize publication. No draft text is in this directory. WordPress was read only.
 
 ## What held up
@@ -32,7 +34,7 @@ This is evidence for the release coordinator. It does not close any gate and doe
 | 5 | The harness validator "negative control" line is a hardcoded sentence, and its regex counts a conditional status as a literal one. It would not notice an upstream fix. | `logs/harness_status_controls.FIXTURE_ONLY.json` | Derive the control from the parsed status expression (the AST approach in `scripts/independent_checks.py`). | Not patched; described only. |
 | 6 | A missing `--config` file is reported as `UNRESOLVED` "Source retrieval failed". | `logs/audit_py_patch_before_after.txt` | `proposed_patches/audit_py_config_error.patch` | `UNRESOLVED`/exit 2 becomes `NOT_RUN`/exit 1 with a configuration message; seven live outputs hash-identical before and after; seven selftests pass. |
 | 7 | The `PROMPT.md` inside each ZIP differs from the article prompt, and it and the ZIP `README.md` link the GitHub ZIP on branch `main`, not the pinned commit. | `logs/package_check.json` | Rebuild ZIPs with the pinned URL, or say in the article that the bundled prompt is a short form. Needs new hashes. | Not patched. |
-| 8 | Link attributes: 84 of 103 external links lack `target="_blank"`, 102 lack `noreferrer`, 3 of 47 internal links open a new tab (AGENTS.md rule 26). | `logs/link_doi_results.json`, private link list | Mechanical attribute fix. | Not patched. |
+| 8 | Link attributes: 84 of 103 external links lack `target="_blank"`, 102 lack `noreferrer`, 3 of 47 internal links open a new tab (AGENTS.md rule 26). | `logs/link_doi_results.json`, private link list | WITHDRAWN as stated: the site adds these attributes when serving pages. See `ADDENDUM.md`. | n/a |
 | 9 | The self-quotation block shows two passages as consecutive; 487 characters separate them in the original. | `logs/public_text_checks.json` | Add an ellipsis. | Not patched. |
 | 10 | The Bayes-factor sentence omits the condition Pr(E\|D) > 0. | `logs/independent_checks.json` | Add "with nonzero likelihood". | Not patched. |
 
