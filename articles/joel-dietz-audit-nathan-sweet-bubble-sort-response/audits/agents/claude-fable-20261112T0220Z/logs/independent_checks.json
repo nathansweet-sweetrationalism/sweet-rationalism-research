@@ -1,0 +1,359 @@
+{
+ "pin": "4bed72c17f09bf336e36e7472e64d457db3b0195",
+ "sources": {
+  "gen": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/media/make_claim_aggregation.py",
+   "sha256": "7449df97210d50bfe5adbd75b5aa342fcebdc04c1949132cfc6e7d4e88f28943",
+   "bytes": 4455
+  },
+  "article": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_ARTICLE.md",
+   "sha256": "15128797b75b65902277fba779560c6c7d1d0c25eae587fe0510ed60c42c5261",
+   "bytes": 54054
+  },
+  "claims": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_CLAIMS.md",
+   "sha256": "fae2a9c1bdc658a21d4ba79245b86976b2d7d40715567f6e99e99cb8808c6eac",
+   "bytes": 28155
+  },
+  "errata": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/ERRATA_AND_REFEREE_AUDIT_LOG.md",
+   "sha256": "f0905d3d477ae5204984a7c83231d7b1c905c67ed96db689e5f415672e441fcb",
+   "bytes": 24107
+  },
+  "validator": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/validate_kymograph_and_paper.py",
+   "sha256": "f292b78a5707dfe81fd3b8f97fb3b523da56e2491467ca2bd30b25b536c6b2cd",
+   "bytes": 42435
+  },
+  "csv": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/figures/zhang_2025_validation_benchmarks.csv",
+   "sha256": "458f9363d86e4142c9eeb30b2984d2f4949a5d8f1d583dedf94bc563bf3d8bb1",
+   "bytes": 1870
+  },
+  "ports": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/verify_multilang_ports.py",
+   "sha256": "19da933acba5bbaa0979493c8d34eb6aa2d31f2d86ea9d9eec06bb87ec7626f8",
+   "bytes": 23142
+  },
+  "guide": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/REPLICATION_AND_PORT_GUIDE.md",
+   "sha256": "2248e5abcc86d9fa597e58aab26a5817c55d5cb960978ff1ed0992c67974b6b5",
+   "bytes": 11113
+  },
+  "renderer": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/render_13yo_illustrations.py",
+   "sha256": "bf02ff2958dd90f0b24fe6e47d663c438d9c8a77afe978478f237f0e56c13ce8",
+   "bytes": 53429
+  },
+  "xeno": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/models/2020-kriegman-xenobot-evolutionary-biobots.py",
+   "sha256": "ea9dad82946cd76c9f357d2cb94eb06dbfef505a6f3febffb0fb0a92139d7580",
+   "bytes": 126768
+  },
+  "tadpole": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/models/2019-bischof-xenopus-craniofacial-remap.py",
+   "sha256": "fccee236c856696f65a2edc65c16250fd4201e8c0fb0e493721ac9bc6b2ab3b6",
+   "bytes": 97206
+  }
+ },
+ "checks": {
+  "score": {
+   "seven_scores": [
+    "667/10",
+    "27/2",
+    "173/2",
+    "961/10",
+    "95",
+    "95",
+    "901/10"
+   ],
+   "exact_mean": "5429/70",
+   "mean_decimal": "77.5571428",
+   "mean_rounded_1dp": "77.6",
+   "hardcoded_MEAN": "77.6%",
+   "MEAN_is_string_literal": true,
+   "numeric_aggregation_calls_in_generator": 0,
+   "rounded_mean_equals_label": true,
+   "leave_one_out_min_max": [
+    "74.47",
+    "88.23"
+   ],
+   "leave_one_out_all": [
+    "79.37",
+    "88.23",
+    "76.07",
+    "74.47",
+    "74.65",
+    "74.65",
+    "75.47"
+   ],
+   "structural7_rounded": "88.1",
+   "four_claim_rounded": "65.7",
+   "structural4_rounded": "84.2",
+   "pillars_rounded": "81.6",
+   "point_ratios_rounded": {
+    "7.4/11.1": "66.7",
+    "1.5/11.1": "13.5",
+    "9.6/11.1": "86.5",
+    "32.0/33.3": "96.1"
+   },
+   "formulas_present": {
+    "structural7_in_article": true,
+    "s16_four_claim_in_errata": true,
+    "s16_pillars_in_errata": true,
+    "zero_dualist_in_article": true
+   },
+   "hypothetical_claim2_weight_to_mean": {
+    "0": "88.23",
+    "0.5": "82.48",
+    "1": "77.56",
+    "2": "69.55",
+    "3": "63.32"
+   },
+   "negative_control_perturbed_score_detected": true,
+   "scope": "Arithmetic of displayed labels only. Not a probability of any ontology."
+  },
+  "validator": {
+   "dict_literals_with_status_and_error": 14,
+   "all_status_values_literal_VERIFIED": true,
+   "conditionals_or_asserts_referencing_relative_error": 0,
+   "lines_352_353": [
+    "\"relative_error_pct\": round(abs(float(np.mean(dg_by_f[\"B\"][3])) - 0.37) / 0.37 * 100.0, 2),",
+    "\"status\": \"VERIFIED\","
+   ],
+   "figure_title_14_of_14_present": true,
+   "pass_literal_count": 2,
+   "fail_literal_count": 0,
+   "csv_rows": 14,
+   "csv_all_VERIFIED": true,
+   "csv_max_error": "3411/100",
+   "csv_rows_detail": [
+    {
+     "id": "fig4a_bubble_swaps",
+     "csv_err": "0.51",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "0.51"
+    },
+    {
+     "id": "fig4a_insertion_swaps",
+     "csv_err": "0.86",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "0.86"
+    },
+    {
+     "id": "fig4a_selection_swap_ratio",
+     "csv_err": "0.26",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "0.27"
+    },
+    {
+     "id": "fig4b_bubble_step_speedup",
+     "csv_err": "3.84",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "4.00"
+    },
+    {
+     "id": "fig4b_insertion_step_speedup",
+     "csv_err": "0.41",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "0.49"
+    },
+    {
+     "id": "fig4b_selection_step_overhead",
+     "csv_err": "0.84",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "0.85"
+    },
+    {
+     "id": "fig5c_selection_immovable_f3",
+     "csv_err": "2.22",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "2.33"
+    },
+    {
+     "id": "fig5c_bubble_immovable_f3",
+     "csv_err": "0.61",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "0.55"
+    },
+    {
+     "id": "fig7a_bubble_dg_f3",
+     "csv_err": "34.11",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "34.05"
+    },
+    {
+     "id": "fig7b_insertion_dg_mean",
+     "csv_err": "1.33",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "1.32"
+    },
+    {
+     "id": "fig8a_unique_chimera_peak_agg",
+     "csv_err": "1.49",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "1.55"
+    },
+    {
+     "id": "fig8d_duplicate_chimera_final_agg",
+     "csv_err": "0.29",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "0.29"
+    },
+    {
+     "id": "fig9_cross_purpose_bi_sortedness",
+     "csv_err": "2.16",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "2.16"
+    },
+    {
+     "id": "fig9_cross_purpose_hierarchy",
+     "csv_err": "11.71",
+     "status": "VERIFIED",
+     "recomputed_from_rounded_values": "11.69"
+    }
+   ],
+   "hypothetical_threshold_fail_counts": {
+    "1%": 7,
+    "5%": 2,
+    "10%": 2,
+    "25%": 1
+   },
+   "synthetic_900pct_control": "status expression is a constant; no input value can change it",
+   "guide_fig7a_row": "| **§4.3 Fig. 7A** | Bubble Delayed Gratification ($f = 3$) | `0.37` (Trad `<0.25`) | `0.5581` | `0.5581` | `0.496` |",
+   "cpp_js_0_5581_vs_published_0_37_pct": "50.84",
+   "numpy_default_rng_in_validator": true,
+   "splitmix_in_ports": true,
+   "scope": "Verdict logic and saved CSV only. Says nothing about whether the simulations are right."
+  },
+  "xenobot": {
+   "eta_sweep_expr": "6.0 + 12.5 * np.exp(-((theta_deg - 65.0) / 26.0) ** 2)",
+   "spill_penalty_expr": "np.where(theta_deg > 85.0, np.exp(-((theta_deg - 85.0) / 38.0) ** 2), 1.0)",
+   "theta_grid_expr": "np.linspace(0.0, 120.0, 25)",
+   "gaussian_centre_deg": 65.0,
+   "argmax_on_code_grid": 65.0,
+   "argmax_fine_grid_0_001": 65.0,
+   "value_at_65": 222.0,
+   "value_at_105": 65.2423,
+   "ratio_65_over_105": 3.403,
+   "control_centre_to_argmax": {
+    "40.0": 40.0,
+    "65.0": 65.0,
+    "80.0": 80.0,
+    "105.0": 96.646
+   },
+   "claims_doc_105_deg_mentions": 3,
+   "claims_doc_both_fluid_sims_sentence": true,
+   "standalone_105_tokens_in_model_file": 0,
+   "theta_mouth_default_65": true,
+   "stokes_sweep_exists_separately": true,
+   "stokes_sweep_angles": "0.0, 20.0, 35.0, 50.0, 65.0, 80.0, 95.0, 110.0, 120.0",
+   "scope": "The closed-form AFPO efficiency curve has a stipulated centre. The separate Stokes capture sweep was NOT run here (upstream code is not executed); its sampled angles do not include 105."
+  },
+  "tadpole": {
+   "rhs_body": [
+    "diff = X - X_star",
+    "homing = -K[:, None] * diff",
+    "rel_diff = diff[:, None, :] - diff[None, :, :]",
+    "coupling = -np.sum(C[:, :, None] * rel_diff, axis=1)",
+    "return eta_mmp * (homing + coupling)"
+   ],
+   "target_parameter_loads": 4,
+   "fixed_point_argument": "RHS is linear in diff = X - X_star and vanishes at diff = 0; with K_i > 0 and symmetric C >= 0 the matrix K + Laplacian(C) is positive definite, so diff -> 0 for any supplied X_star.",
+   "property_test_trials": 200,
+   "property_test_seed": 20261112,
+   "worst_abs_distance_from_supplied_target_at_T40": 9.563374739229857e-06,
+   "property_test_passed": true,
+   "eta_zero_control_stays_put": true,
+   "audit_py_illustration_closed_form": {
+    "-2.0": -1.99976,
+    "9.0": 8.9998
+   },
+   "scope": "Shows the reduced model converges to whatever target it is handed. Not a statement about embryos or about where a biological target comes from."
+  },
+  "ports": {
+   "total_assert_statements": 5,
+   "cross_language_asserts": [
+    "cpp_data['kymograph_n42']['selection_final_values'] == js_data['kymograph_n42']['selection_final_values'] == py_kymo['selection']['final_values']",
+    "cpp_data['kymograph_n42']['bubble_final_values'] == js_data['kymograph_n42']['bubble_final_values'] == py_kymo['bubble']['final_values']",
+    "cpp_data['kymograph_n42']['insertion_final_values'] == js_data['kymograph_n42']['insertion_final_values'] == py_kymo['insertion']['final_values']",
+    "cpp_data['benchmarks'] == js_data['benchmarks']"
+   ],
+   "python_benchmark_values_asserted_equal": false,
+   "intermediate_frames_asserted_equal": false,
+   "guide_fig7a_cells": [
+    "0.37` (Trad `<0.25`)",
+    "0.5581",
+    "0.5581",
+    "0.496",
+    ""
+   ],
+   "scope": "Only this verifier file and the guide were parsed. Other upstream tests could compare more; see the upstream grep receipt in logs/."
+  },
+  "authorship": {
+   "rows": 8,
+   "cols": 5,
+   "prose_column_index": 1,
+   "prose_column_label": "Prose Text Drafted (% AI)",
+   "ai_prose_estimates": [
+    "8",
+    "50",
+    "60",
+    "58",
+    "25",
+    "40",
+    "72",
+    "62"
+   ],
+   "human_prose_mean": "53.125",
+   "after_duplicating_intro_row": "57.444",
+   "rounded": [
+    "53.1",
+    "57.4"
+   ],
+   "split_each_row_in_turn": {
+    "1. Intro: Bach, Levin & the Tools": "57.44",
+    "2. The Seven Claims (headers + GIF)": "52.78",
+    "3. The Score": "51.67",
+    "4. Rationalism: Short and Sweet": "51.89",
+    "5. On Dualism: Within/Without": "55.56",
+    "6. Conclusion": "53.89",
+    "7. Footnotes, the ++ & Problem Graph": "50.33",
+    "8. Appendix: How This Was Audited": "51.44"
+   },
+   "docstring_says_computed_from_matrix": true,
+   "scope": "Arithmetic sensitivity of an unweighted mean of estimates. Assumes both halves of the split row keep the same estimate. Says nothing about real contribution shares."
+  },
+  "source_text": {
+   "p_0_061_in_claims": true,
+   "p_0_061_in_article": true,
+   "quantitative_law_of_vertebrate_evolution": true,
+   "ablation_4_5x": true,
+   "ablation_ratio": "4.48",
+   "papers_last_decade": true,
+   "words_36000": true,
+   "critics_flat_0_50": true,
+   "bloggers_named": true,
+   "reductionist_dismissals": true,
+   "exact_phrase_reductionist_blogger_in_pinned_article": false,
+   "exact_phrase_reductionist_blogger_in_pinned_claims": false,
+   "sufficiency_not_falsity": true,
+   "lower_bound_sentence": true,
+   "zero_cell_mismatches": true,
+   "s16_s17_rows": [
+    true,
+    true
+   ],
+   "scope": "Exact-substring presence in the pinned files only."
+  },
+  "bayes_identity": {
+   "statement": "For real p with 0 < p <= 1: if Pr(E|D+P) = Pr(E|D) = p then Pr(E|D+P)/Pr(E|D) = 1.",
+   "derivation": "p/p = 1 for every nonzero element of a field (multiplicative inverse axiom).",
+   "exact_rational_samples_checked": 15,
+   "all_equal_one": true,
+   "boundary_case_p_zero_is_undefined": true,
+   "scope": "Algebra only. Whether D and D+P really assign equal likelihood to E is an empirical/modelling premise, not checked here."
+  }
+ }
+}
