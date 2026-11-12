@@ -1,14 +1,63 @@
-Traceback (most recent call last):
-  File "C:\Users\micom\OneDrive\Documents\sweetrationalism\scratch\repos\srr-audit-claude-fable-20261112T0220Z\articles\joel-dietz-audit-nathan-sweet-bubble-sort-response\audits\agents\claude-fable-20261112T0220Z\scripts\package_check.py", line 91, in <module>
-    main()
-  File "C:\Users\micom\OneDrive\Documents\sweetrationalism\scratch\repos\srr-audit-claude-fable-20261112T0220Z\articles\joel-dietz-audit-nathan-sweet-bubble-sort-response\audits\agents\claude-fable-20261112T0220Z\scripts\package_check.py", line 59, in main
-    if d.exists(): shutil.rmtree(d)
-                   ^^^^^^^^^^^^^^^^
-  File "C:\Users\micom\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 787, in rmtree
-    return _rmtree_unsafe(path, onerror)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\micom\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 638, in _rmtree_unsafe
-    onerror(os.rmdir, path, sys.exc_info())
-  File "C:\Users\micom\AppData\Local\Programs\Python\Python311\Lib\shutil.py", line 636, in _rmtree_unsafe
-    os.rmdir(path)
-PermissionError: [WinError 5] Access is denied: 'C:\\Users\\micom\\OneDrive\\Documents\\sweetrationalism\\scratch\\private\\dietz-claude-fable-20261112T0220Z\\pkgwork\\validator'
+validator gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+xenobot gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+tadpole gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+score gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+ports gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+authorship gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 
+doi gh 200 wp 200 mirror_eq True gh=head True audit_eq True tj_eq True verify.py False PROMPT True ['README.md', 'PROMPT.md', 'test.json', 'audit.py']
+    live 0 OBSERVATION_REPRODUCED 
+    selftest 0 SELFTEST_ONLY 
+    obsolete_offline_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: unrecognized
+    no_flag 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    both_flags 2 None usage: audit.py [-h] [--live] [--selftest] [--config CONFIG] audit.py: error: Choose exact
+    missing_config 2 UNRESOLVED 
+    malformed_config 1 SELFTEST_FAILED 
+    dead_source_url 2 UNRESOLVED 

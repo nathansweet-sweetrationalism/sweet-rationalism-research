@@ -49,14 +49,15 @@
    "unsafe_paths": [],
    "has_verify_py": false,
    "has_PROMPT_md": true,
-   "bundled_audit_equals_repo_audit": false,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
    "bundled_test_json_equals_repo_test_data": true,
    "runs": [
     {
      "cmd": "-I audit.py --live",
      "exit": 0,
      "status": "OBSERVATION_REPRODUCED",
-     "stdout_sha256": "516b4b28c4ed60bc50614c2de8c4af012eb80a3358f9c3e32af7e794bb6d71ac",
+     "stdout_sha256": "2c9341bfe316765f12c19e511d3ef0e246df410688447275637a61cb863f9500",
      "stderr_head": "",
      "label": "live"
     },
@@ -64,7 +65,7 @@
      "cmd": "-I audit.py --selftest",
      "exit": 0,
      "status": "SELFTEST_ONLY",
-     "stdout_sha256": "3d2e67a0aa6828e0cfee9375979ab20f5e9ce9ee8b291954a3b5a14d6010f4bb",
+     "stdout_sha256": "ca1411484db2370781147e41dd0136417d7f2a485e0934d2a466350272929a95",
      "stderr_head": "",
      "label": "selftest"
     },
@@ -96,7 +97,7 @@
      "cmd": "-I audit.py --live --config nope.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "4fe2e0c2ab1ff214f792f89ad25c2004b71814c4953c4210c320170d752c48ac",
+     "stdout_sha256": "afc050fb3505d26dc90536b9771a99c87c38851295864bbc19667504eaf72a28",
      "stderr_head": "",
      "label": "missing_config"
     },
@@ -104,7 +105,7 @@
      "cmd": "-I audit.py --selftest --config bad.json",
      "exit": 1,
      "status": "SELFTEST_FAILED",
-     "stdout_sha256": "29ac06e269d7f112aa48e6584e35b207ca12b2e2330a1d79258b71d730d6bd3d",
+     "stdout_sha256": "74c9f58f4fac6bad1abecafa66b6f10494968f4edb2228482dddaa311f7a5964",
      "stderr_head": "",
      "label": "malformed_config"
     },
@@ -112,7 +113,7 @@
      "cmd": "-I audit.py --live --config dead.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "19af5591ba4046bd9fb9b9722162dc4d358958a34d54ad8d67ea171f313aac3a",
+     "stdout_sha256": "c43461eba89921639e85b10bf1bb024473add47196582e67421441e8fc647f27",
      "stderr_head": "",
      "label": "dead_source_url"
     }
@@ -164,14 +165,15 @@
    "unsafe_paths": [],
    "has_verify_py": false,
    "has_PROMPT_md": true,
-   "bundled_audit_equals_repo_audit": false,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
    "bundled_test_json_equals_repo_test_data": true,
    "runs": [
     {
      "cmd": "-I audit.py --live",
      "exit": 0,
      "status": "OBSERVATION_REPRODUCED",
-     "stdout_sha256": "4eeb93f69b9cc08ddffb92868d6db797875238e2d2a939986af5a063b42c5301",
+     "stdout_sha256": "a9022335c1b4e96f85e48435055bbc6f7523101f7317c0fa3e75e50f55968522",
      "stderr_head": "",
      "label": "live"
     },
@@ -179,7 +181,7 @@
      "cmd": "-I audit.py --selftest",
      "exit": 0,
      "status": "SELFTEST_ONLY",
-     "stdout_sha256": "8d77150eefc1a02f9a1453947fd9d65ef5504abb3d31fc7581821f08324b318c",
+     "stdout_sha256": "69f206de6ea40885032f9fa954f53cf02d8d2a6785b9c4da4f1095e4a73fb111",
      "stderr_head": "",
      "label": "selftest"
     },
@@ -211,7 +213,7 @@
      "cmd": "-I audit.py --live --config nope.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "1719dc2c62cc5f2c690fdac509da815585ee140a1a266f53179932cdd5a313f6",
+     "stdout_sha256": "5ddadfeaeccd2f9d18835f98bc97c45f91037ca4e8943724f432a0102e6ab7e2",
      "stderr_head": "",
      "label": "missing_config"
     },
@@ -219,7 +221,7 @@
      "cmd": "-I audit.py --selftest --config bad.json",
      "exit": 1,
      "status": "SELFTEST_FAILED",
-     "stdout_sha256": "e94e4e391ea3150fff8cd73b858288c8a5041bd035fbdf47216d59fe3d58c470",
+     "stdout_sha256": "bbfc9570597361c6a5f90b466bd82d3ee8ca6320c2925beee481b5cbeea5bc4f",
      "stderr_head": "",
      "label": "malformed_config"
     },
@@ -227,7 +229,7 @@
      "cmd": "-I audit.py --live --config dead.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "44994a05a1d2d5567ebec85f639a160c73f57699537b5010be859e6f9f89dc88",
+     "stdout_sha256": "c3566eff687a833b0e03e115dfef75dd2625fda6548d4a39cf1b9b2aa3e77871",
      "stderr_head": "",
      "label": "dead_source_url"
     }
@@ -279,14 +281,15 @@
    "unsafe_paths": [],
    "has_verify_py": false,
    "has_PROMPT_md": true,
-   "bundled_audit_equals_repo_audit": false,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
    "bundled_test_json_equals_repo_test_data": true,
    "runs": [
     {
      "cmd": "-I audit.py --live",
      "exit": 0,
      "status": "OBSERVATION_REPRODUCED",
-     "stdout_sha256": "b39fea5a4c29652d36dc79349629b841664ded16dd37a716abc070d5df014175",
+     "stdout_sha256": "a7798446932b8c9c2575cb47fbbc3d4745dc71469a5f0034bf27aef54b0797a5",
      "stderr_head": "",
      "label": "live"
     },
@@ -294,7 +297,7 @@
      "cmd": "-I audit.py --selftest",
      "exit": 0,
      "status": "SELFTEST_ONLY",
-     "stdout_sha256": "fa6825e6115082e052aab56d48528418b1da6256be506e38cf2ec0d758d15773",
+     "stdout_sha256": "32b692db344f683f6b9d1ab74c21cd406f8b9c42b8d11857a4916aa076b1e90e",
      "stderr_head": "",
      "label": "selftest"
     },
@@ -326,7 +329,7 @@
      "cmd": "-I audit.py --live --config nope.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "1d1deb52bf3e4eebf8613a7afb9f11faafa6af1110e0e587c1fab242027679b9",
+     "stdout_sha256": "fbab24e3a25abc685615f91f58a67b29577642e96f245f92a95629b2aa5c7fe3",
      "stderr_head": "",
      "label": "missing_config"
     },
@@ -334,7 +337,7 @@
      "cmd": "-I audit.py --selftest --config bad.json",
      "exit": 1,
      "status": "SELFTEST_FAILED",
-     "stdout_sha256": "55cd0d966178d58f4570c74f8fe85986522313a3cbb798937ff1498ff7193b90",
+     "stdout_sha256": "731950ab5e3427844b08693bf009a5eb59e379587875151467aee44e94f6e7e6",
      "stderr_head": "",
      "label": "malformed_config"
     },
@@ -342,7 +345,7 @@
      "cmd": "-I audit.py --live --config dead.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "1d2e9f88bc7e08a953999a404f899e8e4415c6854adc414de8273330a66b118c",
+     "stdout_sha256": "e02ec8d68c21d51ea72536f64381c03c7c353bb43568cdad78faa703aae95ba6",
      "stderr_head": "",
      "label": "dead_source_url"
     }
@@ -394,14 +397,15 @@
    "unsafe_paths": [],
    "has_verify_py": false,
    "has_PROMPT_md": true,
-   "bundled_audit_equals_repo_audit": false,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
    "bundled_test_json_equals_repo_test_data": true,
    "runs": [
     {
      "cmd": "-I audit.py --live",
      "exit": 0,
      "status": "OBSERVATION_REPRODUCED",
-     "stdout_sha256": "cc4466da182cb87d0dc56ad2e1e0be3c2bcee5953165a4ad5c013a7523320e7e",
+     "stdout_sha256": "e727f87376454de261aaf45043c3d225889e3535fee37e42cbc45447554b2192",
      "stderr_head": "",
      "label": "live"
     },
@@ -409,7 +413,7 @@
      "cmd": "-I audit.py --selftest",
      "exit": 0,
      "status": "SELFTEST_ONLY",
-     "stdout_sha256": "b1c295c5f334b634f2396c0d08a3fb74faca50737a08a6ce48153b9f8a80e7ff",
+     "stdout_sha256": "c9e99455545ff7c654b2ce0935dae0d9349d6f9d5262281189318ef0a206c2cf",
      "stderr_head": "",
      "label": "selftest"
     },
@@ -441,7 +445,7 @@
      "cmd": "-I audit.py --live --config nope.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "a4ac841cbf476157d9d08c99b061f2aded67fae4077412012ec91e8858f0f9d4",
+     "stdout_sha256": "eb7fa2e3b1094b07720244eab875f6ad94b9340bde60900ba9c14f67fdc86383",
      "stderr_head": "",
      "label": "missing_config"
     },
@@ -449,7 +453,7 @@
      "cmd": "-I audit.py --selftest --config bad.json",
      "exit": 1,
      "status": "SELFTEST_FAILED",
-     "stdout_sha256": "cd3593fcf25a4898211f9695aaf4fabc904def9893b3c2cd9544e727eaefa06d",
+     "stdout_sha256": "e4760bbecd8d0f9a7975f116a8579502b09eaf7815d2a8a4a6d2d054125e1bfe",
      "stderr_head": "",
      "label": "malformed_config"
     },
@@ -457,7 +461,7 @@
      "cmd": "-I audit.py --live --config dead.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "8cb192c7ed5581209b8b9415bda59b4b510236d4d450f1680a59701c0f715c48",
+     "stdout_sha256": "f18a7806ce7e2de6cbeabf698ddfca4a29318e639db98eb0940a2c65f19a1cfd",
      "stderr_head": "",
      "label": "dead_source_url"
     }
@@ -509,14 +513,15 @@
    "unsafe_paths": [],
    "has_verify_py": false,
    "has_PROMPT_md": true,
-   "bundled_audit_equals_repo_audit": false,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
    "bundled_test_json_equals_repo_test_data": true,
    "runs": [
     {
      "cmd": "-I audit.py --live",
      "exit": 0,
      "status": "OBSERVATION_REPRODUCED",
-     "stdout_sha256": "39a0c0b200c7197313d07da4c269c9654d3479d40ef9a4f2d07f2acfa7425693",
+     "stdout_sha256": "da2856c54bec2e924a630abec5d0e20777cd854f9304e095b34865f47455c451",
      "stderr_head": "",
      "label": "live"
     },
@@ -524,7 +529,7 @@
      "cmd": "-I audit.py --selftest",
      "exit": 0,
      "status": "SELFTEST_ONLY",
-     "stdout_sha256": "ea6524e46e26d72f2c573850fcd15515900ebf4f4b990b8ddcbd4cc7f166539b",
+     "stdout_sha256": "be5d7d12edbd1c7696ac1b9856f1affc76af23b5975e2f0cb95f891338060135",
      "stderr_head": "",
      "label": "selftest"
     },
@@ -556,7 +561,7 @@
      "cmd": "-I audit.py --live --config nope.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "a98b1fda7263f0bf9b84bb79093aef1ab53f9c1b8819ef8401c105978f2acf10",
+     "stdout_sha256": "074d25f0578c8001756e3e092e94068d4765b407222b93756473847d09dfa760",
      "stderr_head": "",
      "label": "missing_config"
     },
@@ -564,7 +569,7 @@
      "cmd": "-I audit.py --selftest --config bad.json",
      "exit": 1,
      "status": "SELFTEST_FAILED",
-     "stdout_sha256": "7f0d21307bde8e5cd3cf9952c3d3a806fad17d438d0125b1717ef627397ff90e",
+     "stdout_sha256": "a5e06633a702f0a3c7120c8dbe5a7b3bde8878104348bce1b134618235b199ac",
      "stderr_head": "",
      "label": "malformed_config"
     },
@@ -572,7 +577,7 @@
      "cmd": "-I audit.py --live --config dead.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "279ee7b0d0f6e29fc72d56a5c5c147347e658272db8e52ab7041bb57d95db16f",
+     "stdout_sha256": "6576071e971317a8bb66e7ad55b105a8713c0251537f73fd6bac5cf3fc26c14d",
      "stderr_head": "",
      "label": "dead_source_url"
     }
@@ -624,14 +629,15 @@
    "unsafe_paths": [],
    "has_verify_py": false,
    "has_PROMPT_md": true,
-   "bundled_audit_equals_repo_audit": false,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
    "bundled_test_json_equals_repo_test_data": true,
    "runs": [
     {
      "cmd": "-I audit.py --live",
      "exit": 0,
      "status": "OBSERVATION_REPRODUCED",
-     "stdout_sha256": "95daf7a38e24d6d4f22d45c874d60848ccc17ca83cabbdcb6a2069cdfb4ae786",
+     "stdout_sha256": "a5a3019da69a45e75a6e13c56f47e8768719c32ad2c1664d026bfc296486d158",
      "stderr_head": "",
      "label": "live"
     },
@@ -639,7 +645,7 @@
      "cmd": "-I audit.py --selftest",
      "exit": 0,
      "status": "SELFTEST_ONLY",
-     "stdout_sha256": "1ad1344343f1efc5927fa6f82805fbcd9f20dd785255cea00ff7aab53ce37ea5",
+     "stdout_sha256": "ae874f0f629434c1ca12be043502a5943702b4fafa1ad7798e1d77f33ba380c3",
      "stderr_head": "",
      "label": "selftest"
     },
@@ -671,7 +677,7 @@
      "cmd": "-I audit.py --live --config nope.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "4d927e44b386c17755f3c68f338dd433c619a8a7d65847b516cce0c4f6cf6b5b",
+     "stdout_sha256": "e6cc56076d2e7da9d0e0225373379ac221fe45a08a54d2bd8bd2f8688bc303c4",
      "stderr_head": "",
      "label": "missing_config"
     },
@@ -679,7 +685,7 @@
      "cmd": "-I audit.py --selftest --config bad.json",
      "exit": 1,
      "status": "SELFTEST_FAILED",
-     "stdout_sha256": "10c758299f563c17311747803100f6c9cb07d1033ef38619f3c80ebd45f923c2",
+     "stdout_sha256": "3e691a0be87e67b3044a6ded852b4736df4abc7401b492b34fea06f59a4de9b1",
      "stderr_head": "",
      "label": "malformed_config"
     },
@@ -687,7 +693,7 @@
      "cmd": "-I audit.py --live --config dead.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "953b990550439d7f8586b909f98b92350d18878f800b1608af13e6489aba056b",
+     "stdout_sha256": "09cf1dea39feb2d76670dc9391bc2116aac191871f38d9db93ac997282ac5e56",
      "stderr_head": "",
      "label": "dead_source_url"
     }
@@ -739,14 +745,15 @@
    "unsafe_paths": [],
    "has_verify_py": false,
    "has_PROMPT_md": true,
-   "bundled_audit_equals_repo_audit": false,
+   "bundled_audit_equals_repo_audit": true,
+   "bundled_audit_sha256": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843",
    "bundled_test_json_equals_repo_test_data": true,
    "runs": [
     {
      "cmd": "-I audit.py --live",
      "exit": 0,
      "status": "OBSERVATION_REPRODUCED",
-     "stdout_sha256": "625ea73e9be5617087a65ece9623b2a9099c33ab630c4ff1e0ba4419490e55c7",
+     "stdout_sha256": "00d5809b124b5706b69d1df764c13d11c151c7f0ac83aef046bb5aaa418d8cba",
      "stderr_head": "",
      "label": "live"
     },
@@ -754,7 +761,7 @@
      "cmd": "-I audit.py --selftest",
      "exit": 0,
      "status": "SELFTEST_ONLY",
-     "stdout_sha256": "d8eaf4f0a98180c25215f8af10cdff56a8c58ff33262d00d1c5397b70f471c98",
+     "stdout_sha256": "30b225833e359536c9be5d5e54841f6398447e2680f04342b474240b77e0be38",
      "stderr_head": "",
      "label": "selftest"
     },
@@ -786,7 +793,7 @@
      "cmd": "-I audit.py --live --config nope.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "223cc2dd17c6e373aa78de8c73b003866cf7f6331115c5f4d8f5457555898e8a",
+     "stdout_sha256": "ff84e50f9017453fb1edb3adedce51d96ffffe023982129705b271da567227c3",
      "stderr_head": "",
      "label": "missing_config"
     },
@@ -794,7 +801,7 @@
      "cmd": "-I audit.py --selftest --config bad.json",
      "exit": 1,
      "status": "SELFTEST_FAILED",
-     "stdout_sha256": "5898d9bf073f254324e051abaeadba9c6344ff88e14e4ab5e00caee9a94f0d3e",
+     "stdout_sha256": "dfa83c0160914c9bedee778c9be2f1cc86db9ea573a137fcbd9c1ff0eceef81e",
      "stderr_head": "",
      "label": "malformed_config"
     },
@@ -802,7 +809,7 @@
      "cmd": "-I audit.py --live --config dead.json",
      "exit": 2,
      "status": "UNRESOLVED",
-     "stdout_sha256": "cdedadffbc37b47f5f6d66334364458ba00485629a07c42857eea2a898370eee",
+     "stdout_sha256": "e1ac4b73046c3c02c8064f471de5f177c0aa2502db36c9687ff455c973bcdf50",
      "stderr_head": "",
      "label": "dead_source_url"
     }
