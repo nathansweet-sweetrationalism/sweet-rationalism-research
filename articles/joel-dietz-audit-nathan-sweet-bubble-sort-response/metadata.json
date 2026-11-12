@@ -11,7 +11,13 @@
     "slug": "joel-dietz-audit-nathan-sweet-bubble-sort-response",
     "final_permalink": "https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/",
     "published_local": "2026-11-12T00:09:00",
-    "note": "Published on the owner's instruction 2026-11-12; the body in this archive is the published raw body before any DOI links were added."
+    "note": "Published on the owner's instruction 2026-11-12; the body in this archive is the published raw body before any DOI links were added.",
+    "current_live_revision": {
+      "modified_local": "2026-11-12T13:08:10",
+      "raw_body_sha256": "70f5e521e39984172fd6033397b5bb56b5221f7bfba1199fa37609c902b47fc9",
+      "ordering": "opening italic deck > Cite as > Versions and archives > Bottom line > main argument",
+      "note": "Top-level article.html is synced to the current live WordPress body; the as-deposited 1.0.0 zip and its internal metadata are preserved separately and are not byte-identical to subsequent site edits."
+    }
   },
   "zenodo": {
     "draft_record_id": "24151128",
