@@ -1,0 +1,42 @@
+{
+  "status": "OBSERVATION_REPRODUCED",
+  "time_utc": "2026-11-12T02:21:27.891709+00:00",
+  "mode": "PINNED_REMOTE_SOURCES",
+  "observations": [
+    {
+      "name": "narrative_angle_degrees",
+      "value": 105.0
+    },
+    {
+      "name": "programmed_grid_maximum_degrees",
+      "value": 65.0
+    },
+    {
+      "name": "computed_sweep_65_vs_105",
+      "value": {
+        "at_65": 222.0,
+        "at_105": 65.2423
+      }
+    }
+  ],
+  "source_hashes": [
+    {
+      "name": "claim",
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_CLAIMS.md",
+      "sha256": "fae2a9c1bdc658a21d4ba79245b86976b2d7d40715567f6e99e99cb8808c6eac",
+      "bytes": 28155
+    },
+    {
+      "name": "model",
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/models/2020-kriegman-xenobot-evolutionary-biobots.py",
+      "sha256": "ea9dad82946cd76c9f357d2cb94eb06dbfef505a6f3febffb0fb0a92139d7580",
+      "bytes": 126768
+    }
+  ],
+  "limitations": [
+    "This check establishes only the stated source/code observation, not an ontology.",
+    "Fixture mode is a parser smoke test, NOT an independent check of online sources.",
+    "Different angle conventions or another solver could reconcile the numerical contrast."
+  ],
+  "test_id": "xenobot"
+}

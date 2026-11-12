@@ -1,0 +1,32 @@
+{
+  "status": "OBSERVATION_REPRODUCED",
+  "time_utc": "2026-11-12T02:21:27.892210+00:00",
+  "mode": "PINNED_REMOTE_SOURCES",
+  "observations": [
+    {
+      "name": "model_target_input",
+      "value": "params[\"target_nf65_landmarks\"]"
+    },
+    {
+      "name": "illustrative_target_intervention",
+      "value": {
+        "target_minus_2": -1.99976,
+        "target_plus_9": 8.9998
+      }
+    }
+  ],
+  "source_hashes": [
+    {
+      "name": "model",
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/models/2019-bischof-xenopus-craniofacial-remap.py",
+      "sha256": "fccee236c856696f65a2edc65c16250fd4201e8c0fb0e493721ac9bc6b2ab3b6",
+      "bytes": 97206
+    }
+  ],
+  "limitations": [
+    "This check establishes only the stated source/code observation, not an ontology.",
+    "Fixture mode is a parser smoke test, NOT an independent check of online sources.",
+    "The illustrative ODE is not a tadpole experiment or a proof about target origin."
+  ],
+  "test_id": "tadpole"
+}

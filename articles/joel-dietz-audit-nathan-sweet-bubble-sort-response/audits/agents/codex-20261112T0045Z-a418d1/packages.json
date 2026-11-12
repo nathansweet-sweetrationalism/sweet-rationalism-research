@@ -1,0 +1,247 @@
+[
+  {
+    "id": "validator",
+    "mirrors_equal": true,
+    "retrievals": [
+      {
+        "url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "d650355507f16015f33f8351ff802c6ac139d10a7a7c1c7b18419145a3939113",
+        "bytes": 13916,
+        "cache_key": "033edda6f5764e48398eecb6856b371eb64ff75f023e22d406ca6cfbce105f78"
+      },
+      {
+        "url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "d650355507f16015f33f8351ff802c6ac139d10a7a7c1c7b18419145a3939113",
+        "bytes": 13916,
+        "cache_key": "eb568bf4accd82c992c84fcaced8f26401ac92e934bf45c96d5fd987fd917790"
+      }
+    ],
+    "crc_failure": null,
+    "members": [
+      "README.md",
+      "PROMPT.md",
+      "test.json",
+      "audit.py"
+    ],
+    "file_hashes": {
+      "README.md": "cb05fef0c8f95c3f81ba6114bec68c73980fd66bb6710c884baa89553a1a69b1",
+      "PROMPT.md": "4ab7e1eb8dabb67add306aedf579cf6f39a18ce49b565d0e597d3675415cb7b7",
+      "test.json": "9d5a1fa428420ca2c1ef29ad01f873b150e5c8a20b9c3827804265ff28e26546",
+      "audit.py": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    },
+    "harness_identical": true,
+    "config_semantic_equal": true
+  },
+  {
+    "id": "xenobot",
+    "mirrors_equal": true,
+    "retrievals": [
+      {
+        "url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "ed37bb577fce98b5f96786bede1743246dceda68888e85c2f981489796dd889e",
+        "bytes": 14505,
+        "cache_key": "984242aab09b30406852d9b8c1d70199a33fce67269c1b8a16ca2b6945a354b9"
+      },
+      {
+        "url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "ed37bb577fce98b5f96786bede1743246dceda68888e85c2f981489796dd889e",
+        "bytes": 14505,
+        "cache_key": "cfce55f097c0dffdc48d26ff2cf6f7734ec24bfedc2667973313a32f19de7f04"
+      }
+    ],
+    "crc_failure": null,
+    "members": [
+      "README.md",
+      "PROMPT.md",
+      "test.json",
+      "audit.py"
+    ],
+    "file_hashes": {
+      "README.md": "4ca59fa724aa74d0f347c6b523bf608337245d3c93d7b2993eafa2352e0f6e56",
+      "PROMPT.md": "6ae2d0169ad34284ec424ecbb8b0635f38a38c0f63510470fb076561ffe54677",
+      "test.json": "ff35ef921acad7f955c0d6fd4e77a5648c5d93ee9ec1450893ca5a68d8b0604a",
+      "audit.py": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    },
+    "harness_identical": true,
+    "config_semantic_equal": true
+  },
+  {
+    "id": "tadpole",
+    "mirrors_equal": true,
+    "retrievals": [
+      {
+        "url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "0b0e68e01322e76189c9b1b1bfc9971dcedb124479360f1ccbf64c5f68a76bfa",
+        "bytes": 14022,
+        "cache_key": "e25a611d4be44187574815184293593a49789125757383bb3a8508d4ddbb7d65"
+      },
+      {
+        "url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "0b0e68e01322e76189c9b1b1bfc9971dcedb124479360f1ccbf64c5f68a76bfa",
+        "bytes": 14022,
+        "cache_key": "9e2fb9221727d01212d6db826d5c3a59a2acf32e8cddcd7af0e11f063b49b8ae"
+      }
+    ],
+    "crc_failure": null,
+    "members": [
+      "README.md",
+      "PROMPT.md",
+      "test.json",
+      "audit.py"
+    ],
+    "file_hashes": {
+      "README.md": "1e78bb031e223d0600a2a28453e9acaa57c74cc6354acc4119c5c0dc12e4f9e0",
+      "PROMPT.md": "110714915b66efd026e4b7cd52b8703521b1a17f5bbcca6426d7cbc2d425129b",
+      "test.json": "55f98d88539e91ef61d9c8c9bc3ab33d9b0cb8a68d668a1a79ec4fc53eb76a97",
+      "audit.py": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    },
+    "harness_identical": true,
+    "config_semantic_equal": true
+  },
+  {
+    "id": "score",
+    "mirrors_equal": true,
+    "retrievals": [
+      {
+        "url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "0167c45f80fff8bccb3cf483b83d04cadf501c9847f914773911709abcd19745",
+        "bytes": 14022,
+        "cache_key": "0f8aa453984b35d2b30217d9878d5a824d84eebf92645b8e70aa79a3b1a82055"
+      },
+      {
+        "url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "0167c45f80fff8bccb3cf483b83d04cadf501c9847f914773911709abcd19745",
+        "bytes": 14022,
+        "cache_key": "1b0102aeb651e51f8acd2b66b36a624f8e1197f62c5e013f82fa07be9ed6c2ca"
+      }
+    ],
+    "crc_failure": null,
+    "members": [
+      "README.md",
+      "PROMPT.md",
+      "test.json",
+      "audit.py"
+    ],
+    "file_hashes": {
+      "README.md": "e5b33f9387c8da75d2e3ee9150078f3d0a5bd1f879efdf5b49f7e1297481548d",
+      "PROMPT.md": "c2240d04ad998662641ef7a4591d94c290ad896c582b7158b7b0e43ba4d31c03",
+      "test.json": "d8b5bc2cbf78c2af042765f830ddcd843fee1401fb5995b5bb092b10407b1273",
+      "audit.py": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    },
+    "harness_identical": true,
+    "config_semantic_equal": true
+  },
+  {
+    "id": "ports",
+    "mirrors_equal": true,
+    "retrievals": [
+      {
+        "url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "81ca725f9564f36feec2c6536e52ed68e762196338748f85cf193d3ceaae8622",
+        "bytes": 14086,
+        "cache_key": "7513ef57531f724a066a02a35f3f062d3dd98b0a8b112cbdb9a73cac4f60fc18"
+      },
+      {
+        "url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "81ca725f9564f36feec2c6536e52ed68e762196338748f85cf193d3ceaae8622",
+        "bytes": 14086,
+        "cache_key": "03ea0ee70eee11c644270c76c53b15499f51919fda99ef97382aca739b5159bf"
+      }
+    ],
+    "crc_failure": null,
+    "members": [
+      "README.md",
+      "PROMPT.md",
+      "test.json",
+      "audit.py"
+    ],
+    "file_hashes": {
+      "README.md": "dca0c6c767d69d65daf00f0a998c8430edb71f29992330c1f486bff43a0717ba",
+      "PROMPT.md": "ec6cd0cd121c7ddd5d6b1578027f173054fcfb283e76bfe34319b988f1bfb1a1",
+      "test.json": "c9b121fd898e017c0b0d9a3ed8e02617735cc600738c4636936432eb70fb9681",
+      "audit.py": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    },
+    "harness_identical": true,
+    "config_semantic_equal": true
+  },
+  {
+    "id": "authorship",
+    "mirrors_equal": true,
+    "retrievals": [
+      {
+        "url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "ea0490e2ae7e072f8040d8a1937d08ddc15956e0d28c24de07a731c491910a28",
+        "bytes": 13990,
+        "cache_key": "61b1b80cfe78f202fa1a23e799c4b41f2a2e0b12e2650cf931974332b8b517e9"
+      },
+      {
+        "url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "ea0490e2ae7e072f8040d8a1937d08ddc15956e0d28c24de07a731c491910a28",
+        "bytes": 13990,
+        "cache_key": "1ef0d08bd4fa40a0872acbb8d68ea48f3c927494c97b58b3a3a8a0d4ec49896f"
+      }
+    ],
+    "crc_failure": null,
+    "members": [
+      "README.md",
+      "PROMPT.md",
+      "test.json",
+      "audit.py"
+    ],
+    "file_hashes": {
+      "README.md": "d2572b493dfce15b4ade5b0e76c9792d90041c91d0890a390e5492838e7d2e36",
+      "PROMPT.md": "4d60eb3984ced599289eaff4df13c9590783de33402c71fca1a4d2faee004e2d",
+      "test.json": "dc7966ef34676a09c3b02b102b5f3986192c49f7645b28b8b0cf09a209dd074b",
+      "audit.py": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    },
+    "harness_identical": true,
+    "config_semantic_equal": true
+  },
+  {
+    "id": "doi",
+    "mirrors_equal": true,
+    "retrievals": [
+      {
+        "url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "85a8307ec44b07fc8b9b2fb19f86de368cd3b5a194a0dde97bf824de4b89d811",
+        "bytes": 14491,
+        "cache_key": "aefb9d36f3280e661b3da5539b23ad3d147a89a2e2b997b60c0ebc126dca4fcc"
+      },
+      {
+        "url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+        "status": 200,
+        "sha256": "85a8307ec44b07fc8b9b2fb19f86de368cd3b5a194a0dde97bf824de4b89d811",
+        "bytes": 14491,
+        "cache_key": "b474976fc445e240b7495ec05814f5c8ab2409483777491e16b52fb3c032b118"
+      }
+    ],
+    "crc_failure": null,
+    "members": [
+      "README.md",
+      "PROMPT.md",
+      "test.json",
+      "audit.py"
+    ],
+    "file_hashes": {
+      "README.md": "d3c4192167800fe53f327d6245d63d6654205c5a09b355ca7052f94947319f2e",
+      "PROMPT.md": "9b10f4cf7d362aeedbd7b320c113f54cc8e3c7b24f5d0e530c75b34f610e5a8c",
+      "test.json": "6a7be2dc5b2b0f16b12794e434032e6d3a1dda35d8023eb8c3ef66221cbbca4e",
+      "audit.py": "150fac7d25f5aac666552ab81143a47cd7e9cdfd7d08478b0d5fb01d9efd7843"
+    },
+    "harness_identical": true,
+    "config_semantic_equal": true
+  }
+]

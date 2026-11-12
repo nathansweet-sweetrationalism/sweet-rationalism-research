@@ -1,0 +1,9 @@
+{
+  "status": "UNRESOLVED",
+  "time_utc": "2026-11-12T02:21:30.210192+00:00",
+  "mode": "PINNED_REMOTE_SOURCES",
+  "observations": [],
+  "source_hashes": [],
+  "limitations": [],
+  "error": "Source retrieval failed; no offline fallback was substituted: [Errno 2] No such file or directory: 'C:\\\\Users\\\\micom\\\\.codex\\\\.chatgpt-projects\\\\g-p-675cbe9c74d48191bc9e7e4976bd9f57\\\\research_audits\\\\sweet-rationalism-research\\\\articles\\\\joel-dietz-audit-nathan-sweet-bubble-sort-response\\\\not-present.json'"
+}

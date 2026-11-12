@@ -1,0 +1,47 @@
+{
+  "status": "OBSERVATION_REPRODUCED",
+  "time_utc": "2026-11-12T02:21:28.473122+00:00",
+  "mode": "PINNED_REMOTE_SOURCES",
+  "observations": [
+    {
+      "name": "bibliographic_identity_comparison",
+      "value": [
+        {
+          "source_doi": "10.1111/evo.12502",
+          "primary_doi": "10.1371/journal.pone.0112732",
+          "matches": false,
+          "article_fragment": "A morphospace for reef fishes",
+          "primary_source_checked": true
+        },
+        {
+          "source_doi": "10.1093/sysbio/syz029",
+          "primary_doi": "10.1098/rspb.2020.1053",
+          "matches": false,
+          "article_fragment": "Body shape diversification along the benthic",
+          "primary_source_checked": true
+        },
+        {
+          "source_doi": "10.1242/dev.175950",
+          "primary_doi": "10.1242/dev.175893",
+          "matches": false,
+          "article_fragment": "Adaptive correction of craniofacial",
+          "primary_source_checked": true
+        }
+      ]
+    }
+  ],
+  "source_hashes": [
+    {
+      "name": "bibliography",
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_ARTICLE.md",
+      "sha256": "15128797b75b65902277fba779560c6c7d1d0c25eae587fe0510ed60c42c5261",
+      "bytes": 54054
+    }
+  ],
+  "limitations": [
+    "This check establishes only the stated source/code observation, not an ontology.",
+    "Fixture mode is a parser smoke test, NOT an independent check of online sources.",
+    "Incorrect bibliographic metadata is not a refutation of the experiments it cites."
+  ],
+  "test_id": "doi"
+}

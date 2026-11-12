@@ -1,0 +1,2 @@
+usage: audit.py [-h] [--live] [--selftest] [--config CONFIG]
+audit.py: error: Choose exactly one of --live or --selftest

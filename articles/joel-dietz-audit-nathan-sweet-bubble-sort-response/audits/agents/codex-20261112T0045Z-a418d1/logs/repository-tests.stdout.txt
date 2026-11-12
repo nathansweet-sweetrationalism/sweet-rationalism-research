@@ -1,0 +1,31 @@
+
+=================================== ERRORS ====================================
+__________ ERROR collecting tests/test_core_framework_links_gate.py ___________
+ImportError while importing test module 'C:\Users\micom\.codex\.chatgpt-projects\g-p-675cbe9c74d48191bc9e7e4976bd9f57\research_audits\sweet-rationalism-research\tests\test_core_framework_links_gate.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\micom\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_core_framework_links_gate.py:6: in <module>
+    from core_framework_links_gate import CORE_URLS, inspect
+scripts\core_framework_links_gate.py:16: in <module>
+    from lxml import html
+E   ModuleNotFoundError: No module named 'lxml'
+___________ ERROR collecting tests/test_evidence_retention_audit.py ___________
+ImportError while importing test module 'C:\Users\micom\.codex\.chatgpt-projects\g-p-675cbe9c74d48191bc9e7e4976bd9f57\research_audits\sweet-rationalism-research\tests\test_evidence_retention_audit.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\micom\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_evidence_retention_audit.py:6: in <module>
+    from evidence_retention_audit import audit, doi_from_url, extract, normalized
+scripts\evidence_retention_audit.py:18: in <module>
+    from lxml import html
+E   ModuleNotFoundError: No module named 'lxml'
+=========================== short test summary info ===========================
+ERROR tests/test_core_framework_links_gate.py
+ERROR tests/test_evidence_retention_audit.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!
+2 errors in 0.31s

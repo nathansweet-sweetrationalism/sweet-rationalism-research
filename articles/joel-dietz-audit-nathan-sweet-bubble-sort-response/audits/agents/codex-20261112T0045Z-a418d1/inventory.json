@@ -1,0 +1,281 @@
+{
+  "snapshot": {
+    "wordpress_post_id": 218725796,
+    "wordpress_status": "draft",
+    "wordpress_modified": "2026-11-11T20:31:22",
+    "wordpress_content_sha256": "034280325838f1cd563709772311e2de3556f56931b9229538ef944c70c51a98",
+    "github_base_commit": "2ee1a4233d37339e27580e59e83af3284f0027d1",
+    "upstream_commit": "4bed72c17f09bf336e36e7472e64d457db3b0195"
+  },
+  "panels": [
+    {
+      "panel_id": "rcf-computational-doi-quick",
+      "source_prompt_sha256": "c89ed387421304166aabb4a562832e73d08ec5881714b0e3816a5fa565237401",
+      "prompt_characters": 11401,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-tadpole-quick",
+      "source_prompt_sha256": "408379e2f50ef539a7d5fb34004a934e38c2e99893da14a989898fdce0796bea",
+      "prompt_characters": 11353,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-xenobot-quick",
+      "source_prompt_sha256": "56a70fa9397360161baee0880fab742713035f33104096491ca7b54faafda2d7",
+      "prompt_characters": 11336,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-score-quick",
+      "source_prompt_sha256": "4b1c97456f947e55ea3501e9dbabbd131bfba9b6ace33a3d778cbd4444b0943b",
+      "prompt_characters": 11592,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-ports-quick",
+      "source_prompt_sha256": "4733f23ef1546decf647b1ed9af62b6cbe144ec5bdac3355da859db6bf17631c",
+      "prompt_characters": 11443,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-validator-quick",
+      "source_prompt_sha256": "45d1ccfe5c2953a01b1db60de7adca7db1e40fc04decba1fcf46b6beaf5052b7",
+      "prompt_characters": 11529,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-authorship-quick",
+      "source_prompt_sha256": "995d3ad8ac88dd1b849d798a2f55891fe74cdaff560866547bbcc274bac93ffc",
+      "prompt_characters": 11269,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-tadpole-analysis",
+      "source_prompt_sha256": "408379e2f50ef539a7d5fb34004a934e38c2e99893da14a989898fdce0796bea",
+      "prompt_characters": 11353,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-xenobot-analysis",
+      "source_prompt_sha256": "56a70fa9397360161baee0880fab742713035f33104096491ca7b54faafda2d7",
+      "prompt_characters": 11336,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-score-analysis",
+      "source_prompt_sha256": "4b1c97456f947e55ea3501e9dbabbd131bfba9b6ace33a3d778cbd4444b0943b",
+      "prompt_characters": 11592,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-doi-analysis",
+      "source_prompt_sha256": "c89ed387421304166aabb4a562832e73d08ec5881714b0e3816a5fa565237401",
+      "prompt_characters": 11401,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-ports-analysis",
+      "source_prompt_sha256": "4733f23ef1546decf647b1ed9af62b6cbe144ec5bdac3355da859db6bf17631c",
+      "prompt_characters": 11443,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-validator-analysis",
+      "source_prompt_sha256": "45d1ccfe5c2953a01b1db60de7adca7db1e40fc04decba1fcf46b6beaf5052b7",
+      "prompt_characters": 11529,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip"
+      ]
+    },
+    {
+      "panel_id": "rcf-computational-authorship-analysis",
+      "source_prompt_sha256": "995d3ad8ac88dd1b849d798a2f55891fe74cdaff560866547bbcc274bac93ffc",
+      "prompt_characters": 11269,
+      "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+      "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+      "commands": [
+        "python audit.py --live\" with Python 3.10+ in a disposable workspace. Inspect stdout/stderr and its limitations. The script downloads source text but should not execute upstream code. \"--offline\" is merely a fixture/parser smoke test and cannot confirm a live source."
+      ],
+      "selftest_only_literal": false,
+      "fixture_check_only_literal": false,
+      "button_count": 0,
+      "textarea_count": 1,
+      "human_zip_urls": [
+        "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+        "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip"
+      ]
+    }
+  ],
+  "pair_equality": {
+    "validator": true,
+    "xenobot": true,
+    "tadpole": true,
+    "score": true,
+    "ports": true,
+    "authorship": true,
+    "doi": true
+  },
+  "block_count": 151,
+  "math_candidate_blocks": 66,
+  "duplicate_ids": [],
+  "missing_internal_targets": [],
+  "external_link_policy_failures": 172,
+  "internal_new_tab_count": 17,
+  "script_tags": 0,
+  "images_without_alt": 0
+}
