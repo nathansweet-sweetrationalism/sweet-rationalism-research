@@ -112,7 +112,7 @@
       "group": "Archives & reproducibility",
       "label": "Article-specific Zenodo concept DOI and immutable version DOI verified",
       "state": "partial",
-      "evidence": "Unpublished Zenodo draft 24151128 with reserved DOI 10.5281/zenodo.24151128 (RESERVED, NOT REGISTERED until the owner clicks Publish). Version and concept DOIs to be read back after publication."
+      "evidence": "Unpublished Zenodo draft 24151128: DOI 10.5281/zenodo.24151128 reserved (NOT registered; public record 404), metadata and five related works saved, three release files attached and checked against the GitHub copies (size and MD5). Awaiting the owner's Publish click; version and concept DOIs to be read back afterwards."
     },
     {
       "id": "owner",
@@ -188,6 +188,10 @@
     {
       "date": "2026-11-12",
       "event": "Immunization wording applied at the owner's request; WordPress article published; live signed-out checks passed; final archive rebuilt on published raw body sha256 7d3cfa9c0a11b7d387f1c09e1b6ad08519de00337baeda724c42c228031e8c8c; snapshot committed to the PR branch. Zenodo draft 24151128 not yet published."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Release files uploaded to Zenodo draft 24151128 and verified by size and MD5; isIdenticalTo relation to the published permalink added; the record is unpublished and waits for the owner's Publish click."
     }
   ]
 }

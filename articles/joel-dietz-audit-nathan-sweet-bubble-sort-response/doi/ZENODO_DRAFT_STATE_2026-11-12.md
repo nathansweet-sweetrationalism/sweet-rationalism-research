@@ -21,3 +21,8 @@ Still an unpublished draft with no files; DOI reserved only. Draft reworded in f
 
 ## Update 5, later 2026-11-12
 The WordPress article is now published; the Zenodo draft is still unpublished with the DOI only reserved. Final candidate files (built on the published raw body, SHA-256 7d3cfa9c0a11b7d387f1c09e1b6ad08519de00337baeda724c42c228031e8c8c): see `release/SHA256SUMS.txt`. These supersede earlier hashes.
+
+## Update 6: files uploaded, awaiting the owner's Publish click
+Three files are attached to draft 24151128 and verified against the GitHub copies by size and MD5: joel-dietz-response-1.0.0.zip (343,755 bytes, md5 566103f092868d6e9bb14e77343ad2b0), joel-dietz-response-history-1.0.0.zip (2,108,411 bytes, md5 d8bc1f1498d03b9f3e8439d6b71c654d), joel-dietz-response-audit-1.0.0.txt (23,440 bytes, md5 5b02dce131b991a81e1a75a0d39920f9). Related works now: cites 10.1177/10597123241269740; references Zhangtaining/cell_research, 10.5281/zenodo.23866847 and this article's GitHub directory; isIdenticalTo the published permalink. Publication date 2026-11-12. The record is NOT published: the public record URL returns 404 and the DOI 10.5281/zenodo.24151128 is reserved, not registered. Per project policy the owner clicks Publish; the version and concept DOIs are read back afterwards.
+
+Incident: a metadata save made while the related-works relation types were not returned by the API briefly dropped several fields from the draft; the full metadata was resent and re-verified (type, creator with ORCID, licence, 8 keywords, language, five related works, date, version, description).
