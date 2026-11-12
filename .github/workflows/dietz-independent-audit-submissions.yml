@@ -23,6 +23,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate audit coordinator script syntax
         run: python3 -m py_compile articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/agents/validate_submission.py
+      - name: Run synthetic positive and negative validator regression tests
+        run: python3 articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/agents/test_validate_submission.py
       - name: Validate submitted run directories (metadata, evidence coverage and hashes only)
         working-directory: articles/joel-dietz-audit-nathan-sweet-bubble-sort-response
         shell: bash
