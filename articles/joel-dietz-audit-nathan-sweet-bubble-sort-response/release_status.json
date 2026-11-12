@@ -21,21 +21,21 @@
       "group": "WordPress & presentation",
       "label": "Article structure, 12-point navigation and 14 expandable source tests",
       "state": "done",
-      "evidence": "Readback 2026-11-12 (draft modified 2026-11-11T23:30:15, sha256 86592ee1...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. Computational disclosure, dated Revision notes, original-code link and a corrected fish-comparison description were added at the owner's request; section order Research record, Computational disclosure, Revision notes, References."
+      "evidence": "Readback 2026-11-12 (draft modified 2026-11-11T23:43:52, sha256 7871368c...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text."
     },
     {
       "id": "bibliography",
       "group": "Evidence & analysis",
       "label": "Linked scholarly bibliography and original debate documents present",
       "state": "done",
-      "evidence": "20 bibliography entries in draft; bibliographic identities still subject to final source ledger"
+      "evidence": "22 entries in the draft's reference list after adding Pietak and Levin 2016 and Vandenberg et al. 2012; all DOIs in the draft (12 doi.org links) resolve in Crossref or DataCite to the cited works. Passage support is tracked under source_ledger."
     },
     {
       "id": "source_ledger",
       "group": "Evidence & analysis",
       "label": "Final per-claim primary-source, exact-quotation and DOI verification ledger",
       "state": "done",
-      "evidence": "Author attestation 2026-11-11 (primary sources personally verified) still stands. Independent full-text passage checks 2026-11-12 (Levin 2026, Zhang et al. arXiv, Huh et al., Jiang et al., Kriegman et al. main text): the quoted Levin sentence and the Huh, Jiang and delayed-gratification characterizations are confirmed; one draft sentence about what the Zhang authors say on perturbations is not found in the arXiv text (journal version unread); no mouth angle is stated in the Kriegman main text. The p = 0.061 comparison was read from the author's signed record and its direction was corrected in the draft. Two further wrong upstream DOIs reported in earlier drafts are absent from the current article (owner to decide). Details travel in the release archive."
+      "evidence": "Author attestation 2026-11-11 (primary sources personally verified) stands. Independent full-text checks 2026-11-12: Levin 2026 quoted sentence, Zhang et al. delayed-gratification definition and random-walker/barrier passage, Huh et al. and Jiang et al. characterizations all confirmed in the full texts; no mouth angle appears in the Kriegman main text (65 vs 105 degrees still unresolved). The p = 0.061 comparison was read from the author's signed record; its direction was corrected in the draft. Two verified wrong DOIs reported in earlier drafts (Pietak and Levin 2016; Vandenberg et al. 2012) were restored with correct references. Passage-level checks were not done for Anderson, Beane, Pinet, Claverie, Friedman, Kennedy, Balaguer, Rabosky."
     },
     {
       "id": "executable_live",
@@ -91,14 +91,14 @@
       "group": "Archives & reproducibility",
       "label": "Exact private historical snapshots, diffs and restorable Git history",
       "state": "done",
-      "evidence": "2026-11-12: all 58 saved WordPress revisions (218725797 to 218725897) retrieved, hashed and diffed, plus the current state; none unavailable (supersedes the earlier 39-state reconstruction with six missing). Packaged as a separate history ZIP in the release candidate. GitHub-side snapshot still depends on owner approval."
+      "evidence": "2026-11-12: all 58 saved WordPress revisions (218725797 to 218725897) retrieved, hashed and diffed, plus three later post states; none unavailable (supersedes the earlier 39-state reconstruction with six missing). Packaged as a separate history ZIP in the release candidate. GitHub-side snapshot still depends on owner approval."
     },
     {
       "id": "release_assets",
       "group": "Archives & reproducibility",
       "label": "Public UTF-8 audit TXT, full reconstruction ZIP, checksums and verified download links",
       "state": "partial",
-      "evidence": "2026-11-12: release candidate built and verified locally on draft sha256 86592ee1...: main archive (98 files, sha256 8f9a49cdf94b2b64bef81c22c35b25011070de8de83061d0551f88fd62ee8d8e), history ZIP (119 files, sha256 82d0690b6f40b8ce8e32f41c1d9d218a603a1a62ced43ceeff2857a6efe75d91), audit TXT (sha256 0e2627e59c3c40953ea7eeee9f8b27677ab9321ab73f2a1feb01ecbbb8015154). Fresh extraction: 0 checksum mismatches. Not public or uploaded."
+      "evidence": "2026-11-12: release candidate built and verified locally on draft sha256 7871368c...: main archive (100 files, sha256 fd59bf9fcd1e48128f13ca626cf00b88bd40f151c09f9c33366f218350a4ad6b), history ZIP (121 files, sha256 8f1986bf7db54f90936296fe79f5988cd03c15b65de3a4f1bf9f65fa86698877), audit TXT (sha256 f31b5e48dc21423ddc23b6b7e633f9ac6379205548871de84a97f86c1e98bd86). Fresh extraction: 0 checksum mismatches. Not public or uploaded."
     },
     {
       "id": "github_snapshot",
@@ -176,6 +176,10 @@
     {
       "date": "2026-11-12",
       "event": "Owner-requested follow-up checks run: full-text passage checks, p = 0.061 analysis, sitewide link matrix, pre-publication visibility checks, prose review, evidence retention across 58 revisions, history reconstruction. Draft corrected once (direction of the nearest-relative fish comparison); candidate hash now 86592ee1e07791bdf0ee320a31c67f65102b4401853c325aa099fa4427e8c72d; release archive rebuilt. Owner has approved the candidate in conversation subject to his own last read of the draft; nothing is published."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Owner instructed restoring the two dropped wrong-DOI findings and fixing remaining evidence-supported issues. Draft now sha256 7871368c2c5cdfae08180b3dee1116cd6d9881517ebe55fbe7576e713b76b58b; archive rebuilt. Items deliberately not changed: prose trims (judgement calls), ZIP README/PROMPT.md link text and the v2 harness control line (would need new package hashes), publication-time DOI text. Nothing published."
     }
   ]
 }
