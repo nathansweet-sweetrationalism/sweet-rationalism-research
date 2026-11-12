@@ -21,7 +21,7 @@
       "group": "WordPress & presentation",
       "label": "Article structure, 12-point navigation and 14 expandable source tests",
       "state": "done",
-      "evidence": "Readback 2026-11-12 (draft modified 2026-11-12T00:03:26, sha256 7d3cfa9c...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text."
+      "evidence": "Readback 2026-11-12 (draft modified 2026-11-12T00:03:26, sha256 ec6bf095...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text."
     },
     {
       "id": "bibliography",
@@ -35,7 +35,7 @@
       "group": "Evidence & analysis",
       "label": "Final per-claim primary-source, exact-quotation and DOI verification ledger",
       "state": "done",
-      "evidence": "Author attestation 2026-11-11 (primary sources personally verified) stands. Independent full-text checks 2026-11-12: Levin 2026 quoted sentence, Zhang et al. delayed-gratification definition and random-walker/barrier passage, Huh et al. and Jiang et al. characterizations all confirmed in the full texts; no mouth angle appears in the Kriegman main text (65 vs 105 degrees still unresolved). The p = 0.061 comparison was read from the author's signed record; its direction was corrected in the draft. Two verified wrong DOIs reported in earlier drafts (Pietak and Levin 2016; Vandenberg et al. 2012) were restored with correct references. Passage-level checks were not done for Anderson, Beane, Pinet, Claverie, Friedman, Kennedy, Balaguer, Rabosky."
+      "evidence": "Author attestation 2026-11-11 stands. Independent checks 2026-11-12: quoted Levin sentence, Zhang et al. delayed-gratification definition and the 'perturbative experiments are needed to distinguish these cases' passage (confirmed in the free-access journal version), Huh et al. and Jiang et al. characterizations all confirmed; Kriegman main text states no mouth angle and its supplement could not be retrieved (65 vs 105 degrees still unresolved). The nearest-relative comparison was recomputed from hash-checked raw inputs: direction confirmed, exact p not reproduced (0.044-0.057 vs 0.0607), above the pre-registered 0.01 in every variant. Author's sorting article: none of 25 saved states before 2026-11-01 contains the 0.50 forecast. Two verified wrong DOIs restored."
     },
     {
       "id": "executable_live",
@@ -49,7 +49,7 @@
       "group": "Evidence & analysis",
       "label": "Formal logic, statistics, causal-bridge and mathematical proof-duty checks",
       "state": "partial",
-      "evidence": "Arithmetic and one field identity reproduce (17 claims). p = 0.061 taken from the signed record (ratio recomputed, raw data not rerun, signatures not verified). No proof assistant or SMT solver used."
+      "evidence": "Arithmetic and one field identity reproduce (17 claims). The p = 0.061 comparison recomputed from raw inputs with scipy (direction and verdict reproduce; exact p does not). No proof assistant or SMT solver used."
     },
     {
       "id": "prose",
@@ -98,7 +98,7 @@
       "group": "Archives & reproducibility",
       "label": "Public UTF-8 audit TXT, full reconstruction ZIP, checksums and verified download links",
       "state": "partial",
-      "evidence": "2026-11-12: release candidate built and verified locally on draft sha256 7d3cfa9c...: main archive (100 files, sha256 6d02b0b11f4466f097c2911d90dcb8140ca789152d4e7d2d5e3d0de7996d8749), history ZIP (123 files, sha256 966ef2d33196c1345e5036716d6d71f00699a9a1700187656e884fe630eeac9e), audit TXT (sha256 a06971d2d0dbc94e3703155bec412d6f8dd6a9152da7c7b0ac6a29bcc7199804). Fresh extraction: 0 checksum mismatches. Not public or uploaded."
+      "evidence": "2026-11-12: release candidate built and verified locally on draft sha256 ec6bf095...: main archive (100 files, sha256 6d02b0b11f4466f097c2911d90dcb8140ca789152d4e7d2d5e3d0de7996d8749), history ZIP (123 files, sha256 966ef2d33196c1345e5036716d6d71f00699a9a1700187656e884fe630eeac9e), audit TXT (sha256 a06971d2d0dbc94e3703155bec412d6f8dd6a9152da7c7b0ac6a29bcc7199804). Fresh extraction: 0 checksum mismatches. Not public or uploaded."
     },
     {
       "id": "github_snapshot",
@@ -126,7 +126,7 @@
       "group": "Publication sequence",
       "label": "Publish approved WordPress edition and preserve canonical URL",
       "state": "done",
-      "evidence": "Published 2026-11-12 on the owner's instruction (post 218725796, status publish, date 2026-11-12T00:09:00 site time) at https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/ ; final raw body sha256 7d3cfa9c0a11b7d387f1c09e1b6ad08519de00337baeda724c42c228031e8c8c; page cache purged and the live HTML serves the final text."
+      "evidence": "Published 2026-11-12 on the owner's instruction (post 218725796, status publish, date 2026-11-12T00:09:00 site time) at https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/ ; final raw body sha256 ec6bf0953965399e6949a3023c738eb6aadf41e904df1210863dc7c4b151975a; page cache purged and the live HTML serves the final text."
     },
     {
       "id": "visibility",
@@ -187,11 +187,15 @@
     },
     {
       "date": "2026-11-12",
-      "event": "Immunization wording applied at the owner's request; WordPress article published; live signed-out checks passed; final archive rebuilt on published raw body sha256 7d3cfa9c0a11b7d387f1c09e1b6ad08519de00337baeda724c42c228031e8c8c; snapshot committed to the PR branch. Zenodo draft 24151128 not yet published."
+      "event": "Immunization wording applied at the owner's request; WordPress article published; live signed-out checks passed; final archive rebuilt on published raw body sha256 ec6bf0953965399e6949a3023c738eb6aadf41e904df1210863dc7c4b151975a; snapshot committed to the PR branch. Zenodo draft 24151128 not yet published."
     },
     {
       "date": "2026-11-12",
       "event": "Release files uploaded to Zenodo draft 24151128 and verified by size and MD5; isIdenticalTo relation to the published permalink added; the record is unpublished and waits for the owner's Publish click."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "At the owner's request: 'invented' replaced by 'never made' for the 0.50 forecast (supported by a check of all 25 earlier saved states of the author's sorting article), the Zhang sentence restored to quote the journal version, and a recomputation of the nearest-relative comparison added. Article now sha256 ec6bf0953965399e6949a3023c738eb6aadf41e904df1210863dc7c4b151975a; archive rebuilt; Zenodo draft files to be replaced before the owner's Publish click."
     }
   ]
 }

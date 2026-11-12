@@ -58,7 +58,7 @@ This archive was assembled in a Claude Code session running Claude Sonnet 5.5 (A
 
 The article has 14 expandable instruction panels: 7 test types, each shown twice (a short placement near the top and a fuller one in the analysis). Within each pair the copyable prompt text is byte-identical (checked by SHA-256), so there are 7 unique prompts and 7 unique packages.
 
-Candidate: WordPress raw body SHA-256 `7d3cfa9c0a11b7d387f1c09e1b6ad08519de00337baeda724c42c228031e8c8c`, modified 2026-11-12T00:11:27 (site local time). Receipts are in `evidence/`; the date of the runs is 2026-11-12 UTC.
+Candidate: WordPress raw body SHA-256 `ec6bf0953965399e6949a3023c738eb6aadf41e904df1210863dc7c4b151975a`, modified 2026-11-12T00:49:08 (site local time). Receipts are in `evidence/`; the date of the runs is 2026-11-12 UTC.
 
 | Test | Package ZIP SHA-256 (GitHub = WordPress) | Live run of `audit.py --live` | Self-test (fixture only) | Independent second implementation |
 |---|---|---|---|---|
@@ -95,15 +95,15 @@ Method: retrieve the open full text, extract text, search for the exact passage 
 |---|---|---|---|
 | 1 | Levin states "we did not add steps to the algorithm to check whether a swap had been completed, or to do specific things if an operation failed" | Levin (2026), *Philosophies* 11(5):161, open-access HTML page; page text SHA-256 `7a4ba9598b1d74ea4c36350483577568145da83f9c76b4d1799da579a3684f15` | CONFIRMED verbatim |
 | 2 | The paper defines delayed gratification through actions that temporarily raise monotonicity error | Zhang, Goldstein, Levin, arXiv:2401.05375 (preprint of the *Adaptive Behavior* paper) | CONFIRMED: "actions that temporarily increase Monotonicity Error in order to achieve gains later on" |
-| 3 | The draft's sentence about what the Zhang authors say on distinguishing strategic backtracking | same arXiv text | The first wording ("perturbations are needed") is not in the preprint. The preprint does say: "A random walker will sometimes move further from its goal and thus exhibit what may look like Delayed Gratification. To demonstrate DG as a problem-solving strategy it must be shown to be performed specifically in the context of barriers, not just part of a random strategy", and then compares Bubble and Insertion sort across numbers of frozen cells ("context-sensitive manner"). SUPPORTED IN SUBSTANCE; the draft sentence was reworded to follow that text. The journal version was not compared |
+| 3 | The draft's sentence about what the Zhang authors say on distinguishing strategic backtracking | arXiv preprint, then the free-access journal version (*Adaptive Behavior* 33(1), read in a browser 2026-11-12) | The first wording ("perturbations are needed") is not in the preprint. The preprint does say: "A random walker will sometimes move further from its goal and thus exhibit what may look like Delayed Gratification. To demonstrate DG as a problem-solving strategy it must be shown to be performed specifically in the context of barriers, not just part of a random strategy", and then compares Bubble and Insertion sort across numbers of frozen cells ("context-sensitive manner"). The JOURNAL version does say it: "in general, perturbative experiments are needed to distinguish these cases and understand what any behavioral system is really doing. To demonstrate DG as a problem-solving strategy, it must be shown to be performed specifically in the context of barriers". CONFIRMED against the journal version. (An earlier note here, "not found", came from reading only the preprint and was wrong; the draft now quotes the journal wording.) |
 | 4 | Huh et al. propose convergence toward a shared statistical model of reality and discuss limitations and counterexamples | arXiv:2405.07987 (ICML 2024 paper) | CONFIRMED in the abstract |
 | 5 | Jiang et al. study intra-model repetition and inter-model homogeneity, not awareness | arXiv:2510.22954 | CONFIRMED: both terms are defined in the abstract; no occurrence of conscious, phenomenal or self-aware |
-| 6 | The Kriegman et al. mouth angle (65 versus 105 degrees) | Kriegman et al. (2021), *PNAS*, Europe PMC main text | UNRESOLVED. The main text describes a "C-shape" with "a single narrow mouth" and states no angle at all. Supplementary information was not retrieved |
+| 6 | The Kriegman et al. mouth angle (65 versus 105 degrees) | Kriegman et al. (2021), *PNAS*, Europe PMC main text | UNRESOLVED. The main text describes a "C-shape" with "a single narrow mouth" and states no angle at all. The supplementary PDF could not be retrieved (PMC returned a bot challenge, PNAS returned 403) |
 | 7 | Quotes and attributions to Dietz's text | pinned upstream files and live Substack page (earlier audit stage) | CONFIRMED except two phrases fixed before the freeze |
 
 Not checked against a passage: Anderson (1972), Beane et al. (2011), Pinet et al. (2019), Claverie and Wainwright (2014), Friedman et al. (2020), Kennedy et al. (2024), Balaguer (SEP), and Rabosky et al. (2018). For these only the DOI identity was verified. Crossref returned no retraction or correction notice for the ten DOIs in the reference list.
 
-Item 3 was corrected in the draft on 2026-11-12. The preprint is the text checked; if the *Adaptive Behavior* version words this differently, the sentence should be compared against it.
+Item 3: the journal version is the authority for the published claim, and the draft follows it. The same journal paper (Figure 8 caption) gives 50% chance as the aggregation baseline for randomly assigned algotypes, so the number 0.50 is the paper's own baseline, not anyone's forecast.
 
 
 ---
@@ -120,8 +120,19 @@ Source: Dietz's signed outcome record (nanopublication) https://registry.knowled
 ## Checks I ran
 - The ratio recomputes from the two reported medians: 0.038344 / 0.039993 = 0.95877, a 4.12% reduction. Passed.
 - Direction: the record's own test is "less", so the full prediction had the lower median error. Dietz's prose (article and companion) says copying the nearest relative "won by 4%". That reverses the direction in his own record. The draft had repeated his wording and has been corrected (below).
-- The raw per-species errors were not rerun, because that needs the FishShapes data and the author's pipeline. The p-value is taken from the record, not reproduced.
+- The raw per-species errors WERE rerun later on 2026-11-12 (see the section below). The record's own p-value is still the one the draft cites, with the recomputation reported beside it.
 - The fish "Thompson predictor" in his prose is the full 30-dimensional phylogenetic prediction. The 7-mode Thompson version is H6, which beats the consensus but has about 50% higher median error than the full prediction.
+
+## Independent recomputation from raw inputs (2026-11-12)
+Inputs, both hash-checked against the signed records: the locked predictions file `thompson_blind_predictions_registered.csv` (morpholib commit dac08493, sha256 1d50205f...) and FishShapes v1 specimens (Zenodo 6642650, sha256 7447fdc9...). Script: `evidence/recompute_h2.py`, output `evidence/recompute_h2.output.txt`; scipy 1.13.1, numpy 2.0.2. Calibration for BDmax/SL from the signed outcome record (observed = -0.0101 + 1.0183 x landmark ratio).
+
+| Species ratio = | n (tau < 50) | full / nearest median error | H2 one-sided p | H1 p (vs consensus) |
+|---|---|---|---|---|
+| mean of specimen ratios | 1141 | 0.9569 | 0.0444 | 3.9e-107 |
+| median of specimen ratios | 1141 | 0.9651 | 0.0570 | 2.1e-106 |
+| ratio of species means | 1141 | 0.9687 | 0.0522 | 1.2e-106 |
+
+Without the calibration the full prediction is still ahead of the nearest copy (ratio 0.971 to 0.975) but p is 0.18 to 0.21. Result: the direction of the record is reproduced (the full prediction has the LOWER median error), H1 reproduces to the same order of magnitude, and H2 is above the pre-registered alpha of 0.01 in every variant. NOT reproduced exactly: the record reports p = 0.0607 on n = 1122; mine is 0.044 to 0.057 on n = 1141. The 19-species difference and the averaging convention are undocumented in the signed record, and I did not use the author's code. Reading: H2 fails its pre-registered test whichever variant is used; the exact p-value is sensitive to unrecorded choices and sits near 0.05 in my versions.
 
 ## Reading
 A one-sided p of 0.061 against alpha = 0.01 is not significant, so H2 failed on the pre-registered criterion. It is not evidence that the nearest relative did better. It also says nothing about P: a predictive win for a geometric model over a rival is a statement within D.
@@ -189,15 +200,18 @@ Carried from the coordinator's adjudication (`audits/AGENT_ADJUDICATION_2026-11-
 Full-text passage checks (`SOURCE_PASSAGE_CHECKS.md`), the p = 0.061 analysis (`P061_ANALYSIS.md`), the sitewide link matrix and visibility checks (`VISIBILITY_AND_LINK_CHECKS.md`), a prose and cohesion review plus an evidence-retention run over all 58 saved revisions (`PROSE_AND_COHESION_REVIEW.md`), and the revision-history reconstruction (`history/`, shipped as a separate ZIP). On the owner's request the draft gained a Computational disclosure section, dated Revision notes and an original-code link, and two rounds of correction: the direction of the nearest-relative fish comparison, and the restoration of two verified wrong DOIs together with a reworded sentence about the Zhang et al. preprint.
 
 ## Still open
-1. The sentence about what the Zhang et al. authors say on random walkers and barriers was reworded to the arXiv preprint's text. The journal version was not compared.
-2. The p = 0.061 value is taken from Dietz's signed record, not reproduced from the raw FishShapes data; nanopublication signatures were not verified.
-3. Xenobot 65 versus 105 degrees remains unresolved. The Kriegman et al. main text states no angle; its supplement and the upstream Stokes solver were not examined.
+1. The Zhang et al. sentence about random walkers, barriers and perturbative experiments was checked against the free-access journal version and the preprint; both support it, and the draft quotes the journal wording.
+2. The p = 0.061 value was recomputed from the hash-checked raw inputs: direction and verdict reproduce, the exact p does not (0.044 to 0.057 on n = 1141, against 0.0607 on n = 1122, with undocumented species-averaging and exclusion choices). Nanopublication signatures were not verified.
+3. Xenobot 65 versus 105 degrees remains unresolved. The Kriegman et al. main text states no angle. Its supplementary PDF could not be retrieved (bot challenge on PMC, 403 on PNAS), and the upstream Stokes solver was not run.
 4. Passage-level checks were not done for Anderson (1972), Beane et al. (2011), Pinet et al. (2019), Claverie and Wainwright (2014), Friedman et al. (2020), Kennedy et al. (2024), Balaguer (SEP) and Rabosky et al. (2018). Only DOI identity was checked for those.
 5. Formal duties: no proof assistant or SMT solver was used; the 17 inventoried numerical statements reproduce by exact arithmetic or bounded tests.
 6. Prose: reviewed by measurement and one read, not by ear. The repeated restatements of the conclusion were reworded into distinct points (2026-11-12); the repeated if-then device and the switch to second-person address were reworded later the same day.
 7. Five wrong DOIs in Dietz's materials are now stated in the article (the three covered by the executable test, plus Pietak and Levin 2016 and Vandenberg et al. 2012, each a single lookup). Both additions were verified against Crossref and PubMed and are in the reference list.
 8. The signed-out indexing, canonical, sitemap and structured-data checks passed on the live article (2026-11-12). Inbound links from other articles have not been added yet. The article does not yet link its Zenodo DOIs; that is a post-publication step.
 9. The agents' agreement shares the same pinned code and data and is not independent empirical replication.
+
+## The 0.50 forecast
+All 25 saved states of the author's sorting article from 6 Feb to 25 Oct 2026 were checked (`evidence/author_sorting_article_0.50_revision_check.json`): none contains "0.50", "flat", "0.5", "50%", "aggregation" or "chance". The number first appears on 1 Nov, in the response to Dietz. The article therefore describes it as a forecast the author never made. The number itself is the baseline given in Zhang et al.'s Figure 8 caption, and it follows from a globally stable sort; the author's own sorting page grants that a critic may derive it. The article does not claim the number was fabricated.
 
 ## Candidate facts the owner should know
 - The original code repository (`Zhangtaining/cell_research`) carries no licence file on GitHub, was last pushed 2024-10-30, and the earlier audit ran its commit `1fd2bd5`.
