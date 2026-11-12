@@ -9,3 +9,6 @@
 
 ## Update, later 2026-11-12
 Still draft, still no files, DOI still reserved only. The WordPress draft changed after the first archive build (owner-requested disclosure, revision notes and code link), so the candidate archive was rebuilt: 307,596 bytes, SHA-256 f492a70f422fb15be3e6bbcc93695b75700da34f53a4a572f36d254e92e7e830, built on draft SHA-256 c217fdaad74bf7d665b2c6f6d334a33a279825388caec32c4f01e8a1513cd060 (modified 2026-11-11T23:14:27 site time). The earlier archive hash a346c1ce... is superseded.
+
+## Update 2, later 2026-11-12
+Still an unpublished draft with no files and the DOI only reserved. The WordPress draft changed again (one factual correction), so the candidate was rebuilt on draft SHA-256 86592ee1e07791bdf0ee320a31c67f65102b4401853c325aa099fa4427e8c72d (modified 2026-11-11T23:30:15 site time): main archive 336,071 bytes, SHA-256 8f9a49cdf94b2b64bef81c22c35b25011070de8de83061d0551f88fd62ee8d8e; history ZIP 1,906,276 bytes, SHA-256 82d0690b6f40b8ce8e32f41c1d9d218a603a1a62ced43ceeff2857a6efe75d91; audit TXT SHA-256 0e2627e59c3c40953ea7eeee9f8b27677ab9321ab73f2a1feb01ecbbb8015154. These supersede the hashes in the earlier update.
