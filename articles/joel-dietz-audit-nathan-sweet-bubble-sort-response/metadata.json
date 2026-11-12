@@ -13,12 +13,19 @@
     "published_local": "2026-11-12T00:09:00",
     "note": "Published on the owner's instruction 2026-11-12; the body in this archive is the published raw body before any DOI links were added.",
     "current_live_revision": {
-      "modified_local": "2026-11-12T13:31:28",
-      "raw_body_sha256": "dcdbf12002d15d47d6ce012992ff97dadad4e53d8780e242151e7acb55853551",
-      "detail_panels": 14,
-      "deep_link_targets": "Each rcf-computational-<type>-quick/-analysis HTML details panel has a matching -open target inside its body",
-      "note": "Live WordPress HTML now supports email hyperlinks which reveal closed test panels via descendant fragment targets in tested Chromium. This is a post-publication site revision; immutable Zenodo release 1.0.0 remains unchanged. Code Snippets #117 active; live browser verified one panel opened after page re-save. Mechanism not independently isolated; no body content change on re-save.",
-      "body_last_changed_local": "2026-11-12T13:20:20"
+      "modified_local": "2026-11-12T13:57:16",
+      "raw_body_sha256": "4e291e99c9c2dd21f0d909426b2d818eb4de1f14193e78ed3e368f8497bd49fd",
+      "raw_body_utf16_units": 107940,
+      "delivery": "Seven distinct computational test templates stored outside WordPress post_content; fourteen hyperlinks in the article reconstruct disclosure panels via site-only JavaScript and public REST",
+      "doi_badge_layout": "Citation and archive metadata in one text paragraph, followed by one paragraph with both original linked official DOI badges, then Bottom line.",
+      "loader_snippet_id": 118,
+      "legacy_deep_link_snippet_id": 117,
+      "payload_path": "mailpoet/COMPUTATIONAL_PANEL_TEMPLATES_2026-11-12.txt",
+      "site_code_path": "mailpoet/PANEL_LOADER_SNIPPET_118.php",
+      "pre_migration_backup": "mailpoet/PRE_SCRIPT_MIGRATION_BODY_2026-11-12.html",
+      "mailpoet_draft_id": 63,
+      "mailpoet_sent": false,
+      "caution": "Static tests and REST-probe readback do not establish JS execution in every public browser; the browser-agent DOM report conflicted with authenticated source readback. Zenodo 1.0.0 remains immutable."
     }
   },
   "zenodo": {
