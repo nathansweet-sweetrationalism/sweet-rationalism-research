@@ -1,0 +1,145 @@
+{
+  "schema": "sweet-rationalism.release-checklist.v1",
+  "title": "Joel Dietz article publication audit",
+  "article_id": 218725796,
+  "article_editor": "https://sweetrationalism.com/wp-admin/post.php?post=218725796&action=edit",
+  "research_directory": "https://github.com/nathansweet-sweetrationalism/sweet-rationalism-research/tree/main/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response",
+  "as_of": "2026-11-11",
+  "visibility": "draft",
+  "publication_state": "HELD: final quality gates and owner approval required",
+  "notes": "This public progress record contains no unpublished manuscript text. The statuses change only when evidence is checked and this file is committed; the dashboard polls for those commits, not live tool activity.",
+  "gates": [
+    {
+      "id": "wp_metadata",
+      "group": "WordPress & presentation",
+      "label": "SEO metadata, categories, tags, social image and image alt text",
+      "state": "done",
+      "evidence": "WordPress readback: latest featured image #218725889, Yoast OG and Twitter media match"
+    },
+    {
+      "id": "navigation",
+      "group": "WordPress & presentation",
+      "label": "Article structure, 12-point navigation and 14 expandable source tests",
+      "state": "done",
+      "evidence": "Readback of WordPress draft: all internal anchors and test blocks retained"
+    },
+    {
+      "id": "bibliography",
+      "group": "Evidence & analysis",
+      "label": "Linked scholarly bibliography and original debate documents present",
+      "state": "done",
+      "evidence": "20 bibliography entries in draft; bibliographic identities still subject to final source ledger"
+    },
+    {
+      "id": "source_ledger",
+      "group": "Evidence & analysis",
+      "label": "Final per-claim primary-source, exact-quotation and DOI verification ledger",
+      "state": "open",
+      "evidence": "Outstanding final release pass"
+    },
+    {
+      "id": "executable_live",
+      "group": "Evidence & analysis",
+      "label": "Seven test packages: independent live-source checks and negative controls",
+      "state": "open",
+      "evidence": "Previously confirmed offline selftests; live-source checks not yet all evidenced"
+    },
+    {
+      "id": "formal",
+      "group": "Evidence & analysis",
+      "label": "Formal logic, statistics, causal-bridge and mathematical proof-duty checks",
+      "state": "open",
+      "evidence": "Formal preflight not yet closed"
+    },
+    {
+      "id": "prose",
+      "group": "Evidence & analysis",
+      "label": "Whole-article prose, compression, quote retention and adversarial review",
+      "state": "open",
+      "evidence": "Needs final quality-gate report and owner review"
+    },
+    {
+      "id": "bottom_line",
+      "group": "Editorial requirements",
+      "label": "Mandatory near-top Bottom line paragraph",
+      "state": "open",
+      "evidence": "Missing in draft at first release preflight"
+    },
+    {
+      "id": "framework_links",
+      "group": "Editorial requirements",
+      "label": "All four canonical foundation links correctly included",
+      "state": "open",
+      "evidence": "One of four found at first release preflight"
+    },
+    {
+      "id": "link_audit",
+      "group": "Editorial requirements",
+      "label": "Internal/external link audit and verified scholar-repository links",
+      "state": "partial",
+      "evidence": "Relevant inline links added; full typed link audit pending"
+    },
+    {
+      "id": "repro_scaffold",
+      "group": "Archives & reproducibility",
+      "label": "Public GitHub source-first harness, seven ZIPs and mirrored WordPress packages",
+      "state": "done",
+      "evidence": "articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/README.md and seven v2 ZIPs"
+    },
+    {
+      "id": "history",
+      "group": "Archives & reproducibility",
+      "label": "Exact private historical snapshots, diffs and restorable Git history",
+      "state": "partial",
+      "evidence": "Prior private archive reconstructed from 39 available states; six oversized WP revision bodies unavailable"
+    },
+    {
+      "id": "release_assets",
+      "group": "Archives & reproducibility",
+      "label": "Public UTF-8 audit TXT, full reconstruction ZIP, checksums and verified download links",
+      "state": "open",
+      "evidence": "Prepared privately; public links and release packaging pending"
+    },
+    {
+      "id": "github_snapshot",
+      "group": "Archives & reproducibility",
+      "label": "Exact final article.html and metadata.json in article-specific GitHub directory",
+      "state": "open",
+      "evidence": "Do not expose unpublished manuscript before publication approval"
+    },
+    {
+      "id": "doi",
+      "group": "Archives & reproducibility",
+      "label": "Article-specific Zenodo concept DOI and immutable version DOI verified",
+      "state": "open",
+      "evidence": "No article DOI deposit yet; requires closed quality gate and owner signoff"
+    },
+    {
+      "id": "owner",
+      "group": "Publication sequence",
+      "label": "Final candidate and unresolved limitations presented for explicit owner signoff",
+      "state": "open",
+      "evidence": "General readiness request is not a substitute for final reviewed-candidate signoff"
+    },
+    {
+      "id": "publish",
+      "group": "Publication sequence",
+      "label": "Publish approved WordPress edition and preserve canonical URL",
+      "state": "open",
+      "evidence": "Current WordPress status draft"
+    },
+    {
+      "id": "visibility",
+      "group": "Publication sequence",
+      "label": "After release: robots, sitemap, unlist plugin, canonical, schema and public links",
+      "state": "open",
+      "evidence": "Requires live signed-out verification"
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-11-11",
+      "event": "Release audit opened. Baseline gate status established from verified WordPress/GitHub state; live checking continues."
+    }
+  ]
+}
