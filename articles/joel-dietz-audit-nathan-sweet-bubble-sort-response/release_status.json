@@ -208,6 +208,10 @@
     {
       "date": "2026-11-12",
       "event": "At the owner's request: replacement hero image (green NEGATIVE RESULT label on the 0% panel instead of a red VERIFIED stamp; image sha256 e4423483aa194e5e5ffc23145b1f13fd9e6ee6c22019ee8fe2a4ccb2be72bf1a, committed under assets/), image caption and alt text updated, and the reserved Zenodo DOI 10.5281/zenodo.24151128 linked in the article in place of the 'DOI will be linked' and 'unpublished draft' wording. Article sha256 38fff624f6ac395e91cf045f6574613abd295cd590ae8b0a0a1f8e7a9e300e81; archive rebuilt; Zenodo draft files to be swapped before the owner's Publish click."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Final hero image applied at the owner's request: green 'my argument all along' callout plus green NEGATIVE RESULT label (file assets/joel-dietz-michael-levin-audit-green-callout-hero.png, sha256 4f34eec7ee5180c72becf860bd0d310655dfcc65f21cb17b5f6b7b38c4466b0e; WordPress attachment 218725908, featured image; alt text, caption and social image set). The earlier file assets/joel-dietz-michael-levin-audit-negative-result-hero.png is superseded. The image is not part of the Zenodo archive, so no archive change was needed. The site serves a resized 1600x900 copy at the file URL."
     }
   ]
 }

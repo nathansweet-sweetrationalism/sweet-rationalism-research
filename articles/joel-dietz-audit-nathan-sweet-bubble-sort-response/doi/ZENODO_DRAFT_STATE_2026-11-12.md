@@ -38,3 +38,6 @@ Published raw body SHA-256 77ea9112229ae2e6454f8fb8b1e252e8f528a614ad14eb6d609ea
 
 ## Update 10: image swap and DOI wording (files to be swapped; still unpublished)
 Live article raw body SHA-256 38fff624f6ac395e91cf045f6574613abd295cd590ae8b0a0a1f8e7a9e300e81 (full: 38fff624f6ac395e91cf045f6574613abd295cd590ae8b0a0a1f8e7a9e300e81). Changes: featured image replaced (attachment 218725906; green NEGATIVE RESULT label on the 0% panel; sha256 e4423483aa194e5e5ffc23145b1f13fd9e6ee6c22019ee8fe2a4ccb2be72bf1a); caption, alt text and Yoast social image updated; the article now links the reserved DOI 10.5281/zenodo.24151128 (resolves only after the owner publishes).
+
+## Update 11: Zenodo draft files replaced and verified; final hero image applied (still unpublished)
+Draft 24151128 holds joel-dietz-response-1.0.0.zip (355,626 bytes, md5 da4e7a84aa3211cbf7892329a483ab52), joel-dietz-response-history-1.0.0.zip (2,312,340 bytes, md5 b453d37c3c7a13a2209f0f4fadaf74a9) and joel-dietz-response-audit-1.0.0.txt (27,844 bytes, md5 638744c4bb481c5f14bd118d26138e23); all match the files in release/. The final hero image (assets/..green-callout-hero.png) is live and is not part of the archive. Article raw body sha256 38fff624f6ac395e91cf045f6574613abd295cd590ae8b0a0a1f8e7a9e300e81.
