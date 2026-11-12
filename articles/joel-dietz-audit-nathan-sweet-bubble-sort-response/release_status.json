@@ -21,7 +21,7 @@
       "group": "WordPress & presentation",
       "label": "Article structure, 12-point navigation and 14 expandable source tests",
       "state": "done",
-      "evidence": "Readback 2026-11-12 (draft modified 2026-11-12T00:03:26, sha256 0e1603ff...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text."
+      "evidence": "Readback 2026-11-12 (draft modified 2026-11-12T00:03:26, sha256 0e1603ff...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text. Post-publication citation block relocated before Bottom line; 124 root blocks before and after, 1 citation, 1 versions, 1 Bottom line; other block order unchanged."
     },
     {
       "id": "bibliography",
@@ -63,7 +63,7 @@
       "group": "Editorial requirements",
       "label": "Mandatory near-top Bottom line paragraph",
       "state": "partial",
-      "evidence": "Structural gate: the committed script fails the candidate because its italic-deck regex is over-escaped; with the one-line fix (tests added) the candidate passes (116 words, first block after a deck). Semantic review still pending."
+      "evidence": "2026-11-12: WordPress published article #218725796 now begins opening deck → Cite as → Versions and archives → Bottom line → substantive body. Citation block and two official DOI badges preserved, exactly one occurrence each. GitHub scripts/bottom_line_gate.py recognizes citation as opening provenance and checks metadata order. GitHub Actions run https://github.com/nathansweet-sweetrationalism/sweet-rationalism-research/actions/runs/43277649764 completed SUCCESS for regression tests and complete article.html opening-order gate. Human source/argument judgment is a separate requirement."
     },
     {
       "id": "framework_links",
@@ -105,7 +105,7 @@
       "group": "Archives & reproducibility",
       "label": "Exact final article.html and metadata.json in article-specific GitHub directory",
       "state": "partial",
-      "evidence": "Exact published article.html, metadata.json and the release archive files are committed on the pull-request branch (not yet on main until the PR is merged by the owner)."
+      "evidence": "Top-level article.html updated on main to current published WordPress raw body SHA-256 70f5e521e39984172fd6033397b5bb56b5221f7bfba1199fa37609c902b47fc9 (modified 2026-11-12T13:08:10). metadata.json current_live_revision, README and CHANGELOG distinguish this site revision from immutable Zenodo 1.0.0 deposit. Gate remains partial for final cross-archive reconciliation."
     },
     {
       "id": "doi",
@@ -220,6 +220,10 @@
     {
       "date": "2026-11-12",
       "event": "Zenodo record 24151128 published by the owner; public record verified (three files, md5 equal to release/, five related links, CC BY 4.0). Live article gained the post-publication citation and versions block (live raw body sha256 6ca0c150b42eac444aaeaf989a85194ca90f6dcb227c68e7872ed8b0fefe311e, equal to the deposited article plus that block). README, CITATION.cff, CHANGELOG and doi/ snapshots updated on the PR branch; merge to main pending the owner."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Owner-requested opening ordering revision: moved Cite as and Versions and archives before Bottom line in published WordPress article; archived updated raw body in GitHub main (sha256 70f5e521...), amended AGENTS and article quality standards plus Python validator/regressions, and confirmed CI run 43277649764 passed. Published Zenodo 1.0.0 archive not altered."
     }
   ]
 }
