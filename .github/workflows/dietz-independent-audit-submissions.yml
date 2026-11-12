@@ -1,0 +1,33 @@
+name: Joel Dietz independent audit submission checks
+
+on:
+  pull_request:
+    paths:
+      - 'articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/audits/agents/**'
+      - 'articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/agents/**'
+      - '.github/workflows/dietz-independent-audit-submissions.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-agent-submission-structure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate submitted run directories (metadata, evidence coverage and hashes only)
+        working-directory: articles/joel-dietz-audit-nathan-sweet-bubble-sort-response
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          count=0
+          for result in audits/agents/*/result.json; do
+            run_dir="${result%/result.json}"
+            python3 agents/validate_submission.py "$run_dir"
+            count=$((count+1))
+          done
+          echo "Validated $count independently submitted run directories."
+          echo "This check does NOT establish source accuracy, no manuscript leakage, or approval for publication."
