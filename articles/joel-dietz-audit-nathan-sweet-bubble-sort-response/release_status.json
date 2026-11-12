@@ -21,7 +21,7 @@
       "group": "WordPress & presentation",
       "label": "Article structure, 12-point navigation and 14 expandable source tests",
       "state": "done",
-      "evidence": "Readback 2026-11-12 (draft modified 2026-11-12T00:03:26, sha256 38fff624...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text."
+      "evidence": "Readback 2026-11-12 (draft modified 2026-11-12T00:03:26, sha256 0e1603ff...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text."
     },
     {
       "id": "bibliography",
@@ -98,7 +98,7 @@
       "group": "Archives & reproducibility",
       "label": "Public UTF-8 audit TXT, full reconstruction ZIP, checksums and verified download links",
       "state": "partial",
-      "evidence": "2026-11-12: release candidate built and verified locally on article sha256 38fff624... (live, with the replacement hero image and the reserved DOI link): main archive (106 files, sha256 ac8f507980374b32cae371f9e54b3e2c9ab6d645efb37db42be445b4bb070e7d), history ZIP (136 files, sha256 71c01792237f7ed6b6947482c868eb1dbccd42cf8de37e9f33af373fc477861b), audit TXT (sha256 e72f2ae5967c22f0b9fd85c11d557cd9bb39164f189313c0c5ff2fe017682044). Fresh extraction: 0 checksum mismatches. Uploaded to the unpublished Zenodo draft 24151128 only."
+      "evidence": "2026-11-12: release candidate built and verified locally on article sha256 0e1603ff... (live, Revision notes moved to CHANGELOG.md): main archive (108 files, sha256 0e64e0328e3fa75a72e5e7231cb3090a3bfeb671bae629ebd7d3aba66b8716cc), history ZIP (138 files, sha256 461e97f69651a7bd4cef860868db7bd7f267647e3850a7ebd5172eb7db1dc19d), audit TXT (sha256 1be5e3307e46d464f41915b19bb1ddcceb1b3499bd4363b9759d650500b3ff1a). Fresh extraction: 0 checksum mismatches. Uploaded to the unpublished Zenodo draft 24151128 only."
     },
     {
       "id": "github_snapshot",
@@ -126,7 +126,7 @@
       "group": "Publication sequence",
       "label": "Publish approved WordPress edition and preserve canonical URL",
       "state": "done",
-      "evidence": "Published 2026-11-12 on the owner's instruction (post 218725796, status publish, date 2026-11-12T00:09:00 site time) at https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/ ; final raw body sha256 38fff624f6ac395e91cf045f6574613abd295cd590ae8b0a0a1f8e7a9e300e81; page cache purged and the live HTML serves the final text."
+      "evidence": "Published 2026-11-12 on the owner's instruction (post 218725796, status publish, date 2026-11-12T00:09:00 site time) at https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/ ; final raw body sha256 0e1603ff88e9c7e313aa6cd0435f9a0711afa6820cc397471283a756d1907b01; page cache purged and the live HTML serves the final text."
     },
     {
       "id": "visibility",
@@ -212,6 +212,10 @@
     {
       "date": "2026-11-12",
       "event": "Final hero image applied at the owner's request: green 'my argument all along' callout plus green NEGATIVE RESULT label (file assets/joel-dietz-michael-levin-audit-green-callout-hero.png, sha256 4f34eec7ee5180c72becf860bd0d310655dfcc65f21cb17b5f6b7b38c4466b0e; WordPress attachment 218725908, featured image; alt text, caption and social image set). The earlier file assets/joel-dietz-michael-levin-audit-negative-result-hero.png is superseded. The image is not part of the Zenodo archive, so no archive change was needed. The site serves a resized 1600x900 copy at the file URL."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "At the owner's request: the dated Revision notes section was removed from the published article and moved to CHANGELOG.md (article folder and archive root). Article sha256 0e1603ff88e9c7e313aa6cd0435f9a0711afa6820cc397471283a756d1907b01; archive rebuilt; Zenodo draft files to be swapped before the owner's Publish click."
     }
   ]
 }
