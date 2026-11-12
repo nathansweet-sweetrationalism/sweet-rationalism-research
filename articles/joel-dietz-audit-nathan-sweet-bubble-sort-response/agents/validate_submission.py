@@ -139,8 +139,8 @@ def validate(folder):
             fail("Gate cites missing assessment IDs: " + gid)
         if x["suggested_state"] == "done" and not x["assessment_ids"]:
             fail("A completed gate requires supporting assessment IDs: " + gid)
-    if gates - submitted:
-        fail("Account explicitly for every release gate; missing: " + ", ".join(sorted(gates-submitted)))
+    if gates - set(submitted):
+        fail("Account explicitly for every release gate; missing: " + ", ".join(sorted(gates-set(submitted))))
     if not isinstance(result.get("open_items"), list):
         fail("Missing open-items list")
     # Supply hashes for all submitted files, including reports and scripts.
