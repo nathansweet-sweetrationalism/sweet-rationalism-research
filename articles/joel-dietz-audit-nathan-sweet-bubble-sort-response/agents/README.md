@@ -11,7 +11,7 @@ python3 articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/agents/valid
   articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/audits/agents/<run-id>
 ```
 
-The GitHub Actions [submission check](../../../../.github/workflows/dietz-independent-audit-submissions.yml) runs on pull requests. Its success establishes only format, provenance-field, gate-coverage and checksum consistency. It does not establish independent replication, scholarly accuracy, privacy or authorization to publish.
+The GitHub Actions [submission check](../../../.github/workflows/dietz-independent-audit-submissions.yml) runs on pull requests. Its success establishes only format, provenance-field, gate-coverage and checksum consistency. It does not establish independent replication, scholarly accuracy, privacy or authorization to publish.
 
 **Coordinating results:** Inspect each pull request's reproducible script, exact source versions, command receipts, scope, counterexample and limitations. Compare independently generated results, identify copied/shared dependencies, and resolve conflicts before updating [release_status.json](../release_status.json). Only a coordinator should edit that release ledger. `done` for an editorial gate still requires the applicable human/owner review. A signed-off report can later be included in the article's combined computational-audit ZIP, preserving the original agent/model and source hashes.
 
