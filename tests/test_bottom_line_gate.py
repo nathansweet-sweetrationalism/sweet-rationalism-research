@@ -26,6 +26,23 @@ class BottomLineGateTests(unittest.TestCase):
         result = inspect_html(page, required_terms=["Mayo", "Popper"])
         self.assertTrue(result["pass_structural"])
 
+    def test_citation_and_versions_precede_bottom_line(self):
+        deck = "<p><em>Opening deck.</em></p>"
+        citation = "<p><strong>Cite as:</strong> " + ("Citation details and licensing. " * 16) + "</p>"
+        versions = "<p><strong>Versions and archives:</strong> DOI with badge and GitHub link.</p>"
+        result = inspect_html(deck + citation + versions + CONTENT)
+        self.assertTrue(result["pass_structural"], result["failures"])
+
+    def test_citation_after_bottom_line_fails(self):
+        result = inspect_html(CONTENT + "<p><strong>Cite as:</strong> Citation details.</p>")
+        self.assertFalse(result["pass_structural"])
+        self.assertTrue(any("must precede" in x for x in result["failures"]))
+
+    def test_versions_before_citation_fails(self):
+        result = inspect_html("<p>Versions and archives: DOI</p><p>Cite as: Citation.</p>" + CONTENT)
+        self.assertFalse(result["pass_structural"])
+        self.assertTrue(any("metadata order" in x for x in result["failures"]))
+
     def test_single_italic_deck_before_bottom_line_passes(self):
         deck = "<!-- wp:paragraph -->" + "<p><em>" + "word " * 60 + "</em></p>" + "<!-- /wp:paragraph -->"
         self.assertTrue(inspect_html(deck + CONTENT)["pass_structural"])
