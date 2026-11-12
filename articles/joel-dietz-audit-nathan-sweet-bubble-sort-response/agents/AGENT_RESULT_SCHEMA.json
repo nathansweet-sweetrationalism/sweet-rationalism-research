@@ -1,0 +1,253 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Independent article release-audit result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "run_id",
+    "agent",
+    "snapshot",
+    "assessments",
+    "gate_recommendations",
+    "open_items",
+    "privacy"
+  ],
+  "properties": {
+    "schema": {
+      "const": "sweet-rationalism-agent-audit/v1"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]{5,100}$"
+    },
+    "agent": {
+      "type": "object",
+      "required": [
+        "tool",
+        "model"
+      ],
+      "properties": {
+        "tool": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "runtime": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "snapshot": {
+      "type": "object",
+      "required": [
+        "wordpress_post_id",
+        "wordpress_status",
+        "wordpress_modified",
+        "wordpress_content_sha256",
+        "github_base_commit",
+        "upstream_commit"
+      ],
+      "properties": {
+        "wordpress_post_id": {
+          "const": 218725796
+        },
+        "wordpress_status": {
+          "type": "string"
+        },
+        "wordpress_modified": {
+          "type": "string"
+        },
+        "wordpress_content_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "github_base_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "upstream_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        }
+      },
+      "additionalProperties": true
+    },
+    "assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "release_gate",
+          "scope",
+          "status",
+          "observations",
+          "evidence",
+          "limitations",
+          "loss_conditions"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "release_gate": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "CONFIRMED_WITHIN_SCOPE",
+              "DISCONFIRMED_WITHIN_SCOPE",
+              "PARTIAL",
+              "UNRESOLVED",
+              "NOT_RUN"
+            ]
+          },
+          "observations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "sha256": {
+                  "type": "string"
+                },
+                "file": {
+                  "type": "string"
+                },
+                "source_location": {
+                  "type": "string"
+                },
+                "retrieved_at": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "commands": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "command": {
+                  "type": "string"
+                },
+                "exit_code": {
+                  "type": "integer"
+                },
+                "stdout_path": {
+                  "type": "string"
+                },
+                "stderr_path": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "controls": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rivals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "loss_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "private_evidence_sha256": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "gate_recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "suggested_state",
+          "reason",
+          "assessment_ids"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "suggested_state": {
+            "enum": [
+              "done",
+              "partial",
+              "open"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "assessment_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "open_items": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "required": [
+        "reviewed_public_safe",
+        "unpublished_manuscript_excluded"
+      ],
+      "properties": {
+        "reviewed_public_safe": {
+          "const": true
+        },
+        "unpublished_manuscript_excluded": {
+          "const": true
+        },
+        "reviewed_by": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}
