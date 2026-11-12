@@ -1,0 +1,35 @@
+{
+ "sources": {
+  "substack": {
+   "url": "https://metameditations.substack.com/p/auditing-michael-levins-platonism",
+   "sha256": "12f41af9e989dd52676c0dd802e822b73f6e47bcd8f3ea4b9302e6ee8c4fd1ba",
+   "bytes": 370252
+  },
+  "pinned_article": {
+   "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/docs/SUBSTACK_LEVIN_LATENT_SPACE_ARTICLE.md",
+   "sha256": "15128797b75b65902277fba779560c6c7d1d0c25eae587fe0510ed60c42c5261",
+   "bytes": 54054
+  },
+  "own_article": {
+   "url": "https://sweetrationalism.com/articles/metaphysics/religion-with-a-pipette-is-michael-levins-ingressing-minds-pseudoscience-a-scholarly-analysis/",
+   "sha256": "630725dbbc0a4f3024964bef75715d3bbe8a45ab08c04d9261926a7fcca95999",
+   "bytes": 633450
+  }
+ },
+ "checks": {
+  "substack_subtitle": "In a sea of internet debates between “Platonic Ingression” and reductionist blog critics, an internet philosopher who can code doesn’t have to guess—because every single core claim can be tested",
+  "substack_has_reductionist_blog_critics": true,
+  "substack_has_exact_reductionist_blogger": false,
+  "substack_has_internet_philosopher_who_can_code": true,
+  "pinned_none_of_this_required_platonism": true,
+  "own_original_opening_subject_is_the_2025_talk": true,
+  "dietz_quote_opens_with_altered_subject": true,
+  "own_has_knowledge_graph_sentence": true,
+  "own_has_symmetry_paragraph": true,
+  "own_has_grant_sentence": true,
+  "symmetry_paragraph_immediately_follows_span_dietz_quoted": true,
+  "dietz_quote_ends_at_fresh_risk": true,
+  "dietz_pinned_article_contains_symmetry_paragraph": false,
+  "characters_between_knowledge_graph_sentence_and_symmetry_paragraph_in_original": 487
+ }
+}

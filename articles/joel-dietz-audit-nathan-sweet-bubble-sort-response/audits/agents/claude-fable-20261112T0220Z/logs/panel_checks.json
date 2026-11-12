@@ -1,0 +1,844 @@
+{
+ "article_sha256": "034280325838f1cd563709772311e2de3556f56931b9229538ef944c70c51a98",
+ "summary": {
+  "panel_count": 14,
+  "unique_prompt_hashes": 7,
+  "pairs_identical": {
+   "doi": true,
+   "tadpole": true,
+   "xenobot": true,
+   "score": true,
+   "ports": true,
+   "validator": true,
+   "authorship": true
+  },
+  "audit_py_flags": [
+   "--config",
+   "--live",
+   "--selftest"
+  ],
+  "url_status_cache_size": 38
+ },
+ "panels": [
+  {
+   "panel_id": "rcf-computational-doi-quick",
+   "kind": "doi",
+   "place": "quick",
+   "prompt_sha256": "c89ed387421304166aabb4a562832e73d08ec5881714b0e3816a5fa565237401",
+   "prompt_chars": 11401,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 15,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://doi.org/10.1098/rspb.2020.1053": 403,
+    "https://doi.org/10.1242/dev.175893": 403,
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-tadpole-quick",
+   "kind": "tadpole",
+   "place": "quick",
+   "prompt_sha256": "408379e2f50ef539a7d5fb34004a934e38c2e99893da14a989898fdce0796bea",
+   "prompt_chars": 11353,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 11,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://doi.org/10.1242/dev.175893": 403,
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-xenobot-quick",
+   "kind": "xenobot",
+   "place": "quick",
+   "prompt_sha256": "56a70fa9397360161baee0880fab742713035f33104096491ca7b54faafda2d7",
+   "prompt_chars": 11336,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 11,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://doi.org/10.1073/pnas.2112672118": 403,
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-score-quick",
+   "kind": "score",
+   "place": "quick",
+   "prompt_sha256": "4b1c97456f947e55ea3501e9dbabbd131bfba9b6ace33a3d778cbd4444b0943b",
+   "prompt_chars": 11592,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 10,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-ports-quick",
+   "kind": "ports",
+   "place": "quick",
+   "prompt_sha256": "4733f23ef1546decf647b1ed9af62b6cbe144ec5bdac3355da859db6bf17631c",
+   "prompt_chars": 11443,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 12,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-validator-quick",
+   "kind": "validator",
+   "place": "quick",
+   "prompt_sha256": "45d1ccfe5c2953a01b1db60de7adca7db1e40fc04decba1fcf46b6beaf5052b7",
+   "prompt_chars": 11529,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 12,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-authorship-quick",
+   "kind": "authorship",
+   "place": "quick",
+   "prompt_sha256": "995d3ad8ac88dd1b849d798a2f55891fe74cdaff560866547bbcc274bac93ffc",
+   "prompt_chars": 11269,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 10,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-tadpole-analysis",
+   "kind": "tadpole",
+   "place": "analysis",
+   "prompt_sha256": "408379e2f50ef539a7d5fb34004a934e38c2e99893da14a989898fdce0796bea",
+   "prompt_chars": 11353,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-03-tadpole-supplied-target-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 11,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://doi.org/10.1242/dev.175893": 403,
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-xenobot-analysis",
+   "kind": "xenobot",
+   "place": "analysis",
+   "prompt_sha256": "56a70fa9397360161baee0880fab742713035f33104096491ca7b54faafda2d7",
+   "prompt_chars": 11336,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-02-xenobot-angle-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 11,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://doi.org/10.1073/pnas.2112672118": 403,
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-score-analysis",
+   "kind": "score",
+   "place": "analysis",
+   "prompt_sha256": "4b1c97456f947e55ea3501e9dbabbd131bfba9b6ace33a3d778cbd4444b0943b",
+   "prompt_chars": 11592,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-04-score-arithmetic-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 10,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-doi-analysis",
+   "kind": "doi",
+   "place": "analysis",
+   "prompt_sha256": "c89ed387421304166aabb4a562832e73d08ec5881714b0e3816a5fa565237401",
+   "prompt_chars": 11401,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-07-bibliography-doi-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 15,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://doi.org/10.1098/rspb.2020.1053": 403,
+    "https://doi.org/10.1242/dev.175893": 403,
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-ports-analysis",
+   "kind": "ports",
+   "place": "analysis",
+   "prompt_sha256": "4733f23ef1546decf647b1ed9af62b6cbe144ec5bdac3355da859db6bf17631c",
+   "prompt_chars": 11443,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-05-port-assertion-scope-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 12,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-validator-analysis",
+   "kind": "validator",
+   "place": "analysis",
+   "prompt_sha256": "45d1ccfe5c2953a01b1db60de7adca7db1e40fc04decba1fcf46b6beaf5052b7",
+   "prompt_chars": 11529,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-01-verification-label-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 12,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  },
+  {
+   "panel_id": "rcf-computational-authorship-analysis",
+   "kind": "authorship",
+   "place": "analysis",
+   "prompt_sha256": "995d3ad8ac88dd1b849d798a2f55891fe74cdaff560866547bbcc274bac93ffc",
+   "prompt_chars": 11269,
+   "textarea_attrs_readonly": true,
+   "raw_textarea_has_unescaped_lt": false,
+   "roundtrip_escape_ok": true,
+   "primary_zip_url": "https://raw.githubusercontent.com/nathansweet-sweetrationalism/sweet-rationalism-research/7eeb8ccd1f7b4d81186340b62ef300cfacdee14f/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response/packages/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+   "backup_zip_url": "https://sweetrationalism.com/wp-content/uploads/2026/11/RCF-Dietz-Test-06-authorship-denominator-2026-11-11-v2.zip",
+   "prompt_has_primary_zip_url": true,
+   "prompt_has_backup_zip_url": true,
+   "outside_has_primary_zip_link": true,
+   "outside_has_backup_zip_link": true,
+   "outside_code_snippets": [
+    "python audit.py --live",
+    "py -3 audit.py --live",
+    "python audit.py --selftest",
+    "OBSERVATION_REPRODUCED",
+    "FIXTURE_CHECK_ONLY",
+    "UNRESOLVED"
+   ],
+   "prompt_cli_flags": [
+    "--live",
+    "--offline"
+   ],
+   "flags_not_in_audit_py": [
+    "--offline"
+   ],
+   "prompt_mentions_selftest": false,
+   "prompt_mentions_verify_py": true,
+   "prompt_mentions_audit_py": true,
+   "prompt_status_words": [
+    "CONFIRMED",
+    "NOT_RUN",
+    "PARTIAL",
+    "REFUTED",
+    "UNRESOLVED"
+   ],
+   "audit_py_status_words": [
+    "NOT_RUN",
+    "OBSERVATION_REPRODUCED",
+    "SELFTEST_FAILED",
+    "SELFTEST_ONLY",
+    "SOURCE_CHANGED_OR_CHECK_FAILED",
+    "UNRESOLVED"
+   ],
+   "prompt_pins_upstream_commit": true,
+   "upstream_paths_in_sources_json_all_in_prompt": true,
+   "upstream_paths_missing_from_prompt": [],
+   "prompt_url_count": 10,
+   "outside_link_count": 6,
+   "outside_links_missing_noreferrer": 5,
+   "prompt_urls_non_200": {
+    "https://sweetrationalism.com/?p=218725796": 404
+   }
+  }
+ ]
+}

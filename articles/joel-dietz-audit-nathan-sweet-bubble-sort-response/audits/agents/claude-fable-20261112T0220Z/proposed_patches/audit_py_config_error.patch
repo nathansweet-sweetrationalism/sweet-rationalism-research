@@ -1,0 +1,14 @@
+--- a/audit.py
++++ b/audit.py
+@@ -148,6 +148,11 @@
+               "observations": [], "source_hashes": [], "limitations": []}
+     try:
+         spec = json.loads((BASE / args.config).read_text(encoding="utf-8"))
++    except (OSError, ValueError) as e:
++        result["error"] = "Local configuration file missing or unreadable (not a source-retrieval failure): " + type(e).__name__ + ": " + str(e)
++        print(json.dumps(result, indent=2, ensure_ascii=False))
++        return 1
++    try:
+         result["test_id"] = spec["id"]
+         sources = {}
+         for name, item in spec["sources"].items():
