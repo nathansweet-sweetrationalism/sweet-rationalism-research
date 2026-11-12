@@ -11,7 +11,10 @@
     "assessments",
     "gate_recommendations",
     "open_items",
-    "privacy"
+    "privacy",
+    "prompt_checks",
+    "math_inventory",
+    "coverage"
   ],
   "properties": {
     "schema": {
@@ -248,6 +251,155 @@
         }
       },
       "additionalProperties": true
+    },
+    "prompt_checks": {
+      "type": "array",
+      "minItems": 14,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "required": [
+          "panel_id",
+          "status",
+          "source_prompt_sha256",
+          "primary_zip_url",
+          "backup_zip_url",
+          "cli_command",
+          "evidence",
+          "limitations"
+        ],
+        "properties": {
+          "panel_id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "CONFIRMED_WITHIN_SCOPE",
+              "DISCONFIRMED_WITHIN_SCOPE",
+              "PARTIAL",
+              "UNRESOLVED",
+              "NOT_RUN"
+            ]
+          },
+          "source_prompt_sha256": {
+            "type": "string"
+          },
+          "primary_zip_url": {
+            "type": "string"
+          },
+          "backup_zip_url": {
+            "type": "string"
+          },
+          "cli_command": {
+            "type": "string"
+          },
+          "run_mode": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array"
+          },
+          "limitations": {
+            "type": "array"
+          },
+          "controls": {
+            "type": "array"
+          },
+          "independently_checked": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "math_inventory": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "claim_id",
+          "locations",
+          "type",
+          "scope",
+          "tool",
+          "tool_version",
+          "method_sources",
+          "run_result",
+          "independent_check",
+          "status",
+          "limitations",
+          "loss_conditions"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "locations": {
+            "type": "array"
+          },
+          "type": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "tool": {
+            "type": "string"
+          },
+          "tool_version": {
+            "type": "string"
+          },
+          "method_sources": {
+            "type": "array"
+          },
+          "run_result": {
+            "type": "object"
+          },
+          "independent_check": {
+            "type": "object"
+          },
+          "status": {
+            "type": "string"
+          },
+          "limitations": {
+            "type": "array"
+          },
+          "loss_conditions": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "panel_ids_enumerated",
+        "unique_packages_enumerated",
+        "math_claims_count",
+        "article_commands_enumerated",
+        "script_inventory",
+        "public_safety_review"
+      ],
+      "properties": {
+        "panel_ids_enumerated": {
+          "const": 14
+        },
+        "unique_packages_enumerated": {
+          "const": 7
+        },
+        "math_claims_count": {
+          "type": "integer"
+        },
+        "article_commands_enumerated": {
+          "type": "array"
+        },
+        "script_inventory": {
+          "type": "array"
+        },
+        "public_safety_review": {
+          "const": true
+        }
+      }
     }
   }
 }
