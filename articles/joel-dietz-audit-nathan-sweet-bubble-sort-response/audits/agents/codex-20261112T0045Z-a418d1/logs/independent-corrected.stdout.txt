@@ -1,0 +1,208 @@
+{
+  "versions": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "scipy": "1.15.3",
+    "sympy": "1.14.0",
+    "z3": "4.15.4"
+  },
+  "scores": {
+    "display_inputs": [
+      "667/10",
+      "27/2",
+      "173/2",
+      "961/10",
+      "95",
+      "95",
+      "901/10"
+    ],
+    "mean_exact": "5429/70",
+    "mean_decimal": "77.55714285714285714285714286",
+    "structural_mean_exact": "881/10",
+    "leave_one_out": [
+      "2381/30",
+      "2647/30",
+      "1141/15",
+      "1117/15",
+      "1493/20",
+      "1493/20",
+      "1132/15"
+    ],
+    "raw_ratio_mean_percent": "180800/2331",
+    "claim2_weight_sensitivity": {
+      "0": 88.23333333333333,
+      "1": 77.55714285714286,
+      "2": 69.55,
+      "5": 54.263636363636365,
+      "10": 41.525
+    },
+    "negative_control_wrong_denominator": "5429/60"
+  },
+  "authorship": {
+    "rows": 8,
+    "before_exact": "425/8",
+    "after_split_exact": "517/9",
+    "before_percent": 53.125,
+    "after_percent": 57.44444444444444,
+    "numpy_crosscheck": 53.125,
+    "equal_half_weight_split_invariant": true
+  },
+  "xenobot": {
+    "grid_maxima": {
+      "5": 65.0,
+      "1": 65.0,
+      "0.1": 65.0,
+      "0.01": 65.0
+    },
+    "continuous_optimum": 65.00000042822342,
+    "at_65": 222.0,
+    "at_105": 65.24229186773445,
+    "independent_max_discrepancy": 1.4210854715202004e-14,
+    "programmed_maximum_derivation": "eta <=18.5 and penalty <=1; both attain bounds at theta=65 in [0,120], so product <=222 with unique equality at 65. Angle convention remains a separate source question."
+  },
+  "tadpole": {
+    "scenarios": [
+      {
+        "target_shift": 0.0,
+        "eta": 1,
+        "final_target_rms": 0.0009275881472681711,
+        "solve_ivp_difference": 6.877831637552845e-13,
+        "rk4_convergence": [
+          {
+            "dt": 0.1,
+            "error_vs_matrix_exp": 2.818167921248005e-11
+          },
+          {
+            "dt": 0.05,
+            "error_vs_matrix_exp": 1.7406631691585517e-12
+          },
+          {
+            "dt": 0.025,
+            "error_vs_matrix_exp": 1.0830225605218402e-13
+          }
+        ]
+      },
+      {
+        "target_shift": 2.0,
+        "eta": 1,
+        "final_target_rms": 0.011223818815746911,
+        "solve_ivp_difference": 4.5852210917018965e-12,
+        "rk4_convergence": [
+          {
+            "dt": 0.1,
+            "error_vs_matrix_exp": 2.5587310048535983e-10
+          },
+          {
+            "dt": 0.05,
+            "error_vs_matrix_exp": 1.580513497856373e-11
+          },
+          {
+            "dt": 0.025,
+            "error_vs_matrix_exp": 9.827694213981886e-13
+          }
+        ]
+      },
+      {
+        "target_shift": 0.0,
+        "eta": 0,
+        "final_target_rms": 0.42640356471305446,
+        "solve_ivp_difference": 2.7755575615628914e-17,
+        "rk4_convergence": [
+          {
+            "dt": 0.1,
+            "error_vs_matrix_exp": 2.7755575615628914e-17
+          },
+          {
+            "dt": 0.05,
+            "error_vs_matrix_exp": 2.7755575615628914e-17
+          },
+          {
+            "dt": 0.025,
+            "error_vs_matrix_exp": 2.7755575615628914e-17
+          }
+        ]
+      }
+    ],
+    "symmetric": true,
+    "eigenvalues": [
+      0.27920119661145854,
+      0.6714551253432608,
+      0.6893436780452811,
+      0.74,
+      0.7800000000000002
+    ],
+    "positive_definite_exact_principal_minors": [
+      "6200000000000001/10000000000000000",
+      "37000000000000012400000000000001/100000000000000000000000000000000",
+      "1173640000000000402800000000000033/5000000000000000000000000000000000",
+      "35266920000000012558000000000001053/250000000000000000000000000000000000",
+      "186481776000000105373320000000018626400000000001053/2500000000000000000000000000000000000000000000000000"
+    ],
+    "derivation": "For symmetric nonnegative C and positive K, A=diag(K)+L(C) positive definite; V=1/2 sum_coordinates y.T A y; ydot=-eta A y; Vdot=-eta ||Ay||^2. eta=0 arrests motion; eta>0 converges asymptotically to supplied target. This is conditional model mathematics."
+  },
+  "ports": {
+    "assertions": 4,
+    "changed_intermediate_frames_accepted": true,
+    "changed_final_array_rejected": true,
+    "scope": "Synthetic countermodel to sufficiency of these four assertions only, not a measured difference among real ports."
+  },
+  "logic": {
+    "D_success_with_P_false": "sat",
+    "D_success_with_P_true": "sat",
+    "equal_positive_likelihood_ratio_countermodel": "unsat",
+    "truth_table_D_does_not_entail_notP": [
+      {
+        "D": true,
+        "P": true
+      }
+    ],
+    "zero_likelihood_boundary": "0/0 undefined; both assigning zero probability requires a different model/density/support treatment."
+  },
+  "sorting": {
+    "adjacent_inverted_swaps_checked": 17203,
+    "max_n": 7,
+    "two_metrics_counterexample": [
+      {
+        "before": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "after": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "I": [
+          3,
+          2
+        ],
+        "E": [
+          1,
+          2
+        ]
+      }
+    ],
+    "scope": "Distinct-key adjacent inverted swaps; not an unrestricted theorem about all selection swaps."
+  },
+  "harness_adversary": {
+    "comment_only_false_positive": [
+      {
+        "name": "literal_verified_assignments",
+        "value": 1
+      },
+      {
+        "name": "relative_error_fields",
+        "value": 1
+      },
+      {
+        "name": "synthetic_900_pct_negative_control",
+        "value": "VERIFIED literal remains unchanged"
+      }
+    ],
+    "ast_repair_rejects_comment_only": true,
+    "scope": "Supplied verifier reports a synthetic control without executing it; comments alone satisfy its string tests. Independent AST check above supplies the missing real execution."
+  }
+}

@@ -49,7 +49,7 @@ def inventory():
         panels.append({'panel_id':det.get('id'),'source_prompt_sha256':sha(prompt.encode()),'prompt_characters':len(prompt),
             'primary_zip_url':next((u for u in urls if 'raw.githubusercontent.com' in u and '.zip' in u),''),
             'backup_zip_url':next((u for u in urls if '/wp-content/uploads/' in u and '.zip' in u),''),
-            'commands':sorted(set(re.findall(r'python\s+audit\.py[^\n`]*',prompt))),
+            'commands':sorted(set(re.findall(r'python\s+audit\.py(?:\s+--[a-z]+(?:\s+test-data/[a-z]+\.json)?) *',prompt))),
             'selftest_only_literal':'SELFTEST_ONLY' in prompt,'fixture_check_only_literal':'FIXTURE_CHECK_ONLY' in prompt,
             'button_count':len(det.find_all('button')),'textarea_count':len(det.find_all('textarea')),
             'human_zip_urls':[a.get('href') for a in det.find_all('a',href=True) if '.zip' in a['href']]})

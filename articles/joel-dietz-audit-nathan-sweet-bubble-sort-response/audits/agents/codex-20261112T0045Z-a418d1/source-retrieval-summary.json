@@ -1,0 +1,7 @@
+{
+  "total": 105,
+  "succeeded": 88,
+  "errors_count": 17,
+  "private_inventory_sha256": "95c3bd9eefa42b6a125e0c3d37c6ac583292bb6b8960796b556f80cba80b51c6",
+  "scope": "Complete URL inventory retained privately; successful HTTP response does not certify source content or claims."
+}
