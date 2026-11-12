@@ -112,7 +112,7 @@
       "group": "Archives & reproducibility",
       "label": "Article-specific Zenodo concept DOI and immutable version DOI verified",
       "state": "open",
-      "evidence": "DOI stage authorized for preparation after author source sign-off; exact deposit/archives, final release checks and registered DOI still pending. Do not represent a reserved DOI as registered."
+      "evidence": "DOI preparation note at doi/RELEASE_PREP_2026-11-12.md records 2026-11-11 author source-signoff, Gutenberg snapshot fingerprint, immutable-artifact requirements and Zenodo authentication blocker. No reserved or registered article DOI. Final release gates still open."
     },
     {
       "id": "owner",
@@ -160,6 +160,10 @@
     {
       "date": "2026-11-11",
       "event": "Author confirmed all primary-source verifications personally and authorized DOI-stage work. Source ledger accepted as author-attested; outstanding independent computational, mathematical, archive and publication gates remain separate. No DOI registration or public release is implied."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Committed article-specific Zenodo release preparation record with raw WordPress draft SHA-256, 14-panel static scan, archive inventory and publication-order safeguards. Unauthenticated Zenodo browser; deposit not created."
     }
   ]
 }
