@@ -62,15 +62,15 @@
       "id": "bottom_line",
       "group": "Editorial requirements",
       "label": "Mandatory near-top Bottom line paragraph",
-      "state": "open",
-      "evidence": "Missing in draft at first release preflight"
+      "state": "partial",
+      "evidence": "Bottom line is the first paragraph of the authenticated WordPress draft (readback 2026-11-11T20:31:22); formal source and human prose review still pending."
     },
     {
       "id": "framework_links",
       "group": "Editorial requirements",
       "label": "All four canonical foundation links correctly included",
-      "state": "open",
-      "evidence": "One of four found at first release preflight"
+      "state": "partial",
+      "evidence": "All four canonical foundation URLs occur in the authenticated draft (readback 2026-11-11T20:31:22); signed-out link checks and context review still pending."
     },
     {
       "id": "link_audit",
@@ -140,6 +140,14 @@
     {
       "date": "2026-11-11",
       "event": "Release audit opened. Baseline gate status established from verified WordPress/GitHub state; live checking continues."
+    },
+    {
+      "date": "2026-11-11",
+      "event": "Independent coding-agent handoff, JSON result schema, public-safe branch/PR guidance, deterministic validator and GitHub Actions check added to the article research directory. These are infrastructure, not yet independent audit results."
+    },
+    {
+      "date": "2026-11-11",
+      "event": "Rechecked authenticated WordPress draft: opening Bottom line and all four foundation URLs now present. Both remain partial until semantic, source and rendered-link review."
     }
   ]
 }
