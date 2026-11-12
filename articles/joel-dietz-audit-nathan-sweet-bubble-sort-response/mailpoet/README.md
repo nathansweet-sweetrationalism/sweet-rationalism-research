@@ -34,3 +34,10 @@ One naturally wrapping paragraph contains `Cite as:`, licensing and `Versions an
 ## Scientific scope
 
 The payload split does not change any of the actual 14 instructions or the seven executable test packages; it changes only their delivery. The article's published Zenodo version DOI `10.5281/zenodo.24151128` is immutable; the repository's latest `article.html` is a later live website edition. The MailPoet preview and JavaScript hydration are **interface tests**, not proof of the article's scientific claims.
+
+
+## Final email renderer diagnostic, 2026-11-12
+
+The live newsletter preview renders each SVG DOI badge in an individual image table row and inserts an empty padded text row between them, creating the large visual gap. The previously tried pre-processing hook was **not called** on the browser-preview route; an isolated administrator-only diagnostic showed filter_invoked: false. The later newsletter HTML post-processing hook **was called**, and its resulting HTML was inspected.
+
+The site layout filter #120 now operates at this latter stage and replaces just the pair of image rows plus empty padded row with a 360px wide, two-cell, single-row presentation table. A fresh preview readback confirmed both linked DOI image URLs 10.5281/zenodo.24151128 and 10.5281/zenodo.24151127 in exactly two table cells within one row; their original anchor destinations are retained. This is **email preview HTML verification**, not yet a test in multiple actual mail clients. The temporary admin-only diagnostic snippet #121 has been deactivated. Newsletter #63 remains unsent and unscheduled. The published website's archive block remains unchanged by the email filter.
