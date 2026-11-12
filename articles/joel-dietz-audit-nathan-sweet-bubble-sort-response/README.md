@@ -28,3 +28,7 @@ Each test has two directly downloadable ZIP mirrors. Coding agents should fetch 
 A source-first agent should fetch the original pinned code and articles independently. WordPress and GitHub are different availability channels, not independent scientific corroborations. A ZIP can be a convenient test harness; a successful local fixture test is not confirmation of the primary source.
 
 See [tool-first verification standard](../../docs/TOOL_FIRST_VERIFICATION_STANDARD.md) and [source manifest](sources.json) for test-specific inputs. The website's expandable prompts include detailed steps and scope limits. We will update the public article snapshot, source ledger, version diffs, DOI and final release links only after publication approval.
+
+## Independent coding-agent audit intake
+
+For Codex, Claude Code, Antigravity, and other coding agents with authenticated WordPress and GitHub access, use the [full independent audit handoff](agents/INDEPENDENT_AUDIT_HANDOFF.md) and the [submission guide](agents/README.md). Each agent submits evidence, tests, and gate recommendations in a separate PR under `audits/agents/<run-id>/`; the release coordinator reconciles accepted findings into [release_status.json](release_status.json). All public submissions must exclude unpublished manuscript content and private correspondence. This does not authorize article publication or DOI deposits.
