@@ -35,3 +35,6 @@ Published raw body SHA-256 c47a2c0736cfd4f90203e6ff5fb467c4dee0bf0f88999a2fa4fc6
 
 ## Update 9: files swapped to the version with the image note (still unpublished)
 Published raw body SHA-256 77ea9112229ae2e6454f8fb8b1e252e8f528a614ad14eb6d609ea816587db3b3. Draft 24151128 holds: joel-dietz-response-1.0.0.zip 353,938 bytes md5 d8a495b099d513d0e0f012b243b64c84; joel-dietz-response-history-1.0.0.zip 2,261,376 bytes md5 a379e10baab1ea32b177c13ac3e84b37; joel-dietz-response-audit-1.0.0.txt 27,395 bytes md5 5ec6f64badfc3e6c1dfa57bf7b649e52 (match the GitHub copies). Metadata and five related works intact. Not published.
+
+## Update 10: image swap and DOI wording (files to be swapped; still unpublished)
+Live article raw body SHA-256 38fff624f6ac395e91cf045f6574613abd295cd590ae8b0a0a1f8e7a9e300e81 (full: 38fff624f6ac395e91cf045f6574613abd295cd590ae8b0a0a1f8e7a9e300e81). Changes: featured image replaced (attachment 218725906; green NEGATIVE RESULT label on the 0% panel; sha256 e4423483aa194e5e5ffc23145b1f13fd9e6ee6c22019ee8fe2a4ccb2be72bf1a); caption, alt text and Yoast social image updated; the article now links the reserved DOI 10.5281/zenodo.24151128 (resolves only after the owner publishes).

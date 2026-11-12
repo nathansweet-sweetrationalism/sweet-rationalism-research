@@ -21,7 +21,7 @@
       "group": "WordPress & presentation",
       "label": "Article structure, 12-point navigation and 14 expandable source tests",
       "state": "done",
-      "evidence": "Readback 2026-11-12 (draft modified 2026-11-12T00:03:26, sha256 77ea9112...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text."
+      "evidence": "Readback 2026-11-12 (draft modified 2026-11-12T00:03:26, sha256 38fff624...): 14 panels, 0 --offline, 0 verify.py, 14 name --selftest, inventory script 0 structural failures. At the owner's request the draft gained a Computational disclosure, dated Revision notes and an original-code link, a corrected fish-comparison description, five (not three) wrong upstream DOIs stated with correct references, and a sentence about the Zhang et al. preprint reworded to the preprint's text."
     },
     {
       "id": "bibliography",
@@ -98,7 +98,7 @@
       "group": "Archives & reproducibility",
       "label": "Public UTF-8 audit TXT, full reconstruction ZIP, checksums and verified download links",
       "state": "partial",
-      "evidence": "2026-11-12: release candidate built and verified locally on draft sha256 77ea9112...: main archive (100 files, sha256 6d02b0b11f4466f097c2911d90dcb8140ca789152d4e7d2d5e3d0de7996d8749), history ZIP (123 files, sha256 966ef2d33196c1345e5036716d6d71f00699a9a1700187656e884fe630eeac9e), audit TXT (sha256 a06971d2d0dbc94e3703155bec412d6f8dd6a9152da7c7b0ac6a29bcc7199804). Fresh extraction: 0 checksum mismatches. Not public or uploaded."
+      "evidence": "2026-11-12: release candidate built and verified locally on article sha256 38fff624... (live, with the replacement hero image and the reserved DOI link): main archive (106 files, sha256 9be65f0ef01ddfe7d454eb45d92e36e4252bc612df38b9d06a3c1a1c8a5acc03), history ZIP (136 files, sha256 71c01792237f7ed6b6947482c868eb1dbccd42cf8de37e9f33af373fc477861b), audit TXT (sha256 790d29ea8b20940e384be043fd16a7620cf646b44c408852b09440c42aeb0a67). Fresh extraction: 0 checksum mismatches. Uploaded to the unpublished Zenodo draft 24151128 only."
     },
     {
       "id": "github_snapshot",
@@ -126,7 +126,7 @@
       "group": "Publication sequence",
       "label": "Publish approved WordPress edition and preserve canonical URL",
       "state": "done",
-      "evidence": "Published 2026-11-12 on the owner's instruction (post 218725796, status publish, date 2026-11-12T00:09:00 site time) at https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/ ; final raw body sha256 77ea9112229ae2e6454f8fb8b1e252e8f528a614ad14eb6d609ea816587db3b3; page cache purged and the live HTML serves the final text."
+      "evidence": "Published 2026-11-12 on the owner's instruction (post 218725796, status publish, date 2026-11-12T00:09:00 site time) at https://sweetrationalism.com/articles/epistemology/joel-dietz-audit-nathan-sweet-bubble-sort-response/ ; final raw body sha256 38fff624f6ac395e91cf045f6574613abd295cd590ae8b0a0a1f8e7a9e300e81; page cache purged and the live HTML serves the final text."
     },
     {
       "id": "visibility",
@@ -204,6 +204,10 @@
     {
       "date": "2026-11-12",
       "event": "Image note added under the Bottom line (hero illustration is satire; 900% sheet is a synthetic control; the 0% panel was not stamped by the validator; no claim that Michael Levin wrote the validator or endorsed the audit). Article sha256 77ea9112229ae2e6454f8fb8b1e252e8f528a614ad14eb6d609ea816587db3b3; archive rebuilt; Zenodo files to be swapped."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "At the owner's request: replacement hero image (green NEGATIVE RESULT label on the 0% panel instead of a red VERIFIED stamp; image sha256 e4423483aa194e5e5ffc23145b1f13fd9e6ee6c22019ee8fe2a4ccb2be72bf1a, committed under assets/), image caption and alt text updated, and the reserved Zenodo DOI 10.5281/zenodo.24151128 linked in the article in place of the 'DOI will be linked' and 'unpublished draft' wording. Article sha256 38fff624f6ac395e91cf045f6574613abd295cd590ae8b0a0a1f8e7a9e300e81; archive rebuilt; Zenodo draft files to be swapped before the owner's Publish click."
     }
   ]
 }

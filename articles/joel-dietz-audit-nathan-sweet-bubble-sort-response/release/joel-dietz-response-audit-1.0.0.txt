@@ -1,6 +1,6 @@
 # Release candidate 1.0.0: reconstruction and verification
 
-Article: the WordPress article with post ID 218725796 (title in `metadata.json`), by Nathan Sweet. The WordPress article was published on 2026-11-12 on the owner's instruction (permalink in `metadata.json`). This archive holds the published raw body before any DOI links were added. It becomes the citable release when the Zenodo record is published.
+Article: the WordPress article with post ID 218725796 (title in `metadata.json`), by Nathan Sweet. The WordPress article was published on 2026-11-12 on the owner's instruction (permalink in `metadata.json`). This archive holds the published raw body, which links the reserved Zenodo DOI 10.5281/zenodo.24151128 (it resolves only once the Zenodo record is published by the owner). It becomes the citable release at that point.
 
 The article is canonical on sweetrationalism.com. This archive preserves one frozen edition with its evidence. It has not been externally peer reviewed. Nothing in it implies that Zhang, Goldstein, Levin or Dietz have read, evaluated or endorsed it.
 
@@ -202,7 +202,7 @@ An image note was added under the Bottom line (2026-11-12): the hero illustratio
 Carried from the coordinator's adjudication (`audits/AGENT_ADJUDICATION_2026-11-12.md`) and the audits in this archive, with the status found when freezing. Nothing is silently closed.
 
 ## What was done since the first freeze (2026-11-12)
-Full-text passage checks (`SOURCE_PASSAGE_CHECKS.md`), the p = 0.061 analysis (`P061_ANALYSIS.md`), the sitewide link matrix and visibility checks (`VISIBILITY_AND_LINK_CHECKS.md`), a prose and cohesion review plus an evidence-retention run over all 58 saved revisions (`PROSE_AND_COHESION_REVIEW.md`), and the revision-history reconstruction (`history/`, shipped as a separate ZIP). On the owner's request the draft gained a Computational disclosure section, dated Revision notes and an original-code link, and two rounds of correction: the direction of the nearest-relative fish comparison, and the restoration of two verified wrong DOIs together with a reworded sentence about the Zhang et al. preprint.
+Full-text passage checks (`SOURCE_PASSAGE_CHECKS.md`), the p = 0.061 analysis (`P061_ANALYSIS.md`), the sitewide link matrix and visibility checks (`VISIBILITY_AND_LINK_CHECKS.md`), a prose and cohesion review plus an evidence-retention run over all 58 saved revisions (`PROSE_AND_COHESION_REVIEW.md`), and the revision-history reconstruction (`history/`, shipped as a separate ZIP). On the owner's request the draft gained a Computational disclosure section, dated Revision notes and an original-code link, and a replacement hero image (the red VERIFIED stamp on the 0% panel became a green NEGATIVE RESULT label, added by the author's image tool; the caption, media alt text and Yoast social image were updated to match; image sha256 e4423483aa194e5e5ffc23145b1f13fd9e6ee6c22019ee8fe2a4ccb2be72bf1a), and two rounds of correction: the direction of the nearest-relative fish comparison, and the restoration of two verified wrong DOIs together with a reworded sentence about the Zhang et al. preprint.
 
 ## Still open
 1. The Zhang et al. sentence about random walkers, barriers and perturbative experiments was checked against the free-access journal version and the preprint; both support it, and the draft quotes the journal wording.
@@ -212,7 +212,7 @@ Full-text passage checks (`SOURCE_PASSAGE_CHECKS.md`), the p = 0.061 analysis (`
 5. Formal duties: no proof assistant or SMT solver was used; the 17 inventoried numerical statements reproduce by exact arithmetic or bounded tests.
 6. Prose: reviewed by measurement and one read, not by ear. The repeated restatements of the conclusion were reworded into distinct points (2026-11-12); the repeated if-then device and the switch to second-person address were reworded later the same day.
 7. Five wrong DOIs in Dietz's materials are now stated in the article (the three covered by the executable test, plus Pietak and Levin 2016 and Vandenberg et al. 2012, each a single lookup). Both additions were verified against Crossref and PubMed and are in the reference list.
-8. The signed-out indexing, canonical, sitemap and structured-data checks passed on the live article (2026-11-12). Inbound links from other articles have not been added yet. The article does not yet link its Zenodo DOIs; that is a post-publication step.
+8. The signed-out indexing, canonical, sitemap and structured-data checks passed on the live article (2026-11-12). Inbound links from other articles have not been added yet. The article links its reserved Zenodo DOI, which resolves only after the owner publishes the record; the concept DOI does not exist until then and is not linked.
 9. The agents' agreement shares the same pinned code and data and is not independent empirical replication.
 
 ## The 0.50 forecast
