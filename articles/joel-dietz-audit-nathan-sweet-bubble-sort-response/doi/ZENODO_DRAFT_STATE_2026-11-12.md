@@ -1,0 +1,8 @@
+# Zenodo draft state, read back 2026-11-12 04:1x UTC
+
+- Draft record: **24151128** (https://zenodo.org/uploads/24151128), status `draft`, `is_published: false`, created through the signed-in account. It is the only unpublished upload; the account's other seven records are published and unrelated.
+- **Reserved DOI: `10.5281/zenodo.24151128`** (DataCite). RESERVED, NOT REGISTERED: `https://zenodo.org/api/records/24151128` returns 404 and the DOI does not resolve. The concept DOI does not exist until the first publication; do not infer it.
+- Files: none uploaded (files enabled, 0 entries). The release candidate archive is held locally and is not public.
+- Metadata saved: type Publication / Preprint; title equal to the WordPress title at the freeze; creator Nathan Sweet with ORCID and affiliation as in the author's other published records; version 1.0.0; publication date 2026-11-12 (to be updated at publication); licence CC-BY-4.0 (as in the author's other records; owner to confirm); eight keywords from the preparation file; description from the preparation file plus a no-peer-review and no-endorsement sentence.
+- Related works saved: `cites` 10.1177/10597123241269740; `references` https://github.com/Zhangtaining/cell_research; `references` 10.5281/zenodo.23866847 (the earlier published audit, version DOI; the concept DOI is 10.5281/zenodo.23866304); `references` the article's GitHub directory. Not used: IsIdenticalTo, IsSupplementTo, IsDerivedFrom. To add after the WordPress article is public: `isIdenticalTo` the canonical permalink, as in the author's other records.
+- No creators or contributors other than Nathan Sweet.

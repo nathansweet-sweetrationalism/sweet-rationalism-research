@@ -4,7 +4,7 @@
   "article_id": 218725796,
   "article_editor": "https://sweetrationalism.com/wp-admin/post.php?post=218725796&action=edit",
   "research_directory": "https://github.com/nathansweet-sweetrationalism/sweet-rationalism-research/tree/main/articles/joel-dietz-audit-nathan-sweet-bubble-sort-response",
-  "as_of": "2026-11-11",
+  "as_of": "2026-11-12",
   "visibility": "draft",
   "publication_state": "HELD: final quality gates and owner approval required",
   "notes": "This public progress record contains no unpublished manuscript text. The statuses change only when evidence is checked and this file is committed; the dashboard polls for those commits, not live tool activity.",
@@ -21,7 +21,7 @@
       "group": "WordPress & presentation",
       "label": "Article structure, 12-point navigation and 14 expandable source tests",
       "state": "done",
-      "evidence": "Readback of WordPress draft: all internal anchors and test blocks retained"
+      "evidence": "Readback 2026-11-12 (sha256 6150cd11...): 14 panels present, 0 --offline, 0 verify.py, 14 name --selftest, ZIP URLs and escaping intact, inventory script reports 0 structural failures. Computational disclosure and dated Revision Notes are absent from the article and tracked under prose/release_assets."
     },
     {
       "id": "bibliography",
@@ -41,8 +41,8 @@
       "id": "executable_live",
       "group": "Evidence & analysis",
       "label": "Seven test packages: independent live-source checks and negative controls",
-      "state": "open",
-      "evidence": "Previously confirmed offline selftests; live-source checks not yet all evidenced"
+      "state": "partial",
+      "evidence": "2026-11-12: all seven packages run with audit.py --live from both mirrors (exit 0, OBSERVATION_REPRODUCED), each confirmed by an independent AST/exact-arithmetic reimplementation with negative controls (evidence in the release candidate archive and audits/agents/claude-fable-20261112T0220Z). Kept partial: Stokes solver not run; v2 harness self-audit weakness not yet fixed in a v3 package; no end-to-end run of a prompt in a second agent; agent agreement shares code and data."
     },
     {
       "id": "formal",
@@ -63,7 +63,7 @@
       "group": "Editorial requirements",
       "label": "Mandatory near-top Bottom line paragraph",
       "state": "partial",
-      "evidence": "Bottom line is the first paragraph of the authenticated WordPress draft (readback 2026-11-11T20:31:22); formal source and human prose review still pending."
+      "evidence": "Structural gate: the committed script fails the candidate because its italic-deck regex is over-escaped; with the one-line fix (tests added) the candidate passes (116 words, first block after a deck). Semantic review still pending."
     },
     {
       "id": "framework_links",
@@ -97,8 +97,8 @@
       "id": "release_assets",
       "group": "Archives & reproducibility",
       "label": "Public UTF-8 audit TXT, full reconstruction ZIP, checksums and verified download links",
-      "state": "open",
-      "evidence": "Prepared privately; public links and release packaging pending"
+      "state": "partial",
+      "evidence": "2026-11-12: release candidate archive assembled locally and verified (89 files, SHA-256 manifest, fresh extraction, 0 mismatches); ZIP a346c1cee0484e53941da1b6540834bf43ad5b1b2f2136996cb1fb28b5c3989f. Not public: it contains the unpublished article. Public TXT diff/historical reconstruction still pending."
     },
     {
       "id": "github_snapshot",
@@ -111,8 +111,8 @@
       "id": "doi",
       "group": "Archives & reproducibility",
       "label": "Article-specific Zenodo concept DOI and immutable version DOI verified",
-      "state": "open",
-      "evidence": "DOI preparation note at doi/RELEASE_PREP_2026-11-12.md records 2026-11-11 author source-signoff, Gutenberg snapshot fingerprint, immutable-artifact requirements and Zenodo authentication blocker. No reserved or registered article DOI. Final release gates still open."
+      "state": "partial",
+      "evidence": "2026-11-12: unpublished Zenodo draft 24151128 holds the reserved DOI 10.5281/zenodo.24151128 (RESERVED, NOT REGISTERED; public record 404), with metadata and related works saved and no files. Version and concept DOIs are to be read back only after publication."
     },
     {
       "id": "owner",
@@ -164,6 +164,10 @@
     {
       "date": "2026-11-12",
       "event": "Committed article-specific Zenodo release preparation record with raw WordPress draft SHA-256, 14-panel static scan, archive inventory and publication-order safeguards. Unauthenticated Zenodo browser; deposit not created."
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Zenodo draft 24151128 created with reserved DOI 10.5281/zenodo.24151128 (not registered). Release candidate archive built and checksum-verified locally, not uploaded and not public. Gate evidence updated; prose, formal, history, github_snapshot, owner, publish and visibility remain open or partial. Publication awaits the owner's approval of the exact candidate."
     }
   ]
 }
