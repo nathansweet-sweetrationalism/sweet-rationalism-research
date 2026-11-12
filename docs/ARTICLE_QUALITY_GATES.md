@@ -140,3 +140,8 @@ Before requesting final approval, assemble **privately**:
 | Proof assistant | Kernel acceptance of encoded theorem/dependencies | Physical truth or external scholarly peer review |
 
 Failures warrant local correction and retesting, not abandonment of unrelated empirical evidence. Passing checks remain revisable when a better formalization, source, or counterexample appears.
+
+## Public-site and newsletter publication-surface gate (2026-11-12)
+
+Consult [PUBLIC_SITE_BRANDING_AND_EMAIL_LAYOUT.md](PUBLIC_SITE_BRANDING_AND_EMAIL_LAYOUT.md) for mandatory checks on the public reader-facing publication surface. Avoid incidental exposure of site implementation names in editorial prose; preserve accurately quoted third-party words, literal identifiers, external URLs, reproducibility records and unmodified archival provenance. Check the paired official linked version/concept DOI badges as one row **on the website**, and separately check their layout in the **email-rendered** preview, where a dedicated two-cell table may be necessary. Assert that GitHub links visibly receive the site-wide icon without damaging link targets or accessibility, and that full computational panels do not leak into emails. These are presentation checks, not evidence for empirical or philosophical conclusions. Note an unverified preview as UNRESOLVED, not PASS.
+
