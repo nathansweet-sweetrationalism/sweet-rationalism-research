@@ -1,0 +1,33 @@
+{
+  "status": "SELFTEST_ONLY",
+  "time_utc": "2026-11-12T02:17:58.752846+00:00",
+  "mode": "LOCAL_FIXTURE_SELFTEST",
+  "observations": [
+    {
+      "name": "literal_verified_assignments",
+      "value": 1
+    },
+    {
+      "name": "relative_error_fields",
+      "value": 1
+    },
+    {
+      "name": "synthetic_900_pct_negative_control",
+      "value": "VERIFIED literal remains unchanged"
+    }
+  ],
+  "source_hashes": [
+    {
+      "name": "validator",
+      "url": "FIXTURE_ONLY",
+      "sha256": "0d644eef8566a95b19bf6acc190a39d1d6fbcd2dcdda6e362822ec6b2eac55f9",
+      "bytes": 61
+    }
+  ],
+  "limitations": [
+    "This check establishes only the stated source/code observation, not an ontology.",
+    "Fixture mode is a parser smoke test, NOT an independent check of online sources.",
+    "900% is a fabricated negative-control input, not an observed replication discrepancy."
+  ],
+  "test_id": "validator"
+}

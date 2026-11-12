@@ -1,0 +1,36 @@
+{
+  "status": "OBSERVATION_REPRODUCED",
+  "time_utc": "2026-11-12T02:18:13.646931+00:00",
+  "mode": "PINNED_REMOTE_SOURCES",
+  "observations": [
+    {
+      "name": "estimated_human_prose_mean_percent",
+      "value": 53.125
+    },
+    {
+      "name": "after_hypothetical_intro_row_split_percent",
+      "value": 57.4444
+    },
+    {
+      "name": "row_count_before_after",
+      "value": [
+        8,
+        9
+      ]
+    }
+  ],
+  "source_hashes": [
+    {
+      "name": "renderer",
+      "url": "https://raw.githubusercontent.com/fractastical/morpholib/4bed72c17f09bf336e36e7472e64d457db3b0195/sorting-morphogenesis/render_13yo_illustrations.py",
+      "sha256": "bf02ff2958dd90f0b24fe6e47d663c438d9c8a77afe978478f237f0e56c13ce8",
+      "bytes": 53429
+    }
+  ],
+  "limitations": [
+    "This check establishes only the stated source/code observation, not an ontology.",
+    "Fixture mode is a parser smoke test, NOT an independent check of online sources.",
+    "Section-boundary sensitivity does not reveal real authorship contribution shares."
+  ],
+  "test_id": "authorship"
+}

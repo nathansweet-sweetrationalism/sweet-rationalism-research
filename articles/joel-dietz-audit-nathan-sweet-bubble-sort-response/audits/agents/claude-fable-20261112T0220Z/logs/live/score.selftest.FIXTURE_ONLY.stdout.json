@@ -1,0 +1,48 @@
+{
+  "status": "SELFTEST_ONLY",
+  "time_utc": "2026-11-12T02:18:08.351549+00:00",
+  "mode": "LOCAL_FIXTURE_SELFTEST",
+  "observations": [
+    {
+      "name": "seven_displayed_scores",
+      "value": [
+        66.7,
+        13.5,
+        86.5,
+        96.1,
+        95.0,
+        95.0,
+        90.1
+      ]
+    },
+    {
+      "name": "arithmetic_mean_percent",
+      "value": 77.5571
+    },
+    {
+      "name": "leave_one_out_mean_range_percent",
+      "value": [
+        74.4667,
+        88.2333
+      ]
+    },
+    {
+      "name": "display_value_in_source",
+      "value": "77.6%"
+    }
+  ],
+  "source_hashes": [
+    {
+      "name": "generator",
+      "url": "FIXTURE_ONLY",
+      "sha256": "1fdd8812c84347ea9008b793743dae277f4e1a7e1ac608ab7d2efb81b9b4422d",
+      "bytes": 234
+    }
+  ],
+  "limitations": [
+    "This check establishes only the stated source/code observation, not an ontology.",
+    "Fixture mode is a parser smoke test, NOT an independent check of online sources.",
+    "An average of scored judgments is not a calibrated probability of P."
+  ],
+  "test_id": "score"
+}
