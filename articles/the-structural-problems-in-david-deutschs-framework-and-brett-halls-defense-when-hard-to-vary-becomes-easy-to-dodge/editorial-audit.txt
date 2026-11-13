@@ -1,0 +1,9 @@
+# Deutsch and Hall editorial audit
+
+Published edition of post 2443. See the canonical article and the original-to-current plain-text diff for exact wording.
+
+- Causal accountability. A thermodynamic bound applies to particular operations under stated conditions. The stronger requirement on an added cause is to identify an effect that distinguishes its contribution from rival accounts.
+- Hall and Deutsch. Hall explicitly defends experimental testability for science. His human-only conjectures and Deutsch’s physical Church–Turing proposal concern different claims. Primary writing and the recorded podcast support the distinctions made in the article.
+- Evidence and decision scope. Crook’s octopus study provides behavioral evidence relevant to welfare. The article distinguishes that evidence from a categorical verdict about experience or a finding of actual policy harm.
+- Source traceability. The author checked quotations when preparing the original post. Where the saved citation trail was incomplete, the revised article uses sources a reader can retrace. This record does not imply that missing documentation means a quotation was unchecked at the time.
+- Checks. Local source audit and article comparison, exact old and new HTML, public links and rendering. Unavailable historical comment evidence is not used as a direct quotation in the new edition. No article-specific DOI has been verified for this edition.

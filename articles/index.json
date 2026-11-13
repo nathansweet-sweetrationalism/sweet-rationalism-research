@@ -2,8 +2,17 @@
   "schema_version": "1.0",
   "canonical_domain": "https://sweetrationalism.com",
   "scope": "public_indexable_articles_only",
-  "count": 36,
+  "count": 37,
   "articles": [
+    {
+      "id": 2443,
+      "title": "David Deutsch and Brett Hall: What Would Count Against “Hard to Vary”?",
+      "slug": "the-structural-problems-in-david-deutschs-framework-and-brett-halls-defense-when-hard-to-vary-becomes-easy-to-dodge",
+      "canonical_url": "https://sweetrationalism.com/articles/philosophy/the-structural-problems-in-david-deutschs-framework-and-brett-halls-defense-when-hard-to-vary-becomes-easy-to-dodge/",
+      "html_path": "articles/the-structural-problems-in-david-deutschs-framework-and-brett-halls-defense-when-hard-to-vary-becomes-easy-to-dodge/article.html",
+      "last_modified": "2026-11-13T03:47:48",
+      "doi": null
+    },
     {
       "id": 218725595,
       "title": "Matthew David Segall: Scholarly Evidence, Criticism, Corrections, and Process Philosophy",
