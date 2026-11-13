@@ -1,7 +1,7 @@
 --- before_text.txt
 +++ published_2026-11-13.txt
-@@ -1,265 +1,57 @@
-+## David Deutsch and Brett Hall: What Would Count Against “Hard to Vary”?
+@@ -1,265 +1,59 @@
++# David Deutsch and Brett Hall: What Would Count Against “Hard to Vary”?
  
 -# How a YouTube Comment Exposed Unfalsifiable Foundations Beneath Rigorous-Sounding Philosophy
 -### The Setup: A Critique That Deserved Better
@@ -320,5 +320,7 @@
 +I narrowed the thermodynamic claim to the physical realization of specific operations. The original wording assigned a universal cost to distinctions, while the sources support bounds under defined conditions. I also corrected the account of Hall’s position using his published defense of experimental testability and distinguished his conjectures about explanatory creativity from claims about experience.
 +
 +I checked the quotations for the original post. The references I saved do not always let readers retrace those checks today. This edition uses sources readers can locate and shortens overlapping examples. The argument rests on comparing what rival explanations can show and what evidence would change the conclusion. The original text and plain-text diff show the changes.
++
++Editorial audit · Historical reconstruction (ZIP)
 +
 +Computational disclosure. Nathan Sweet directed this edition. Claude Code (Claude Sonnet 5.5) contributed to the initial revision and citation audit. Codex (OpenAI GPT-6) developed the reading draft, checked sources and prepared the web edition. OpenAI image generation created the editorial cover from public portrait references.
